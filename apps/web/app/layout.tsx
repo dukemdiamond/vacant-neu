@@ -38,7 +38,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <body className="flex min-h-[100dvh] flex-col bg-surface">
         <Nav />
-        <div className="flex flex-1 flex-col">{children}</div>
+        {/*
+          A plain block, not a flex container. As a flex item of the body it stretches to full
+          width, but inside it the page is normal flow, so `mx-auto max-w-*` on a <main> resolves
+          against the viewport. Making this a flex column instead causes `mx-auto` to override
+          align-items: stretch, and every page silently shrinks to fit its own content.
+        */}
+        <div className="flex-1">{children}</div>
         <Footer />
         <Analytics />
       </body>

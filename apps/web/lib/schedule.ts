@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import MiniSearch from "minisearch";
+import { useNow } from "./clock";
 import {
   allRoomStatuses,
   indexMeetingsByRoom,
@@ -44,31 +45,6 @@ export function useSchedule(): LoadState {
   }, []);
 
   return state;
-}
-
-/**
- * A clock that re-renders on a cadence.
- *
- * Vacancy is a function of the current minute, so a page left open would otherwise drift out of
- * date. Ticking on the minute boundary rather than every 60s keeps the countdown honest.
- */
-export function useNow(): Date {
-  const [now, setNow] = useState(() => new Date());
-
-  useEffect(() => {
-    let timer: ReturnType<typeof setTimeout>;
-    const schedule = () => {
-      const msToNextMinute = 60_000 - (Date.now() % 60_000);
-      timer = setTimeout(() => {
-        setNow(new Date());
-        schedule();
-      }, msToNextMinute + 50);
-    };
-    schedule();
-    return () => clearTimeout(timer);
-  }, []);
-
-  return now;
 }
 
 export interface RoomHit {
@@ -139,3 +115,5 @@ export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | nul
 export function useAllStatuses(artifact: ScheduleArtifact | null, now: Date): RoomStatus[] {
   return useMemo(() => (artifact ? allRoomStatuses(artifact, now) : []), [artifact, now]);
 }
+
+export { useNow };

@@ -39,7 +39,7 @@ export default function Home() {
   }, [index, query]);
 
   return (
-    <main className="mx-auto max-w-5xl px-5 pb-24 sm:px-8">
+    <main className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
       <section className="pt-14 sm:pt-20">
         <h1 className="display-xl max-w-3xl text-[2.75rem] font-semibold sm:text-6xl">
           {/* pr-1 reserves room for the italic slant so the "d" does not crowd the next word. */}
@@ -133,7 +133,14 @@ function Results({
         {total} {total === 1 ? "room" : "rooms"}, {openCount} open now.
         {total > rooms.length && <> Showing the first {rooms.length}.</>}
       </p>
-      <div className="flex flex-col gap-2">
+      <div
+        className={[
+          "grid items-start gap-2",
+          // A single exact match keeps the full width for its schedule; a list of candidates is
+          // easier to scan two-up than as one very wide column.
+          expandFirst && rooms.length === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2",
+        ].join(" ")}
+      >
         {rooms.map((room) => {
           const status = statusById.get(room.id);
           if (!status) return null;

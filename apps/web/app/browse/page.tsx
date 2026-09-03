@@ -85,7 +85,7 @@ export default function BrowsePage() {
   }, [visible, artifact]);
 
   return (
-    <main className="mx-auto max-w-6xl px-5 pb-24 sm:px-8">
+    <main className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
       <section className="pt-14 sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
         <p className="mt-4 max-w-lg text-lg text-ink-muted">
@@ -135,7 +135,7 @@ export default function BrowsePage() {
             )}
           </p>
 
-          <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[16rem_1fr]">
+          <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[17rem_1fr]">
             <BuildingFilter
               buildings={artifact.buildings}
               counts={countByBuilding}

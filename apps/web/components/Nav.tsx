@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LiveClock } from "@/components/LiveClock";
 
 /**
  * Single-line navigation.
@@ -16,9 +17,12 @@ export function Nav() {
         >
           <span className="text-accent">vacant</span>NEU
         </Link>
-        <div className="flex items-center gap-1">
-          <NavLink href="/browse">Browse</NavLink>
-          <NavLink href="/map">Map</NavLink>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <LiveClock />
+          <div className="flex items-center gap-1">
+            <NavLink href="/browse">Browse</NavLink>
+            <NavLink href="/map">Map</NavLink>
+          </div>
         </div>
       </nav>
     </header>
