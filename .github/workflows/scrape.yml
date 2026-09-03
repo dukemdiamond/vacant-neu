@@ -1,0 +1,51 @@
+name: Scrape Banner
+
+on:
+  schedule:
+    # 04:15 ET (09:15 UTC) daily — off-peak for Banner, and the artifact is fresh before classes.
+    - cron: "15 9 * * *"
+  workflow_dispatch:
+    inputs:
+      term:
+        description: "Banner term code (blank = auto-detect current term)"
+        required: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # The vacancy engine gates the data: if its behaviour has drifted, we don't publish.
+      - run: pnpm test
+
+      - name: Scrape
+        run: pnpm scrape ${{ inputs.term && format('--term {0}', inputs.term) || '' }}
+
+      # The scraper exits non-zero on an implausible result set, so reaching this step means the
+      # artifact passed its sanity floors. Nothing is committed when the data is unchanged.
+      - name: Commit updated data
+        run: |
+          if [[ -z "$(git status --porcelain data/)" ]]; then
+            echo "No schedule changes."
+            exit 0
+          fi
+          git config user.name "vacantneu-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/
+          git commit -m "data: refresh Banner schedule ($(date -u +%Y-%m-%d))"
+          git push

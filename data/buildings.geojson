@@ -1,0 +1,575 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "271",
+        "name": "271 Huntington (LP)",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0864365,
+          42.3420292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "BK",
+        "name": "Behrakis Health Sciences Cntr",
+        "roomCount": 32
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0915592,
+          42.3369029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "CA",
+        "name": "Cahners Hall",
+        "roomCount": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0915265,
+          42.3414665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "CG",
+        "name": "Cargill Hall",
+        "roomCount": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0915964,
+          42.3389432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "CH",
+        "name": "Churchill Hall",
+        "roomCount": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.088903,
+          42.3387699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "CN",
+        "name": "Cullinane Building",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0865371,
+          42.3401017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "DA",
+        "name": "Dana Research Center",
+        "roomCount": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0893034,
+          42.3380735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "DK",
+        "name": "Dockser Hall",
+        "roomCount": 12
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09044,
+          42.33869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "DG",
+        "name": "Dodge Hall",
+        "roomCount": 15
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0878034,
+          42.3402945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "EV",
+        "name": "East Village",
+        "roomCount": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08689,
+          42.34047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "EL",
+        "name": "Ell Hall",
+        "roomCount": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0880746,
+          42.339794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "EXP",
+        "name": "EXP",
+        "roomCount": 17
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.08761,
+          42.33706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "FC",
+        "name": "Fenway Center",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0878347,
+          42.342037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "FR",
+        "name": "Forsyth Building",
+        "roomCount": 19
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0895778,
+          42.3386144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "HS",
+        "name": "Hastings Suite",
+        "roomCount": 20
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.09019,
+          42.34271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "HA",
+        "name": "Hayden Hall",
+        "roomCount": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0884467,
+          42.3392841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "HO",
+        "name": "Holmes Hall",
+        "roomCount": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.090829,
+          42.3378925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "HT",
+        "name": "Hurtig Hall",
+        "roomCount": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0861652,
+          42.3397774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "INV",
+        "name": "International Village",
+        "roomCount": 8
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0892456,
+          42.3351039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "KA",
+        "name": "Kariotis Hall",
+        "roomCount": 13
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0908967,
+          42.3386318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "KN",
+        "name": "Knowles Center",
+        "roomCount": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0908704,
+          42.3392099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "LA",
+        "name": "Lake Hall",
+        "roomCount": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.090665,
+          42.338201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "ME",
+        "name": "Meserve Hall",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0908638,
+          42.337639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "MU",
+        "name": "Mugar Life Science Building",
+        "roomCount": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0871733,
+          42.3398758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "NI",
+        "name": "Nightingale Hall",
+        "roomCount": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0901758,
+          42.3381299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "RI",
+        "name": "Richards Hall",
+        "roomCount": 26
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0888393,
+          42.3398671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "RB",
+        "name": "Robinson Hall",
+        "roomCount": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.086721,
+          42.3392672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "RY",
+        "name": "Ryder Hall",
+        "roomCount": 71
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0906288,
+          42.3365935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "ISEC",
+        "name": "Science Engineering Complex",
+        "roomCount": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0868904,
+          42.3377258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SH",
+        "name": "Shillman Hall",
+        "roomCount": 16
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0902621,
+          42.3376131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SN",
+        "name": "Snell Engineering Center",
+        "roomCount": 6
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0888473,
+          42.3382859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SL",
+        "name": "Snell Library",
+        "roomCount": 29
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0879537,
+          42.3383406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "ST",
+        "name": "Stearns Center",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.091359,
+          42.3390145
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "SE",
+        "name": "Stetson East",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0901877,
+          42.3413459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WVC",
+        "name": "West Village C",
+        "roomCount": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0925664,
+          42.3369551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WVF",
+        "name": "West Village F",
+        "roomCount": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0915336,
+          42.3375426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WVG",
+        "name": "West Village G",
+        "roomCount": 4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0917462,
+          42.3382286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WVH",
+        "name": "West Village H",
+        "roomCount": 5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.0922902,
+          42.3385478
+        ]
+      }
+    }
+  ]
+}

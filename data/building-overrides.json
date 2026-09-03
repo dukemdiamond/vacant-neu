@@ -1,0 +1,322 @@
+{
+  "271": {
+    "code": "271",
+    "name": "271 Huntington (LP)",
+    "lat": 42.3420292,
+    "lon": -71.0864365,
+    "osmName": "271 Huntington",
+    "source": "auto"
+  },
+  "BK": {
+    "code": "BK",
+    "name": "Behrakis Health Sciences Cntr",
+    "lat": 42.3369029,
+    "lon": -71.0915592,
+    "osmName": "Behrakis Health Sciences Center",
+    "source": "auto"
+  },
+  "BL": {
+    "code": "BL",
+    "name": "Burlington",
+    "lat": null,
+    "lon": null,
+    "source": "excluded",
+    "osmName": "Burlington campus - off Boston campus"
+  },
+  "CA": {
+    "code": "CA",
+    "name": "Cahners Hall",
+    "lat": 42.3414665,
+    "lon": -71.0915265,
+    "osmName": "Cahners Hall",
+    "source": "auto"
+  },
+  "CG": {
+    "code": "CG",
+    "name": "Cargill Hall",
+    "lat": 42.3389432,
+    "lon": -71.0915964,
+    "osmName": "Cargill Hall",
+    "source": "auto"
+  },
+  "CH": {
+    "code": "CH",
+    "name": "Churchill Hall",
+    "lat": 42.3387699,
+    "lon": -71.088903,
+    "osmName": "Churchill Hall",
+    "source": "auto"
+  },
+  "CN": {
+    "code": "CN",
+    "name": "Cullinane Building",
+    "lat": 42.3401017,
+    "lon": -71.0865371,
+    "osmName": "Cullinane Hall",
+    "source": "auto"
+  },
+  "DA": {
+    "code": "DA",
+    "name": "Dana Research Center",
+    "lat": 42.3380735,
+    "lon": -71.0893034,
+    "osmName": "Dana Research Center",
+    "source": "auto"
+  },
+  "DK": {
+    "code": "DK",
+    "name": "Dockser Hall",
+    "lat": 42.33869,
+    "lon": -71.09044,
+    "source": "manual",
+    "osmName": "Northeastern University School of Law-Dockser Hall"
+  },
+  "DG": {
+    "code": "DG",
+    "name": "Dodge Hall",
+    "lat": 42.3402945,
+    "lon": -71.0878034,
+    "osmName": "Dodge Hall",
+    "source": "auto"
+  },
+  "EV": {
+    "code": "EV",
+    "name": "East Village",
+    "lat": 42.34047,
+    "lon": -71.08689,
+    "osmName": "East Village Residence Hall",
+    "source": "manual"
+  },
+  "EL": {
+    "code": "EL",
+    "name": "Ell Hall",
+    "lat": 42.339794,
+    "lon": -71.0880746,
+    "osmName": "Ell Hall",
+    "source": "auto"
+  },
+  "EXP": {
+    "code": "EXP",
+    "name": "EXP",
+    "lat": 42.33706,
+    "lon": -71.08761,
+    "source": "manual",
+    "osmName": "Northeastern EXP"
+  },
+  "FC": {
+    "code": "FC",
+    "name": "Fenway Center",
+    "lat": 42.342037,
+    "lon": -71.0878347,
+    "osmName": "Fenway Center",
+    "source": "auto"
+  },
+  "FR": {
+    "code": "FR",
+    "name": "Forsyth Building",
+    "lat": 42.3386144,
+    "lon": -71.0895778,
+    "osmName": "Forsyth Building",
+    "source": "auto"
+  },
+  "HS": {
+    "code": "HS",
+    "name": "Hastings Suite",
+    "lat": 42.34271,
+    "lon": -71.09019,
+    "source": "manual",
+    "osmName": "122 Hemenway Street (Hastings)"
+  },
+  "HA": {
+    "code": "HA",
+    "name": "Hayden Hall",
+    "lat": 42.3392841,
+    "lon": -71.0884467,
+    "osmName": "Hayden Hall",
+    "source": "auto"
+  },
+  "HO": {
+    "code": "HO",
+    "name": "Holmes Hall",
+    "lat": 42.3378925,
+    "lon": -71.090829,
+    "osmName": "Holmes Hall",
+    "source": "auto"
+  },
+  "HT": {
+    "code": "HT",
+    "name": "Hurtig Hall",
+    "lat": 42.3397774,
+    "lon": -71.0861652,
+    "osmName": "Hurtig Hall",
+    "source": "auto"
+  },
+  "INV": {
+    "code": "INV",
+    "name": "International Village",
+    "lat": 42.3351039,
+    "lon": -71.0892456,
+    "osmName": "International Village",
+    "source": "auto"
+  },
+  "KA": {
+    "code": "KA",
+    "name": "Kariotis Hall",
+    "lat": 42.3386318,
+    "lon": -71.0908967,
+    "osmName": "Kariotis Hall",
+    "source": "auto"
+  },
+  "KN": {
+    "code": "KN",
+    "name": "Knowles Center",
+    "lat": 42.3392099,
+    "lon": -71.0908704,
+    "osmName": "Knowles Center",
+    "source": "auto"
+  },
+  "LA": {
+    "code": "LA",
+    "name": "Lake Hall",
+    "lat": 42.338201,
+    "lon": -71.090665,
+    "osmName": "Lake Hall",
+    "source": "auto"
+  },
+  "MSI": {
+    "code": "MSI",
+    "name": "Marine Science Inst (Nahant)",
+    "lat": null,
+    "lon": null,
+    "source": "excluded",
+    "osmName": "Nahant - off Boston campus"
+  },
+  "ME": {
+    "code": "ME",
+    "name": "Meserve Hall",
+    "lat": 42.337639,
+    "lon": -71.0908638,
+    "osmName": "Meserve Hall",
+    "source": "auto"
+  },
+  "MU": {
+    "code": "MU",
+    "name": "Mugar Life Science Building",
+    "lat": 42.3398758,
+    "lon": -71.0871733,
+    "osmName": "Mugar Life Sciences Building",
+    "source": "auto"
+  },
+  "NI": {
+    "code": "NI",
+    "name": "Nightingale Hall",
+    "lat": 42.3381299,
+    "lon": -71.0901758,
+    "osmName": "Nightingale Hall",
+    "source": "auto"
+  },
+  "RI": {
+    "code": "RI",
+    "name": "Richards Hall",
+    "lat": 42.3398671,
+    "lon": -71.0888393,
+    "osmName": "Richards Hall",
+    "source": "auto"
+  },
+  "RB": {
+    "code": "RB",
+    "name": "Robinson Hall",
+    "lat": 42.3392672,
+    "lon": -71.086721,
+    "osmName": "Robinson Hall",
+    "source": "auto"
+  },
+  "RY": {
+    "code": "RY",
+    "name": "Ryder Hall",
+    "lat": 42.3365935,
+    "lon": -71.0906288,
+    "osmName": "Ryder Hall",
+    "source": "auto"
+  },
+  "ISEC": {
+    "code": "ISEC",
+    "name": "Science Engineering Complex",
+    "lat": 42.3377258,
+    "lon": -71.0868904,
+    "osmName": "Interdisciplinary Science & Engineering Complex",
+    "source": "auto"
+  },
+  "SH": {
+    "code": "SH",
+    "name": "Shillman Hall",
+    "lat": 42.3376131,
+    "lon": -71.0902621,
+    "osmName": "Shillman Hall",
+    "source": "auto"
+  },
+  "SN": {
+    "code": "SN",
+    "name": "Snell Engineering Center",
+    "lat": 42.3382859,
+    "lon": -71.0888473,
+    "osmName": "Snell Engineering Center",
+    "source": "auto"
+  },
+  "SL": {
+    "code": "SL",
+    "name": "Snell Library",
+    "lat": 42.3383406,
+    "lon": -71.0879537,
+    "osmName": "Snell Library",
+    "source": "auto"
+  },
+  "ST": {
+    "code": "ST",
+    "name": "Stearns Center",
+    "lat": 42.3390145,
+    "lon": -71.091359,
+    "osmName": "Stearns Center",
+    "source": "auto"
+  },
+  "SE": {
+    "code": "SE",
+    "name": "Stetson East",
+    "lat": 42.3413459,
+    "lon": -71.0901877,
+    "osmName": "Stetson East",
+    "source": "auto"
+  },
+  "WVC": {
+    "code": "WVC",
+    "name": "West Village C",
+    "lat": 42.3369551,
+    "lon": -71.0925664,
+    "osmName": "West Village C",
+    "source": "auto"
+  },
+  "WVF": {
+    "code": "WVF",
+    "name": "West Village F",
+    "lat": 42.3375426,
+    "lon": -71.0915336,
+    "osmName": "West Village F",
+    "source": "auto"
+  },
+  "WVG": {
+    "code": "WVG",
+    "name": "West Village G",
+    "lat": 42.3382286,
+    "lon": -71.0917462,
+    "osmName": "West Villlage G",
+    "source": "auto"
+  },
+  "WVH": {
+    "code": "WVH",
+    "name": "West Village H",
+    "lat": 42.3385478,
+    "lon": -71.0922902,
+    "osmName": "West Village H",
+    "source": "auto"
+  }
+}

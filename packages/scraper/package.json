@@ -1,0 +1,17 @@
+{
+  "name": "@vacantneu/scraper",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "scrape": "tsx src/index.ts",
+    "buildings": "tsx src/buildings.ts",
+    "inspect": "tsx src/inspect.ts"
+  },
+  "dependencies": {
+    "@vacantneu/core": "workspace:*",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
