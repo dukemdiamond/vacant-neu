@@ -23,6 +23,12 @@ interface Props {
   now: Date;
   /** Renders the room's schedule for today underneath. Used for a single searched result. */
   expanded?: boolean;
+  /**
+   * Whether the heading repeats the building name. False where a group header already names it,
+   * so a card reads "204" rather than "Behrakis Health Sciences Cntr 204" directly beneath a
+   * heading that says exactly that.
+   */
+  showBuilding?: boolean;
 }
 
 /**
@@ -33,7 +39,15 @@ interface Props {
  * held back for the one case that genuinely needs urgency, a room about to be reclaimed.
  * Status is never carried by colour alone; the label and the duration say it in words.
  */
-export function RoomCard({ room, status, meetings, calendar, now, expanded = false }: Props) {
+export function RoomCard({
+  room,
+  status,
+  meetings,
+  calendar,
+  now,
+  expanded = false,
+  showBuilding = true,
+}: Props) {
   const free = status.state === "free";
   const closingSoon =
     free && status.minutesUntilChange !== null && status.minutesUntilChange <= CLOSING_SOON_MINUTES;
@@ -47,7 +61,7 @@ export function RoomCard({ room, status, meetings, calendar, now, expanded = fal
     >
       <div className="flex items-baseline justify-between gap-4">
         <h3 className={["text-lg leading-tight", free ? "text-ink" : "text-ink-muted"].join(" ")}>
-          {room.displayName}
+          {showBuilding ? room.displayName : room.room}
         </h3>
         <span
           className={[

@@ -8,6 +8,9 @@ interface Props {
   onChange: (value: string) => void;
   disabled?: boolean;
   resultCount: number | null;
+  placeholder?: string;
+  /** Overrides the visually hidden label when the field filters rather than searches. */
+  label?: string;
 }
 
 /**
@@ -17,13 +20,20 @@ interface Props {
  * The live region announces the result count for screen readers, which otherwise get no signal
  * that the list below has changed.
  */
-export function SearchField({ value, onChange, disabled = false, resultCount }: Props) {
+export function SearchField({
+  value,
+  onChange,
+  disabled = false,
+  resultCount,
+  placeholder = "Try Snell Library, Ryder 155, or ISEC",
+  label = "Search for a classroom by building or room number",
+}: Props) {
   const input = useRef<HTMLInputElement>(null);
 
   return (
     <div className="w-full">
       <label htmlFor="room-search" className="sr-only">
-        Search for a classroom by building or room number
+        {label}
       </label>
 
       <div
@@ -52,7 +62,7 @@ export function SearchField({ value, onChange, disabled = false, resultCount }: 
           disabled={disabled}
           value={value}
           onChange={(event) => onChange(event.target.value)}
-          placeholder="Try Snell Library, Ryder 155, or ISEC"
+          placeholder={placeholder}
           className={[
             "w-full bg-transparent text-base text-ink outline-none",
             "placeholder:text-ink-muted",

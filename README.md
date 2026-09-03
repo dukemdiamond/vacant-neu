@@ -8,8 +8,11 @@ the whole product is one dataset — the registrar's room schedule — read back
 
 ## Status
 
-**Phase 1 (data pipeline) and Phase 2 (home page) are complete and verified.**
-Browse and Map are placeholder routes.
+**Phases 1 through 3 are complete and verified.** Map is a placeholder route.
+
+- **Phase 1** Banner scraper, vacancy engine, Fall 2026 artifact
+- **Phase 2** Home page: search a room, see whether a class is in it
+- **Phase 3** Browse: every classroom, filtered by building and by how long it stays free
 
 | | |
 |---|---|
