@@ -8,7 +8,8 @@ the whole product is one dataset — the registrar's room schedule — read back
 
 ## Status
 
-**Phase 1 (data pipeline) is complete and verified.** The UI is not built yet.
+**Phase 1 (data pipeline) and Phase 2 (home page) are complete and verified.**
+Browse and Map are placeholder routes.
 
 | | |
 |---|---|
@@ -63,9 +64,14 @@ pnpm inspect --room DG-070     # one room's full weekly schedule
 pnpm inspect --building SL     # every room in a building, with live status
 pnpm inspect --free --at 2026-09-16T14:30
 
-pnpm test                      # 45 unit tests
+pnpm test                      # 47 unit tests
 pnpm typecheck
+
+pnpm --filter @vacantneu/web dev     # http://localhost:3000
+pnpm --filter @vacantneu/web build   # static export to apps/web/out
 ```
+
+`apps/web` reads `data/` through a prebuild step, so run `pnpm scrape` at least once first.
 
 `pnpm inspect --room` exists so a human can compare a room against Banner's own UI. Automated
 tests prove the code matches our assumptions; only that comparison proves the assumptions match
@@ -74,11 +80,28 @@ reality.
 ## Layout
 
 ```
+apps/web/            Next.js 15 static export. Home page, design tokens, client vacancy rendering.
 packages/core/       Pure vacancy engine + types. No dependencies. Shared by scraper and UI, so
                      there is exactly one definition of "free".
 packages/scraper/    Banner client, Zod schemas, transform, OSM building matching, CLIs.
 data/                Generated artifacts (committed) + the hand-maintained academic calendar.
 ```
+
+## The web app
+
+Vacancy depends on the current minute, so it cannot be prerendered. The page ships as a static
+shell, fetches the artifact, and recomputes against the visitor's clock on each minute boundary.
+That keeps 741 KB of schedule out of the JS bundle and lets the CDN revalidate data without a
+code deploy. First load is 119 KB of JS.
+
+All reasoning happens in campus time rather than the visitor's, so a student checking from a
+laptop still set to Pacific sees the same answer as one standing in the hallway.
+
+Design language is the Lovable system with Northeastern red (`#c8102e`) as the accent. Free and
+occupied rooms are distinguished by surface weight rather than a green/red pair, keeping the one
+saturated colour reserved for a room about to be reclaimed. Status is never carried by colour
+alone. Dark mode keeps the palette's warmth instead of inverting it, and lightens the accent,
+which only reaches 3.0:1 against a dark surface at full strength.
 
 ## Two things that are easy to get wrong
 
