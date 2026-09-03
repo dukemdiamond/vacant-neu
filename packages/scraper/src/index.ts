@@ -48,7 +48,11 @@ async function main() {
 
   const explicit = arg("term");
   const term = explicit
-    ? { code: explicit, description: (await client.getTerms()).find((t) => t.code === explicit)?.description ?? explicit }
+    ? {
+        code: explicit,
+        description:
+          (await client.getTerms()).find((t) => t.code === explicit)?.description ?? explicit,
+      }
     : await selectTerm(client);
 
   console.log(`Scraping ${term.description} (${term.code}) from Banner...`);
@@ -61,9 +65,15 @@ async function main() {
   const { buildings, rooms, meetings, stats } = transform(sections, BOSTON_CAMPUS);
 
   console.log(`\nParsed ${stats.sections} sections / ${stats.meetingRows} meeting rows`);
-  console.log(`  skipped: no room ${stats.skippedNoRoom}, other campus ${stats.skippedOtherCampus},`);
-  console.log(`           excluded building ${stats.skippedExcludedBuilding}, unusable time ${stats.skippedBadTime}, no days ${stats.skippedNoDays}`);
-  console.log(`\nBoston: ${buildings.length} buildings, ${rooms.length} rooms, ${meetings.length} meetings`);
+  console.log(
+    `  skipped: no room ${stats.skippedNoRoom}, other campus ${stats.skippedOtherCampus},`,
+  );
+  console.log(
+    `           excluded building ${stats.skippedExcludedBuilding}, unusable time ${stats.skippedBadTime}, no days ${stats.skippedNoDays}`,
+  );
+  console.log(
+    `\nBoston: ${buildings.length} buildings, ${rooms.length} rooms, ${meetings.length} meetings`,
+  );
 
   const failures = [
     buildings.length < MIN_BUILDINGS && `buildings ${buildings.length} < ${MIN_BUILDINGS}`,
@@ -104,7 +114,10 @@ async function main() {
   }
 
   writeFileSync(outPath, json);
-  writeFileSync(join(DATA_DIR, "current.json"), JSON.stringify({ term: term.code }, null, 2) + "\n");
+  writeFileSync(
+    join(DATA_DIR, "current.json"),
+    JSON.stringify({ term: term.code }, null, 2) + "\n",
+  );
   console.log(`\nWrote ${outPath} (${(json.length / 1024).toFixed(0)} KB)`);
 }
 

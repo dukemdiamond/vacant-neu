@@ -178,15 +178,14 @@ async function main() {
       geometry: { type: "Point" as const, coordinates: [o.lon, o.lat] },
     }));
 
-  writeFileSync(
-    OUT_PATH,
-    JSON.stringify({ type: "FeatureCollection", features }, null, 2) + "\n",
-  );
+  writeFileSync(OUT_PATH, JSON.stringify({ type: "FeatureCollection", features }, null, 2) + "\n");
 
   console.log(`\nMatched ${features.length}/${buildings.length} buildings to coordinates`);
   if (unmatched.length > 0) {
     console.log(`\nNeed manual coordinates in ${OVERRIDES_PATH}`);
-    console.log(`(set lat/lon and change "source" to "manual", or "excluded" if not a real venue):`);
+    console.log(
+      `(set lat/lon and change "source" to "manual", or "excluded" if not a real venue):`,
+    );
     for (const u of unmatched) console.log(`   ${u}`);
   }
 }

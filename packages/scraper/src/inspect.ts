@@ -54,7 +54,12 @@ if (roomArg) {
   const id = roomArg.toUpperCase();
   const room = artifact.rooms.find((r) => r.id === id);
   if (!room) {
-    console.error(`No room "${id}". Try: ${artifact.rooms.slice(0, 3).map((r) => r.id).join(", ")}`);
+    console.error(
+      `No room "${id}". Try: ${artifact.rooms
+        .slice(0, 3)
+        .map((r) => r.id)
+        .join(", ")}`,
+    );
     process.exit(1);
   }
   const meetings = indexMeetingsByRoom(artifact.meetings).get(id) ?? [];
@@ -67,7 +72,8 @@ if (roomArg) {
   }
   const status = roomStatus(id, meetings, instant, artifact.calendar);
   console.log(`\n  Right now: ${status.state.toUpperCase()}`);
-  if (status.current) console.log(`  In session: ${status.current.course} — ${status.current.title}`);
+  if (status.current)
+    console.log(`  In session: ${status.current.course} — ${status.current.title}`);
   if (status.minutesUntilChange !== null) {
     const verb = status.state === "free" ? "free for another" : "busy for another";
     console.log(`  ${verb} ${formatDuration(status.minutesUntilChange)}`);
@@ -122,10 +128,16 @@ if (roomArg) {
     console.log(`  ${room.room.padEnd(10)} ${s.state === "free" ? "○" : "●"} ${detail}`);
   }
 } else {
-  console.log(`\n${artifact.term.description} (${artifact.term.code}) — scraped ${artifact.generatedAt}`);
-  console.log(`${artifact.buildings.length} buildings, ${artifact.rooms.length} rooms, ${artifact.meetings.length} meetings\n`);
+  console.log(
+    `\n${artifact.term.description} (${artifact.term.code}) — scraped ${artifact.generatedAt}`,
+  );
+  console.log(
+    `${artifact.buildings.length} buildings, ${artifact.rooms.length} rooms, ${artifact.meetings.length} meetings\n`,
+  );
   for (const b of artifact.buildings) {
-    console.log(`  ${b.code.padEnd(6)} ${b.name.padEnd(36)} ${String(b.roomCount).padStart(3)} rooms`);
+    console.log(
+      `  ${b.code.padEnd(6)} ${b.name.padEnd(36)} ${String(b.roomCount).padStart(3)} rooms`,
+    );
   }
   console.log("\nTry: pnpm inspect --free | --room DG-070 | --building SL");
 }

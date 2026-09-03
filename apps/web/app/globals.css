@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+/*
+ * vacantNEU design tokens.
+ *
+ * Base language is the Lovable system: a warm parchment surface, near-black charcoal text, and a
+ * neutral scale derived from one hue at varying opacity rather than arbitrary greys. The
+ * complementary accent is replaced with Northeastern red.
+ *
+ * `@theme inline` is deliberate. It makes Tailwind emit `var(--surface)` into the utility classes
+ * instead of resolving the value at build time, which is what lets the plain custom properties
+ * below be swapped at runtime by a media query. Declaring the dark values inside a nested @theme
+ * block does not work; Tailwind flattens it and the last definition wins unconditionally.
+ */
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-raised: var(--surface-raised);
+
+  --color-ink: var(--ink);
+  --color-ink-body: var(--ink-body);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-ink-inverse: var(--ink-inverse);
+
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+
+  --color-wash: var(--wash);
+  --color-wash-faint: var(--wash-faint);
+
+  --color-accent: var(--accent);
+  --color-accent-quiet: var(--accent-quiet);
+
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+
+  --surface: #f7f4ed;
+  --surface-sunken: #f2eee5;
+  --surface-raised: #fcfbf8;
+
+  --ink: #1c1c1c;
+  --ink-body: rgb(28 28 28 / 0.82);
+  --ink-muted: #5f5f5d;
+  --ink-faint: rgb(28 28 28 / 0.4);
+  --ink-inverse: #fcfbf8;
+
+  /* Passive divisions and interactive boundaries are separate tokens and never interchanged. */
+  --line: #eceae4;
+  --line-strong: rgb(28 28 28 / 0.4);
+
+  --wash: rgb(28 28 28 / 0.04);
+  --wash-faint: rgb(28 28 28 / 0.03);
+
+  --accent: #c8102e;
+  --accent-quiet: rgb(200 16 46 / 0.09);
+
+  /* One radius scale, one rule: controls 6px, cards 12px, containers 16px, pill for icon buttons
+     only. Nothing in the app invents a radius outside these. */
+  --radius-control: 6px;
+  --radius-card: 12px;
+  --radius-container: 16px;
+
+  --shadow-focus: 0 4px 12px rgb(0 0 0 / 0.1);
+  --shadow-inset:
+    inset 0 0.5px 0 0 rgb(255 255 255 / 0.2), inset 0 0 0 0.5px rgb(0 0 0 / 0.2),
+    0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/*
+ * Dark mode keeps the warmth. The point of the light palette is that it is parchment rather than
+ * paper, so the dark surface is a warm near-black instead of a blue-black zinc.
+ *
+ * The accent is lightened because #c8102e only reaches 3.0:1 against this surface, which passes
+ * for large text but not for the body copy and status labels that carry it. #f2556b reaches
+ * 5.3:1 and still reads as Northeastern red.
+ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1a1815;
+    --surface-sunken: #151310;
+    --surface-raised: #211e1a;
+
+    --ink: #f2efe7;
+    --ink-body: rgb(242 239 231 / 0.82);
+    --ink-muted: #a09a8e;
+    --ink-faint: rgb(242 239 231 / 0.4);
+    --ink-inverse: #1a1815;
+
+    --line: #302c26;
+    --line-strong: rgb(242 239 231 / 0.4);
+
+    --wash: rgb(242 239 231 / 0.05);
+    --wash-faint: rgb(242 239 231 / 0.035);
+
+    --accent: #f2556b;
+    --accent-quiet: rgb(242 85 107 / 0.13);
+
+    --shadow-focus: 0 4px 12px rgb(0 0 0 / 0.4);
+    --shadow-inset:
+      inset 0 0.5px 0 0 rgb(255 255 255 / 0.1), inset 0 0 0 0.5px rgb(0 0 0 / 0.5),
+      0 1px 2px 0 rgb(0 0 0 / 0.2);
+  }
+}
+
+@layer base {
+  html {
+    background-color: var(--surface);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    color: var(--ink);
+    font-family: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  }
+
+  /* Times and durations sit in aligned columns and must not jitter as the clock ticks. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  /* Tracking tightens as display type scales up, per the type system. */
+  .display-xl {
+    letter-spacing: -0.032em;
+    line-height: 1.04;
+  }
+  .display-lg {
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+  }
+
+  /*
+   * Focus is a soft diffused shadow rather than a hard ring, matching the depth model.
+   * Controls whose wrapper already draws the focus state opt out via [data-focus-parent], so the
+   * indicator is not drawn twice, once around the field and once around the input inside it.
+   */
+  :focus-visible:not([data-focus-parent]) {
+    outline: none;
+    box-shadow: var(--shadow-focus);
+    border-radius: var(--radius-control);
+  }
+
+  [data-focus-parent]:focus-visible,
+  [data-focus-parent]:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

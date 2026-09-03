@@ -7,3 +7,8 @@ dist/
 .env
 .env.local
 .cache/
+
+# Next.js build output
+out/
+# Generated at build time by apps/web/scripts/sync-data.mjs from data/
+apps/web/public/data/

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { ACADEMIC_CALENDAR_2026_2027 as CAL } from "./calendar.js";
-import { campusTime, formatDuration, formatMinutes } from "./time.js";
+import { campusTime, formatDuration, formatMinutes, formatRange } from "./time.js";
 import { DAY_BITS, type AcademicCalendar, type Meeting } from "./types.js";
 import { isFreeFor, roomStatus } from "./vacancy.js";
 
@@ -100,7 +100,9 @@ describe("roomStatus", () => {
       endDate: "2026-10-25",
       course: "MGMT1000",
     };
-    expect(roomStatus("DG-070", [sessionA], edt("2026-10-14", "08:30"), CAL).state).toBe("occupied");
+    expect(roomStatus("DG-070", [sessionA], edt("2026-10-14", "08:30"), CAL).state).toBe(
+      "occupied",
+    );
     // Same weekday and time in November, after the session ended.
     expect(roomStatus("DG-070", [sessionA], est("2026-11-18", "08:30"), CAL).state).toBe("free");
   });
@@ -181,5 +183,17 @@ describe("formatting", () => {
     expect(formatDuration(45)).toBe("45m");
     expect(formatDuration(60)).toBe("1h");
     expect(formatDuration(135)).toBe("2h 15m");
+  });
+});
+
+describe("formatRange", () => {
+  it("prints the meridiem once when both ends share it", () => {
+    expect(formatRange(555, 620)).toBe("9:15 to 10:20 AM");
+    expect(formatRange(870, 990)).toBe("2:30 to 4:30 PM");
+  });
+
+  it("prints both when the range crosses noon or midnight", () => {
+    expect(formatRange(690, 810)).toBe("11:30 AM to 1:30 PM");
+    expect(formatRange(1380, 1439)).toBe("11:00 to 11:59 PM");
   });
 });

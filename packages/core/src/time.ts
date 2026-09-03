@@ -63,3 +63,15 @@ export function formatDuration(minutes: number): string {
   const m = minutes % 60;
   return m === 0 ? `${h}h` : `${h}h ${m}m`;
 }
+
+/**
+ * Formats a start and end time as one label, e.g. 555 and 620 -> "9:15 to 10:20 AM".
+ *
+ * The meridiem is printed once when both ends share it, which keeps schedule rows narrow enough
+ * to sit in a fixed column without wrapping.
+ */
+export function formatRange(start: number, end: number): string {
+  const sameMeridiem = Math.floor(start / 60) % 24 < 12 === Math.floor(end / 60) % 24 < 12;
+  const from = sameMeridiem ? formatMinutes(start).replace(/ [AP]M$/, "") : formatMinutes(start);
+  return `${from} to ${formatMinutes(end)}`;
+}
