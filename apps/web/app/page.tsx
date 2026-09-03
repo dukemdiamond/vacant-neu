@@ -39,10 +39,11 @@ export default function Home() {
   }, [index, query]);
 
   return (
-    <main className="mx-auto max-w-5xl px-5 pb-24 sm:px-8">
+    <main className="max-w-5xl px-4 pb-24 sm:px-6">
       <section className="pt-14 sm:pt-20">
         <h1 className="display-xl max-w-3xl text-[2.75rem] font-semibold sm:text-6xl">
-          <span className="text-accent">Find</span> a free classroom
+          {/* pr-1 reserves room for the italic slant so the "d" does not crowd the next word. */}
+          <span className="pr-1 text-accent italic">Find</span> a free classroom
         </h1>
         <p className="mt-5 max-w-xl text-lg text-ink-muted">
           Every classroom on the Boston campus, and whether a class is in it right now.

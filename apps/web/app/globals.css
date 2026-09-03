@@ -162,3 +162,64 @@
     }
   }
 }
+
+/*
+ * Legal pages.
+ *
+ * These are long-form documents rather than product surfaces, so they get a narrower measure and
+ * a plain heading rhythm instead of the display type used elsewhere.
+ */
+@layer components {
+  .legal {
+    max-width: 44rem;
+  }
+  .legal h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .legal h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .legal p {
+    margin-bottom: 1rem;
+    line-height: 1.65;
+    color: var(--ink-body);
+  }
+  .legal ul {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .legal li {
+    position: relative;
+    padding-left: 1.1rem;
+    line-height: 1.65;
+    color: var(--ink-body);
+  }
+  .legal li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    height: 3px;
+    width: 6px;
+    background-color: var(--ink-faint);
+  }
+  .legal strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .legal a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

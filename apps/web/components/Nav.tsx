@@ -1,18 +1,18 @@
 import Link from "next/link";
 
 /**
- * Single-line navigation, 64px tall.
+ * Single-line navigation.
  *
- * The wordmark carries the one piece of brand colour that appears on every page, matching the
- * accent in the headline so the two read as the same system.
+ * Full-bleed rather than constrained to the content column, so the wordmark sits near the
+ * viewport edge and reads as a masthead rather than as the first item of the page body.
  */
 export function Nav() {
   return (
     <header className="border-b border-line">
-      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-5 sm:px-8">
+      <nav className="flex h-16 items-center justify-between px-4 sm:h-20 sm:px-6">
         <Link
           href="/"
-          className="text-base tracking-tight text-ink transition-opacity hover:opacity-80"
+          className="display-lg text-2xl font-semibold tracking-tight text-ink transition-opacity hover:opacity-80 sm:text-3xl"
         >
           <span className="text-accent">vacant</span>NEU
         </Link>
@@ -29,7 +29,7 @@ function NavLink({ href, children }: { href: string; children: React.ReactNode }
   return (
     <Link
       href={href}
-      className="rounded-[var(--radius-control)] px-3 py-2 text-sm text-ink-body transition-colors hover:bg-wash hover:text-ink"
+      className="rounded-[var(--radius-control)] px-3 py-2 text-base text-ink-body transition-colors hover:bg-wash hover:text-ink"
     >
       {children}
     </Link>

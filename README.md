@@ -111,6 +111,26 @@ The map uses MapLibre with OpenFreeMap vector tiles, which need no API key. The 
 style is recoloured onto our palette before the map is constructed, and building footprints come
 from OpenStreetMap via `pnpm buildings`.
 
+### Analytics
+
+Traffic counting is off until you configure it. Copy `apps/web/.env.example` to
+`apps/web/.env.local` and set a provider and token:
+
+```
+NEXT_PUBLIC_ANALYTICS_PROVIDER=cloudflare   # or plausible, or umami
+NEXT_PUBLIC_ANALYTICS_ID=your-token
+```
+
+All three supported providers are cookieless and count page views without building a visitor
+profile. That is deliberate: it keeps the Privacy Policy short and true, and it means the app
+still collects no personal information. Cloudflare Web Analytics is free and works on any host.
+
+### Legal
+
+`/terms` and `/privacy` are written for what this app actually does. It has no accounts, no
+sign-in, and no notifications, so the usual clauses about credentials, phone numbers, and message
+rates were removed rather than carried over. They are adapted templates, not legal advice.
+
 ## Two things that are easy to get wrong
 
 **Banner does not encode holidays.** A meeting row says "Mon/Wed, 09/09–12/20" and will happily

@@ -76,8 +76,13 @@ export default function MapPage() {
   const selectedBuilding = artifact?.buildings.find((b) => b.code === selected) ?? null;
 
   return (
-    <main className="flex h-[calc(100dvh-4rem)] flex-col lg:flex-row">
-      <div className="h-[45dvh] shrink-0 border-b border-line lg:h-full lg:flex-1 lg:border-r lg:border-b-0">
+    /*
+     * A definite height, not flex-1. The body only sets a minimum height, so a flex child has no
+     * definite size to resolve against and the map stretches to whatever the building list needs.
+     * 10rem is the masthead plus the footer, leaving the map and its panel to fill one screen.
+     */
+    <main className="flex h-[calc(100dvh-10rem)] min-h-[30rem] flex-col lg:flex-row">
+      <div className="h-[45%] shrink-0 border-b border-line lg:h-full lg:flex-1 lg:border-r lg:border-b-0">
         <CampusMap data={mapData} selected={selected} onSelect={setSelected} dark={dark} />
       </div>
 

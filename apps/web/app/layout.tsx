@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Sans } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
+import { Footer } from "@/components/Footer";
 import { Nav } from "@/components/Nav";
 import "./globals.css";
 
@@ -30,9 +32,15 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={instrumentSans.variable}>
-      <body className="min-h-[100dvh] bg-surface">
+      {/*
+        Column layout so the footer is pushed to the bottom on short pages and the map route can
+        claim the remaining height with `h-full` rather than hard-coding a viewport calculation.
+      */}
+      <body className="flex min-h-[100dvh] flex-col bg-surface">
         <Nav />
-        {children}
+        <div className="flex flex-1 flex-col">{children}</div>
+        <Footer />
+        <Analytics />
       </body>
     </html>
   );
