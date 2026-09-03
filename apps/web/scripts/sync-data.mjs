@@ -24,3 +24,14 @@ const artifact = JSON.parse(readFileSync(join(dataDir, `${term}.json`), "utf8"))
 writeFileSync(join(outDir, "schedule.json"), JSON.stringify(artifact));
 const kb = (JSON.stringify(artifact).length / 1024).toFixed(0);
 console.log(`synced ${term}: ${artifact.rooms.length} rooms, ${kb} KB -> public/data/schedule.json`);
+
+// Building footprints for the campus map. Generated separately by `pnpm buildings`, which runs
+// rarely, so it is copied rather than regenerated on every build.
+const geojsonPath = join(dataDir, "buildings.geojson");
+if (existsSync(geojsonPath)) {
+  const geo = JSON.parse(readFileSync(geojsonPath, "utf8"));
+  writeFileSync(join(outDir, "buildings.geojson"), JSON.stringify(geo));
+  console.log(`synced ${geo.features.length} building footprints`);
+} else {
+  console.warn("No data/buildings.geojson - the map will have no buildings. Run `pnpm buildings`.");
+}

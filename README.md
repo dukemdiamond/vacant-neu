@@ -8,17 +8,18 @@ the whole product is one dataset — the registrar's room schedule — read back
 
 ## Status
 
-**Phases 1 through 3 are complete and verified.** Map is a placeholder route.
+**All four phases are complete and verified.**
 
 - **Phase 1** Banner scraper, vacancy engine, Fall 2026 artifact
 - **Phase 2** Home page: search a room, see whether a class is in it
 - **Phase 3** Browse: every classroom, filtered by building and by how long it stays free
+- **Phase 4** Map: real building footprints, clickable, labelled with open room counts
 
 | | |
 |---|---|
 | Term | Fall 2026 (`202710`) |
 | Coverage | Boston campus |
-| Buildings | 40 (38 mapped, 2 off-campus) |
+| Buildings | 40 (38 mapped: 36 with footprints, 2 as points) |
 | Rooms | 385 |
 | Scheduled meetings | 4,524 |
 | Artifact size | 1.1 MB raw / **86 KB gzipped** |
@@ -59,7 +60,7 @@ pnpm scrape                    # scrape current term -> data/<term>.json
 pnpm scrape --dry-run          # scrape and report, write nothing
 pnpm scrape --term 202710      # pin a specific term
 
-pnpm buildings                 # regenerate map coordinates from OpenStreetMap (run rarely)
+pnpm buildings                 # regenerate map footprints from OpenStreetMap (run rarely)
 
 pnpm inspect                   # list buildings
 pnpm inspect --free            # what's free right now
@@ -105,6 +106,10 @@ occupied rooms are distinguished by surface weight rather than a green/red pair,
 saturated colour reserved for a room about to be reclaimed. Status is never carried by colour
 alone. Dark mode keeps the palette's warmth instead of inverting it, and lightens the accent,
 which only reaches 3.0:1 against a dark surface at full strength.
+
+The map uses MapLibre with OpenFreeMap vector tiles, which need no API key. The borrowed basemap
+style is recoloured onto our palette before the map is constructed, and building footprints come
+from OpenStreetMap via `pnpm buildings`.
 
 ## Two things that are easy to get wrong
 

@@ -26,6 +26,7 @@ interface OverpassElement {
   id: number;
   tags?: Record<string, string>;
   center?: { lat: number; lon: number };
+  /** Present on ways when the query asks for `geom`. Absent for relations. */
   geometry?: { lat: number; lon: number }[];
 }
 
@@ -67,12 +68,14 @@ const OVERPASS_MIRRORS = [
 ];
 
 async function fetchOsmBuildings(): Promise<OverpassElement[]> {
-  // `out tags center` only: we need a point per building, and asking for full geometry makes the
-  // response large enough that the public instances time out.
+  // `geom` returns each way's full outline, which is what lets the map draw real footprints
+  // rather than pins. Overpass accepts exactly one geometry mode, so `center` cannot be combined
+  // with it; centres are derived from the outline instead. It is a heavier response than
+  // `center` alone, hence the mirror fallback below.
   const query = `[out:json][timeout:60];
     (way["building"](around:${SEARCH_RADIUS_M},${CAMPUS_CENTER.lat},${CAMPUS_CENTER.lon});
      relation["building"](around:${SEARCH_RADIUS_M},${CAMPUS_CENTER.lat},${CAMPUS_CENTER.lon}););
-    out tags center;`;
+    out tags geom;`;
 
   let lastError: unknown;
   for (const mirror of OVERPASS_MIRRORS) {
@@ -85,7 +88,11 @@ async function fetchOsmBuildings(): Promise<OverpassElement[]> {
         });
         if (!response.ok) throw new Error(`${mirror} returned ${response.status}`);
         const json = (await response.json()) as { elements: OverpassElement[] };
-        return json.elements.filter((e) => e.tags?.name && e.center);
+        // Ways carry `geometry`; relations return neither outline nor centre under `geom`, so
+        // they are dropped. Nearly every NEU building is mapped as a way.
+        return json.elements
+          .filter((e) => e.tags?.name && e.geometry && e.geometry.length >= 3)
+          .map((e) => ({ ...e, center: centroid(e.geometry!) }));
       } catch (error) {
         lastError = error;
         console.warn(`  Overpass attempt failed: ${String(error)}`);
@@ -112,8 +119,33 @@ interface Override {
   /** null means "deliberately has no map location" (e.g. off-campus). */
   lat: number | null;
   lon: number | null;
+  /**
+   * Name of the matched OpenStreetMap building. Also the key used to recover that element's
+   * outline on a later run, so a hand-corrected match still draws its real footprint instead of
+   * falling back to a marker.
+   */
   osmName?: string;
   source: "auto" | "manual" | "excluded";
+}
+
+/** Mean of an outline's nodes. Good enough for a label anchor on a building-sized polygon. */
+function centroid(nodes: { lat: number; lon: number }[]): { lat: number; lon: number } {
+  const sum = nodes.reduce((a, n) => ({ lat: a.lat + n.lat, lon: a.lon + n.lon }), {
+    lat: 0,
+    lon: 0,
+  });
+  return { lat: sum.lat / nodes.length, lon: sum.lon / nodes.length };
+}
+
+/** Closes an OSM way's node list into a GeoJSON linear ring, or null if it is not an area. */
+function toRing(element: OverpassElement | undefined): [number, number][] | null {
+  const nodes = element?.geometry;
+  if (!nodes || nodes.length < 4) return null;
+  const ring: [number, number][] = nodes.map((n) => [n.lon, n.lat]);
+  const first = ring[0]!;
+  const last = ring[ring.length - 1]!;
+  if (first[0] !== last[0] || first[1] !== last[1]) ring.push(first);
+  return ring.length >= 4 ? ring : null;
 }
 
 async function main() {
@@ -166,21 +198,39 @@ async function main() {
 
   writeFileSync(OVERRIDES_PATH, JSON.stringify(overrides, null, 2) + "\n");
 
+  // Recover each building's OSM element by the name recorded in the override, so hand-corrected
+  // matches pick up a footprint too rather than staying a bare point.
+  const byName = new Map(osm.map((e) => [e.tags!.name!, e]));
+
+  let polygons = 0;
   const features = Object.values(overrides)
     .filter((o) => o.lat !== null && o.lon !== null)
-    .map((o) => ({
-      type: "Feature" as const,
-      properties: {
-        code: o.code,
-        name: o.name,
-        roomCount: buildings.find((b) => b.code === o.code)?.roomCount ?? 0,
-      },
-      geometry: { type: "Point" as const, coordinates: [o.lon, o.lat] },
-    }));
+    .map((o) => {
+      const ring = o.osmName ? toRing(byName.get(o.osmName)) : null;
+      if (ring) polygons++;
+      return {
+        type: "Feature" as const,
+        id: o.code,
+        properties: {
+          code: o.code,
+          name: o.name,
+          roomCount: buildings.find((b) => b.code === o.code)?.roomCount ?? 0,
+          // The label anchor. Kept explicit so the map does not have to compute a centroid.
+          lon: o.lon,
+          lat: o.lat,
+        },
+        geometry: ring
+          ? { type: "Polygon" as const, coordinates: [ring] }
+          : { type: "Point" as const, coordinates: [o.lon, o.lat] },
+      };
+    });
 
   writeFileSync(OUT_PATH, JSON.stringify({ type: "FeatureCollection", features }, null, 2) + "\n");
 
-  console.log(`\nMatched ${features.length}/${buildings.length} buildings to coordinates`);
+  console.log(
+    `\nMatched ${features.length}/${buildings.length} buildings ` +
+      `(${polygons} with footprints, ${features.length - polygons} as points)`,
+  );
   if (unmatched.length > 0) {
     console.log(`\nNeed manual coordinates in ${OVERRIDES_PATH}`);
     console.log(
