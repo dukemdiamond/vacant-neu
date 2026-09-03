@@ -85,7 +85,7 @@ export default function BrowsePage() {
   }, [visible, artifact]);
 
   return (
-    <main className="max-w-6xl px-4 pb-24 sm:px-6">
+    <main className="mx-auto max-w-6xl px-5 pb-24 sm:px-8">
       <section className="pt-14 sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
         <p className="mt-4 max-w-lg text-lg text-ink-muted">
@@ -163,7 +163,8 @@ export default function BrowsePage() {
                       </h2>
                       {/* Two columns once the results pane is wide enough; these cards are a
                           single line of detail and stretch badly across a full desktop width. */}
-                      <div className="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2">
+                      {/* items-start so expanding one card does not stretch its row neighbour. */}
+                      <div className="mt-3 grid grid-cols-1 items-start gap-2 md:grid-cols-2">
                         {rooms.map((room) => (
                           <RoomCard
                             key={room.id}

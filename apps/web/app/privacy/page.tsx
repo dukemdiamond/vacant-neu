@@ -10,7 +10,7 @@ const CONTACT = "dukediamondd@gmail.com";
 
 export default function PrivacyPage() {
   return (
-    <main className="max-w-5xl px-4 pt-12 pb-24 sm:px-6 sm:pt-16">
+    <main className="mx-auto max-w-5xl px-5 pt-12 pb-24 sm:px-8 sm:pt-16">
       <div className="legal">
         <h1 className="display-lg text-3xl font-semibold sm:text-4xl">Privacy Policy</h1>
         <p className="mt-3 text-sm text-ink-muted">Effective date: {EFFECTIVE_DATE}</p>

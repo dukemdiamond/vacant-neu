@@ -1,5 +1,7 @@
 "use client";
 
+import { useId, useState } from "react";
+import { CaretDownIcon } from "@phosphor-icons/react";
 import {
   campusTime,
   formatDuration,
@@ -21,8 +23,8 @@ interface Props {
   meetings: Meeting[];
   calendar: AcademicCalendar;
   now: Date;
-  /** Renders the room's schedule for today underneath. Used for a single searched result. */
-  expanded?: boolean;
+  /** Opens the day schedule on first render. Used when a search resolves to one room. */
+  defaultOpen?: boolean;
   /**
    * Whether the heading repeats the building name. False where a group header already names it,
    * so a card reads "204" rather than "Behrakis Health Sciences Cntr 204" directly beneath a
@@ -32,7 +34,7 @@ interface Props {
 }
 
 /**
- * One room's live answer.
+ * One room's live answer, with the rest of the day behind a disclosure.
  *
  * Free and occupied are distinguished by surface weight rather than by a green/red pair: free
  * rooms sit raised on the page, occupied rooms recede into the sunken wash. Northeastern red is
@@ -45,9 +47,12 @@ export function RoomCard({
   meetings,
   calendar,
   now,
-  expanded = false,
+  defaultOpen = false,
   showBuilding = true,
 }: Props) {
+  const [open, setOpen] = useState(defaultOpen);
+  const panelId = useId();
+
   const free = status.state === "free";
   const closingSoon =
     free && status.minutesUntilChange !== null && status.minutesUntilChange <= CLOSING_SOON_MINUTES;
@@ -59,27 +64,47 @@ export function RoomCard({
         free ? "border-line bg-surface-raised" : "border-transparent bg-wash-faint",
       ].join(" ")}
     >
-      <div className="flex items-baseline justify-between gap-4">
-        <h3 className={["text-lg leading-tight", free ? "text-ink" : "text-ink-muted"].join(" ")}>
-          {showBuilding ? room.displayName : room.room}
-        </h3>
-        <span
-          className={[
-            "shrink-0 text-sm",
-            closingSoon ? "text-accent" : free ? "text-ink-body" : "text-ink-faint",
-          ].join(" ")}
+      <h3>
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls={panelId}
+          className="flex w-full items-baseline justify-between gap-4 text-left"
         >
-          {free ? "Open" : "In use"}
-        </span>
-      </div>
+          <span
+            className={["text-lg leading-tight", free ? "text-ink" : "text-ink-muted"].join(" ")}
+          >
+            {showBuilding ? room.displayName : room.room}
+          </span>
+          <span
+            className={[
+              "flex shrink-0 items-center gap-1.5 text-sm",
+              closingSoon ? "text-accent" : free ? "text-ink-body" : "text-ink-faint",
+            ].join(" ")}
+          >
+            {free ? "Open" : "In use"}
+            <CaretDownIcon
+              size={12}
+              weight="bold"
+              aria-hidden
+              className={[
+                "transition-transform duration-200",
+                open ? "rotate-180" : "",
+                free ? "text-ink-faint" : "text-ink-faint",
+              ].join(" ")}
+            />
+          </span>
+        </button>
+      </h3>
 
       <p className="tabular mt-1.5 text-sm text-ink-muted">
         {free ? <FreeDetail status={status} /> : <BusyDetail status={status} />}
       </p>
 
-      {expanded && (
+      <div id={panelId} hidden={!open}>
         <DaySchedule meetings={meetings} status={status} calendar={calendar} now={now} />
-      )}
+      </div>
     </article>
   );
 }
@@ -108,10 +133,14 @@ function BusyDetail({ status }: { status: RoomStatus }) {
 }
 
 /**
- * The room's classes for today only.
+ * The room's classes for today.
  *
  * This reuses the same day filter the vacancy engine uses, so the list can never disagree with
  * the status line above it: a holiday or an out-of-range date empties both at once.
+ *
+ * Classes that have already finished are dimmed rather than dropped. What is left in the day is
+ * the useful part, but a class that ended ten minutes ago explains why a room still has people in
+ * it, so removing it would lose real context.
  */
 function DaySchedule({
   meetings,
@@ -124,38 +153,48 @@ function DaySchedule({
   calendar: AcademicCalendar;
   now: Date;
 }) {
-  const today = meetingsOnDay(meetings, calendar, campusTime(now)).sort(
-    (a, b) => a.start - b.start,
-  );
+  const clock = campusTime(now);
+  const today = meetingsOnDay(meetings, calendar, clock).sort((a, b) => a.start - b.start);
 
   if (today.length === 0) {
     return (
-      <p className="mt-5 border-t border-line pt-4 text-sm text-ink-faint">
+      <p className="mt-4 border-t border-line pt-4 text-sm text-ink-faint">
         No classes are scheduled in this room today.
       </p>
     );
   }
 
+  const remaining = today.filter((m) => m.end > clock.minutes).length;
+
   return (
-    <div className="mt-5 border-t border-line pt-4">
-      <h4 className="text-xs uppercase tracking-wide text-ink-faint">Today in this room</h4>
-      <ul className="mt-3 flex flex-col gap-2">
+    <div className="mt-4 border-t border-line pt-4">
+      <h4 className="text-xs text-ink-faint">
+        {remaining === 0
+          ? "Today in this room, all finished"
+          : `Today in this room, ${remaining} left`}
+      </h4>
+      <ul className="mt-2.5 flex flex-col gap-2">
         {today.map((m, i) => {
           const active =
             status.current !== null &&
             status.current.course === m.course &&
             status.current.start === m.start;
+          const past = m.end <= clock.minutes;
           return (
             <li key={`${m.course}-${m.start}-${i}`} className="flex items-baseline gap-3 text-sm">
               <span
                 className={[
                   "tabular w-40 shrink-0 whitespace-nowrap",
-                  active ? "text-ink" : "text-ink-faint",
+                  active ? "text-ink" : past ? "text-ink-faint opacity-60" : "text-ink-muted",
                 ].join(" ")}
               >
                 {formatRange(m.start, m.end)}
               </span>
-              <span className={active ? "text-ink" : "text-ink-muted"}>
+              <span
+                className={
+                  past ? "text-ink-faint opacity-60" : active ? "text-ink" : "text-ink-muted"
+                }
+              >
                 {m.course} <span className="text-ink-faint">{m.title}</span>
               </span>
             </li>
