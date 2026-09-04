@@ -75,3 +75,46 @@ export function formatRange(start: number, end: number): string {
   const from = sameMeridiem ? formatMinutes(start).replace(/ [AP]M$/, "") : formatMinutes(start);
   return `${from} to ${formatMinutes(end)}`;
 }
+
+/**
+ * The instant at which the campus wall clock reads the given date and time.
+ *
+ * A date input yields "2026-09-16" and a time input yields "10:30", and the person choosing them
+ * means half past ten on campus. Naively parsing that pair produces an instant in the visitor's
+ * own timezone, so a student checking from Seattle would silently be shown the 7:30 AM schedule.
+ *
+ * Rather than hard-code an offset, this converges on the answer: guess, read the campus clock at
+ * that guess, and shift by the error. Two passes are enough even when the guess and the answer
+ * fall on opposite sides of a daylight saving transition.
+ *
+ * Returns null for malformed input. The hour repeated by the autumn transition is ambiguous by
+ * definition; this resolves it to one of the two, which is immaterial at a class's granularity.
+ */
+export function campusInstant(dateISO: string, timeHHMM: string): Date | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(dateISO) || !/^\d{2}:\d{2}$/.test(timeHHMM)) return null;
+
+  const target = Date.parse(`${dateISO}T${timeHHMM}:00Z`);
+  if (Number.isNaN(target)) return null;
+
+  let guess = target;
+  for (let pass = 0; pass < 2; pass++) {
+    const wall = campusTime(new Date(guess));
+    const hh = String(Math.floor(wall.minutes / 60)).padStart(2, "0");
+    const mm = String(wall.minutes % 60).padStart(2, "0");
+    const reached = Date.parse(`${wall.date}T${hh}:${mm}:00Z`);
+    if (reached === target) break;
+    guess += target - reached;
+  }
+  return new Date(guess);
+}
+
+/** Campus-local date as `YYYY-MM-DD`, for prefilling a date input. */
+export function campusDateISO(instant: Date): string {
+  return campusTime(instant).date;
+}
+
+/** Campus-local time as `HH:MM`, for prefilling a time input. */
+export function campusTimeHHMM(instant: Date): string {
+  const { minutes } = campusTime(instant);
+  return `${String(Math.floor(minutes / 60)).padStart(2, "0")}:${String(minutes % 60).padStart(2, "0")}`;
+}

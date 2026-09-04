@@ -1,22 +1,33 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { isFreeFor, type Building, type Room, type RoomStatus } from "@vacantneu/core";
+import {
+  campusInstant,
+  isFreeFor,
+  type Building,
+  type Room,
+  type RoomStatus,
+} from "@vacantneu/core";
+import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { SearchField } from "@/components/SearchField";
 import { SegmentedControl, type Segment } from "@/components/SegmentedControl";
+import { TimeTravel, type Moment } from "@/components/TimeTravel";
 import { ResultsSkeleton } from "@/components/Skeleton";
 import { useAllStatuses, useNow, useRoomIndex, useSchedule, type RoomIndex } from "@/lib/schedule";
 import { termPhase } from "@/lib/term";
 
 type Availability = "all" | "now" | "1h" | "2h";
 
-const AVAILABILITY: readonly Segment<Availability>[] = [
-  { value: "all", label: "All" },
-  { value: "now", label: "Open now" },
-  { value: "1h", label: "1 hour" },
-  { value: "2h", label: "2 hours" },
-];
+/** "Open now" is only true while following the clock; inspecting another moment relabels it. */
+function availabilitySegments(viewingOtherDay: boolean): readonly Segment<Availability>[] {
+  return [
+    { value: "all", label: "All" },
+    { value: "now", label: viewingOtherDay ? "Open then" : "Open now" },
+    { value: "1h", label: "1 hour" },
+    { value: "2h", label: "2 hours" },
+  ];
+}
 
 /** Minutes a room must stay free to satisfy each filter. */
 const REQUIRED_MINUTES: Record<Availability, number> = { all: 0, now: 0, "1h": 60, "2h": 120 };
@@ -30,10 +41,21 @@ export default function BrowsePage() {
   const [availability, setAvailability] = useState<Availability>("now");
   const [building, setBuilding] = useState<string>(ALL_BUILDINGS);
   const [query, setQuery] = useState("");
+  const [moment, setMoment] = useState<Moment | null>(null);
+
+  /**
+   * The instant every room on this page is evaluated against. Null moment means follow the clock;
+   * an unparseable one falls back to it rather than showing a blank page.
+   */
+  const at = useMemo(
+    () => (moment ? (campusInstant(moment.date, moment.time) ?? now) : now),
+    [moment, now],
+  );
+  const viewingOtherDay = moment !== null;
 
   const artifact = state.status === "ready" ? state.artifact : null;
   const index = useRoomIndex(artifact);
-  const statuses = useAllStatuses(artifact, now);
+  const statuses = useAllStatuses(artifact, at);
   const statusById = useMemo(() => new Map(statuses.map((s) => [s.roomId, s])), [statuses]);
 
   /**
@@ -71,6 +93,11 @@ export default function BrowsePage() {
     [candidates, building],
   );
 
+  const phase = useMemo(
+    () => (artifact ? termPhase(artifact, at) : { kind: "in-session" as const }),
+    [artifact, at],
+  );
+
   const grouped = useMemo(() => {
     if (!artifact) return [];
     const byCode = new Map<string, Room[]>();
@@ -89,7 +116,7 @@ export default function BrowsePage() {
       <section className="pt-14 sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
         <p className="mt-4 max-w-lg text-lg text-ink-muted">
-          Filter by building, or by how long you need the room.
+          Filter by building or by how long you need the room, at any date and time.
         </p>
       </section>
 
@@ -106,34 +133,43 @@ export default function BrowsePage() {
 
       {state.status === "ready" && artifact && index && (
         <>
-          <div className="mt-10 flex flex-col gap-4 border-b border-line pb-6 lg:flex-row lg:items-center lg:justify-between">
-            <div className="max-w-sm flex-1">
-              <SearchField
-                value={query}
-                onChange={setQuery}
-                resultCount={visible.length}
-                placeholder="Filter by building or room"
-                label="Filter classrooms by building or room number"
-              />
+          <div className="mt-10 flex flex-col gap-4 border-b border-line pb-6">
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <div className="max-w-sm flex-1">
+                <SearchField
+                  value={query}
+                  onChange={setQuery}
+                  resultCount={visible.length}
+                  placeholder="Filter by building or room"
+                  label="Filter classrooms by building or room number"
+                />
+              </div>
+              {/* Scrollable on narrow screens so the segments never wrap onto two rows. */}
+              <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
+                <SegmentedControl
+                  label="Filter by how long the room stays free"
+                  value={availability}
+                  segments={availabilitySegments(viewingOtherDay)}
+                  onChange={setAvailability}
+                />
+              </div>
             </div>
-            {/* Scrollable on narrow screens so the segments never wrap onto two rows. */}
-            <div className="-mx-5 overflow-x-auto px-5 sm:mx-0 sm:px-0">
-              <SegmentedControl
-                label="Filter by how long the room stays free"
-                value={availability}
-                segments={AVAILABILITY}
-                onChange={setAvailability}
-              />
-            </div>
+            <TimeTravel value={moment} onChange={setMoment} now={now} />
           </div>
 
           <p className="tabular mt-6 text-sm text-ink-muted">
             {summarize(
               visible.length,
               availability,
-              termPhase(artifact, now).kind === "in-session",
+              phase.kind === "in-session",
+              at,
+              viewingOtherDay,
             )}
           </p>
+
+          <div className="mt-6">
+            <PhaseNotice phase={phase} viewingOtherDay={viewingOtherDay} />
+          </div>
 
           <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[17rem_1fr]">
             <BuildingFilter
@@ -172,7 +208,7 @@ export default function BrowsePage() {
                             status={statusById.get(room.id)!}
                             meetings={index.meetings.get(room.id) ?? []}
                             calendar={artifact.calendar}
-                            now={now}
+                            now={at}
                             showBuilding={false}
                           />
                         ))}
@@ -189,12 +225,32 @@ export default function BrowsePage() {
   );
 }
 
-function summarize(count: number, availability: Availability, inSession: boolean): string {
+const MOMENT_LABEL = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/New_York",
+  weekday: "short",
+  month: "short",
+  day: "numeric",
+  hour: "numeric",
+  minute: "2-digit",
+});
+
+function summarize(
+  count: number,
+  availability: Availability,
+  inSession: boolean,
+  at: Date,
+  viewingOtherDay: boolean,
+): string {
   const rooms = `${count} ${count === 1 ? "room" : "rooms"}`;
+  const when = viewingOtherDay ? `at ${MOMENT_LABEL.format(at)}` : "right now";
+
   if (availability === "all") return `${rooms} on campus.`;
-  if (!inSession) return `${rooms}. No classes are scheduled today, so everything reads as open.`;
-  if (availability === "now") return `${rooms} open right now.`;
-  return `${rooms} open for at least ${availability === "1h" ? "an hour" : "two hours"}.`;
+  if (!inSession) {
+    return `${rooms}. No classes are scheduled ${viewingOtherDay ? "then" : "today"}, so everything reads as open.`;
+  }
+  if (availability === "now") return `${rooms} open ${when}.`;
+  const window = availability === "1h" ? "an hour" : "two hours";
+  return `${rooms} open for at least ${window} ${viewingOtherDay ? `from ${MOMENT_LABEL.format(at)}` : "from now"}.`;
 }
 
 /**

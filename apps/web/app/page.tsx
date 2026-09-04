@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRightIcon, InfoIcon } from "@phosphor-icons/react";
+import { ArrowRightIcon } from "@phosphor-icons/react";
 import type { AcademicCalendar, Building, Room, RoomStatus } from "@vacantneu/core";
+import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { ResultsSkeleton } from "@/components/Skeleton";
 import { SearchField } from "@/components/SearchField";
@@ -260,39 +261,6 @@ function Overview({
 }
 
 /* ---------------------------------------------------------------- notices */
-
-/**
- * Says out loud when Banner's class schedule is not what is happening on campus.
- *
- * These are the days the app would otherwise be confidently wrong, so each one gets named rather
- * than silently reporting an empty schedule as universal vacancy.
- */
-function PhaseNotice({ phase }: { phase: TermPhase }) {
-  const message = noticeFor(phase);
-  if (!message) return null;
-
-  return (
-    <div className="mb-8 flex gap-3 rounded-[var(--radius-card)] border border-line bg-wash-faint p-4">
-      <InfoIcon size={18} weight="regular" aria-hidden className="mt-0.5 shrink-0 text-accent" />
-      <p className="max-w-2xl text-sm text-ink-body">{message}</p>
-    </div>
-  );
-}
-
-function noticeFor(phase: TermPhase): string | null {
-  switch (phase.kind) {
-    case "before-term":
-      return `Fall classes begin ${formatDay(phase.firstDay)}. Until then nothing is scheduled, so every room below reads as open.`;
-    case "after-term":
-      return "The term has ended, so no classes are scheduled and every room reads as open.";
-    case "holiday":
-      return "No classes are scheduled today, so every room reads as open. Buildings may still be closed.";
-    case "exams":
-      return "It is the final exam period. Exams follow a separate schedule that Banner does not publish, so a room shown as open may still be in use.";
-    case "in-session":
-      return null;
-  }
-}
 
 function ErrorState({ message }: { message: string }) {
   return (

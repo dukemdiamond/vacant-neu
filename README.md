@@ -12,7 +12,8 @@ the whole product is one dataset — the registrar's room schedule — read back
 
 - **Phase 1** Banner scraper, vacancy engine, Fall 2026 artifact
 - **Phase 2** Home page: search a room, see whether a class is in it
-- **Phase 3** Browse: every classroom, filtered by building and by how long it stays free
+- **Phase 3** Browse: every classroom, filtered by building, by how long it stays free, and at
+  any date and time rather than only right now
 - **Phase 4** Map: real building footprints, clickable, labelled with open room counts
 
 | | |

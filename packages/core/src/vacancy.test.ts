@@ -1,6 +1,14 @@
 import { describe, expect, it } from "vitest";
 import { ACADEMIC_CALENDAR_2026_2027 as CAL } from "./calendar.js";
-import { campusTime, formatDuration, formatMinutes, formatRange } from "./time.js";
+import {
+  campusDateISO,
+  campusInstant,
+  campusTime,
+  campusTimeHHMM,
+  formatDuration,
+  formatMinutes,
+  formatRange,
+} from "./time.js";
 import { DAY_BITS, type AcademicCalendar, type Meeting } from "./types.js";
 import { isFreeFor, roomStatus } from "./vacancy.js";
 
@@ -195,5 +203,57 @@ describe("formatRange", () => {
   it("prints both when the range crosses noon or midnight", () => {
     expect(formatRange(690, 810)).toBe("11:30 AM to 1:30 PM");
     expect(formatRange(1380, 1439)).toBe("11:00 to 11:59 PM");
+  });
+});
+
+describe("campusInstant", () => {
+  const roundTrip = (date: string, time: string) => {
+    const instant = campusInstant(date, time)!;
+    const wall = campusTime(instant);
+    const hh = String(Math.floor(wall.minutes / 60)).padStart(2, "0");
+    const mm = String(wall.minutes % 60).padStart(2, "0");
+    return `${wall.date} ${hh}:${mm}`;
+  };
+
+  it("produces an instant whose campus wall clock is exactly what was asked for", () => {
+    expect(roundTrip("2026-09-16", "10:30")).toBe("2026-09-16 10:30");
+    expect(roundTrip("2026-09-16", "00:00")).toBe("2026-09-16 00:00");
+    expect(roundTrip("2026-09-16", "23:59")).toBe("2026-09-16 23:59");
+  });
+
+  it("holds either side of a daylight saving transition", () => {
+    // US daylight saving ends 1 November 2026, so these straddle EDT and EST.
+    expect(roundTrip("2026-10-31", "08:30")).toBe("2026-10-31 08:30");
+    expect(roundTrip("2026-11-02", "08:30")).toBe("2026-11-02 08:30");
+    // And the spring transition.
+    expect(roundTrip("2026-03-07", "08:30")).toBe("2026-03-07 08:30");
+    expect(roundTrip("2026-03-09", "08:30")).toBe("2026-03-09 08:30");
+  });
+
+  it("is not the naive local parse when the caller is not in campus time", () => {
+    // 14:30Z is 10:30 in campus time during EDT, so the two must differ.
+    expect(campusInstant("2026-09-16", "10:30")!.toISOString()).toBe("2026-09-16T14:30:00.000Z");
+  });
+
+  it("agrees with the vacancy engine about what is in session", () => {
+    const at = campusInstant("2026-09-16", "08:30")!;
+    expect(roomStatus("DG-070", [dodge], at, CAL).state).toBe("occupied");
+    expect(roomStatus("DG-070", [dodge], campusInstant("2026-09-16", "03:00")!, CAL).state).toBe(
+      "free",
+    );
+  });
+
+  it("rejects malformed input rather than guessing", () => {
+    expect(campusInstant("2026-9-16", "10:30")).toBeNull();
+    expect(campusInstant("2026-09-16", "1:30")).toBeNull();
+    expect(campusInstant("", "")).toBeNull();
+  });
+});
+
+describe("campus input helpers", () => {
+  it("round-trips through the date and time input formats", () => {
+    const at = campusInstant("2026-11-11", "14:05")!;
+    expect(campusDateISO(at)).toBe("2026-11-11");
+    expect(campusTimeHHMM(at)).toBe("14:05");
   });
 });
