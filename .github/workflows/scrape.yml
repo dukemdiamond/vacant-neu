@@ -47,11 +47,41 @@ jobs:
           ENGAGE_UID: ${{ secrets.ENGAGE_UID }}
         run: pnpm events
 
-      - name: Warn if the Engage session expired
+      # Exit 2 is a refused session, exit 3 a refusal to overwrite good data with a thin pull.
+      # Both mean the same thing in practice: the cookie needs replacing. Neither is fatal, since
+      # events are future-dated and the existing artifact stays useful for weeks.
+      - name: Open an issue when the Engage session needs refreshing
         if: steps.events.outcome == 'failure'
-        run: |
-          echo "::warning title=Engage events not updated::The club event scrape failed. If this \
-          persists, refresh ENGAGE_SESSION_ID and ENGAGE_UID in repository secrets."
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Engage session cookie needs refreshing";
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "engage-session",
+            });
+            if (open.length > 0) {
+              core.info("An issue is already open; not filing another.");
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title,
+              labels: ["engage-session"],
+              body: [
+                "The club event scrape could not use the stored Engage session, so `data/events.json`",
+                "was left untouched. Existing bookings stay live, but no new ones are being picked up.",
+                "",
+                "To fix:",
+                "1. Sign in to https://engage.northeastern.edu",
+                "2. DevTools -> Application -> Cookies -> engage.northeastern.edu",
+                "3. Copy `CG.SessionID` and `cg_uid` **verbatim**, without decoding `%2b` or `%3d`",
+                "4. Update the `ENGAGE_SESSION_ID` and `ENGAGE_UID` repository secrets",
+                "5. Re-run this workflow",
+                "",
+                `Failed run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              ].join("\n"),
+            });
 
       # The scraper exits non-zero on an implausible result set, so reaching this step means the
       # artifact passed its sanity floors. Nothing is committed when the data is unchanged.

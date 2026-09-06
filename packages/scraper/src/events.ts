@@ -91,6 +91,30 @@ async function main() {
 
   const outPath = join(DATA_DIR, "events.json");
   const json = `${JSON.stringify(artifact, null, 2)}\n`;
+
+  /*
+   * Never trade a good artifact for a worse one.
+   *
+   * An anonymous pull still succeeds; it just finds almost nothing, because Engage redacts the
+   * venues. Letting it overwrite an authenticated artifact would quietly discard weeks of real
+   * bookings and look like a normal run. Same reasoning as the class scraper's count floors:
+   * keeping yesterday's data beats publishing a hollow version of today's.
+   */
+  if (existsSync(outPath)) {
+    const previous = JSON.parse(readFileSync(outPath, "utf8")) as EventArtifact;
+    const losingAuth = previous.authenticated && !artifact.authenticated;
+    const collapsing =
+      previous.meetings.length > 4 && meetings.length < previous.meetings.length / 2;
+    if (!process.argv.includes("--force") && (losingAuth || collapsing)) {
+      console.error(
+        `\nRefusing to overwrite ${previous.meetings.length} existing bookings with ` +
+          `${meetings.length}` +
+          (losingAuth ? ", because this pull was anonymous and the existing one was not" : "") +
+          `.\nSet a working ENGAGE_SESSION_ID, or pass --force if the drop is genuine.`,
+      );
+      process.exit(3);
+    }
+  }
   if (existsSync(outPath) && readFileSync(outPath, "utf8") === json) {
     console.log(`\nNo changes. ${outPath} is already current.`);
     return;
