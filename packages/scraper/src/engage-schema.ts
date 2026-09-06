@@ -11,7 +11,8 @@ import { z } from "zod";
 export const engageRecord = z
   .object({
     fields: z.string(),
-    listingSeparator: z.string().optional(),
+    // Present and null on event records, the string "true" on the date separators between them.
+    listingSeparator: z.string().nullable().optional(),
     counter: z.string().nullable().optional(),
   })
   .passthrough();

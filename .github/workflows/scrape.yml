@@ -33,8 +33,25 @@ jobs:
       # The vacancy engine gates the data: if its behaviour has drifted, we don't publish.
       - run: pnpm test
 
-      - name: Scrape
+      - name: Scrape classes
         run: pnpm scrape ${{ inputs.term && format('--term {0}', inputs.term) || '' }}
+
+      # Club events are a secondary source behind a credential that expires, so a failure here
+      # must not stop the class schedule publishing. Exit code 2 means the Engage session needs a
+      # manual refresh; anything else is a transient fault worth ignoring until the next run.
+      - name: Scrape club events
+        id: events
+        continue-on-error: true
+        env:
+          ENGAGE_SESSION_ID: ${{ secrets.ENGAGE_SESSION_ID }}
+          ENGAGE_UID: ${{ secrets.ENGAGE_UID }}
+        run: pnpm events
+
+      - name: Warn if the Engage session expired
+        if: steps.events.outcome == 'failure'
+        run: |
+          echo "::warning title=Engage events not updated::The club event scrape failed. If this \
+          persists, refresh ENGAGE_SESSION_ID and ENGAGE_UID in repository secrets."
 
       # The scraper exits non-zero on an implausible result set, so reaching this step means the
       # artifact passed its sanity floors. Nothing is committed when the data is unchanged.
@@ -47,5 +64,5 @@ jobs:
           git config user.name "vacantneu-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/
-          git commit -m "data: refresh Banner schedule ($(date -u +%Y-%m-%d))"
+          git commit -m "data: refresh schedule and club events ($(date -u +%Y-%m-%d))"
           git push

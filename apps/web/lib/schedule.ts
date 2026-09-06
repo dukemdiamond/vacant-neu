@@ -15,25 +15,51 @@ import {
 export type LoadState =
   | { status: "loading" }
   | { status: "error"; message: string }
-  | { status: "ready"; artifact: ScheduleArtifact };
+  | { status: "ready"; artifact: ScheduleArtifact; clubEvents: number };
+
+interface EventArtifact {
+  meetings: Meeting[];
+}
 
 /**
- * Loads the schedule artifact once and builds a search index over rooms.
+ * Loads the class schedule and the club events, and merges them into one set of bookings.
  *
- * The artifact is fetched rather than imported so it stays out of the JS bundle and can be
- * revalidated by the CDN independently of a code deploy.
+ * Both are fetched rather than imported so they stay out of the JS bundle and can be revalidated
+ * by the CDN independently of a code deploy.
+ *
+ * The two sources are not equal partners. The class schedule is required; the club events come
+ * from an undocumented endpoint behind a credential that expires, so a failure to load them
+ * degrades the answer rather than breaking the page. Getting that backwards would mean an expired
+ * cookie takes down the thing the app is actually for.
  */
 export function useSchedule(): LoadState {
   const [state, setState] = useState<LoadState>({ status: "loading" });
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch("./data/schedule.json", { signal: controller.signal })
-      .then((response) => {
+
+    const schedule = fetch("./data/schedule.json", { signal: controller.signal }).then(
+      (response) => {
         if (!response.ok) throw new Error(`Schedule unavailable (${response.status})`);
         return response.json() as Promise<ScheduleArtifact>;
+      },
+    );
+
+    const events = fetch("./data/events.json", { signal: controller.signal })
+      .then((response) => (response.ok ? (response.json() as Promise<EventArtifact>) : null))
+      .catch(() => null);
+
+    Promise.all([schedule, events])
+      .then(([artifact, clubs]) => {
+        const extra = clubs?.meetings ?? [];
+        setState({
+          status: "ready",
+          artifact: extra.length
+            ? { ...artifact, meetings: [...artifact.meetings, ...extra] }
+            : artifact,
+          clubEvents: extra.length,
+        });
       })
-      .then((artifact) => setState({ status: "ready", artifact }))
       .catch((error: unknown) => {
         if (error instanceof DOMException && error.name === "AbortError") return;
         setState({
@@ -41,6 +67,7 @@ export function useSchedule(): LoadState {
           message: error instanceof Error ? error.message : "Could not load the schedule.",
         });
       });
+
     return () => controller.abort();
   }, []);
 

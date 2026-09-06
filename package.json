@@ -11,7 +11,8 @@
     "test": "vitest run",
     "typecheck": "tsc --build",
     "format": "prettier --write .",
-    "inspect": "pnpm --filter @vacantneu/scraper inspect"
+    "inspect": "pnpm --filter @vacantneu/scraper inspect",
+    "events": "pnpm --filter @vacantneu/scraper events"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

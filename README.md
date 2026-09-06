@@ -22,7 +22,8 @@ the whole product is one dataset — the registrar's room schedule — read back
 | Coverage | Boston campus |
 | Buildings | 40 (38 mapped: 36 with footprints, 2 as points) |
 | Rooms | 385 |
-| Scheduled meetings | 4,524 |
+| Scheduled class meetings | 4,516 |
+| Club event bookings | depends on the Engage session (see below) |
 | Artifact size | 1.1 MB raw / **86 KB gzipped** |
 
 ## How it works
@@ -37,7 +38,7 @@ Banner 9 Self-Service API  ->  Zod validation  ->  transform  ->  data/202710.js
                                           home / map / browse all read the same answer
 ```
 
-Course data comes from Northeastern's **Banner 9 Self-Service API** — the same public,
+Class data comes from Northeastern's **Banner 9 Self-Service API** — the same public,
 unauthenticated endpoint SearchNEU's scraper reads. A full term is ~20 paginated requests
 (`searchResults` accepts no subject filter, so one sweep covers the whole catalog).
 
@@ -60,6 +61,9 @@ pnpm install
 pnpm scrape                    # scrape current term -> data/<term>.json
 pnpm scrape --dry-run          # scrape and report, write nothing
 pnpm scrape --term 202710      # pin a specific term
+
+pnpm events                    # scrape club events from Engage -> data/events.json
+pnpm events --dry-run          # fetch and report, write nothing
 
 pnpm buildings                 # regenerate map footprints from OpenStreetMap (run rarely)
 
@@ -132,6 +136,40 @@ still collects no personal information. Cloudflare Web Analytics is free and wor
 sign-in, and no notifications, so the usual clauses about credentials, phone numbers, and message
 rates were removed rather than carried over. They are adapted templates, not legal advice.
 
+## Club events
+
+A room is occupied if anything is in it, so club events from
+[Engage](https://engage.northeastern.edu) are ingested as bookings alongside classes. To the
+vacancy engine they are the same `Meeting` shape: an event is simply a meeting whose date range is
+a single day. Events crossing midnight are split at it, because the engine reasons in minutes
+within one day.
+
+`packages/scraper/src/location.ts` resolves Engage's free-text venues ("West Village H Room 110",
+"EV 8", "Robinson Hall 409") to room ids. It only ever returns a room that exists in the artifact:
+naming a building we know is not licence to invent a room inside it, so "Behrakis 4th floor labs"
+resolves to nothing rather than to a guess.
+
+### The Engage session
+
+The endpoint answers anonymous requests, but redacts most venues to
+`Private Location (sign in to display)`. On an anonymous pull roughly 95% of events have no usable
+location, which makes the feature close to worthless. Supplying a CampusGroups session fixes that:
+
+```
+ENGAGE_SESSION_ID=...
+ENGAGE_UID=...
+```
+
+Sign in to Engage in a browser, then DevTools → Application → Cookies → engage.northeastern.edu.
+This is CampusGroups' own session rather than Northeastern SSO, so the values are portable and no
+MFA replay is needed. They expire on no published schedule; `pnpm events` exits with code 2 and a
+clear message when the session dies, which the workflow surfaces as a warning.
+
+Events are written to a **separate** `data/events.json` and loaded separately by the browser. That
+separation is deliberate: Engage is an undocumented endpoint behind an expiring credential, and a
+failure there degrades the answer rather than taking down the class schedule, which is what the
+app is actually for.
+
 ## Two things that are easy to get wrong
 
 **Banner does not encode holidays.** A meeting row says "Mon/Wed, 09/09–12/20" and will happily
@@ -139,11 +177,12 @@ claim its room is occupied on Thanksgiving. `packages/core/src/calendar.ts` is t
 from the registrar's PDF and **must be reviewed every academic year**. It is the only input to the
 pipeline that cannot be scraped.
 
-**"No class scheduled" is not "unlocked and available."** Banner knows nothing about club
-meetings, department events, exam proctoring, room reservations, or whether the door is locked. We
-also only know a room exists if a class was scheduled in it, so the real classroom inventory is
-larger than 385. This is a limitation of the data source, not a bug — the UI must say "no class
-scheduled here" rather than "free," or it will send people to locked doors.
+**"Nothing scheduled" is still not "unlocked and available."** Club events close part of this
+gap, but only the part Engage publishes with a resolvable room. Departments book rooms directly,
+exams follow a schedule nobody publishes through these sources, and a room with nothing in it can
+simply be locked. We also only know a room exists if a class was scheduled in it, so the real
+classroom inventory is larger than 385. This is a limitation of the data sources, not a bug: the
+UI says "no class scheduled here" rather than "free," or it will send people to locked doors.
 
 ## Safety
 

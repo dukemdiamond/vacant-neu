@@ -5,7 +5,8 @@
   "scripts": {
     "scrape": "tsx src/index.ts",
     "buildings": "tsx src/buildings.ts",
-    "inspect": "tsx src/inspect.ts"
+    "inspect": "tsx src/inspect.ts",
+    "events": "tsx src/events.ts"
   },
   "dependencies": {
     "@vacantneu/core": "workspace:*",

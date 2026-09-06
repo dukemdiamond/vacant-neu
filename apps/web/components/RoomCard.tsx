@@ -126,7 +126,9 @@ function BusyDetail({ status }: { status: RoomStatus }) {
   if (!current) return <>In use.</>;
   return (
     <>
-      {current.label} until {formatMinutes(current.end)}
+      {current.label}
+      {current.kind === "event" && current.detail ? ` (${current.detail})` : ""} until{" "}
+      {formatMinutes(current.end)}
       {minutesUntilChange !== null && <>, {formatDuration(minutesUntilChange)} left</>}.
     </>
   );
@@ -196,6 +198,13 @@ function DaySchedule({
                 }
               >
                 {m.label} <span className="text-ink-faint">{m.detail}</span>
+                {/* Classes and club events sit in one chronological list, so the source of a
+                    booking has to be readable without decoding the wording. */}
+                {m.kind === "event" && (
+                  <span className="ml-1.5 align-middle rounded-[4px] border border-line px-1.5 py-px text-[11px] text-ink-faint">
+                    club
+                  </span>
+                )}
               </span>
             </li>
           );

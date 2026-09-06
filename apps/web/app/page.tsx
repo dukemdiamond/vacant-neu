@@ -21,6 +21,7 @@ export default function Home() {
   const [query, setQuery] = useState("");
 
   const artifact = state.status === "ready" ? state.artifact : null;
+  const clubEvents = state.status === "ready" ? state.clubEvents : undefined;
   const index = useRoomIndex(artifact);
   const statuses = useAllStatuses(artifact, now);
   const phase = useMemo(() => (artifact ? termPhase(artifact, now) : null), [artifact, now]);
@@ -88,7 +89,7 @@ export default function Home() {
         )}
       </section>
 
-      <Footnote generatedAt={artifact?.generatedAt} />
+      <Footnote generatedAt={artifact?.generatedAt} clubEvents={clubEvents} />
     </main>
   );
 }
@@ -284,17 +285,22 @@ function ErrorState({ message }: { message: string }) {
  * Banner only knows about registrar-scheduled classes. A room with no class in it may still be
  * locked, booked by a club, or holding an exam. Saying so plainly is what keeps the app honest.
  */
-function Footnote({ generatedAt }: { generatedAt?: string }) {
+function Footnote({ generatedAt, clubEvents }: { generatedAt?: string; clubEvents?: number }) {
   return (
     <footer className="mt-20 border-t border-line pt-6">
       <p className="max-w-2xl text-sm text-ink-muted">
-        vacantNEU shows where no class is scheduled. That is not the same as unlocked: rooms can be
-        booked for events, held for exams, or simply locked. Only rooms that host at least one class
+        vacantNEU shows where nothing is scheduled: classes from Northeastern&rsquo;s course
+        catalog, plus club events from Engage whose venue names a room we track. That is still not
+        the same as unlocked. Departments book rooms directly, exams follow their own schedule, and
+        a room with nothing in it can simply be locked. Only rooms that host at least one class
         appear here.
       </p>
       {generatedAt && (
         <p className="tabular mt-3 text-xs text-ink-faint">
           Schedule from Northeastern Banner, updated {formatDay(generatedAt, true)}.
+          {clubEvents !== undefined &&
+            clubEvents > 0 &&
+            ` Plus ${clubEvents} club bookings from Engage.`}
         </p>
       )}
     </footer>
