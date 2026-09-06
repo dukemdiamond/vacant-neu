@@ -13,61 +13,61 @@
     },
     {
       "code": "NYC",
-      "name": "New York, NY",
+      "name": "New York",
       "buildingCount": 6,
       "roomCount": 59
     },
     {
       "code": "OAK",
-      "name": "Oakland, CA",
+      "name": "Oakland",
       "buildingCount": 12,
       "roomCount": 43
     },
     {
       "code": "PTL",
-      "name": "Portland, Maine",
+      "name": "Portland",
       "buildingCount": 1,
       "roomCount": 18
     },
     {
       "code": "SEA",
-      "name": "Seattle, WA",
+      "name": "Seattle",
       "buildingCount": 2,
       "roomCount": 16
     },
     {
       "code": "SJO",
-      "name": "Silicon Valley, CA",
+      "name": "Silicon Valley",
       "buildingCount": 1,
       "roomCount": 12
     },
     {
       "code": "ARL",
-      "name": "Arlington, VA",
+      "name": "Arlington",
       "buildingCount": 1,
       "roomCount": 9
     },
     {
       "code": "TOR",
-      "name": "Toronto, Canada",
+      "name": "Toronto",
       "buildingCount": 1,
       "roomCount": 8
     },
     {
       "code": "VAN",
-      "name": "Vancouver, Canada",
+      "name": "Vancouver",
       "buildingCount": 1,
       "roomCount": 8
     },
     {
       "code": "MIA",
-      "name": "Miami, FL",
+      "name": "Miami",
       "buildingCount": 1,
       "roomCount": 6
     },
     {
       "code": "CHL",
-      "name": "Charlotte, NC",
+      "name": "Charlotte",
       "buildingCount": 1,
       "roomCount": 2
     }

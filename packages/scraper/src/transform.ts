@@ -48,6 +48,17 @@ export function parseBannerDate(value: string | null): string | null {
   return `${match[3]}-${match[1]}-${match[2]}`;
 }
 
+/**
+ * Trims the state or country Banner appends to a campus name.
+ *
+ * "Oakland, CA" and "Toronto, Canada" are how Banner writes them, but the qualifier is noise in a
+ * picker where every option is a Northeastern campus. Only a short trailing fragment is removed,
+ * so a campus whose name genuinely contains a comma survives intact.
+ */
+export function shortCampusName(name: string): string {
+  return name.replace(/,\s*[^,]{1,8}$/, "").trim() || name.trim();
+}
+
 /** Collapses Banner's seven booleans into a single bitmask. */
 export function parseDays(mt: BannerMeetingTime): number {
   return (
@@ -199,7 +210,7 @@ export function transform(sections: BannerSection[]): TransformResult {
       const id = roomId(building, room);
 
       if (mt.buildingDescription) buildingNames.set(building, mt.buildingDescription.trim());
-      if (mt.campusDescription) campusNames.set(campus, mt.campusDescription.trim());
+      if (mt.campusDescription) campusNames.set(campus, shortCampusName(mt.campusDescription));
 
       /*
        * Room ids omit the campus, which is only safe while Banner keeps building codes globally

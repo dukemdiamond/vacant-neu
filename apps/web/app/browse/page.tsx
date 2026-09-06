@@ -8,7 +8,7 @@ import {
   type Room,
   type RoomStatus,
 } from "@vacantneu/core";
-import { CampusPicker } from "@/components/CampusPicker";
+import { CampusSelect } from "@/components/CampusSelect";
 import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { SearchField } from "@/components/SearchField";
@@ -125,9 +125,9 @@ export default function BrowsePage() {
 
   return (
     <main className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
-      <section className="pt-14 sm:pt-20">
+      <section className="pt-14 text-center sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
-        <p className="mt-4 max-w-lg text-lg text-ink-muted">
+        <p className="mx-auto mt-4 max-w-xl text-lg text-balance text-ink-muted">
           Filter by building or by how long you need the room, at any date and time.
         </p>
       </section>
@@ -168,7 +168,7 @@ export default function BrowsePage() {
             </div>
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <TimeTravel value={moment} onChange={setMoment} now={now} />
-              <CampusPicker campuses={artifact.campuses} value={campusCode} onChange={setCampus} />
+              <CampusSelect campuses={artifact.campuses} value={campusCode} onChange={setCampus} />
             </div>
           </div>
 

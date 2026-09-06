@@ -15,9 +15,10 @@ the whole product is one dataset — the registrar's room schedule — read back
 - **Phase 3** Browse: every classroom, filtered by building, by how long it stays free, and at
   any date and time rather than only right now
 - **Phase 4** Map: real building footprints, clickable, labelled with open room counts
-- **Events** `/events`: club events from Engage, day by day
+- **Events** `/events`: club events from Engage, a week at a time, searchable by club
 
-Home and Browse filter by campus, one at a time. Pooling them would make "412 rooms are open"
+Home shows the four largest campuses as pills with the rest behind a "more"; Browse uses a native
+select, since it already carries three other controls. Both filter to one campus at a time. Pooling them would make "412 rooms are open"
 true and useless when some are on another continent. The map stays on Boston: its footprints come
 from OpenStreetMap around that campus, so it cannot draw a room in Oakland.
 
@@ -29,6 +30,7 @@ A list of start times cannot show where the gaps are; a timeline can.
 |---|---|
 | Term | Fall 2026 (`202710`) |
 | Campuses | 11 (Boston 385 rooms, New York 59, Oakland 43, plus 8 more) |
+| Not covered | London: Banner publishes no room for any of its 282 meeting rows |
 | Boston buildings | 40 (38 mapped: 36 with footprints, 2 as points) |
 | Rooms | 566 across all campuses |
 | Scheduled class meetings | 4,516 |

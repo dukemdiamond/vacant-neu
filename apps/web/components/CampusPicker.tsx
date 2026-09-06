@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Campus } from "@vacantneu/core";
 
 interface Props {
@@ -10,6 +10,14 @@ interface Props {
   /** Centres the row, for the home page hero. */
   centered?: boolean;
 }
+
+/**
+ * Campuses shown before the row offers the rest.
+ *
+ * Eleven pills is a wall. Four covers almost everyone, since Boston, New York and Oakland hold
+ * 87% of all timetabled rooms between them.
+ */
+const VISIBLE = 4;
 
 /**
  * Campus selector.
@@ -31,7 +39,19 @@ export function CampusPicker({ campuses, value, onChange, centered = false }: Pr
     selected.current?.scrollIntoView({ block: "nearest", inline: "nearest" });
   }, [value]);
 
+  const [expanded, setExpanded] = useState(false);
+
   if (campuses.length < 2) return null;
+
+  // The selected campus is always shown, even when it sits outside the visible few.
+  const selectedIndex = campuses.findIndex((c) => c.code === value);
+  const shown =
+    expanded || selectedIndex >= VISIBLE
+      ? expanded
+        ? campuses
+        : [...campuses.slice(0, VISIBLE), campuses[selectedIndex]!]
+      : campuses.slice(0, VISIBLE);
+  const hidden = campuses.length - shown.length;
 
   return (
     <div
@@ -48,7 +68,7 @@ export function CampusPicker({ campuses, value, onChange, centered = false }: Pr
       ].join(" ")}
     >
       <div className="inline-flex gap-2">
-        {campuses.map((campus) => {
+        {shown.map((campus) => {
           const active = campus.code === value;
           return (
             <button
@@ -71,6 +91,15 @@ export function CampusPicker({ campuses, value, onChange, centered = false }: Pr
             </button>
           );
         })}
+        {hidden > 0 && (
+          <button
+            type="button"
+            onClick={() => setExpanded(true)}
+            className="shrink-0 rounded-full border border-line bg-surface-raised px-4 py-1.5 text-sm whitespace-nowrap text-ink-muted transition-colors hover:border-line-strong hover:text-ink"
+          >
+            {hidden} more
+          </button>
+        )}
       </div>
     </div>
   );

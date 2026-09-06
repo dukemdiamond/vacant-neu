@@ -7,6 +7,7 @@ import {
   parseBannerDate,
   parseBannerTime,
   roomId,
+  shortCampusName,
   transform,
 } from "./transform.js";
 
@@ -227,5 +228,23 @@ describe("decodeEntities — double encoding", () => {
     expect(decodeEntities("&amp;".repeat(50)).length).toBeLessThanOrEqual(50);
     expect(decodeEntities("&#0;")).toBe("&#0;");
     expect(decodeEntities("&#99999999;")).toBe("&#99999999;");
+  });
+});
+
+describe("shortCampusName", () => {
+  it("drops the state or country Banner appends", () => {
+    expect(shortCampusName("Oakland, CA")).toBe("Oakland");
+    expect(shortCampusName("New York, NY")).toBe("New York");
+    expect(shortCampusName("Portland, Maine")).toBe("Portland");
+    expect(shortCampusName("Toronto, Canada")).toBe("Toronto");
+    expect(shortCampusName("Silicon Valley, CA")).toBe("Silicon Valley");
+  });
+
+  it("leaves a name that has no qualifier alone", () => {
+    expect(shortCampusName("Boston")).toBe("Boston");
+  });
+
+  it("keeps a long trailing fragment, which is part of the name rather than a qualifier", () => {
+    expect(shortCampusName("Something, Really Long Place")).toBe("Something, Really Long Place");
   });
 });
