@@ -17,13 +17,14 @@ const { Mon, Wed, Thu } = DAY_BITS;
 /** Dodge Hall 070, MWR 8:00-9:05, full Fall 2026 semester (a real row from the Banner scrape). */
 const dodge: Meeting = {
   roomId: "DG-070",
+  kind: "class",
   days: Mon | Wed | Thu,
   start: 8 * 60,
   end: 9 * 60 + 5,
   startDate: "2026-09-09",
   endDate: "2026-12-20",
-  course: "CS2500",
-  title: "Fundamentals of Computer Science 1",
+  label: "CS2500",
+  detail: "Fundamentals of Computer Science 1",
 };
 
 /** Campus-local instant helper. EDT is UTC-4 in Sept/Oct, EST is UTC-5 from Nov 1. */
@@ -56,7 +57,7 @@ describe("roomStatus", () => {
   it("reports occupied mid-class, with time until the room empties", () => {
     const s = roomStatus("DG-070", [dodge], edt("2026-09-16", "08:30"), CAL);
     expect(s.state).toBe("occupied");
-    expect(s.current?.course).toBe("CS2500");
+    expect(s.current?.label).toBe("CS2500");
     expect(s.minutesUntilChange).toBe(35);
   });
 
@@ -64,7 +65,7 @@ describe("roomStatus", () => {
     const s = roomStatus("DG-070", [dodge], edt("2026-09-16", "03:00"), CAL);
     expect(s.state).toBe("free");
     expect(s.minutesUntilChange).toBe(300); // 3:00 -> 8:00
-    expect(s.next?.course).toBe("CS2500");
+    expect(s.next?.label).toBe("CS2500");
   });
 
   it("is free on a weekday the class does not meet", () => {
@@ -106,7 +107,7 @@ describe("roomStatus", () => {
       ...dodge,
       startDate: "2026-09-09",
       endDate: "2026-10-25",
-      course: "MGMT1000",
+      label: "MGMT1000",
     };
     expect(roomStatus("DG-070", [sessionA], edt("2026-10-14", "08:30"), CAL).state).toBe(
       "occupied",
@@ -121,7 +122,7 @@ describe("roomStatus", () => {
   });
 
   it("chains back-to-back classes into one occupied block", () => {
-    const second: Meeting = { ...dodge, start: 9 * 60 + 5, end: 10 * 60 + 10, course: "CS2510" };
+    const second: Meeting = { ...dodge, start: 9 * 60 + 5, end: 10 * 60 + 10, label: "CS2510" };
     const s = roomStatus("DG-070", [dodge, second], edt("2026-09-16", "08:30"), CAL);
     expect(s.state).toBe("occupied");
     // Free at 10:10, not 9:05 — the next class starts the moment this one ends.
@@ -129,20 +130,20 @@ describe("roomStatus", () => {
   });
 
   it("reports the class actually in the room, not just the block's first class", () => {
-    const second: Meeting = { ...dodge, start: 9 * 60 + 5, end: 10 * 60 + 10, course: "CS2510" };
+    const second: Meeting = { ...dodge, start: 9 * 60 + 5, end: 10 * 60 + 10, label: "CS2510" };
     const s = roomStatus("DG-070", [dodge, second], edt("2026-09-16", "09:30"), CAL);
-    expect(s.current?.course).toBe("CS2510");
+    expect(s.current?.label).toBe("CS2510");
   });
 
   it("reports a real gap between classes honestly", () => {
-    const later: Meeting = { ...dodge, start: 9 * 60 + 15, end: 10 * 60 + 20, course: "CS2510" };
+    const later: Meeting = { ...dodge, start: 9 * 60 + 15, end: 10 * 60 + 20, label: "CS2510" };
     const s = roomStatus("DG-070", [dodge, later], edt("2026-09-16", "09:05"), CAL);
     expect(s.state).toBe("free");
     expect(s.minutesUntilChange).toBe(10);
   });
 
   it("handles overlapping meetings (double-booked rooms exist in Banner)", () => {
-    const overlap: Meeting = { ...dodge, start: 8 * 60 + 30, end: 10 * 60, course: "ENGW1111" };
+    const overlap: Meeting = { ...dodge, start: 8 * 60 + 30, end: 10 * 60, label: "ENGW1111" };
     const s = roomStatus("DG-070", [dodge, overlap], edt("2026-09-16", "09:30"), CAL);
     expect(s.state).toBe("occupied");
     expect(s.minutesUntilChange).toBe(30);

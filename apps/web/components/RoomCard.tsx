@@ -116,7 +116,7 @@ function FreeDetail({ status }: { status: RoomStatus }) {
   return (
     <>
       Free for {formatDuration(status.minutesUntilChange)}, until{" "}
-      {formatMinutes(status.next!.start)}. Then {status.next!.course}.
+      {formatMinutes(status.next!.start)}. Then {status.next!.label}.
     </>
   );
 }
@@ -126,7 +126,7 @@ function BusyDetail({ status }: { status: RoomStatus }) {
   if (!current) return <>In use.</>;
   return (
     <>
-      {current.course} until {formatMinutes(current.end)}
+      {current.label} until {formatMinutes(current.end)}
       {minutesUntilChange !== null && <>, {formatDuration(minutesUntilChange)} left</>}.
     </>
   );
@@ -177,11 +177,11 @@ function DaySchedule({
         {today.map((m, i) => {
           const active =
             status.current !== null &&
-            status.current.course === m.course &&
+            status.current.label === m.label &&
             status.current.start === m.start;
           const past = m.end <= clock.minutes;
           return (
-            <li key={`${m.course}-${m.start}-${i}`} className="flex items-baseline gap-3 text-sm">
+            <li key={`${m.label}-${m.start}-${i}`} className="flex items-baseline gap-3 text-sm">
               <span
                 className={[
                   "tabular w-40 shrink-0 whitespace-nowrap",
@@ -195,7 +195,7 @@ function DaySchedule({
                   past ? "text-ink-faint opacity-60" : active ? "text-ink" : "text-ink-muted"
                 }
               >
-                {m.course} <span className="text-ink-faint">{m.title}</span>
+                {m.label} <span className="text-ink-faint">{m.detail}</span>
               </span>
             </li>
           );

@@ -38,8 +38,18 @@ export interface Room {
   displayName: string;
 }
 
+/**
+ * Where a booking came from.
+ *
+ * A room is occupied if anything is in it, so classes and club events are the same shape to the
+ * vacancy engine. They are told apart only for display, and so that a failure to reach one source
+ * can never be mistaken for the room being free.
+ */
+export type BookingKind = "class" | "event";
+
 export interface Meeting {
   roomId: string;
+  kind: BookingKind;
   /** Bitmask of {@link DAY_BITS}. */
   days: number;
   /** Minutes since campus-local midnight, inclusive. */
@@ -50,9 +60,10 @@ export interface Meeting {
   startDate: string;
   /** ISO `YYYY-MM-DD`, inclusive. */
   endDate: string;
-  /** e.g. "CS2500". */
-  course: string;
-  title: string;
+  /** Shown first: a course code for a class, the event name for a club event. */
+  label: string;
+  /** Shown after, dimmed: the course title for a class, the hosting club for an event. */
+  detail: string;
 }
 
 /** Dates on which the regular class schedule does not run. */

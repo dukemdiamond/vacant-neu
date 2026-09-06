@@ -97,7 +97,7 @@ describe("transform", () => {
       end: 545,
       startDate: "2026-09-09",
       endDate: "2026-12-20",
-      course: "CS2500",
+      label: "CS2500",
     });
   });
 

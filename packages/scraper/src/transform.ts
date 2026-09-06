@@ -195,13 +195,14 @@ export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): Tr
 
       meetings.push({
         roomId: id,
+        kind: "class",
         days,
         start,
         end,
         startDate,
         endDate,
-        course: `${section.subject}${section.courseNumber}`,
-        title: decodeEntities(section.courseTitle?.trim() ?? ""),
+        label: `${section.subject}${section.courseNumber}`,
+        detail: decodeEntities(section.courseTitle?.trim() ?? ""),
       });
     }
   }
@@ -231,7 +232,7 @@ export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): Tr
         a.roomId.localeCompare(b.roomId) ||
         a.startDate.localeCompare(b.startDate) ||
         a.start - b.start ||
-        a.course.localeCompare(b.course),
+        a.label.localeCompare(b.label),
     ),
     stats,
   };

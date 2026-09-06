@@ -67,13 +67,13 @@ if (roomArg) {
   for (const m of [...meetings].sort((a, b) => a.start - b.start || a.days - b.days)) {
     console.log(
       `  ${dayLabel(m.days).padEnd(8)} ${formatMinutes(m.start)}–${formatMinutes(m.end)}` +
-        `  ${m.course.padEnd(10)} ${m.startDate}→${m.endDate}  ${m.title}`,
+        `  ${m.label.padEnd(10)} ${m.startDate}→${m.endDate}  ${m.detail}`,
     );
   }
   const status = roomStatus(id, meetings, instant, artifact.calendar);
   console.log(`\n  Right now: ${status.state.toUpperCase()}`);
   if (status.current)
-    console.log(`  In session: ${status.current.course} — ${status.current.title}`);
+    console.log(`  In session: ${status.current.label} — ${status.current.detail}`);
   if (status.minutesUntilChange !== null) {
     const verb = status.state === "free" ? "free for another" : "busy for another";
     console.log(`  ${verb} ${formatDuration(status.minutesUntilChange)}`);
@@ -102,7 +102,7 @@ if (roomArg) {
     for (const s of soonest) {
       console.log(
         `  ${(byId.get(s.roomId)?.displayName ?? s.roomId).padEnd(42)}` +
-          ` free ${formatDuration(s.minutesUntilChange!)} (next: ${s.next?.course})`,
+          ` free ${formatDuration(s.minutesUntilChange!)} (next: ${s.next?.label})`,
       );
     }
   }
@@ -124,7 +124,7 @@ if (roomArg) {
         ? s.minutesUntilChange === null
           ? "free — nothing else today"
           : `free for ${formatDuration(s.minutesUntilChange)}`
-        : `${s.current?.course} until ${formatMinutes(s.current!.end)}`;
+        : `${s.current?.label} until ${formatMinutes(s.current!.end)}`;
     console.log(`  ${room.room.padEnd(10)} ${s.state === "free" ? "○" : "●"} ${detail}`);
   }
 } else {
