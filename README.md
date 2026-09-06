@@ -162,8 +162,19 @@ ENGAGE_UID=...
 
 Sign in to Engage in a browser, then DevTools → Application → Cookies → engage.northeastern.edu.
 This is CampusGroups' own session rather than Northeastern SSO, so the values are portable and no
-MFA replay is needed. They expire on no published schedule; `pnpm events` exits with code 2 and a
-clear message when the session dies, which the workflow surfaces as a warning.
+MFA replay is needed.
+
+**Copy the values verbatim.** The session token contains percent sequences (`%2b`, `%3d`) and
+CampusGroups expects them exactly as stored. Decoding them first produces a token the server does
+not recognise, and it will not tell you: it silently mints a fresh anonymous session and serves a
+200 with every venue redacted, so the scrape looks like it worked and quietly finds nothing.
+
+`pnpm events` exits 2 with a clear message when the session is refused. It detects this from the
+server replacing the cookie, which only happens when the one sent was rejected; a session Engage
+accepts is left untouched. The workflow surfaces that as a warning without failing the run.
+
+With a working session the difference is stark: venue redaction drops from 336 of 352 events to
+2 of 238, and matched bookings go from 1 to 18.
 
 Events are written to a **separate** `data/events.json` and loaded separately by the browser. That
 separation is deliberate: Engage is an undocumented endpoint behind an expiring credential, and a

@@ -1,8 +1,41 @@
 {
   "source": "engage",
   "generatedAt": "2026-09-06",
-  "authenticated": false,
+  "authenticated": true,
   "meetings": [
+    {
+      "roomId": "EV-008",
+      "kind": "event",
+      "label": "AINU Investment Team Kickoff & Info Session — Part 2",
+      "detail": "Artificial Intelligence Club",
+      "days": 4,
+      "start": 1080,
+      "end": 1140,
+      "startDate": "2026-09-16",
+      "endDate": "2026-09-16"
+    },
+    {
+      "roomId": "HS-210",
+      "kind": "event",
+      "label": "Loteria Night",
+      "detail": "Association of Latino Professionals for America",
+      "days": 2,
+      "start": 1080,
+      "end": 1140,
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15"
+    },
+    {
+      "roomId": "HS-211",
+      "kind": "event",
+      "label": "Welcome Bash - Fall 2026",
+      "detail": "LatAm Business Club",
+      "days": 4,
+      "start": 1110,
+      "end": 1170,
+      "startDate": "2026-09-23",
+      "endDate": "2026-09-23"
+    },
     {
       "roomId": "RB-409",
       "kind": "event",
@@ -13,14 +46,168 @@
       "end": 1260,
       "startDate": "2026-09-10",
       "endDate": "2026-09-10"
+    },
+    {
+      "roomId": "WVG-104",
+      "kind": "event",
+      "label": "Welcome Back CS@NEU",
+      "detail": "ColorStack at Northeastern University",
+      "days": 2,
+      "start": 1140,
+      "end": 1200,
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15"
+    },
+    {
+      "roomId": "WVG-106",
+      "kind": "event",
+      "label": "H4H First Fall General Body Meeting",
+      "detail": "Hearts for the Homeless NEU",
+      "days": 2,
+      "start": 1080,
+      "end": 1140,
+      "startDate": "2026-09-15",
+      "endDate": "2026-09-15"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-18"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-09-25",
+      "endDate": "2026-09-25"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-02"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-09"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-10-23",
+      "endDate": "2026-10-23"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-10-30",
+      "endDate": "2026-10-30"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-11-06",
+      "endDate": "2026-11-06"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-11-20",
+      "endDate": "2026-11-20"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-12-04",
+      "endDate": "2026-12-04"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "event",
+      "label": "Northeastern Smash Tournaments (Ultimate)",
+      "detail": "Super Smash Bros Club",
+      "days": 16,
+      "start": 1080,
+      "end": 1320,
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-11"
     }
   ],
   "stats": {
-    "events": 352,
-    "redacted": 336,
-    "noLocation": 3,
-    "unmatchedVenue": 12,
+    "events": 238,
+    "redacted": 2,
+    "noLocation": 155,
+    "unmatchedVenue": 63,
     "unparsedDates": 0,
-    "matched": 1
+    "matched": 18
   }
 }

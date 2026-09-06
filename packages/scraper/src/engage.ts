@@ -44,8 +44,15 @@ export function cookieHeaderFromEnv(): string | null {
   const uid = process.env.ENGAGE_UID?.trim();
   if (!session || !uid) return null;
 
-  // Values copied out of DevTools arrive percent-encoded; the cookie jar needs them decoded.
-  return `CG.SessionID=${decodeURIComponent(session)}; cg_uid=${decodeURIComponent(uid)}`;
+  /*
+   * Sent verbatim, not decoded.
+   *
+   * The session value contains percent sequences (%2b, %3d) and CampusGroups expects them exactly
+   * as the browser stores them. Decoding to "+" and "=" first produces a token the server does not
+   * recognise: it silently mints a fresh anonymous session instead of rejecting the request, so
+   * the pull succeeds while every venue stays redacted. Copy the value straight out of DevTools.
+   */
+  return `CG.SessionID=${session}; cg_uid=${uid}`;
 }
 
 async function fetchPage(range: number, cookie: string | null): Promise<EngageRecord[]> {
@@ -68,6 +75,22 @@ async function fetchPage(range: number, cookie: string | null): Promise<EngageRe
   const response = await fetch(`${ENDPOINT}?${query}`, { headers });
   if (!response.ok) {
     throw new Error(`Engage returned ${response.status} ${response.statusText}`);
+  }
+
+  /*
+   * Expiry detection.
+   *
+   * A rejected session is not an error here: the endpoint quietly mints a fresh anonymous session
+   * and serves a 200 with every venue redacted, so the run looks like a success that found almost
+   * nothing. A session it accepts is left alone and no CG.SessionID comes back. So a Set-Cookie
+   * for that name, on a request that carried one, means ours was refused.
+   */
+  if (cookie && response.headers.getSetCookie().some((c) => c.startsWith("CG.SessionID="))) {
+    throw new EngageSessionError(
+      "Engage replaced the session cookie, which means the one supplied was rejected. It has " +
+        "either expired or was altered in transit. Refresh ENGAGE_SESSION_ID and ENGAGE_UID, " +
+        "copying the values verbatim from DevTools without decoding them.",
+    );
   }
 
   const text = await response.text();
