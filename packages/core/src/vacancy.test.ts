@@ -10,7 +10,7 @@ import {
   formatRange,
 } from "./time.js";
 import { DAY_BITS, type AcademicCalendar, type Meeting } from "./types.js";
-import { isFreeFor, roomStatus } from "./vacancy.js";
+import { isFreeFor, meetingsOnDay, roomStatus } from "./vacancy.js";
 
 const { Mon, Wed, Thu } = DAY_BITS;
 
@@ -256,5 +256,39 @@ describe("campus input helpers", () => {
     const at = campusInstant("2026-11-11", "14:05")!;
     expect(campusDateISO(at)).toBe("2026-11-11");
     expect(campusTimeHHMM(at)).toBe("14:05");
+  });
+});
+
+describe("holidays and club events", () => {
+  /** A club meeting in the same room on Veterans Day, when no class runs. */
+  const clubOnHoliday: Meeting = {
+    roomId: "DG-070",
+    kind: "event",
+    days: DAY_BITS.Wed,
+    start: 18 * 60,
+    end: 20 * 60,
+    startDate: "2026-11-11",
+    endDate: "2026-11-11",
+    label: "Fall Kickoff",
+    detail: "Some Club",
+  };
+
+  it("still occupies a room for an event booked on a university holiday", () => {
+    // A holiday cancels classes, not the building. This is exactly when clubs book rooms.
+    const s = roomStatus("DG-070", [dodge, clubOnHoliday], est("2026-11-11", "18:30"), CAL);
+    expect(s.state).toBe("occupied");
+    expect(s.current?.label).toBe("Fall Kickoff");
+  });
+
+  it("keeps suppressing the class that would otherwise have met that day", () => {
+    // 08:30 on Veterans Day: the Mon/Wed/Thu class does not run, and nothing else is booked.
+    const s = roomStatus("DG-070", [dodge, clubOnHoliday], est("2026-11-11", "08:30"), CAL);
+    expect(s.state).toBe("free");
+    expect(s.next?.label).toBe("Fall Kickoff");
+  });
+
+  it("lists only the event in the day schedule for that holiday", () => {
+    const day = meetingsOnDay([dodge, clubOnHoliday], CAL, campusTime(est("2026-11-11", "12:00")));
+    expect(day.map((m) => m.label)).toEqual(["Fall Kickoff"]);
   });
 });

@@ -48,7 +48,7 @@ export default function Home() {
           <span className="pr-1 text-accent italic">Find</span> a free classroom
         </h1>
         <p className="mt-5 max-w-xl text-lg text-ink-muted">
-          Every classroom on the Boston campus, and whether a class is in it right now.
+          Every classroom on the Boston campus, and whether a class or event is in it right now.
         </p>
 
         <div className="mt-8 max-w-xl">
@@ -216,7 +216,7 @@ function Overview({
   return (
     <>
       <p className="tabular max-w-xl text-2xl leading-snug text-ink">
-        {totalOpen} of {statuses.length} rooms have no class in them right now.
+        {totalOpen} of {statuses.length} rooms have nothing scheduled in them right now.
       </p>
 
       <h2 className="mt-10 text-sm text-ink-muted">

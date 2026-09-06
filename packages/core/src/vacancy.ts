@@ -50,14 +50,23 @@ export function isExamPeriod(calendar: AcademicCalendar, date: string): boolean 
   return calendar.examPeriods.some((p) => p.start <= date && date <= p.end);
 }
 
-/** Meetings that actually convene in a given room on a given campus-local day. */
+/**
+ * Bookings that actually occupy a given room on a given campus-local day.
+ *
+ * A university holiday cancels classes, not the building. Clubs book rooms precisely on the days
+ * nothing is timetabled, so the holiday rule suppresses classes only; an event listed for that
+ * day still occupies its room.
+ */
 export function meetingsOnDay(
   meetings: readonly Meeting[],
   calendar: AcademicCalendar,
   now: CampusTime,
 ): Meeting[] {
-  if (isNoClassDate(calendar, now.date)) return [];
-  return meetings.filter((m) => (m.days & now.dayBit) !== 0 && withinDateRange(m, now.date));
+  const holiday = isNoClassDate(calendar, now.date);
+  return meetings.filter((m) => {
+    if (holiday && m.kind === "class") return false;
+    return (m.days & now.dayBit) !== 0 && withinDateRange(m, now.date);
+  });
 }
 
 /**

@@ -19,7 +19,7 @@ const instrumentSans = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Find a free classroom at Northeastern | vacantNEU",
   description:
-    "Search Northeastern's Boston campus for classrooms with no class scheduled right now.",
+    "Search Northeastern's Boston campus for classrooms with no class or club event scheduled right now.",
 };
 
 export const viewport: Viewport = {

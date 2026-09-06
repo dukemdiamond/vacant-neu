@@ -65,7 +65,7 @@ async function main() {
 
   if (unmatchedSamples.length > 0) {
     console.log(`\nVenues we could not resolve (first ${unmatchedSamples.length}):`);
-    for (const venue of unmatchedSamples.slice(0, 15)) console.log(`   ${venue}`);
+    for (const venue of unmatchedSamples) console.log(`   ${venue}`);
     console.log("  Add a spelling to BUILDING_ALIASES in location.ts if one of these is a room.");
   }
 

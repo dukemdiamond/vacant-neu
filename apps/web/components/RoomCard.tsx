@@ -1,7 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
-import { CaretDownIcon } from "@phosphor-icons/react";
+import { CalendarBlankIcon, CaretDownIcon } from "@phosphor-icons/react";
 import {
   campusTime,
   formatDuration,
@@ -13,6 +13,7 @@ import {
   type Room,
   type RoomStatus,
 } from "@vacantneu/core";
+import { RoomScheduleDialog } from "@/components/RoomScheduleDialog";
 
 /** A class starting within this window makes the room not worth walking to. */
 const CLOSING_SOON_MINUTES = 20;
@@ -51,6 +52,7 @@ export function RoomCard({
   showBuilding = true,
 }: Props) {
   const [open, setOpen] = useState(defaultOpen);
+  const [showSchedule, setShowSchedule] = useState(false);
   const panelId = useId();
 
   const free = status.state === "free";
@@ -64,39 +66,50 @@ export function RoomCard({
         free ? "border-line bg-surface-raised" : "border-transparent bg-wash-faint",
       ].join(" ")}
     >
-      <h3>
+      <div className="flex items-baseline gap-2">
+        <h3 className="min-w-0 flex-1">
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls={panelId}
+            className="flex w-full items-baseline justify-between gap-4 text-left"
+          >
+            <span
+              className={["text-lg leading-tight", free ? "text-ink" : "text-ink-muted"].join(" ")}
+            >
+              {showBuilding ? room.displayName : room.room}
+            </span>
+            <span
+              className={[
+                "flex shrink-0 items-center gap-1.5 text-sm",
+                closingSoon ? "text-accent" : free ? "text-ink-body" : "text-ink-faint",
+              ].join(" ")}
+            >
+              {free ? "Open" : "In use"}
+              <CaretDownIcon
+                size={12}
+                weight="bold"
+                aria-hidden
+                className={[
+                  "transition-transform duration-200",
+                  open ? "rotate-180" : "",
+                  free ? "text-ink-faint" : "text-ink-faint",
+                ].join(" ")}
+              />
+            </span>
+          </button>
+        </h3>
         <button
           type="button"
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls={panelId}
-          className="flex w-full items-baseline justify-between gap-4 text-left"
+          onClick={() => setShowSchedule(true)}
+          className="shrink-0 rounded-[var(--radius-control)] p-1.5 text-ink-faint transition-colors hover:bg-wash hover:text-ink"
+          aria-label={`Full day schedule for ${room.displayName}`}
+          title="Full day schedule"
         >
-          <span
-            className={["text-lg leading-tight", free ? "text-ink" : "text-ink-muted"].join(" ")}
-          >
-            {showBuilding ? room.displayName : room.room}
-          </span>
-          <span
-            className={[
-              "flex shrink-0 items-center gap-1.5 text-sm",
-              closingSoon ? "text-accent" : free ? "text-ink-body" : "text-ink-faint",
-            ].join(" ")}
-          >
-            {free ? "Open" : "In use"}
-            <CaretDownIcon
-              size={12}
-              weight="bold"
-              aria-hidden
-              className={[
-                "transition-transform duration-200",
-                open ? "rotate-180" : "",
-                free ? "text-ink-faint" : "text-ink-faint",
-              ].join(" ")}
-            />
-          </span>
+          <CalendarBlankIcon size={16} weight="regular" aria-hidden />
         </button>
-      </h3>
+      </div>
 
       <p className="tabular mt-1.5 text-sm text-ink-muted">
         {free ? <FreeDetail status={status} /> : <BusyDetail status={status} />}
@@ -104,7 +117,24 @@ export function RoomCard({
 
       <div id={panelId} hidden={!open}>
         <DaySchedule meetings={meetings} status={status} calendar={calendar} now={now} />
+        <button
+          type="button"
+          onClick={() => setShowSchedule(true)}
+          className="mt-3 text-sm text-ink-body underline underline-offset-2 transition-opacity hover:opacity-70"
+        >
+          Open full day schedule
+        </button>
       </div>
+
+      {showSchedule && (
+        <RoomScheduleDialog
+          room={room}
+          meetings={meetings}
+          calendar={calendar}
+          now={now}
+          onClose={() => setShowSchedule(false)}
+        />
+      )}
     </article>
   );
 }
@@ -161,7 +191,7 @@ function DaySchedule({
   if (today.length === 0) {
     return (
       <p className="mt-4 border-t border-line pt-4 text-sm text-ink-faint">
-        No classes are scheduled in this room today.
+        Nothing is scheduled in this room today.
       </p>
     );
   }

@@ -16,6 +16,10 @@ the whole product is one dataset — the registrar's room schedule — read back
   any date and time rather than only right now
 - **Phase 4** Map: real building footprints, clickable, labelled with open room counts
 
+Any room card, on Browse or in the map panel, opens a **day timeline**: the whole day drawn to
+scale against an hour grid, steppable day by day, with classes and club bookings distinguished.
+A list of start times cannot show where the gaps are; a timeline can.
+
 | | |
 |---|---|
 | Term | Fall 2026 (`202710`) |
@@ -175,6 +179,10 @@ accepts is left untouched. The workflow surfaces that as a warning without faili
 
 With a working session the difference is stark: venue redaction drops from 336 of 352 events to
 2 of 238, and matched bookings go from 1 to 18.
+
+A university holiday cancels classes, not the building, so the holiday rule suppresses classes
+only. A club event listed on Veterans Day still occupies its room, which is exactly when clubs
+book them.
 
 Events are written to a **separate** `data/events.json` and loaded separately by the browser. That
 separation is deliberate: Engage is an undocumented endpoint behind an expiring credential, and a
