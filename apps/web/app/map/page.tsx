@@ -48,15 +48,31 @@ export default function MapPage() {
     return () => controller.abort();
   }, []);
 
+  /*
+   * Boston only.
+   *
+   * The footprints come from OpenStreetMap around the Boston campus, so a map of them cannot
+   * show a room in Oakland. Rather than plot nothing for the other ten campuses, this view is
+   * scoped to the one it can actually draw.
+   */
+  const bostonRooms = useMemo(
+    () => new Set((artifact?.rooms ?? []).filter((r) => r.campus === "BOS").map((r) => r.id)),
+    [artifact],
+  );
+  const bostonBuildings = useMemo(
+    () => (artifact?.buildings ?? []).filter((b) => b.campus === "BOS"),
+    [artifact],
+  );
+
   const openByBuilding = useMemo(() => {
     const counts = new Map<string, number>();
     for (const status of statuses) {
-      if (status.state !== "free") continue;
+      if (status.state !== "free" || !bostonRooms.has(status.roomId)) continue;
       const code = status.roomId.slice(0, status.roomId.lastIndexOf("-"));
       counts.set(code, (counts.get(code) ?? 0) + 1);
     }
     return counts;
-  }, [statuses]);
+  }, [statuses, bostonRooms]);
 
   /** Footprints with the live open count merged in, which is what the map styles against. */
   const mapData = useMemo<GeoJSON.FeatureCollection>(() => {
@@ -73,7 +89,7 @@ export default function MapPage() {
     };
   }, [footprints, openByBuilding]);
 
-  const selectedBuilding = artifact?.buildings.find((b) => b.code === selected) ?? null;
+  const selectedBuilding = bostonBuildings.find((b) => b.code === selected) ?? null;
 
   return (
     /*
@@ -106,9 +122,11 @@ export default function MapPage() {
                 />
               ) : (
                 <Legend
-                  buildings={artifact.buildings}
+                  buildings={bostonBuildings}
                   openByBuilding={openByBuilding}
-                  totalOpen={statuses.filter((s) => s.state === "free").length}
+                  totalOpen={
+                    statuses.filter((s) => s.state === "free" && bostonRooms.has(s.roomId)).length
+                  }
                   onSelect={setSelected}
                 />
               )}

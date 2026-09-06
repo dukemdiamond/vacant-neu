@@ -1,17 +1,20 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react";
-import type { AcademicCalendar, Building, Room, RoomStatus } from "@vacantneu/core";
+import type { AcademicCalendar, Building, Campus, Room, RoomStatus } from "@vacantneu/core";
+import { CampusPicker } from "@/components/CampusPicker";
 import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { ResultsSkeleton } from "@/components/Skeleton";
 import { SearchField } from "@/components/SearchField";
 import { useAllStatuses, useNow, useRoomIndex, useSchedule, type RoomIndex } from "@/lib/schedule";
+import { resolveCampus, roomsOnCampus, useCampus } from "@/lib/campus";
 import { formatDay, termPhase, type TermPhase } from "@/lib/term";
 
-const MAX_RESULTS = 24;
+/** Results shown before the list offers to reveal the rest. */
+const RESULTS_PAGE = 24;
 /** Buildings shown before the list hands off to the browse page. */
 const OVERVIEW_LIMIT = 12;
 
@@ -19,6 +22,8 @@ export default function Home() {
   const state = useSchedule();
   const now = useNow();
   const [query, setQuery] = useState("");
+  const [campus, setCampus] = useCampus();
+  const [showAll, setShowAll] = useState(false);
 
   const artifact = state.status === "ready" ? state.artifact : null;
   const clubEvents = state.status === "ready" ? state.clubEvents : undefined;
@@ -28,37 +33,76 @@ export default function Home() {
 
   const statusById = useMemo(() => new Map(statuses.map((s) => [s.roomId, s])), [statuses]);
 
-  const results = useMemo(() => {
+  const active = artifact ? resolveCampus(artifact.campuses, campus) : null;
+  const campusCode = active?.code ?? campus;
+
+  // Everything below is scoped to one campus. Pooling them would make "412 rooms are open" true
+  // and useless, since some of those rooms are on another continent.
+  const campusRooms = useMemo(
+    () => (artifact ? roomsOnCampus(artifact, campusCode) : []),
+    [artifact, campusCode],
+  );
+  const campusStatuses = useMemo(() => {
+    const ids = new Set(campusRooms.map((r) => r.id));
+    return statuses.filter((s) => ids.has(s.roomId));
+  }, [statuses, campusRooms]);
+  const campusBuildings = useMemo(
+    () => (artifact ? artifact.buildings.filter((b) => b.campus === campusCode) : []),
+    [artifact, campusCode],
+  );
+
+  const matches = useMemo(() => {
     const trimmed = query.trim();
     if (!index || trimmed.length === 0) return null;
-    const matched = index.search
+    return index.search
       .search(trimmed)
       .map((hit) => index.rooms.get(hit.id as string))
-      .filter((room): room is Room => room !== undefined);
-    // The visible list is capped, so the count is tracked separately; reporting the length of the
-    // truncated list would silently understate how many rooms actually matched.
-    return { rooms: matched.slice(0, MAX_RESULTS), total: matched.length };
-  }, [index, query]);
+      .filter((room): room is Room => room !== undefined && room.campus === campusCode);
+  }, [index, query, campusCode]);
+
+  // Reset the expansion when the query or campus changes, so a new search starts short again.
+  useEffect(() => setShowAll(false), [query, campusCode]);
 
   return (
     <main className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
-      <section className="pt-14 sm:pt-20">
-        <h1 className="display-xl max-w-3xl text-[2.75rem] font-semibold sm:text-6xl">
+      <section className="pt-14 text-center sm:pt-20">
+        <h1 className="display-xl mx-auto text-[2.75rem] font-semibold sm:text-6xl">
           {/* pr-1 reserves room for the italic slant so the "d" does not crowd the next word. */}
           <span className="pr-1 text-accent italic">Find</span> a free classroom
         </h1>
-        <p className="mt-5 max-w-xl text-lg text-ink-muted">
-          Every classroom on the Boston campus, and whether a class or event is in it right now.
+        {/* Balanced wrapping, and no break before the campus name, so the sentence never leaves a
+            lone word on its own line. */}
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-balance text-ink-muted lg:max-w-none lg:whitespace-nowrap">
+          {active ? (
+            <>
+              Every Northeastern classroom in{" "}
+              <span className="whitespace-nowrap">{active.name}</span>, and whether a class or event
+              is in it right now.
+            </>
+          ) : (
+            <>Every classroom at Northeastern, and whether a class or event is in it right now.</>
+          )}
         </p>
 
-        <div className="mt-8 max-w-xl">
+        <div className="mx-auto mt-8 max-w-xl">
           <SearchField
             value={query}
             onChange={setQuery}
             disabled={state.status !== "ready"}
-            resultCount={results?.total ?? null}
+            resultCount={matches?.length ?? null}
           />
         </div>
+
+        {artifact && (
+          <div className="mt-5">
+            <CampusPicker
+              campuses={artifact.campuses}
+              value={campusCode}
+              onChange={setCampus}
+              centered
+            />
+          </div>
+        )}
       </section>
 
       <section className="mt-12">
@@ -67,17 +111,18 @@ export default function Home() {
         {state.status === "ready" && artifact && index && phase && (
           <>
             <PhaseNotice phase={phase} />
-            {results === null ? (
+            {matches === null ? (
               <Overview
-                statuses={statuses}
-                buildings={artifact.buildings}
+                statuses={campusStatuses}
+                buildings={campusBuildings}
                 phase={phase}
                 onPickBuilding={setQuery}
               />
             ) : (
               <Results
-                rooms={results.rooms}
-                total={results.total}
+                matches={matches}
+                showAll={showAll}
+                onShowAll={() => setShowAll(true)}
                 statusById={statusById}
                 index={index}
                 calendar={artifact.calendar}
@@ -97,22 +142,26 @@ export default function Home() {
 /* ---------------------------------------------------------------- search results */
 
 function Results({
-  rooms,
-  total,
+  matches,
+  showAll,
+  onShowAll,
   statusById,
   index,
   calendar,
   now,
   query,
 }: {
-  rooms: Room[];
-  total: number;
+  matches: Room[];
+  showAll: boolean;
+  onShowAll: () => void;
   statusById: Map<string, RoomStatus>;
   index: RoomIndex;
   calendar: AcademicCalendar;
   now: Date;
   query: string;
 }) {
+  const rooms = showAll ? matches : matches.slice(0, RESULTS_PAGE);
+  const total = matches.length;
   if (rooms.length === 0) {
     return (
       <div className="rounded-[var(--radius-card)] border border-line p-8">
@@ -127,20 +176,19 @@ function Results({
 
   const openCount = rooms.filter((r) => statusById.get(r.id)?.state === "free").length;
   // A query naming a specific room number should land on that room, not on a list to scan.
-  const expandFirst = rooms.length === 1 || namesExactRoom(query, rooms[0]);
+  const expandFirst = total === 1 || namesExactRoom(query, rooms[0]);
 
   return (
     <>
       <p className="tabular mb-4 text-sm text-ink-muted">
         {total} {total === 1 ? "room" : "rooms"}, {openCount} open now.
-        {total > rooms.length && <> Showing the first {rooms.length}.</>}
       </p>
       <div
         className={[
           "grid items-start gap-2",
           // A single exact match keeps the full width for its schedule; a list of candidates is
           // easier to scan two-up than as one very wide column.
-          expandFirst && rooms.length === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2",
+          expandFirst && total === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2",
         ].join(" ")}
       >
         {rooms.map((room) => {
@@ -159,6 +207,16 @@ function Results({
           );
         })}
       </div>
+
+      {total > rooms.length && (
+        <button
+          type="button"
+          onClick={onShowAll}
+          className="mt-4 rounded-[var(--radius-control)] border border-line px-4 py-2 text-sm text-ink-body transition-colors hover:border-line-strong hover:text-ink"
+        >
+          Show the other {total - rooms.length}
+        </button>
+      )}
     </>
   );
 }
@@ -215,11 +273,11 @@ function Overview({
 
   return (
     <>
-      <p className="tabular max-w-xl text-2xl leading-snug text-ink">
+      <p className="tabular text-center text-xl leading-snug text-balance text-ink sm:text-2xl sm:whitespace-nowrap">
         {totalOpen} of {statuses.length} rooms have nothing scheduled in them right now.
       </p>
 
-      <h2 className="mt-10 text-sm text-ink-muted">
+      <h2 className="mt-12 text-sm text-ink-muted">
         {showRatio ? "Open rooms by building" : "Buildings with classrooms"}
       </h2>
 

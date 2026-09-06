@@ -8,6 +8,7 @@ import {
   type Room,
   type RoomStatus,
 } from "@vacantneu/core";
+import { CampusPicker } from "@/components/CampusPicker";
 import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { SearchField } from "@/components/SearchField";
@@ -15,6 +16,7 @@ import { SegmentedControl, type Segment } from "@/components/SegmentedControl";
 import { TimeTravel, type Moment } from "@/components/TimeTravel";
 import { ResultsSkeleton } from "@/components/Skeleton";
 import { useAllStatuses, useNow, useRoomIndex, useSchedule, type RoomIndex } from "@/lib/schedule";
+import { resolveCampus, useCampus } from "@/lib/campus";
 import { termPhase } from "@/lib/term";
 
 type Availability = "all" | "now" | "1h" | "2h";
@@ -42,6 +44,7 @@ export default function BrowsePage() {
   const [building, setBuilding] = useState<string>(ALL_BUILDINGS);
   const [query, setQuery] = useState("");
   const [moment, setMoment] = useState<Moment | null>(null);
+  const [campus, setCampus] = useCampus();
 
   /**
    * The instant every room on this page is evaluated against. Null moment means follow the clock;
@@ -58,6 +61,13 @@ export default function BrowsePage() {
   const statuses = useAllStatuses(artifact, at);
   const statusById = useMemo(() => new Map(statuses.map((s) => [s.roomId, s])), [statuses]);
 
+  const activeCampus = artifact ? resolveCampus(artifact.campuses, campus) : null;
+  const campusCode = activeCampus?.code ?? campus;
+  const campusBuildings = useMemo(
+    () => (artifact ? artifact.buildings.filter((b) => b.campus === campusCode) : []),
+    [artifact, campusCode],
+  );
+
   /**
    * Rooms passing the availability filter and the text query, before the building filter.
    *
@@ -73,13 +83,15 @@ export default function BrowsePage() {
       : null;
 
     return artifact.rooms.filter((room) => {
+      // One campus at a time. A pooled list would put Vancouver rooms in a Boston search.
+      if (room.campus !== campusCode) return false;
       if (allowed && !allowed.has(room.id)) return false;
       const status = statusById.get(room.id);
       if (!status) return false;
       if (availability === "all") return true;
       return isFreeFor(status, REQUIRED_MINUTES[availability]);
     });
-  }, [artifact, index, query, statusById, availability]);
+  }, [artifact, index, query, statusById, availability, campusCode]);
 
   const countByBuilding = useMemo(() => {
     const counts = new Map<string, number>();
@@ -106,10 +118,10 @@ export default function BrowsePage() {
       if (list) list.push(room);
       else byCode.set(room.building, [room]);
     }
-    return artifact.buildings
+    return campusBuildings
       .filter((b) => byCode.has(b.code))
       .map((b) => ({ building: b, rooms: byCode.get(b.code)! }));
-  }, [visible, artifact]);
+  }, [visible, campusBuildings]);
 
   return (
     <main className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
@@ -154,7 +166,10 @@ export default function BrowsePage() {
                 />
               </div>
             </div>
-            <TimeTravel value={moment} onChange={setMoment} now={now} />
+            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+              <TimeTravel value={moment} onChange={setMoment} now={now} />
+              <CampusPicker campuses={artifact.campuses} value={campusCode} onChange={setCampus} />
+            </div>
           </div>
 
           <p className="tabular mt-6 text-sm text-ink-muted">
@@ -173,7 +188,7 @@ export default function BrowsePage() {
 
           <div className="mt-6 grid grid-cols-1 gap-10 lg:grid-cols-[17rem_1fr]">
             <BuildingFilter
-              buildings={artifact.buildings}
+              buildings={campusBuildings}
               counts={countByBuilding}
               total={candidates.length}
               selected={building}
