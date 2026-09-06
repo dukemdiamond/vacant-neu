@@ -135,7 +135,7 @@ export default function BrowsePage() {
       <section className="pt-14 text-center sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-balance text-ink-muted">
-          Filter by building or time.
+          Filter by building, room, or time.
         </p>
       </section>
 

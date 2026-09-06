@@ -12,10 +12,12 @@
     "typecheck": "tsc --build",
     "format": "prettier --write .",
     "inspect": "pnpm --filter @vacantneu/scraper inspect",
-    "events": "pnpm --filter @vacantneu/scraper events"
+    "events": "pnpm --filter @vacantneu/scraper events",
+    "demo": "node tools/demo/record.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
+    "playwright": "^1.63.0",
     "prettier": "^3.4.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"

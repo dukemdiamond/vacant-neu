@@ -2,6 +2,10 @@
 
 Find an empty classroom at Northeastern.
 
+**[Live at vacantneu.vercel.app](https://vacantneu.vercel.app)** · [Watch the demo](demo/vacantneu-demo.mp4)
+
+[![vacantNEU](demo/vacantneu-poster.jpg)](demo/vacantneu-demo.mp4)
+
 Every course catalog answers "where is my class?". vacantNEU answers the inverse: **which rooms
 have no class in them right now?** A room's free time is the complement of its class bookings, so
 the whole product is one dataset — the registrar's room schedule — read backwards.
@@ -88,7 +92,9 @@ pnpm inspect --room DG-070     # one room's full weekly schedule
 pnpm inspect --building SL     # every room in a building, with live status
 pnpm inspect --free --at 2026-09-16T14:30
 
-pnpm test                      # 47 unit tests
+pnpm demo                      # record a walkthrough video (see tools/demo)
+
+pnpm test                      # 83 unit tests
 pnpm typecheck
 
 pnpm --filter @vacantneu/web dev     # http://localhost:3000
