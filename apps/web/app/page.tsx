@@ -26,12 +26,23 @@ export default function Home() {
   const [showAll, setShowAll] = useState(false);
 
   const artifact = state.status === "ready" ? state.artifact : null;
-  const clubEvents = state.status === "ready" ? state.clubEvents : undefined;
   const index = useRoomIndex(artifact);
   const statuses = useAllStatuses(artifact, now);
   const phase = useMemo(() => (artifact ? termPhase(artifact, now) : null), [artifact, now]);
 
   const statusById = useMemo(() => new Map(statuses.map((s) => [s.roomId, s])), [statuses]);
+
+  /*
+   * Changing campus clears the search.
+   *
+   * Picking a building fills the field with its name, and that name means nothing on another
+   * campus, so switching would leave the page reporting "no rooms match Ryder Hall" for a campus
+   * that has never had one.
+   */
+  const chooseCampus = (code: string) => {
+    setCampus(code);
+    setQuery("");
+  };
 
   const active = artifact ? resolveCampus(artifact.campuses, campus) : null;
   const campusCode = active?.code ?? campus;
@@ -98,7 +109,7 @@ export default function Home() {
             <CampusPicker
               campuses={artifact.campuses}
               value={campusCode}
-              onChange={setCampus}
+              onChange={chooseCampus}
               centered
             />
           </div>
@@ -134,7 +145,7 @@ export default function Home() {
         )}
       </section>
 
-      <Footnote generatedAt={artifact?.generatedAt} clubEvents={clubEvents} />
+      <Footnote generatedAt={artifact?.generatedAt} />
     </main>
   );
 }
@@ -343,22 +354,18 @@ function ErrorState({ message }: { message: string }) {
  * Banner only knows about registrar-scheduled classes. A room with no class in it may still be
  * locked, booked by a club, or holding an exam. Saying so plainly is what keeps the app honest.
  */
-function Footnote({ generatedAt, clubEvents }: { generatedAt?: string; clubEvents?: number }) {
+function Footnote({ generatedAt }: { generatedAt?: string }) {
   return (
     <footer className="mt-20 border-t border-line pt-6">
       <p className="max-w-2xl text-sm text-ink-muted">
-        vacantNEU shows where nothing is scheduled: classes from Northeastern&rsquo;s course
-        catalog, plus club events from Engage whose venue names a room we track. That is still not
-        the same as unlocked. Departments book rooms directly, exams follow their own schedule, and
-        a room with nothing in it can simply be locked. Only rooms that host at least one class
-        appear here.
+        vacantNEU just shows where nothing is scheduled: classes from Northeastern (pulled from
+        Banner), and events from Engage. Rooms may be locked or may be occupied due to other
+        circumstances.
       </p>
       {generatedAt && (
         <p className="tabular mt-3 text-xs text-ink-faint">
-          Schedule from Northeastern Banner, updated {formatDay(generatedAt, true)}.
-          {clubEvents !== undefined &&
-            clubEvents > 0 &&
-            ` Plus ${clubEvents} club bookings from Engage.`}
+          Schedule from Northeastern Banner, events from Engage, updated{" "}
+          {formatDay(generatedAt, true)}.
         </p>
       )}
     </footer>

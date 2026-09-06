@@ -63,7 +63,7 @@ export default function EventsPage() {
     <main className="mx-auto max-w-5xl px-5 pt-14 pb-24 sm:px-8 sm:pt-20">
       <section className="text-center">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">What&rsquo;s on</h1>
-        <p className="mx-auto mt-4 text-lg text-ink-muted">Events right from Engage</p>
+        <p className="mx-auto mt-4 text-lg text-ink-muted">Events this week, pulled from Engage</p>
       </section>
 
       <div className="mt-10 flex items-center justify-between gap-3 border-y border-line py-3">

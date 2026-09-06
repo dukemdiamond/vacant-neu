@@ -13,7 +13,9 @@ import {
   type Room,
   type RoomStatus,
 } from "@vacantneu/core";
+import { DirectionsLink } from "@/components/DirectionsLink";
 import { RoomScheduleDialog } from "@/components/RoomScheduleDialog";
+import { useBuildingLocations } from "@/lib/buildings";
 
 /** A class starting within this window makes the room not worth walking to. */
 const CLOSING_SOON_MINUTES = 20;
@@ -54,6 +56,7 @@ export function RoomCard({
   const [open, setOpen] = useState(defaultOpen);
   const [showSchedule, setShowSchedule] = useState(false);
   const panelId = useId();
+  const location = useBuildingLocations().get(room.building);
 
   const free = status.state === "free";
   const closingSoon =
@@ -100,6 +103,7 @@ export function RoomCard({
             </span>
           </button>
         </h3>
+        <DirectionsLink location={location} compact />
         <button
           type="button"
           onClick={() => setShowSchedule(true)}

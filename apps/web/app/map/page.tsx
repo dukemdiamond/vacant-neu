@@ -4,7 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
 import { ArrowLeftIcon } from "@phosphor-icons/react";
 import type { AcademicCalendar, Building, Meeting, Room, RoomStatus } from "@vacantneu/core";
+import { DirectionsLink } from "@/components/DirectionsLink";
 import { RoomCard } from "@/components/RoomCard";
+import { useBuildingLocations } from "@/lib/buildings";
 import { useAllStatuses, useNow, useRoomIndex, useSchedule } from "@/lib/schedule";
 
 // MapLibre needs `window` and is by far the heaviest dependency in the app, so it is loaded only
@@ -157,6 +159,7 @@ function BuildingPanel({
 }) {
   const open = rooms.filter((r) => statusById.get(r.id)?.state === "free");
   const busy = rooms.filter((r) => statusById.get(r.id)?.state === "occupied");
+  const location = useBuildingLocations().get(building.code);
 
   return (
     <>
@@ -173,6 +176,9 @@ function BuildingPanel({
       <p className="tabular mt-1 text-sm text-ink-muted">
         {open.length} of {rooms.length} rooms open right now
       </p>
+      <div className="mt-3">
+        <DirectionsLink location={location} />
+      </div>
 
       {open.length > 0 && (
         <div className="mt-6 flex flex-col gap-2">

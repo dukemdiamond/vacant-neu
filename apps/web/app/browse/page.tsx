@@ -61,6 +61,13 @@ export default function BrowsePage() {
   const statuses = useAllStatuses(artifact, at);
   const statusById = useMemo(() => new Map(statuses.map((s) => [s.roomId, s])), [statuses]);
 
+  // The filter text names a building, which will not exist on the campus being switched to.
+  const chooseCampus = (code: string) => {
+    setCampus(code);
+    setQuery("");
+    setBuilding(ALL_BUILDINGS);
+  };
+
   const activeCampus = artifact ? resolveCampus(artifact.campuses, campus) : null;
   const campusCode = activeCampus?.code ?? campus;
   const campusBuildings = useMemo(
@@ -128,7 +135,7 @@ export default function BrowsePage() {
       <section className="pt-14 text-center sm:pt-20">
         <h1 className="display-lg text-4xl font-semibold sm:text-5xl">Every classroom</h1>
         <p className="mx-auto mt-4 max-w-xl text-lg text-balance text-ink-muted">
-          Filter by building or by how long you need the room, at any date and time.
+          Filter by building or time.
         </p>
       </section>
 
@@ -168,7 +175,11 @@ export default function BrowsePage() {
             </div>
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <TimeTravel value={moment} onChange={setMoment} now={now} />
-              <CampusSelect campuses={artifact.campuses} value={campusCode} onChange={setCampus} />
+              <CampusSelect
+                campuses={artifact.campuses}
+                value={campusCode}
+                onChange={chooseCampus}
+              />
             </div>
           </div>
 

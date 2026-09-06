@@ -17,6 +17,10 @@ the whole product is one dataset — the registrar's room schedule — read back
 - **Phase 4** Map: real building footprints, clickable, labelled with open room counts
 - **Events** `/events`: club events from Engage, a week at a time, searchable by club
 
+Room cards and the map panel link to walking directions, opening Apple Maps on Apple devices and
+Google Maps elsewhere. Boston only: the coordinates come from the OpenStreetMap query around that
+campus, so buildings anywhere else simply show no link.
+
 Home shows the four largest campuses as pills with the rest behind a "more"; Browse uses a native
 select, since it already carries three other controls. Both filter to one campus at a time. Pooling them would make "412 rooms are open"
 true and useless when some are on another continent. The map stays on Boston: its footprints come

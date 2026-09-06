@@ -91,13 +91,13 @@ export function CampusPicker({ campuses, value, onChange, centered = false }: Pr
             </button>
           );
         })}
-        {hidden > 0 && (
+        {(hidden > 0 || expanded) && (
           <button
             type="button"
-            onClick={() => setExpanded(true)}
+            onClick={() => setExpanded((v) => !v)}
             className="shrink-0 rounded-full border border-line bg-surface-raised px-4 py-1.5 text-sm whitespace-nowrap text-ink-muted transition-colors hover:border-line-strong hover:text-ink"
           >
-            {hidden} more
+            {expanded ? "Show less" : `${hidden} more`}
           </button>
         )}
       </div>
