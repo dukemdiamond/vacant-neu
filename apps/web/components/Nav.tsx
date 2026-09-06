@@ -21,6 +21,7 @@ export function Nav() {
           <LiveClock />
           <div className="flex items-center gap-1">
             <NavLink href="/browse">Browse</NavLink>
+            <NavLink href="/events">Events</NavLink>
             <NavLink href="/map">Map</NavLink>
           </div>
         </div>

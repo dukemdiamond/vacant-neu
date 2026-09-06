@@ -85,6 +85,34 @@ export interface Meeting {
   detail: string;
 }
 
+/**
+ * A club event as Engage lists it.
+ *
+ * Kept whole and separate from {@link Meeting}, which only carries the events that resolve to a
+ * room we track. Most do not: they are in buildings with no timetabled classrooms, or outdoors,
+ * or off campus, or simply have no venue yet. Those are still worth showing on an events page
+ * even though they can say nothing about whether a classroom is free.
+ */
+export interface CampusEvent {
+  id: string;
+  name: string;
+  club: string;
+  /** Venue exactly as Engage gives it, including "TBD". */
+  location: string;
+  /** Set only when the venue resolved to a room in the inventory. */
+  roomId: string | null;
+  /** ISO `YYYY-MM-DD` the event starts on. */
+  date: string;
+  /** Minutes since campus-local midnight. */
+  start: number;
+  end: number;
+  /** True when the event runs past midnight into another day. */
+  spansDays: boolean;
+  category: string | null;
+  /** Absolute link to the Engage listing. */
+  url: string | null;
+}
+
 /** Dates on which the regular class schedule does not run. */
 export interface AcademicCalendar {
   /** ISO dates with no classes at all (holidays, breaks). */

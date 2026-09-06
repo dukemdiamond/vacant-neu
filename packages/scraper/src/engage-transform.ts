@@ -6,7 +6,7 @@
  * day's weekday. Everything the engine already does, overlap merging, holiday handling, next-free
  * time, works on it unchanged.
  */
-import { DAY_BITS, type Meeting } from "@vacantneu/core";
+import { DAY_BITS, type CampusEvent, type Meeting } from "@vacantneu/core";
 import { createMatcher, isNonLocation, isRedacted, type Matcher } from "./location.js";
 import { decodeEntities } from "./transform.js";
 
@@ -177,6 +177,8 @@ export function toMeetings(
 
 export interface EventTransformResult {
   meetings: Meeting[];
+  /** Every event with a readable date, whether or not its venue resolved to a room. */
+  events: CampusEvent[];
   stats: {
     events: number;
     redacted: number;
@@ -205,10 +207,36 @@ export function transformEvents(
   };
   const unmatched = new Set<string>();
   const meetings: Meeting[] = [];
+  const listed: CampusEvent[] = [];
 
   for (const event of events) {
     const location = (event.eventLocation ?? "").trim();
-    if (isRedacted(location)) {
+    const dates = parseEventDates(event.eventDates ?? "");
+    const name = decodeEntities((event.eventName ?? "").trim()) || "Club event";
+    const club = decodeEntities((event.clubName ?? "").trim());
+    const redacted = isRedacted(location);
+    const hit = redacted || isNonLocation(location) ? null : matcher.match(location);
+
+    // The events listing keeps anything with a readable date. A venue we cannot resolve, or one
+    // Engage will not disclose, still describes something happening on campus that day.
+    if (dates) {
+      const path = (event.eventUrl ?? "").trim();
+      listed.push({
+        id: String(event.eventId ?? `${name}-${dates.startDate}-${dates.startMinutes}`),
+        name,
+        club,
+        location: redacted ? "Private location" : location,
+        roomId: hit?.roomId ?? null,
+        date: dates.startDate,
+        start: dates.startMinutes,
+        end: dates.endMinutes,
+        spansDays: dates.startDate !== dates.endDate,
+        category: decodeEntities((event.eventCategory ?? "").trim()) || null,
+        url: path ? `https://engage.northeastern.edu${path}` : null,
+      });
+    }
+
+    if (redacted) {
       stats.redacted++;
       continue;
     }
@@ -216,23 +244,17 @@ export function transformEvents(
       stats.noLocation++;
       continue;
     }
-
-    const hit = matcher.match(location);
     if (!hit) {
       stats.unmatchedVenue++;
       if (unmatched.size < 40) unmatched.add(location);
       continue;
     }
-
-    const dates = parseEventDates(event.eventDates ?? "");
     if (!dates) {
       stats.unparsedDates++;
       continue;
     }
 
-    const name = decodeEntities((event.eventName ?? "").trim());
-    const club = decodeEntities((event.clubName ?? "").trim());
-    const expanded = toMeetings(hit.roomId, dates, name || "Club event", club);
+    const expanded = toMeetings(hit.roomId, dates, name, club);
     if (expanded.length === 0) {
       stats.unparsedDates++;
       continue;
@@ -240,6 +262,10 @@ export function transformEvents(
     stats.matched++;
     meetings.push(...expanded);
   }
+
+  listed.sort(
+    (a, b) => a.date.localeCompare(b.date) || a.start - b.start || a.name.localeCompare(b.name),
+  );
 
   meetings.sort(
     (a, b) =>
@@ -249,5 +275,5 @@ export function transformEvents(
       a.label.localeCompare(b.label),
   );
 
-  return { meetings, stats, unmatchedSamples: [...unmatched].sort() };
+  return { meetings, events: listed, stats, unmatchedSamples: [...unmatched].sort() };
 }

@@ -15,6 +15,11 @@ the whole product is one dataset — the registrar's room schedule — read back
 - **Phase 3** Browse: every classroom, filtered by building, by how long it stays free, and at
   any date and time rather than only right now
 - **Phase 4** Map: real building footprints, clickable, labelled with open room counts
+- **Events** `/events`: club events from Engage, day by day
+
+Home and Browse filter by campus, one at a time. Pooling them would make "412 rooms are open"
+true and useless when some are on another continent. The map stays on Boston: its footprints come
+from OpenStreetMap around that campus, so it cannot draw a room in Oakland.
 
 Any room card, on Browse or in the map panel, opens a **day timeline**: the whole day drawn to
 scale against an hour grid, steppable day by day, with classes and club bookings distinguished.
@@ -23,9 +28,9 @@ A list of start times cannot show where the gaps are; a timeline can.
 | | |
 |---|---|
 | Term | Fall 2026 (`202710`) |
-| Coverage | Boston campus |
-| Buildings | 40 (38 mapped: 36 with footprints, 2 as points) |
-| Rooms | 385 |
+| Campuses | 11 (Boston 385 rooms, New York 59, Oakland 43, plus 8 more) |
+| Boston buildings | 40 (38 mapped: 36 with footprints, 2 as points) |
+| Rooms | 566 across all campuses |
 | Scheduled class meetings | 4,516 |
 | Club event bookings | depends on the Engage session (see below) |
 | Artifact size | 1.1 MB raw / **86 KB gzipped** |
@@ -147,6 +152,10 @@ A room is occupied if anything is in it, so club events from
 vacancy engine they are the same `Meeting` shape: an event is simply a meeting whose date range is
 a single day. Events crossing midnight are split at it, because the engine reasons in minutes
 within one day.
+
+`/events` lists every event Engage publishes, whether or not its venue resolves to a room. Most
+do not, so they say nothing about classroom availability, but they are still the answer to "what
+is on today".
 
 `packages/scraper/src/location.ts` resolves Engage's free-text venues ("West Village H Room 110",
 "EV 8", "Robinson Hall 409") to room ids. It only ever returns a room that exists in the artifact:

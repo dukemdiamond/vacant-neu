@@ -11,7 +11,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { Meeting, ScheduleArtifact } from "@vacantneu/core";
+import type { CampusEvent, Meeting, ScheduleArtifact } from "@vacantneu/core";
 import { EngageSessionError, cookieHeaderFromEnv, fetchEvents } from "./engage.js";
 import { transformEvents } from "./engage-transform.js";
 
@@ -24,6 +24,8 @@ export interface EventArtifact {
   /** Whether the pull carried a session cookie. Without one most venues are redacted. */
   authenticated: boolean;
   meetings: Meeting[];
+  /** Every listed event, including the ones with no resolvable room. */
+  events: CampusEvent[];
   stats: Record<string, number>;
 }
 
@@ -50,7 +52,7 @@ async function main() {
   });
   process.stdout.write("\n");
 
-  const { meetings, stats, unmatchedSamples } = transformEvents(
+  const { meetings, events, stats, unmatchedSamples } = transformEvents(
     pull.events,
     schedule.rooms.map((r) => r.id),
     schedule.buildings,
@@ -62,6 +64,7 @@ async function main() {
   console.log(`  venue outside our rooms  : ${stats.unmatchedVenue}`);
   console.log(`  dates unparseable        : ${stats.unparsedDates}`);
   console.log(`  matched to a room        : ${stats.matched}  (${meetings.length} bookings)`);
+  console.log(`  listed on the events page: ${events.length}`);
 
   if (unmatchedSamples.length > 0) {
     console.log(`\nVenues we could not resolve (first ${unmatchedSamples.length}):`);
@@ -86,6 +89,7 @@ async function main() {
     generatedAt: new Date().toISOString().slice(0, 10),
     authenticated: pull.authenticated,
     meetings,
+    events,
     stats,
   };
 
