@@ -5,7 +5,7 @@
  * room at all. Online, "One-On-One", and study-abroad sections carry no building, and other
  * campuses (NYC, Oakland, London, Seattle, Portland) are out of scope for v1.
  */
-import type { Building, Meeting, Room } from "@vacantneu/core";
+import type { Building, Campus, Meeting, Room } from "@vacantneu/core";
 import { DAY_BITS } from "@vacantneu/core";
 import type { BannerMeetingTime, BannerSection } from "./schema.js";
 
@@ -18,6 +18,17 @@ export const BOSTON_CAMPUS = "BOS";
 const EXCLUDED_BUILDINGS = new Set([
   "BOS", // Generic "Boston" placeholder, not a building.
   "RG", // Ruggles Station (the MBTA stop).
+]);
+
+/**
+ * Campus codes that are not places.
+ *
+ * Banner files asynchronous and unlocated sections under these, each with a single pseudo-room.
+ * They would otherwise appear in the campus picker as somewhere a student could walk to.
+ */
+const EXCLUDED_CAMPUSES = new Set([
+  "VTL", // Online.
+  "XCR", // "No campus, no room needed".
 ]);
 
 /** "0800" -> 480 minutes since midnight. Returns null for malformed or absent times. */
@@ -110,6 +121,7 @@ export function decodeEntities(value: string): string {
 }
 
 export interface TransformResult {
+  campuses: Campus[];
   buildings: Building[];
   rooms: Room[];
   meetings: Meeting[];
@@ -118,25 +130,27 @@ export interface TransformResult {
     sections: number;
     meetingRows: number;
     skippedNoRoom: number;
-    skippedOtherCampus: number;
+    skippedNoCampus: number;
     skippedExcludedBuilding: number;
     skippedBadTime: number;
     skippedNoDays: number;
   };
 }
 
-export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): TransformResult {
+export function transform(sections: BannerSection[]): TransformResult {
   const stats: TransformResult["stats"] = {
     sections: sections.length,
     meetingRows: 0,
     skippedNoRoom: 0,
-    skippedOtherCampus: 0,
+    skippedNoCampus: 0,
     skippedExcludedBuilding: 0,
     skippedBadTime: 0,
     skippedNoDays: 0,
   };
 
   const buildingNames = new Map<string, string>();
+  const buildingCampus = new Map<string, string>();
+  const campusNames = new Map<string, string>();
   const rooms = new Map<string, Room>();
   const meetings: Meeting[] = [];
 
@@ -150,8 +164,9 @@ export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): Tr
         stats.skippedNoRoom++;
         continue;
       }
-      if (mt.campus !== campus) {
-        stats.skippedOtherCampus++;
+      const campus = mt.campus?.trim().toUpperCase();
+      if (!campus || EXCLUDED_CAMPUSES.has(campus)) {
+        stats.skippedNoCampus++;
         continue;
       }
 
@@ -184,9 +199,26 @@ export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): Tr
       const id = roomId(building, room);
 
       if (mt.buildingDescription) buildingNames.set(building, mt.buildingDescription.trim());
+      if (mt.campusDescription) campusNames.set(campus, mt.campusDescription.trim());
+
+      /*
+       * Room ids omit the campus, which is only safe while Banner keeps building codes globally
+       * unique. Assert it rather than assume it: a silent collision would merge two rooms on
+       * different continents into one.
+       */
+      const priorCampus = buildingCampus.get(building);
+      if (priorCampus && priorCampus !== campus) {
+        throw new Error(
+          `Building code ${building} is used by both ${priorCampus} and ${campus}. ` +
+            `Room ids assume building codes are unique across campuses; they are not any more.`,
+        );
+      }
+      buildingCampus.set(building, campus);
+
       if (!rooms.has(id)) {
         rooms.set(id, {
           id,
+          campus,
           building,
           room,
           displayName: `${buildingNames.get(building) ?? building} ${room}`,
@@ -219,10 +251,27 @@ export function transform(sections: BannerSection[], campus = BOSTON_CAMPUS): Tr
   }
 
   const buildings: Building[] = [...roomsByBuilding]
-    .map(([code, roomCount]) => ({ code, name: buildingNames.get(code) ?? code, roomCount }))
+    .map(([code, roomCount]) => ({
+      code,
+      name: buildingNames.get(code) ?? code,
+      campus: buildingCampus.get(code) ?? "",
+      roomCount,
+    }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
+  const campuses: Campus[] = [...campusNames]
+    .map(([code, name]) => ({
+      code,
+      name,
+      buildingCount: buildings.filter((b) => b.campus === code).length,
+      roomCount: [...rooms.values()].filter((r) => r.campus === code).length,
+    }))
+    .filter((c) => c.roomCount > 0)
+    // Largest first, so the picker leads with the campus almost everyone wants.
+    .sort((a, b) => b.roomCount - a.roomCount || a.name.localeCompare(b.name));
+
   return {
+    campuses,
     buildings,
     rooms: [...rooms.values()].sort((a, b) => a.id.localeCompare(b.id)),
     // Sorted so re-running the scraper produces a byte-identical artifact and the daily cron

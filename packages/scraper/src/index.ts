@@ -10,7 +10,7 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { ACADEMIC_CALENDAR_2026_2027, type ScheduleArtifact } from "@vacantneu/core";
 import { BannerClient } from "./banner.js";
-import { BOSTON_CAMPUS, transform } from "./transform.js";
+import { transform } from "./transform.js";
 
 /**
  * Sanity floors. A Banner outage that returns an empty or truncated result set would otherwise
@@ -62,18 +62,23 @@ async function main() {
   });
   process.stdout.write("\n");
 
-  const { buildings, rooms, meetings, stats } = transform(sections, BOSTON_CAMPUS);
+  const { campuses, buildings, rooms, meetings, stats } = transform(sections);
 
   console.log(`\nParsed ${stats.sections} sections / ${stats.meetingRows} meeting rows`);
   console.log(
-    `  skipped: no room ${stats.skippedNoRoom}, other campus ${stats.skippedOtherCampus},`,
+    `  skipped: no room ${stats.skippedNoRoom}, no usable campus ${stats.skippedNoCampus},`,
   );
   console.log(
     `           excluded building ${stats.skippedExcludedBuilding}, unusable time ${stats.skippedBadTime}, no days ${stats.skippedNoDays}`,
   );
   console.log(
-    `\nBoston: ${buildings.length} buildings, ${rooms.length} rooms, ${meetings.length} meetings`,
+    `\n${buildings.length} buildings, ${rooms.length} rooms, ${meetings.length} meetings across ${campuses.length} campuses:`,
   );
+  for (const c of campuses) {
+    console.log(
+      `   ${c.code.padEnd(5)} ${c.name.padEnd(24)} ${String(c.buildingCount).padStart(3)} buildings, ${String(c.roomCount).padStart(4)} rooms`,
+    );
+  }
 
   const failures = [
     buildings.length < MIN_BUILDINGS && `buildings ${buildings.length} < ${MIN_BUILDINGS}`,
@@ -92,7 +97,7 @@ async function main() {
     // Date only: a full timestamp would change on every run and churn a daily commit even when
     // the schedule itself is identical.
     generatedAt: new Date().toISOString().slice(0, 10),
-    campus: BOSTON_CAMPUS,
+    campuses,
     buildings,
     rooms,
     meetings,

@@ -19,17 +19,36 @@ export interface Term {
   description: string;
 }
 
+/** A Northeastern location with timetabled rooms. */
+export interface Campus {
+  /** Banner campus code, e.g. "BOS". */
+  code: string;
+  /** Banner's `campusDescription`, e.g. "Boston". */
+  name: string;
+  buildingCount: number;
+  roomCount: number;
+}
+
 export interface Building {
   /** Banner building code, e.g. "DG". */
   code: string;
   /** Banner's `buildingDescription`, e.g. "Dodge Hall". */
   name: string;
+  /** Campus code this building belongs to. */
+  campus: string;
   roomCount: number;
 }
 
 export interface Room {
-  /** Stable synthetic key, `${building}-${room}`, e.g. "DG-070". */
+  /**
+   * Stable synthetic key, `${building}-${room}`, e.g. "DG-070".
+   *
+   * Campus is not part of the key because Banner's building codes are unique across every
+   * campus. The scraper asserts that on each run rather than trusting it to stay true.
+   */
   id: string;
+  /** Campus code this room belongs to. */
+  campus: string;
   /** Building code this room belongs to. */
   building: string;
   /** Room number as Banner reports it, e.g. "070". */
@@ -78,7 +97,8 @@ export interface ScheduleArtifact {
   term: Term;
   /** ISO timestamp of the scrape that produced this artifact. */
   generatedAt: string;
-  campus: string;
+  /** Every campus with timetabled rooms, largest first. */
+  campuses: Campus[];
   buildings: Building[];
   rooms: Room[];
   meetings: Meeting[];

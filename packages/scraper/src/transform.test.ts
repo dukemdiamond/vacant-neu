@@ -83,9 +83,10 @@ function section(overrides: Record<string, unknown> = {}, courseNumber = "2500")
 describe("transform", () => {
   it("extracts a room and meeting from a well-formed section", () => {
     const { buildings, rooms, meetings } = transform([section()]);
-    expect(buildings).toEqual([{ code: "DG", name: "Dodge Hall", roomCount: 1 }]);
+    expect(buildings).toEqual([{ code: "DG", name: "Dodge Hall", campus: "BOS", roomCount: 1 }]);
     expect(rooms[0]).toEqual({
       id: "DG-070",
+      campus: "BOS",
       building: "DG",
       room: "070",
       displayName: "Dodge Hall 070",
@@ -107,10 +108,30 @@ describe("transform", () => {
     expect(stats.skippedNoRoom).toBe(1);
   });
 
-  it("drops other campuses", () => {
-    const { rooms, stats } = transform([section({ campus: "OAK", campusDescription: "Oakland" })]);
+  it("keeps other campuses, tagged with where they are", () => {
+    const { rooms, campuses } = transform([
+      section({ campus: "OAK", campusDescription: "Oakland, CA", building: "OAKB", room: "12" }),
+      section(),
+    ]);
+    expect(rooms.map((r) => r.campus).sort()).toEqual(["BOS", "OAK"]);
+    expect(campuses.map((c) => c.code).sort()).toEqual(["BOS", "OAK"]);
+  });
+
+  it("drops campuses that are not places", () => {
+    // Banner files asynchronous sections under a pseudo-campus with a pseudo-room.
+    const { rooms, stats } = transform([
+      section({ campus: "VTL", campusDescription: "Online" }),
+      section({ campus: "XCR", campusDescription: "No campus, no room needed" }),
+    ]);
     expect(rooms).toHaveLength(0);
-    expect(stats.skippedOtherCampus).toBe(1);
+    expect(stats.skippedNoCampus).toBe(2);
+  });
+
+  it("refuses to merge two campuses that share a building code", () => {
+    // Room ids omit the campus, which is only safe while codes stay globally unique.
+    expect(() =>
+      transform([section(), section({ campus: "OAK", campusDescription: "Oakland, CA" })]),
+    ).toThrow(/unique across campuses/);
   });
 
   it("excludes non-classroom venues like Ruggles Station", () => {
