@@ -25,7 +25,7 @@ export function SearchField({
   onChange,
   disabled = false,
   resultCount,
-  placeholder = "Try Snell Library, Ryder 155, or ISEC",
+  placeholder = "Try Snell Library, Ryder 155, or CS2500",
   label = "Search for a classroom by building or room number",
 }: Props) {
   const input = useRef<HTMLInputElement>(null);

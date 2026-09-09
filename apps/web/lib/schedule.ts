@@ -86,6 +86,20 @@ interface SearchDoc {
   roomLoose: string;
   building: string;
   buildingCode: string;
+  /** Every class and event that meets in this room, so a course code finds its classroom. */
+  bookings: string;
+}
+
+/** A room the query matched, and whether it matched only because of what is booked in it. */
+export interface RoomHit {
+  room: Room;
+  /**
+   * True when the query hit a class or event name rather than a building or room number.
+   *
+   * Searching a course code is a request to find that class's room, not a free room, so callers
+   * use this to keep the result visible even when an availability filter would drop it.
+   */
+  viaBooking: boolean;
 }
 
 /**
@@ -99,6 +113,8 @@ export interface RoomIndex {
   rooms: Map<string, Room>;
   meetings: Map<string, Meeting[]>;
   buildingNames: Map<string, string>;
+  /** Rooms matching a query, ranked, each tagged with how it matched. */
+  lookup(query: string): RoomHit[];
 }
 
 export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | null {
@@ -107,17 +123,21 @@ export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | nul
 
     const buildingNames = new Map(artifact.buildings.map((b) => [b.code, b.name]));
     const search = new MiniSearch<SearchDoc>({
-      fields: ["room", "roomLoose", "building", "buildingCode"],
+      fields: ["room", "roomLoose", "building", "buildingCode", "bookings"],
       storeFields: ["id"],
       searchOptions: {
         prefix: true,
         // Building names tolerate typos, room numbers must not: with a flat fuzzy factor,
         // "Ryder 155" also matches 153, 154, 156 and 158, burying the room actually asked for.
         fuzzy: (term) => (/^\d+$/.test(term) ? false : 0.2),
-        boost: { buildingCode: 2, room: 2, roomLoose: 2 },
+        // A room number should outrank a course that happens to contain the same digits.
+        boost: { buildingCode: 2, room: 2, roomLoose: 2, bookings: 0.5 },
         combineWith: "AND",
       },
     });
+
+    const meetings = indexMeetingsByRoom(artifact.meetings);
+    const rooms = new Map(artifact.rooms.map((r) => [r.id, r]));
 
     search.addAll(
       artifact.rooms.map((room) => ({
@@ -126,14 +146,35 @@ export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | nul
         roomLoose: room.room.replace(/^0+/, ""),
         building: buildingNames.get(room.building) ?? room.building,
         buildingCode: room.building,
+        // Deduplicated: a lecture repeating three times a week should not weight its room three
+        // times as heavily as one that meets once.
+        bookings: [
+          ...new Set((meetings.get(room.id) ?? []).flatMap((m) => [m.label, m.detail])),
+        ].join(" "),
       })),
     );
 
+    const ROOM_FIELDS = new Set(["room", "roomLoose", "building", "buildingCode"]);
+
     return {
       search,
-      rooms: new Map(artifact.rooms.map((r) => [r.id, r])),
-      meetings: indexMeetingsByRoom(artifact.meetings),
+      rooms,
+      meetings,
       buildingNames,
+      lookup(query: string): RoomHit[] {
+        const trimmed = query.trim();
+        if (!trimmed) return [];
+        return search
+          .search(trimmed)
+          .map((hit) => {
+            const room = rooms.get(hit.id as string);
+            if (!room) return null;
+            // `match` maps each matched term to the fields it was found in.
+            const fields = Object.values(hit.match).flat();
+            return { room, viaBooking: !fields.some((f) => ROOM_FIELDS.has(f)) };
+          })
+          .filter((hit): hit is RoomHit => hit !== null);
+      },
     };
   }, [artifact]);
 }

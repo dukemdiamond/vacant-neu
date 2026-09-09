@@ -103,6 +103,11 @@ pnpm --filter @vacantneu/web build   # static export to apps/web/out
 
 `apps/web` reads `data/` through a prebuild step, so run `pnpm scrape` at least once first.
 
+Search covers buildings, room numbers, and the classes and events booked in them, so a course
+code finds its classroom. A class match stays visible even when the availability filter would
+drop it: searching a course is a request to find that room, and answering "no rooms match"
+because the class is in session is the opposite of useful.
+
 `pnpm inspect --room` exists so a human can compare a room against Banner's own UI. Automated
 tests prove the code matches our assumptions; only that comparison proves the assumptions match
 reality.

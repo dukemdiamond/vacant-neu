@@ -65,10 +65,11 @@ export default function Home() {
   const matches = useMemo(() => {
     const trimmed = query.trim();
     if (!index || trimmed.length === 0) return null;
-    return index.search
-      .search(trimmed)
-      .map((hit) => index.rooms.get(hit.id as string))
-      .filter((room): room is Room => room !== undefined && room.campus === campusCode);
+    // The index covers class and event names too, so a course code finds the room it meets in.
+    return index
+      .lookup(trimmed)
+      .map((hit) => hit.room)
+      .filter((room) => room.campus === campusCode);
   }, [index, query, campusCode]);
 
   // Reset the expansion when the query or campus changes, so a new search starts short again.

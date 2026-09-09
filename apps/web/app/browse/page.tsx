@@ -82,23 +82,34 @@ export default function BrowsePage() {
    * each building would contribute under the current filters. Counting after the building filter
    * would leave every other building reading zero.
    */
+  /**
+   * Rooms matching the query, and how each one matched.
+   *
+   * A hit on a class name is kept even when the availability filter would drop it. Searching
+   * "CS2500" is a request to find that class's room, and answering "no rooms match" because the
+   * class is in session is the opposite of useful: the room being busy is the answer.
+   */
+  const hits = useMemo(() => (index ? index.lookup(query) : []), [index, query]);
+  const searching = query.trim().length > 0;
+
   const candidates = useMemo(() => {
     if (!artifact || !index) return [];
 
-    const allowed = query.trim()
-      ? new Set(index.search.search(query.trim()).map((hit) => hit.id as string))
-      : null;
+    const byId = new Map(hits.map((h) => [h.room.id, h]));
 
     return artifact.rooms.filter((room) => {
       // One campus at a time. A pooled list would put Vancouver rooms in a Boston search.
       if (room.campus !== campusCode) return false;
-      if (allowed && !allowed.has(room.id)) return false;
+
+      const hit = searching ? byId.get(room.id) : null;
+      if (searching && !hit) return false;
+
       const status = statusById.get(room.id);
       if (!status) return false;
-      if (availability === "all") return true;
+      if (availability === "all" || hit?.viaBooking) return true;
       return isFreeFor(status, REQUIRED_MINUTES[availability]);
     });
-  }, [artifact, index, query, statusById, availability, campusCode]);
+  }, [artifact, index, hits, searching, statusById, availability, campusCode]);
 
   const countByBuilding = useMemo(() => {
     const counts = new Map<string, number>();
@@ -115,6 +126,11 @@ export default function BrowsePage() {
   const phase = useMemo(
     () => (artifact ? termPhase(artifact, at) : { kind: "in-session" as const }),
     [artifact, at],
+  );
+
+  const openCount = useMemo(
+    () => visible.filter((r) => statusById.get(r.id)?.state === "free").length,
+    [visible, statusById],
   );
 
   const grouped = useMemo(() => {
@@ -159,8 +175,8 @@ export default function BrowsePage() {
                   value={query}
                   onChange={setQuery}
                   resultCount={visible.length}
-                  placeholder="Filter by building or room"
-                  label="Filter classrooms by building or room number"
+                  placeholder="Building, room, or class"
+                  label="Filter classrooms by building, room number, or class"
                 />
               </div>
               {/* Scrollable on narrow screens so the segments never wrap onto two rows. */}
@@ -184,13 +200,15 @@ export default function BrowsePage() {
           </div>
 
           <p className="tabular mt-6 text-sm text-ink-muted">
-            {summarize(
-              visible.length,
-              availability,
-              phase.kind === "in-session",
-              at,
-              viewingOtherDay,
-            )}
+            {searching
+              ? matchSummary(visible.length, openCount)
+              : summarize(
+                  visible.length,
+                  availability,
+                  phase.kind === "in-session",
+                  at,
+                  viewingOtherDay,
+                )}
           </p>
 
           <div className="mt-6">
@@ -259,6 +277,19 @@ const MOMENT_LABEL = new Intl.DateTimeFormat("en-US", {
   hour: "numeric",
   minute: "2-digit",
 });
+
+/**
+ * Summary while a search is running.
+ *
+ * Reports matches and how many of them are open, rather than describing everything as open. A
+ * class search deliberately surfaces rooms that are in use, so "8 rooms open" would be false
+ * exactly when the feature is doing its job.
+ */
+function matchSummary(total: number, open: number): string {
+  if (total === 0) return "No rooms match.";
+  const rooms = `${total} ${total === 1 ? "room" : "rooms"} match`;
+  return open === 0 ? `${rooms}, none open right now.` : `${rooms}, ${open} open right now.`;
+}
 
 function summarize(
   count: number,
