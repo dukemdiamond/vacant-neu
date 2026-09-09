@@ -144,17 +144,20 @@ from OpenStreetMap via `pnpm buildings`.
 
 ### Analytics
 
-Traffic counting is off until you configure it. Copy `apps/web/.env.example` to
-`apps/web/.env.local` and set a provider and token:
+Defaults to **Vercel Web Analytics**, which needs no token and is free on the Hobby plan. It has
+to be switched on once per project: Vercel dashboard → the project → Analytics → Enable. Nothing
+is reported from local development either way.
+
+To use something else, set a provider and token in `apps/web/.env.local`:
 
 ```
-NEXT_PUBLIC_ANALYTICS_PROVIDER=cloudflare   # or plausible, or umami
+NEXT_PUBLIC_ANALYTICS_PROVIDER=cloudflare   # or vercel (default), plausible, umami
 NEXT_PUBLIC_ANALYTICS_ID=your-token
 ```
 
-All three supported providers are cookieless and count page views without building a visitor
-profile. That is deliberate: it keeps the Privacy Policy short and true, and it means the app
-still collects no personal information. Cloudflare Web Analytics is free and works on any host.
+Every supported provider is cookieless and counts page views without building a visitor profile.
+That is deliberate: it keeps the Privacy Policy short and true, and means the app still collects
+no personal information.
 
 ### Legal
 

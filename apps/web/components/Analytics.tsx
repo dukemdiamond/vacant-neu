@@ -1,3 +1,4 @@
+import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
 /**
@@ -8,13 +9,20 @@ import Script from "next/script";
  * NEXT_PUBLIC_ANALYTICS_ID is set, so local development and forks send no traffic anywhere.
  *
  * Configure in .env.local or the host's environment:
- *   NEXT_PUBLIC_ANALYTICS_PROVIDER = cloudflare | plausible | umami
- *   NEXT_PUBLIC_ANALYTICS_ID       = the provider's site token
+ *   NEXT_PUBLIC_ANALYTICS_PROVIDER = vercel | cloudflare | plausible | umami
+ *   NEXT_PUBLIC_ANALYTICS_ID       = the provider's site token (not needed for vercel)
  *   NEXT_PUBLIC_ANALYTICS_HOST     = script origin, for self-hosted Umami or Plausible
+ *
+ * "vercel" is the default when nothing is set, because that is where this is deployed and it
+ * needs no token: Vercel injects the endpoint at build time. It still does nothing locally, since
+ * the script only reports from a Vercel deployment.
  */
 export function Analytics() {
-  const provider = process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER;
+  const provider = process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER ?? "vercel";
   const id = process.env.NEXT_PUBLIC_ANALYTICS_ID;
+
+  // Vercel is the only provider that needs no token, so it is checked before the token guard.
+  if (provider === "vercel") return <VercelAnalytics />;
   if (!id) return null;
 
   switch (provider) {
