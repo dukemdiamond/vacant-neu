@@ -99,13 +99,14 @@ export default function MapPage() {
      * definite size to resolve against and the map stretches to whatever the building list needs.
      * 10rem is the masthead plus the footer, leaving the map and its panel to fill one screen.
      */
-    <main className="flex h-[calc(100dvh-10rem)] min-h-[30rem] flex-col lg:flex-row">
-      <div className="h-[45%] shrink-0 border-b border-line lg:h-full lg:flex-1 lg:border-r lg:border-b-0">
+    <main className="flex h-[calc(100dvh-7.5rem)] min-h-[26rem] flex-col sm:h-[calc(100dvh-9.5rem)] lg:flex-row">
+      {/* The map is the page on mobile, so it takes most of the height and the panel scrolls. */}
+      <div className="h-[58%] shrink-0 border-b border-line sm:h-[50%] lg:h-full lg:flex-1 lg:border-r lg:border-b-0">
         <CampusMap data={mapData} selected={selected} onSelect={setSelected} dark={dark} />
       </div>
 
       <aside className="min-h-0 flex-1 overflow-y-auto lg:w-[26rem] lg:flex-none">
-        <div className="px-5 py-6 sm:px-6">
+        <div className="px-5 py-4 sm:px-6 sm:py-6">
           {state.status === "loading" && <p className="text-sm text-ink-muted">Loading rooms.</p>}
           {state.status === "error" && (
             <p className="text-sm text-ink-muted">The schedule did not load. {state.message}</p>
@@ -172,7 +173,7 @@ function BuildingPanel({
         All buildings
       </button>
 
-      <h1 className="display-lg mt-4 text-2xl font-semibold">{building.name}</h1>
+      <h1 className="display-lg mt-3 text-xl font-semibold sm:mt-4 sm:text-2xl">{building.name}</h1>
       <p className="tabular mt-1 text-sm text-ink-muted">
         {open.length} of {rooms.length} rooms open right now
       </p>
@@ -235,12 +236,14 @@ function Legend({
 
   return (
     <>
-      <h1 className="display-lg text-2xl font-semibold">Campus map</h1>
-      <p className="mt-2 text-sm text-ink-muted">
+      <h1 className="display-lg text-xl font-semibold sm:text-2xl">Campus map</h1>
+      {/* Hidden on a phone, where the map fills most of the screen directly above and the
+          instruction spends three lines explaining something already visible. */}
+      <p className="mt-2 hidden text-sm text-ink-muted sm:block">
         Buildings with open rooms are outlined and labelled with how many. Pick one on the map, or
         from the list.
       </p>
-      <p className="tabular mt-4 text-sm text-ink">{totalOpen} rooms open right now.</p>
+      <p className="tabular mt-2 text-sm text-ink sm:mt-4">{totalOpen} rooms open right now.</p>
 
       <ul className="mt-4 flex flex-col">
         {ranked.map((b) => (

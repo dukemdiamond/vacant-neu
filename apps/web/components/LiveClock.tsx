@@ -29,7 +29,12 @@ export function LiveClock() {
   return (
     <time
       dateTime={now.toISOString()}
-      className="tabular text-sm text-ink-muted"
+      /*
+       * Hidden below the small breakpoint. The nav cannot fit a wordmark, a clock and three links
+       * on a 360px phone, and the clock is the one element the device already provides in its own
+       * status bar, so it is the one to drop rather than a navigation link.
+       */
+      className="tabular hidden text-sm whitespace-nowrap text-ink-muted sm:inline"
       title="Current time on the Boston campus"
     >
       {CAMPUS_TIME.format(now)}
