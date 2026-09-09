@@ -16,10 +16,36 @@ const instrumentSans = Instrument_Sans({
   display: "swap",
 });
 
+const DESCRIPTION =
+  "Find a free classroom at Northeastern. Class schedules from Banner, club events from Engage, " +
+  "updated daily.";
+
 export const metadata: Metadata = {
-  title: "Find a free classroom at Northeastern | vacantNEU",
-  description:
-    "Search Northeastern's Boston campus for classrooms with no class or club event scheduled right now.",
+  /*
+   * metadataBase makes the generated image and canonical URLs absolute. Link previews are fetched
+   * by a server that has no page context, so a relative path resolves against nothing and the
+   * card arrives without its image.
+   */
+  metadataBase: new URL("https://vacantneu.vercel.app"),
+  // The name alone. A tab or a hover should say what the app is called, not pitch it; the pitch
+  // belongs in the description, which is where a link preview shows it.
+  title: "vacantNEU",
+  description: DESCRIPTION,
+  applicationName: "vacantNEU",
+  openGraph: {
+    title: "vacantNEU",
+    description: DESCRIPTION,
+    url: "/",
+    siteName: "vacantNEU",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    // The wide card, so the screenshot reads as a screenshot rather than a thumbnail.
+    card: "summary_large_image",
+    title: "vacantNEU",
+    description: DESCRIPTION,
+  },
 };
 
 export const viewport: Viewport = {

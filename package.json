@@ -13,7 +13,8 @@
     "format": "prettier --write .",
     "inspect": "pnpm --filter @vacantneu/scraper inspect",
     "events": "pnpm --filter @vacantneu/scraper events",
-    "demo": "node tools/demo/record.mjs"
+    "demo": "node tools/demo/record.mjs",
+    "og": "node tools/og/capture.mjs"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",

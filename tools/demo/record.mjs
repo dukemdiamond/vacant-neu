@@ -160,7 +160,10 @@ async function main() {
   await context.close();
   await browser.close();
 
-  const file = readdirSync(OUT).filter((f) => f.endsWith(".webm")).sort().pop();
+  const file = readdirSync(OUT)
+    .filter((f) => f.endsWith(".webm"))
+    .sort()
+    .pop();
   if (file) {
     renameSync(join(OUT, file), join(OUT, "vacantneu-demo.webm"));
     console.log(`recorded ${join(OUT, "vacantneu-demo.webm")}`);
