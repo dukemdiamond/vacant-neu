@@ -2,7 +2,7 @@ name: Scrape Banner
 
 on:
   schedule:
-    # 04:15 ET (09:15 UTC) daily — off-peak for Banner, and the artifact is fresh before classes.
+    # 09:15 UTC daily (04:15 EST / 05:15 EDT), off-peak for Banner.
     - cron: "15 9 * * *"
   workflow_dispatch:
     inputs:
@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   scrape:
@@ -19,9 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Use the exact version pinned in package.json; a second version can conflict.
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - uses: actions/setup-node@v4
         with:
@@ -52,6 +52,8 @@ jobs:
       # events are future-dated and the existing artifact stays useful for weeks.
       - name: Open an issue when the Engage session needs refreshing
         if: steps.events.outcome == 'failure'
+        # An alerting failure must not prevent publishing a successful class scrape.
+        continue-on-error: true
         uses: actions/github-script@v7
         with:
           script: |
