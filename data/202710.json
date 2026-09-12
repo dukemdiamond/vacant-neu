@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-11",
+  "generatedAt": "2026-09-12",
   "campuses": [
     {
       "code": "BOS",
@@ -4565,6 +4565,17 @@
     {
       "roomId": "225-216",
       "kind": "class",
+      "days": 1,
+      "start": 635,
+      "end": 835,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS5180",
+      "detail": "Reinforcement Learning and Sequential Decision Making"
+    },
+    {
+      "roomId": "225-216",
+      "kind": "class",
       "days": 10,
       "start": 635,
       "end": 735,
@@ -5089,17 +5100,6 @@
       "endDate": "2026-12-20",
       "label": "ALY6115",
       "detail": "Foundations of Data Analytics"
-    },
-    {
-      "roomId": "225-416",
-      "kind": "class",
-      "days": 1,
-      "start": 635,
-      "end": 835,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5180",
-      "detail": "Reinforcement Learning and Sequential Decision Making"
     },
     {
       "roomId": "225-416",
@@ -6512,6 +6512,17 @@
     {
       "roomId": "BK-105",
       "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "CHME3322",
+      "detail": "Chemical Thermodynamics"
+    },
+    {
+      "roomId": "BK-105",
+      "kind": "class",
       "days": 8,
       "start": 890,
       "end": 990,
@@ -6772,6 +6783,17 @@
       "endDate": "2026-12-13",
       "label": "SLPA1555",
       "detail": "Communication Disorders in Movies"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 8,
+      "start": 995,
+      "end": 1045,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "HSCI1000",
+      "detail": "College: An Introduction"
     },
     {
       "roomId": "BK-204",
@@ -9625,17 +9647,6 @@
     {
       "roomId": "BK-750",
       "kind": "class",
-      "days": 13,
-      "start": 815,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BUSN1101",
-      "detail": "Applied Business Fundamentals"
-    },
-    {
-      "roomId": "BK-750",
-      "kind": "class",
       "days": 8,
       "start": 890,
       "end": 990,
@@ -9654,17 +9665,6 @@
       "endDate": "2026-12-20",
       "label": "PPUA5270",
       "detail": "Food Systems and Public Policy"
-    },
-    {
-      "roomId": "BK-750",
-      "kind": "class",
-      "days": 8,
-      "start": 995,
-      "end": 1045,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "HSCI1000",
-      "detail": "College: An Introduction"
     },
     {
       "roomId": "BK-750",
@@ -15015,6 +15015,17 @@
     {
       "roomId": "DG-270",
       "kind": "class",
+      "days": 13,
+      "start": 555,
+      "end": 620,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "CHME4701",
+      "detail": "Separations and Process Analysis"
+    },
+    {
+      "roomId": "DG-270",
+      "kind": "class",
       "days": 18,
       "start": 590,
       "end": 690,
@@ -18777,17 +18788,6 @@
     {
       "roomId": "EXP-202",
       "kind": "class",
-      "days": 13,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MATH2341",
-      "detail": "Differential Equations and Linear Algebra for Engineering"
-    },
-    {
-      "roomId": "EXP-202",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -18927,6 +18927,17 @@
       "endDate": "2026-12-13",
       "label": "ME2380",
       "detail": "Thermodynamics"
+    },
+    {
+      "roomId": "EXP-203",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "MATH2341",
+      "detail": "Differential Equations and Linear Algebra for Engineering"
     },
     {
       "roomId": "EXP-203",
@@ -25839,6 +25850,17 @@
     {
       "roomId": "HO-206",
       "kind": "class",
+      "days": 8,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "COMM3450",
+      "detail": "Voice-Over Artist"
+    },
+    {
+      "roomId": "HO-206",
+      "kind": "class",
       "days": 2,
       "start": 925,
       "end": 1125,
@@ -28633,17 +28655,6 @@
     {
       "roomId": "HT-308",
       "kind": "class",
-      "days": 9,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "CRIM1110",
-      "detail": "Criminal Due Process"
-    },
-    {
-      "roomId": "HT-308",
-      "kind": "class",
       "days": 4,
       "start": 705,
       "end": 805,
@@ -30195,6 +30206,17 @@
     {
       "roomId": "ISEC-140",
       "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "BUSN1101",
+      "detail": "Applied Business Fundamentals"
+    },
+    {
+      "roomId": "ISEC-140",
+      "kind": "class",
       "days": 18,
       "start": 815,
       "end": 915,
@@ -31537,6 +31559,17 @@
     {
       "roomId": "KA-202",
       "kind": "class",
+      "days": 9,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "CRIM1110",
+      "detail": "Criminal Due Process"
+    },
+    {
+      "roomId": "KA-202",
+      "kind": "class",
       "days": 20,
       "start": 705,
       "end": 805,
@@ -32670,17 +32703,6 @@
     {
       "roomId": "KN-002B",
       "kind": "class",
-      "days": 2,
-      "start": 1040,
-      "end": 1240,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MGMT3380",
-      "detail": "Leadership"
-    },
-    {
-      "roomId": "KN-002B",
-      "kind": "class",
       "days": 8,
       "start": 1090,
       "end": 1300,
@@ -33748,6 +33770,17 @@
     {
       "roomId": "M20-118",
       "kind": "class",
+      "days": 2,
+      "start": 525,
+      "end": 625,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHTH1260",
+      "detail": "The U.S. Healthcare System"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
       "days": 13,
       "start": 635,
       "end": 700,
@@ -33766,6 +33799,17 @@
       "endDate": "2026-12-13",
       "label": "MGSC2301",
       "detail": "Business Statistics"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 8,
+      "start": 710,
+      "end": 810,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHTH1260",
+      "detail": "The U.S. Healthcare System"
     },
     {
       "roomId": "M20-118",
@@ -35365,17 +35409,6 @@
     {
       "roomId": "M48-101",
       "kind": "class",
-      "days": 2,
-      "start": 525,
-      "end": 625,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHTH1260",
-      "detail": "The U.S. Healthcare System"
-    },
-    {
-      "roomId": "M48-101",
-      "kind": "class",
       "days": 13,
       "start": 635,
       "end": 700,
@@ -35944,17 +35977,6 @@
       "endDate": "2026-12-13",
       "label": "POLS2325",
       "detail": "Ancient Philosophy and Political Thought"
-    },
-    {
-      "roomId": "M62-101",
-      "kind": "class",
-      "days": 8,
-      "start": 710,
-      "end": 810,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHTH1260",
-      "detail": "The U.S. Healthcare System"
     },
     {
       "roomId": "M62-101",
@@ -36730,6 +36752,17 @@
       "roomId": "NY-569-M02",
       "kind": "class",
       "days": 13,
+      "start": 480,
+      "end": 545,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "THTR1101",
+      "detail": "Introduction to Theatre"
+    },
+    {
+      "roomId": "NY-569-M02",
+      "kind": "class",
+      "days": 13,
       "start": 555,
       "end": 620,
       "startDate": "2026-09-09",
@@ -37486,17 +37519,6 @@
       "detail": "Creative Writing 3"
     },
     {
-      "roomId": "NY-CH-504",
-      "kind": "class",
-      "days": 13,
-      "start": 995,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
-    },
-    {
       "roomId": "NY-CH-505",
       "kind": "class",
       "days": 13,
@@ -37880,6 +37902,17 @@
       "endDate": "2026-12-20",
       "label": "PHIL2303",
       "detail": "Social and Political Philosophy"
+    },
+    {
+      "roomId": "NY-CH-509",
+      "kind": "class",
+      "days": 13,
+      "start": 995,
+      "end": 1060,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
     },
     {
       "roomId": "NY-CH-509",
@@ -39530,17 +39563,6 @@
       "endDate": "2026-12-20",
       "label": "INSC1983",
       "detail": "ST:Resilient NYC ClimateHealth"
-    },
-    {
-      "roomId": "NY-FND-OS2",
-      "kind": "class",
-      "days": 13,
-      "start": 480,
-      "end": 545,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "THTR1101",
-      "detail": "Introduction to Theatre"
     },
     {
       "roomId": "NY-FND-OS2",
@@ -44352,6 +44374,17 @@
     {
       "roomId": "RI-229",
       "kind": "class",
+      "days": 2,
+      "start": 1040,
+      "end": 1240,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "MGMT3380",
+      "detail": "Leadership"
+    },
+    {
+      "roomId": "RI-229",
+      "kind": "class",
       "days": 1,
       "start": 1070,
       "end": 1220,
@@ -48103,6 +48136,17 @@
     {
       "roomId": "RY-143",
       "kind": "class",
+      "days": 20,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1102",
+      "detail": "First-Year Writing for Multilingual Writers"
+    },
+    {
+      "roomId": "RY-143",
+      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -48275,6 +48319,17 @@
       "endDate": "2026-12-13",
       "label": "ARTG1002",
       "detail": "Seminar for Design Perspectives"
+    },
+    {
+      "roomId": "RY-147",
+      "kind": "class",
+      "days": 2,
+      "start": 1070,
+      "end": 1190,
+      "startDate": "2026-09-09",
+      "endDate": "2026-10-25",
+      "label": "DGM5000",
+      "detail": "Visual Communication Fundamentals"
     },
     {
       "roomId": "RY-153",
@@ -49566,7 +49621,7 @@
     {
       "roomId": "RY-202",
       "kind": "class",
-      "days": 9,
+      "days": 1,
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
@@ -49855,17 +49910,6 @@
       "days": 1,
       "start": 995,
       "end": 1115,
-      "startDate": "2026-09-09",
-      "endDate": "2026-10-25",
-      "label": "DGM5000",
-      "detail": "Visual Communication Fundamentals"
-    },
-    {
-      "roomId": "RY-204",
-      "kind": "class",
-      "days": 2,
-      "start": 1070,
-      "end": 1190,
       "startDate": "2026-09-09",
       "endDate": "2026-10-25",
       "label": "DGM5000",
@@ -50189,6 +50233,17 @@
       "endDate": "2026-12-13",
       "label": "ARTG3467",
       "detail": "Paper Mechanics and Package Design"
+    },
+    {
+      "roomId": "RY-209",
+      "kind": "class",
+      "days": 1,
+      "start": 1050,
+      "end": 1200,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "PHTH5230",
+      "detail": "Global Health"
     },
     {
       "roomId": "RY-209",
@@ -51271,17 +51326,6 @@
     {
       "roomId": "RY-264",
       "kind": "class",
-      "days": 20,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1102",
-      "detail": "First-Year Writing for Multilingual Writers"
-    },
-    {
-      "roomId": "RY-264",
-      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 805,
@@ -52004,6 +52048,17 @@
       "endDate": "2026-12-13",
       "label": "JPNS2102",
       "detail": "Intermediate Japanese 2"
+    },
+    {
+      "roomId": "RY-270",
+      "kind": "class",
+      "days": 2,
+      "start": 995,
+      "end": 1145,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CAEP8501",
+      "detail": "Internship in School Psychology 1"
     },
     {
       "roomId": "RY-270",
@@ -55242,17 +55297,6 @@
     {
       "roomId": "RY-431",
       "kind": "class",
-      "days": 13,
-      "start": 815,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHIL3822",
-      "detail": "Philosophy of Race and Racism"
-    },
-    {
-      "roomId": "RY-431",
-      "kind": "class",
       "days": 18,
       "start": 815,
       "end": 915,
@@ -55260,17 +55304,6 @@
       "endDate": "2026-12-13",
       "label": "POLS1160",
       "detail": "International Relations"
-    },
-    {
-      "roomId": "RY-431",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "CHME3322",
-      "detail": "Chemical Thermodynamics"
     },
     {
       "roomId": "RY-431",
@@ -58738,17 +58771,6 @@
       "detail": "Fundamentals of Cloud Computing"
     },
     {
-      "roomId": "SJ-1010/1011",
-      "kind": "class",
-      "days": 8,
-      "start": 1020,
-      "end": 1220,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5001",
-      "detail": "Intensive Foundations of Computer Science"
-    },
-    {
       "roomId": "SJ-1011",
       "kind": "class",
       "days": 8,
@@ -58945,6 +58967,17 @@
       "endDate": "2026-12-20",
       "label": "INFO6350",
       "detail": "Smartphones-Based Web Development"
+    },
+    {
+      "roomId": "SJ-902",
+      "kind": "class",
+      "days": 8,
+      "start": 960,
+      "end": 1160,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS5001",
+      "detail": "Intensive Foundations of Computer Science"
     },
     {
       "roomId": "SJ-902",
@@ -59429,17 +59462,6 @@
       "endDate": "2026-12-13",
       "label": "COMM3230",
       "detail": "Interpersonal Communication"
-    },
-    {
-      "roomId": "SL-001",
-      "kind": "class",
-      "days": 1,
-      "start": 1050,
-      "end": 1200,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHTH5230",
-      "detail": "Global Health"
     },
     {
       "roomId": "SL-002",
@@ -60595,17 +60617,6 @@
       "endDate": "2026-12-13",
       "label": "GE1501",
       "detail": "Cornerstone of Engineering 1"
-    },
-    {
-      "roomId": "SL-017",
-      "kind": "class",
-      "days": 13,
-      "start": 555,
-      "end": 620,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "CHME4701",
-      "detail": "Separations and Process Analysis"
     },
     {
       "roomId": "SL-017",
@@ -63301,17 +63312,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL2301",
       "detail": "Genetics and Molecular Biology"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
     },
     {
       "roomId": "SN-108",
