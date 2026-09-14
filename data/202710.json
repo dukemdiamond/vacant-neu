@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-13",
+  "generatedAt": "2026-09-14",
   "campuses": [
     {
       "code": "BOS",
@@ -49621,17 +49621,6 @@
     {
       "roomId": "RY-202",
       "kind": "class",
-      "days": 1,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "COMM3450",
-      "detail": "Voice-Over Artist"
-    },
-    {
-      "roomId": "RY-202",
-      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 805,
@@ -50288,6 +50277,17 @@
       "endDate": "2026-12-13",
       "label": "ARCH2370",
       "detail": "Topics in Architectural History"
+    },
+    {
+      "roomId": "RY-215",
+      "kind": "class",
+      "days": 1,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "COMM3450",
+      "detail": "Voice-Over Artist"
     },
     {
       "roomId": "RY-215",
@@ -63312,17 +63312,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL2301",
       "detail": "Genetics and Molecular Biology"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
     },
     {
       "roomId": "SN-108",
