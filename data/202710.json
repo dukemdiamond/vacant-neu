@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-14",
+  "generatedAt": "2026-09-15",
   "campuses": [
     {
       "code": "BOS",
@@ -6688,17 +6688,6 @@
     {
       "roomId": "BK-204",
       "kind": "class",
-      "days": 13,
-      "start": 555,
-      "end": 620,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE4512",
-      "detail": "Engineering Economy"
-    },
-    {
-      "roomId": "BK-204",
-      "kind": "class",
       "days": 18,
       "start": 590,
       "end": 690,
@@ -6783,6 +6772,17 @@
       "endDate": "2026-12-13",
       "label": "SLPA1555",
       "detail": "Communication Disorders in Movies"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 18,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "THTR1236",
+      "detail": "Introduction to Global Fashion Studies: History, Theory, and Contemporary Practice"
     },
     {
       "roomId": "BK-204",
@@ -6981,6 +6981,17 @@
       "endDate": "2026-12-20",
       "label": "PA6311",
       "detail": "Principles of Medicine 1"
+    },
+    {
+      "roomId": "BK-220",
+      "kind": "class",
+      "days": 2,
+      "start": 1070,
+      "end": 1220,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "BIO1200",
+      "detail": "Principles of Biology 2"
     },
     {
       "roomId": "BK-220",
@@ -18744,17 +18755,6 @@
     {
       "roomId": "EXP-201",
       "kind": "class",
-      "days": 2,
-      "start": 1070,
-      "end": 1220,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BIO1200",
-      "detail": "Principles of Biology 2"
-    },
-    {
-      "roomId": "EXP-201",
-      "kind": "class",
       "days": 5,
       "start": 1070,
       "end": 1170,
@@ -18773,6 +18773,17 @@
       "endDate": "2026-12-13",
       "label": "ECON1126",
       "detail": "Recitation for ECON 1116"
+    },
+    {
+      "roomId": "EXP-202",
+      "kind": "class",
+      "days": 13,
+      "start": 555,
+      "end": 620,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "IE4512",
+      "detail": "Engineering Economy"
     },
     {
       "roomId": "EXP-202",
@@ -23019,6 +23030,17 @@
       "endDate": "2026-12-20",
       "label": "EECE7202",
       "detail": "Electromagnetic Theory 1"
+    },
+    {
+      "roomId": "FR-241",
+      "kind": "class",
+      "days": 18,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "THTR2330",
+      "detail": "Playwriting"
     },
     {
       "roomId": "FR-241",
@@ -28655,6 +28677,17 @@
     {
       "roomId": "HT-308",
       "kind": "class",
+      "days": 9,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "COMM2725",
+      "detail": "Popular Communication"
+    },
+    {
+      "roomId": "HT-308",
+      "kind": "class",
       "days": 4,
       "start": 705,
       "end": 805,
@@ -28717,17 +28750,6 @@
       "endDate": "2026-12-13",
       "label": "CIVE2222",
       "detail": "Recitation for CIVE 2221"
-    },
-    {
-      "roomId": "HT-308",
-      "kind": "class",
-      "days": 4,
-      "start": 1070,
-      "end": 1150,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ALY6125",
-      "detail": "Intermediate Analytics"
     },
     {
       "roomId": "HT-308",
@@ -29157,17 +29179,6 @@
       "endDate": "2026-12-13",
       "label": "ENGW3304",
       "detail": "Advanced Writing in the Business Administration Professions"
-    },
-    {
-      "roomId": "INV-016",
-      "kind": "class",
-      "days": 13,
-      "start": 995,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
     },
     {
       "roomId": "INV-018",
@@ -44165,17 +44176,6 @@
     {
       "roomId": "RI-228",
       "kind": "class",
-      "days": 9,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "COMM2725",
-      "detail": "Popular Communication"
-    },
-    {
-      "roomId": "RI-228",
-      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 805,
@@ -45225,9 +45225,9 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE4516",
-      "detail": "Quality Assurance"
+      "endDate": "2026-12-20",
+      "label": "IE7200",
+      "detail": "Supply Chain Engineering"
     },
     {
       "roomId": "RI-238",
@@ -46924,28 +46924,6 @@
       "detail": "Biomaterials"
     },
     {
-      "roomId": "RXI-105",
-      "kind": "class",
-      "days": 4,
-      "start": 1020,
-      "end": 1170,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BINF6250",
-      "detail": "Algorithmic Foundations in Bioinformatics"
-    },
-    {
-      "roomId": "RXI-105",
-      "kind": "class",
-      "days": 4,
-      "start": 1175,
-      "end": 1235,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BINF6251",
-      "detail": "Lab for BINF 6250"
-    },
-    {
       "roomId": "RXI-108",
       "kind": "class",
       "days": 32,
@@ -47487,17 +47465,6 @@
     {
       "roomId": "RXI-208",
       "kind": "class",
-      "days": 16,
-      "start": 780,
-      "end": 980,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CSYE6225",
-      "detail": "Network Structures and Cloud Computing"
-    },
-    {
-      "roomId": "RXI-208",
-      "kind": "class",
       "days": 4,
       "start": 1080,
       "end": 1160,
@@ -47619,6 +47586,17 @@
     {
       "roomId": "RXI-218",
       "kind": "class",
+      "days": 16,
+      "start": 780,
+      "end": 980,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CSYE6225",
+      "detail": "Network Structures and Cloud Computing"
+    },
+    {
+      "roomId": "RXI-218",
+      "kind": "class",
       "days": 8,
       "start": 1020,
       "end": 1220,
@@ -47674,6 +47652,17 @@
     {
       "roomId": "RXI-234",
       "kind": "class",
+      "days": 4,
+      "start": 1020,
+      "end": 1170,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "BINF6250",
+      "detail": "Algorithmic Foundations in Bioinformatics"
+    },
+    {
+      "roomId": "RXI-234",
+      "kind": "class",
       "days": 2,
       "start": 1080,
       "end": 1160,
@@ -47681,6 +47670,17 @@
       "endDate": "2026-12-20",
       "label": "CMG6600",
       "detail": "Foundations of Construction Management"
+    },
+    {
+      "roomId": "RXI-234",
+      "kind": "class",
+      "days": 4,
+      "start": 1175,
+      "end": 1235,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "BINF6251",
+      "detail": "Lab for BINF 6250"
     },
     {
       "roomId": "RXI-235",
@@ -51282,6 +51282,17 @@
     {
       "roomId": "RY-247",
       "kind": "class",
+      "days": 13,
+      "start": 995,
+      "end": 1060,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "RY-247",
+      "kind": "class",
       "days": 2,
       "start": 995,
       "end": 1195,
@@ -52796,6 +52807,17 @@
       "endDate": "2026-12-20",
       "label": "PPUA6506",
       "detail": "Techniques of Policy Analysis"
+    },
+    {
+      "roomId": "RY-283",
+      "kind": "class",
+      "days": 4,
+      "start": 1070,
+      "end": 1150,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "ALY6125",
+      "detail": "Intermediate Analytics"
     },
     {
       "roomId": "RY-285",
@@ -56175,17 +56197,6 @@
       "detail": "Mixed Research Methods for Games"
     },
     {
-      "roomId": "SE-020",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "THTR1236",
-      "detail": "Introduction to Global Fashion Studies: History, Theory, and Contemporary Practice"
-    },
-    {
       "roomId": "SH-105",
       "kind": "class",
       "days": 13,
@@ -56951,9 +56962,9 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "IE7200",
-      "detail": "Supply Chain Engineering"
+      "endDate": "2026-12-13",
+      "label": "IE4516",
+      "detail": "Quality Assurance"
     },
     {
       "roomId": "SH-215",
@@ -64665,17 +64676,6 @@
       "endDate": "2026-12-20",
       "label": "ARCH7430",
       "detail": "Topics In Research Methods in Architectural Design"
-    },
-    {
-      "roomId": "WVF-114",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "THTR2330",
-      "detail": "Playwriting"
     },
     {
       "roomId": "WVF-116",
