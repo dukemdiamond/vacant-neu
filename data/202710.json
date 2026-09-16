@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-15",
+  "generatedAt": "2026-09-16",
   "campuses": [
     {
       "code": "BOS",
@@ -4728,6 +4728,17 @@
       "detail": "Web Development"
     },
     {
+      "roomId": "225-220",
+      "kind": "class",
+      "days": 1,
+      "start": 1080,
+      "end": 1280,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6510",
+      "detail": "Advanced Software Development"
+    },
+    {
       "roomId": "225-305",
       "kind": "class",
       "days": 2,
@@ -4979,17 +4990,6 @@
       "endDate": "2026-12-20",
       "label": "CS5330",
       "detail": "Pattern Recognition and Computer Vision"
-    },
-    {
-      "roomId": "225-307",
-      "kind": "class",
-      "days": 1,
-      "start": 1080,
-      "end": 1280,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6510",
-      "detail": "Advanced Software Development"
     },
     {
       "roomId": "225-307",
@@ -6398,17 +6398,6 @@
       "endDate": "2026-12-13",
       "label": "ACCT1201",
       "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "BK-105",
-      "kind": "class",
-      "days": 18,
-      "start": 480,
-      "end": 580,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE4520",
-      "detail": "Stochastic Modeling"
     },
     {
       "roomId": "BK-105",
@@ -19250,17 +19239,6 @@
     {
       "roomId": "EXP-204",
       "kind": "class",
-      "days": 13,
-      "start": 995,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ME2380",
-      "detail": "Thermodynamics"
-    },
-    {
-      "roomId": "EXP-204",
-      "kind": "class",
       "days": 1,
       "start": 1070,
       "end": 1220,
@@ -21743,17 +21721,6 @@
       "endDate": "2026-12-13",
       "label": "CHEM1153",
       "detail": "Recitation for CHEM 1151"
-    },
-    {
-      "roomId": "FR-201",
-      "kind": "class",
-      "days": 8,
-      "start": 1070,
-      "end": 1180,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CED6910",
-      "detail": "Capstone: Master’s Project"
     },
     {
       "roomId": "FR-201",
@@ -24339,6 +24306,17 @@
       "endDate": "2026-12-13",
       "label": "ACCT4501",
       "detail": "Financial Reporting and Analysis 2"
+    },
+    {
+      "roomId": "HA-221",
+      "kind": "class",
+      "days": 18,
+      "start": 480,
+      "end": 580,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHIL1165",
+      "detail": "Moral and Social Problems in Healthcare"
     },
     {
       "roomId": "HA-221",
@@ -27115,6 +27093,17 @@
     {
       "roomId": "HS-112",
       "kind": "class",
+      "days": 4,
+      "start": 950,
+      "end": 1030,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "DGM6115",
+      "detail": "Data Collection, Analysis, and Visualization"
+    },
+    {
+      "roomId": "HS-112",
+      "kind": "class",
       "days": 2,
       "start": 1070,
       "end": 1220,
@@ -29018,6 +29007,17 @@
     {
       "roomId": "INV-013",
       "kind": "class",
+      "days": 18,
+      "start": 815,
+      "end": 915,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "EECE7398",
+      "detail": "ST: Deep Learning & Edge Comp"
+    },
+    {
+      "roomId": "INV-013",
+      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -29744,6 +29744,17 @@
     {
       "roomId": "ISEC-136",
       "kind": "class",
+      "days": 18,
+      "start": 480,
+      "end": 580,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "IE4520",
+      "detail": "Stochastic Modeling"
+    },
+    {
+      "roomId": "ISEC-136",
+      "kind": "class",
       "days": 13,
       "start": 555,
       "end": 620,
@@ -30327,17 +30338,6 @@
     {
       "roomId": "ISEC-142",
       "kind": "class",
-      "days": 18,
-      "start": 480,
-      "end": 580,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHIL1165",
-      "detail": "Moral and Social Problems in Healthcare"
-    },
-    {
-      "roomId": "ISEC-142",
-      "kind": "class",
       "days": 13,
       "start": 555,
       "end": 620,
@@ -30807,17 +30807,6 @@
       "endDate": "2026-12-20",
       "label": "MATH6241",
       "detail": "Stochastic Processes"
-    },
-    {
-      "roomId": "KA-005",
-      "kind": "class",
-      "days": 2,
-      "start": 1070,
-      "end": 1220,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BIO1600",
-      "detail": "Human Anatomy and Physiology 1"
     },
     {
       "roomId": "KA-005",
@@ -31515,6 +31504,17 @@
     {
       "roomId": "KA-110",
       "kind": "class",
+      "days": 1,
+      "start": 1070,
+      "end": 1150,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "PJM6120",
+      "detail": "Project Scope, Schedule and Cost Planning"
+    },
+    {
+      "roomId": "KA-110",
+      "kind": "class",
       "days": 4,
       "start": 1070,
       "end": 1150,
@@ -31698,17 +31698,6 @@
       "endDate": "2026-12-13",
       "label": "MSCR3600",
       "detail": "Film Theory"
-    },
-    {
-      "roomId": "KA-204",
-      "kind": "class",
-      "days": 2,
-      "start": 815,
-      "end": 1015,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "HONR1310",
-      "detail": "The North of Ireland"
     },
     {
       "roomId": "KA-204",
@@ -32050,28 +32039,6 @@
       "endDate": "2026-12-13",
       "label": "PHTH2300",
       "detail": "Communication Skills for the Health Professions"
-    },
-    {
-      "roomId": "KA-302",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "SOCL1260",
-      "detail": "Sociology of Gender"
-    },
-    {
-      "roomId": "KA-302",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "WMNS1260",
-      "detail": "Sociology of Gender"
     },
     {
       "roomId": "KA-302",
@@ -32611,17 +32578,6 @@
       "endDate": "2026-12-13",
       "label": "ECON3520",
       "detail": "History of Economic Thought"
-    },
-    {
-      "roomId": "KN-002B",
-      "kind": "class",
-      "days": 9,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "HIST1100",
-      "detail": "Law and History"
     },
     {
       "roomId": "KN-002B",
@@ -33957,17 +33913,6 @@
     {
       "roomId": "M20-125",
       "kind": "class",
-      "days": 2,
-      "start": 525,
-      "end": 625,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
-    },
-    {
-      "roomId": "M20-125",
-      "kind": "class",
       "days": 18,
       "start": 635,
       "end": 735,
@@ -33986,17 +33931,6 @@
       "endDate": "2026-12-20",
       "label": "EECE5161",
       "detail": "Thin Film Technologies"
-    },
-    {
-      "roomId": "M20-125",
-      "kind": "class",
-      "days": 8,
-      "start": 710,
-      "end": 810,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
     },
     {
       "roomId": "M20-125",
@@ -34668,17 +34602,6 @@
       "endDate": "2026-12-13",
       "label": "CHEM1212",
       "detail": "Lab for CHEM 1211"
-    },
-    {
-      "roomId": "M41-212",
-      "kind": "class",
-      "days": 2,
-      "start": 525,
-      "end": 625,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MATH1215",
-      "detail": "Mathematical Thinking"
     },
     {
       "roomId": "M41-212",
@@ -35750,6 +35673,17 @@
     {
       "roomId": "M54-014",
       "kind": "class",
+      "days": 2,
+      "start": 525,
+      "end": 625,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "MATH1215",
+      "detail": "Mathematical Thinking"
+    },
+    {
+      "roomId": "M54-014",
+      "kind": "class",
       "days": 18,
       "start": 635,
       "end": 735,
@@ -35768,17 +35702,6 @@
       "endDate": "2026-12-13",
       "label": "MATH1215",
       "detail": "Mathematical Thinking"
-    },
-    {
-      "roomId": "M54-014",
-      "kind": "class",
-      "days": 18,
-      "start": 745,
-      "end": 845,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "FINA4983",
-      "detail": "Special Topics in Finance"
     },
     {
       "roomId": "M54-026",
@@ -35834,17 +35757,6 @@
       "endDate": "2026-12-13",
       "label": "PSYC3406",
       "detail": "Clinical Psychology and Mental Health"
-    },
-    {
-      "roomId": "M54-035",
-      "kind": "class",
-      "days": 18,
-      "start": 635,
-      "end": 735,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "FINA2730",
-      "detail": "Fintech and Financial Innovation"
     },
     {
       "roomId": "M54-035",
@@ -35926,6 +35838,17 @@
     {
       "roomId": "M54-107",
       "kind": "class",
+      "days": 2,
+      "start": 525,
+      "end": 625,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
       "days": 13,
       "start": 635,
       "end": 700,
@@ -35933,6 +35856,39 @@
       "endDate": "2026-12-13",
       "label": "BIOL1111",
       "detail": "General Biology 1"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 18,
+      "start": 635,
+      "end": 735,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "FINA2730",
+      "detail": "Fintech and Financial Innovation"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 8,
+      "start": 710,
+      "end": 810,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 18,
+      "start": 745,
+      "end": 845,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "FINA4983",
+      "detail": "Special Topics in Finance"
     },
     {
       "roomId": "M54-107",
@@ -38736,8 +38692,19 @@
       "end": 915,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "ARTH2313",
-      "detail": "Global Networks in Early Modern Art and Visual Culture"
+      "label": "DANC3540",
+      "detail": "Dance &Cultural Histories(HON)"
+    },
+    {
+      "roomId": "NY-CH-701",
+      "kind": "class",
+      "days": 18,
+      "start": 815,
+      "end": 915,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "DANC3540",
+      "detail": "Dance &Cultural Histories(HON)"
     },
     {
       "roomId": "NY-CH-701",
@@ -38813,19 +38780,8 @@
       "end": 915,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "DANC3540",
-      "detail": "Dance &Cultural Histories(HON)"
-    },
-    {
-      "roomId": "NY-CH-702",
-      "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DANC3540",
-      "detail": "Dance &Cultural Histories(HON)"
+      "label": "ARTH2313",
+      "detail": "Global Networks in Early Modern Art and Visual Culture"
     },
     {
       "roomId": "NY-CH-702",
@@ -42097,6 +42053,17 @@
     {
       "roomId": "QSW-514",
       "kind": "class",
+      "days": 1,
+      "start": 870,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "INFO5101",
+      "detail": "Lab for INFO 5100"
+    },
+    {
+      "roomId": "QSW-514",
+      "kind": "class",
       "days": 16,
       "start": 900,
       "end": 980,
@@ -44249,17 +44216,6 @@
       "endDate": "2026-12-20",
       "label": "ITC2400",
       "detail": "Web and Mobile Development"
-    },
-    {
-      "roomId": "RI-228",
-      "kind": "class",
-      "days": 1,
-      "start": 1070,
-      "end": 1150,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PJM6120",
-      "detail": "Project Scope, Schedule and Cost Planning"
     },
     {
       "roomId": "RI-228",
@@ -49764,6 +49720,17 @@
     {
       "roomId": "RY-203",
       "kind": "class",
+      "days": 9,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "HIST1100",
+      "detail": "Law and History"
+    },
+    {
+      "roomId": "RY-203",
+      "kind": "class",
       "days": 1,
       "start": 815,
       "end": 1025,
@@ -50233,6 +50200,17 @@
       "endDate": "2026-12-20",
       "label": "PHTH5230",
       "detail": "Global Health"
+    },
+    {
+      "roomId": "RY-209",
+      "kind": "class",
+      "days": 2,
+      "start": 1070,
+      "end": 1220,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "BIO1600",
+      "detail": "Human Anatomy and Physiology 1"
     },
     {
       "roomId": "RY-209",
@@ -51458,6 +51436,17 @@
     {
       "roomId": "RY-265",
       "kind": "class",
+      "days": 20,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "INAM2000",
+      "detail": "Ethics in Creativity"
+    },
+    {
+      "roomId": "RY-265",
+      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 805,
@@ -51971,17 +51960,6 @@
       "endDate": "2026-12-13",
       "label": "FRNH2101",
       "detail": "Intermediate French 1"
-    },
-    {
-      "roomId": "RY-269",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BIOL6407",
-      "detail": "Biochemistry for Molecular Biologists"
     },
     {
       "roomId": "RY-269",
@@ -53456,6 +53434,17 @@
       "endDate": "2026-12-20",
       "label": "PHYS5125",
       "detail": "Advanced Quantum Mechanics"
+    },
+    {
+      "roomId": "RY-299",
+      "kind": "class",
+      "days": 8,
+      "start": 1070,
+      "end": 1180,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CED6910",
+      "detail": "Capstone: Master’s Project"
     },
     {
       "roomId": "RY-299",
@@ -55337,6 +55326,28 @@
       "endDate": "2026-12-13",
       "label": "ENCP3000",
       "detail": "Professional Issues in Engineering"
+    },
+    {
+      "roomId": "RY-431",
+      "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "SOCL1260",
+      "detail": "Sociology of Gender"
+    },
+    {
+      "roomId": "RY-431",
+      "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "WMNS1260",
+      "detail": "Sociology of Gender"
     },
     {
       "roomId": "RY-431",
@@ -58080,6 +58091,17 @@
     {
       "roomId": "SH-335",
       "kind": "class",
+      "days": 13,
+      "start": 995,
+      "end": 1060,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ME2380",
+      "detail": "Thermodynamics"
+    },
+    {
+      "roomId": "SH-335",
+      "kind": "class",
       "days": 4,
       "start": 1080,
       "end": 1280,
@@ -59473,6 +59495,17 @@
       "endDate": "2026-12-13",
       "label": "COMM3230",
       "detail": "Interpersonal Communication"
+    },
+    {
+      "roomId": "SL-001",
+      "kind": "class",
+      "days": 1,
+      "start": 1020,
+      "end": 1200,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "HONR1310",
+      "detail": "The North of Ireland"
     },
     {
       "roomId": "SL-002",
@@ -61105,17 +61138,6 @@
     {
       "roomId": "SL-035",
       "kind": "class",
-      "days": 20,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "INAM2000",
-      "detail": "Ethics in Creativity"
-    },
-    {
-      "roomId": "SL-035",
-      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -61666,17 +61688,6 @@
     {
       "roomId": "SL-045",
       "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "EECE7398",
-      "detail": "ST: Deep Learning & Edge Comp"
-    },
-    {
-      "roomId": "SL-045",
-      "kind": "class",
       "days": 2,
       "start": 925,
       "end": 1075,
@@ -61860,17 +61871,6 @@
       "endDate": "2026-12-20",
       "label": "DGM6680",
       "detail": "Designing for Game Frameworks"
-    },
-    {
-      "roomId": "SL-109",
-      "kind": "class",
-      "days": 4,
-      "start": 950,
-      "end": 1030,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DGM6115",
-      "detail": "Data Collection, Analysis, and Visualization"
     },
     {
       "roomId": "SL-109",
