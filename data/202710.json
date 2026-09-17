@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-16",
+  "generatedAt": "2026-09-17",
   "campuses": [
     {
       "code": "BOS",
@@ -12716,6 +12716,17 @@
     {
       "roomId": "CH-325",
       "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHYS4112",
+      "detail": "Principles of Radio Astronomy"
+    },
+    {
+      "roomId": "CH-325",
+      "kind": "class",
       "days": 16,
       "start": 925,
       "end": 1025,
@@ -20337,6 +20348,17 @@
       "detail": "Lab for CHM 1100"
     },
     {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 4,
+      "start": 1230,
+      "end": 1320,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CHM1201",
+      "detail": "Lab for CHM 1200"
+    },
+    {
       "roomId": "EXP-360",
       "kind": "class",
       "days": 16,
@@ -21941,17 +21963,6 @@
       "endDate": "2026-12-20",
       "label": "BIOT5120",
       "detail": "Foundations in Biotechnology"
-    },
-    {
-      "roomId": "FR-202",
-      "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1230,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BIOT6310",
-      "detail": "CGMP Statutes and Regulation"
     },
     {
       "roomId": "FR-223",
@@ -32043,6 +32054,17 @@
     {
       "roomId": "KA-302",
       "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "POLS3418",
+      "detail": "Nationalism"
+    },
+    {
+      "roomId": "KA-302",
+      "kind": "class",
       "days": 1,
       "start": 1070,
       "end": 1150,
@@ -35704,6 +35726,17 @@
       "detail": "Mathematical Thinking"
     },
     {
+      "roomId": "M54-014",
+      "kind": "class",
+      "days": 10,
+      "start": 1010,
+      "end": 1110,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "COMM2303",
+      "detail": "Global and Intercultural Communication"
+    },
+    {
       "roomId": "M54-026",
       "kind": "class",
       "days": 2,
@@ -35801,17 +35834,6 @@
       "endDate": "2026-12-13",
       "label": "SOCL1101",
       "detail": "Introduction to Sociology"
-    },
-    {
-      "roomId": "M54-035",
-      "kind": "class",
-      "days": 10,
-      "start": 1010,
-      "end": 1110,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "COMM2303",
-      "detail": "Global and Intercultural Communication"
     },
     {
       "roomId": "M54-035",
@@ -55594,17 +55616,6 @@
     {
       "roomId": "RY-435",
       "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "POLS3418",
-      "detail": "Nationalism"
-    },
-    {
-      "roomId": "RY-435",
-      "kind": "class",
       "days": 16,
       "start": 925,
       "end": 1135,
@@ -61728,17 +61739,6 @@
       "endDate": "2026-12-20",
       "label": "ARCH7430",
       "detail": "Topics In Research Methods in Architectural Design"
-    },
-    {
-      "roomId": "SL-047",
-      "kind": "class",
-      "days": 13,
-      "start": 815,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS4112",
-      "detail": "Principles of Radio Astronomy"
     },
     {
       "roomId": "SL-047",
