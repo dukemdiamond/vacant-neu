@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-17",
+  "generatedAt": "2026-09-18",
   "campuses": [
     {
       "code": "BOS",
@@ -4915,6 +4915,17 @@
       "detail": "Managing Innovation Projects"
     },
     {
+      "roomId": "225-306",
+      "kind": "class",
+      "days": 4,
+      "start": 635,
+      "end": 755,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "PJM6490",
+      "detail": "Project Communications"
+    },
+    {
       "roomId": "225-307",
       "kind": "class",
       "days": 8,
@@ -5430,17 +5441,6 @@
       "endDate": "2026-12-20",
       "label": "PJM6440",
       "detail": "Leading and Managing Technical Projects"
-    },
-    {
-      "roomId": "401-143",
-      "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1230,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6490",
-      "detail": "Project Communications"
     },
     {
       "roomId": "ARL-1504",
@@ -16281,12 +16281,12 @@
       "roomId": "DK-042",
       "kind": "class",
       "days": 10,
-      "start": 510,
-      "end": 635,
+      "start": 590,
+      "end": 685,
       "startDate": "2026-09-09",
       "endDate": "2026-12-04",
-      "label": "LAW7479",
-      "detail": "Basic Income Taxation"
+      "label": "LAW7338",
+      "detail": "International Law"
     },
     {
       "roomId": "DK-042",
@@ -16941,12 +16941,12 @@
       "roomId": "DK-230",
       "kind": "class",
       "days": 10,
-      "start": 590,
-      "end": 685,
+      "start": 510,
+      "end": 635,
       "startDate": "2026-09-09",
       "endDate": "2026-12-04",
-      "label": "LAW7338",
-      "detail": "International Law"
+      "label": "LAW7479",
+      "detail": "Basic Income Taxation"
     },
     {
       "roomId": "DK-230",
@@ -18102,6 +18102,17 @@
       "endDate": "2026-12-13",
       "label": "ENGW1111",
       "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "EV-008",
+      "kind": "class",
+      "days": 1,
+      "start": 810,
+      "end": 960,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "HINF7701",
+      "detail": "Health Informatics Capstone Project"
     },
     {
       "roomId": "EV-008",
@@ -30448,6 +30459,17 @@
     {
       "roomId": "ISEC-142",
       "kind": "class",
+      "days": 2,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "BUSN1103",
+      "detail": "Professional Development for Business Co-op"
+    },
+    {
+      "roomId": "ISEC-142",
+      "kind": "class",
       "days": 16,
       "start": 925,
       "end": 1025,
@@ -32050,17 +32072,6 @@
       "endDate": "2026-12-13",
       "label": "PHTH2300",
       "detail": "Communication Skills for the Health Professions"
-    },
-    {
-      "roomId": "KA-302",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "POLS3418",
-      "detail": "Nationalism"
     },
     {
       "roomId": "KA-302",
@@ -33990,6 +34001,17 @@
     {
       "roomId": "M20-241",
       "kind": "class",
+      "days": 18,
+      "start": 745,
+      "end": 845,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "MISM6410",
+      "detail": "Information Visuals and Dashboards for Business"
+    },
+    {
+      "roomId": "M20-241",
+      "kind": "class",
       "days": 5,
       "start": 710,
       "end": 810,
@@ -35372,17 +35394,6 @@
       "endDate": "2026-12-13",
       "label": "CS2100",
       "detail": "Program Design and Implementation 1"
-    },
-    {
-      "roomId": "M48-101",
-      "kind": "class",
-      "days": 18,
-      "start": 745,
-      "end": 845,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "MISM6410",
-      "detail": "Information Visuals and Dashboards for Business"
     },
     {
       "roomId": "M48-101",
@@ -37906,17 +37917,6 @@
     {
       "roomId": "NY-CH-509",
       "kind": "class",
-      "days": 1,
-      "start": 1080,
-      "end": 1295,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DANC4950",
-      "detail": "Senior Seminar"
-    },
-    {
-      "roomId": "NY-CH-509",
-      "kind": "class",
       "days": 2,
       "start": 1080,
       "end": 1280,
@@ -38045,17 +38045,6 @@
       "endDate": "2026-12-20",
       "label": "BIOL1143",
       "detail": "Biology and Society"
-    },
-    {
-      "roomId": "NY-CH-606",
-      "kind": "class",
-      "days": 18,
-      "start": 480,
-      "end": 580,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "JRNL3550",
-      "detail": "The First Amendment and the Media"
     },
     {
       "roomId": "NY-CH-606",
@@ -38287,6 +38276,17 @@
       "endDate": "2026-12-20",
       "label": "THTR2150",
       "detail": "Script Analysis"
+    },
+    {
+      "roomId": "NY-CH-608",
+      "kind": "class",
+      "days": 1,
+      "start": 1080,
+      "end": 1295,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "DANC4950",
+      "detail": "Senior Seminar"
     },
     {
       "roomId": "NY-CH-610",
@@ -40916,6 +40916,17 @@
       "endDate": "2026-12-20",
       "label": "COMM1112",
       "detail": "Public Speaking"
+    },
+    {
+      "roomId": "NY-NH-553",
+      "kind": "class",
+      "days": 18,
+      "start": 480,
+      "end": 580,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "JRNL3550",
+      "detail": "The First Amendment and the Media"
     },
     {
       "roomId": "NY-NH-553",
@@ -45683,6 +45694,17 @@
     {
       "roomId": "RI-243",
       "kind": "class",
+      "days": 8,
+      "start": 530,
+      "end": 680,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CAEP6399",
+      "detail": "Clinical Skills in Counseling Psychology"
+    },
+    {
+      "roomId": "RI-243",
+      "kind": "class",
       "days": 18,
       "start": 590,
       "end": 690,
@@ -46872,17 +46894,6 @@
       "roomId": "RI-458",
       "kind": "class",
       "days": 2,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BUSN1103",
-      "detail": "Professional Development for Business Co-op"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 2,
       "start": 1030,
       "end": 1230,
       "startDate": "2026-09-09",
@@ -47740,17 +47751,6 @@
     {
       "roomId": "RY-124",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "SOCL3300",
-      "detail": "Social Theory"
-    },
-    {
-      "roomId": "RY-124",
-      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -47773,13 +47773,13 @@
     {
       "roomId": "RY-124",
       "kind": "class",
-      "days": 8,
+      "days": 5,
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "SOCL3300",
-      "detail": "Social Theory"
+      "label": "POLS3418",
+      "detail": "Nationalism"
     },
     {
       "roomId": "RY-124",
@@ -48147,17 +48147,6 @@
     {
       "roomId": "RY-145",
       "kind": "class",
-      "days": 8,
-      "start": 530,
-      "end": 680,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CAEP6399",
-      "detail": "Clinical Skills in Counseling Psychology"
-    },
-    {
-      "roomId": "RY-145",
-      "kind": "class",
       "days": 32,
       "start": 540,
       "end": 720,
@@ -48242,28 +48231,6 @@
       "endDate": "2026-12-20",
       "label": "CAEP6399",
       "detail": "Clinical Skills in Counseling Psychology"
-    },
-    {
-      "roomId": "RY-147",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MSCR2505",
-      "detail": "Digital Feminisms"
-    },
-    {
-      "roomId": "RY-147",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "WMNS2505",
-      "detail": "Digital Feminisms"
     },
     {
       "roomId": "RY-147",
@@ -50677,17 +50644,6 @@
     {
       "roomId": "RY-233",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENCP2000",
-      "detail": "Introduction to Engineering Co-op Education"
-    },
-    {
-      "roomId": "RY-233",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -51216,6 +51172,17 @@
     {
       "roomId": "RY-247",
       "kind": "class",
+      "days": 2,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENCP2000",
+      "detail": "Introduction to Engineering Co-op Education"
+    },
+    {
+      "roomId": "RY-247",
+      "kind": "class",
       "days": 16,
       "start": 705,
       "end": 805,
@@ -51331,8 +51298,8 @@
       "end": 695,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "JPNS1101",
-      "detail": "Elementary Japanese 1"
+      "label": "ITLN1102",
+      "detail": "Elementary Italian 2"
     },
     {
       "roomId": "RY-264",
@@ -52244,8 +52211,8 @@
       "end": 695,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "ITLN1102",
-      "detail": "Elementary Italian 2"
+      "label": "JPNS1101",
+      "detail": "Elementary Japanese 1"
     },
     {
       "roomId": "RY-273",
@@ -56923,17 +56890,6 @@
       "detail": "Foundations of Project Management"
     },
     {
-      "roomId": "SH-210",
-      "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1290,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "IE7374",
-      "detail": "ST: Generative AI"
-    },
-    {
       "roomId": "SH-215",
       "kind": "class",
       "days": 18,
@@ -57519,6 +57475,17 @@
     {
       "roomId": "SH-315",
       "kind": "class",
+      "days": 2,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "SOCL3300",
+      "detail": "Social Theory"
+    },
+    {
+      "roomId": "SH-315",
+      "kind": "class",
       "days": 18,
       "start": 815,
       "end": 915,
@@ -57537,6 +57504,17 @@
       "endDate": "2026-12-13",
       "label": "MATH1365",
       "detail": "Introduction to Mathematical Reasoning"
+    },
+    {
+      "roomId": "SH-315",
+      "kind": "class",
+      "days": 8,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "SOCL3300",
+      "detail": "Social Theory"
     },
     {
       "roomId": "SH-315",
@@ -59715,6 +59693,28 @@
       "endDate": "2026-12-13",
       "label": "MISM2301",
       "detail": "Introduction to Information Systems and Digital Technologies"
+    },
+    {
+      "roomId": "SL-005",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "MSCR2505",
+      "detail": "Digital Feminisms"
+    },
+    {
+      "roomId": "SL-005",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "WMNS2505",
+      "detail": "Digital Feminisms"
     },
     {
       "roomId": "SL-005",
@@ -63096,6 +63096,17 @@
     {
       "roomId": "SL-125",
       "kind": "class",
+      "days": 2,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "INFO6205",
+      "detail": "Program Structure and Algorithms"
+    },
+    {
+      "roomId": "SL-125",
+      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -63129,13 +63140,13 @@
     {
       "roomId": "SL-125",
       "kind": "class",
-      "days": 5,
+      "days": 8,
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ME4550",
-      "detail": "Mechanical Engineering Design"
+      "endDate": "2026-12-20",
+      "label": "INFO6205",
+      "detail": "Program Structure and Algorithms"
     },
     {
       "roomId": "SL-125",
@@ -64174,17 +64185,6 @@
     {
       "roomId": "WGV-1426",
       "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5002",
-      "detail": "Discrete Structures"
-    },
-    {
-      "roomId": "WGV-1426",
-      "kind": "class",
       "days": 1,
       "start": 780,
       "end": 900,
@@ -64203,6 +64203,17 @@
       "endDate": "2026-12-20",
       "label": "DGM6670",
       "detail": "Game Development Fundamentals"
+    },
+    {
+      "roomId": "WGV-1426",
+      "kind": "class",
+      "days": 8,
+      "start": 795,
+      "end": 915,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS5002",
+      "detail": "Discrete Structures"
     },
     {
       "roomId": "WGV-1426",
@@ -65945,6 +65956,17 @@
     {
       "roomId": "WVH-110",
       "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ME4550",
+      "detail": "Mechanical Engineering Design"
+    },
+    {
+      "roomId": "WVH-110",
+      "kind": "class",
       "days": 18,
       "start": 925,
       "end": 1025,
@@ -66546,17 +66568,6 @@
       "endDate": "2026-12-13",
       "label": "CS1802",
       "detail": "Seminar for CS 1800"
-    },
-    {
-      "roomId": "WVH-212",
-      "kind": "class",
-      "days": 1,
-      "start": 810,
-      "end": 960,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "HINF7701",
-      "detail": "Health Informatics Capstone Project"
     },
     {
       "roomId": "WVH-212",
