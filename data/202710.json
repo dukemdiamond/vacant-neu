@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-18",
+  "generatedAt": "2026-09-19",
   "campuses": [
     {
       "code": "BOS",
@@ -9966,17 +9966,6 @@
     {
       "roomId": "CA-001",
       "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "HIST1232",
-      "detail": "History of Boston"
-    },
-    {
-      "roomId": "CA-001",
-      "kind": "class",
       "days": 4,
       "start": 1070,
       "end": 1150,
@@ -16181,6 +16170,17 @@
     {
       "roomId": "DK-040",
       "kind": "class",
+      "days": 8,
+      "start": 600,
+      "end": 720,
+      "startDate": "2026-09-07",
+      "endDate": "2026-12-04",
+      "label": "LAW6160",
+      "detail": "Legal Skills in Social Context: Foundations of Social Justice Project"
+    },
+    {
+      "roomId": "DK-040",
+      "kind": "class",
       "days": 2,
       "start": 600,
       "end": 720,
@@ -16628,17 +16628,6 @@
       "endDate": "2026-12-20",
       "label": "LAW7679",
       "detail": "Race and the Law"
-    },
-    {
-      "roomId": "DK-160",
-      "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 720,
-      "startDate": "2026-09-07",
-      "endDate": "2026-12-04",
-      "label": "LAW6160",
-      "detail": "Legal Skills in Social Context: Foundations of Social Justice Project"
     },
     {
       "roomId": "DK-160",
@@ -19327,6 +19316,17 @@
     {
       "roomId": "EXP-310",
       "kind": "class",
+      "days": 2,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHIL2155",
+      "detail": "Human Rights"
+    },
+    {
+      "roomId": "EXP-310",
+      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -19356,6 +19356,17 @@
       "endDate": "2026-12-13",
       "label": "PHIL1105",
       "detail": "Science and Pseudoscience"
+    },
+    {
+      "roomId": "EXP-310",
+      "kind": "class",
+      "days": 8,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "PHIL2155",
+      "detail": "Human Rights"
     },
     {
       "roomId": "EXP-310",
@@ -21065,17 +21076,6 @@
     {
       "roomId": "FR-129",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHIL2155",
-      "detail": "Human Rights"
-    },
-    {
-      "roomId": "FR-129",
-      "kind": "class",
       "days": 1,
       "start": 815,
       "end": 1015,
@@ -21105,17 +21105,6 @@
       "endDate": "2026-12-13",
       "label": "POLS4505",
       "detail": "U.S. Civil Liberties"
-    },
-    {
-      "roomId": "FR-129",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHIL2155",
-      "detail": "Human Rights"
     },
     {
       "roomId": "FR-129",
@@ -24706,6 +24695,17 @@
     {
       "roomId": "HA-222",
       "kind": "class",
+      "days": 18,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "HA-222",
+      "kind": "class",
       "days": 2,
       "start": 1035,
       "end": 1235,
@@ -27735,9 +27735,9 @@
       "start": 815,
       "end": 880,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE4512",
-      "detail": "Engineering Economy"
+      "endDate": "2026-12-20",
+      "label": "IE6200",
+      "detail": "Engineering Probability and Statistics"
     },
     {
       "roomId": "HS-209",
@@ -33506,13 +33506,13 @@
     {
       "roomId": "M20-109",
       "kind": "class",
-      "days": 2,
+      "days": 10,
       "start": 900,
       "end": 1000,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "CS2545",
-      "detail": "Introduction to Computer Science Research"
+      "endDate": "2026-12-20",
+      "label": "CS6120",
+      "detail": "Natural Language Processing"
     },
     {
       "roomId": "M20-109",
@@ -33843,17 +33843,6 @@
       "endDate": "2026-12-13",
       "label": "PHIL1160",
       "detail": "Introduction to Economic Justice"
-    },
-    {
-      "roomId": "M20-118",
-      "kind": "class",
-      "days": 10,
-      "start": 1010,
-      "end": 1110,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "INNO2301",
-      "detail": "Innovation!"
     },
     {
       "roomId": "M20-124",
@@ -35044,6 +35033,17 @@
       "detail": "Professional Development for Co-op"
     },
     {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 10,
+      "start": 1010,
+      "end": 1110,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "INNO2301",
+      "detail": "Innovation!"
+    },
+    {
       "roomId": "M44-132",
       "kind": "class",
       "days": 20,
@@ -35068,13 +35068,13 @@
     {
       "roomId": "M44-132",
       "kind": "class",
-      "days": 10,
+      "days": 2,
       "start": 900,
       "end": 1000,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6120",
-      "detail": "Natural Language Processing"
+      "endDate": "2026-12-13",
+      "label": "CS2545",
+      "detail": "Introduction to Computer Science Research"
     },
     {
       "roomId": "M44-132",
@@ -44686,9 +44686,9 @@
       "start": 815,
       "end": 880,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "IE6200",
-      "detail": "Engineering Probability and Statistics"
+      "endDate": "2026-12-13",
+      "label": "IE4512",
+      "detail": "Engineering Economy"
     },
     {
       "roomId": "RI-233",
@@ -51832,17 +51832,6 @@
     {
       "roomId": "RY-268",
       "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
-    },
-    {
-      "roomId": "RY-268",
-      "kind": "class",
       "days": 13,
       "start": 995,
       "end": 1060,
@@ -53493,17 +53482,6 @@
     {
       "roomId": "RY-301",
       "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ARTF1240",
-      "detail": "Making with Video, Sound, and Animation"
-    },
-    {
-      "roomId": "RY-301",
-      "kind": "class",
       "days": 4,
       "start": 815,
       "end": 1025,
@@ -53709,6 +53687,17 @@
       "endDate": "2026-12-20",
       "label": "EXRE5010",
       "detail": "Immersive Media: Extended Realities (XR) History, Theory, and Impact"
+    },
+    {
+      "roomId": "RY-324",
+      "kind": "class",
+      "days": 16,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ARTF1240",
+      "detail": "Making with Video, Sound, and Animation"
     },
     {
       "roomId": "RY-324",
@@ -59158,6 +59147,17 @@
     {
       "roomId": "SJ-906",
       "kind": "class",
+      "days": 1,
+      "start": 1020,
+      "end": 1110,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS5005",
+      "detail": "Recitation for CS 5004"
+    },
+    {
+      "roomId": "SJ-906",
+      "kind": "class",
       "days": 16,
       "start": 1080,
       "end": 1200,
@@ -59244,6 +59244,17 @@
       "detail": "Foundations of Software Engineering"
     },
     {
+      "roomId": "SJ-912/913",
+      "kind": "class",
+      "days": 1,
+      "start": 960,
+      "end": 1160,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6120",
+      "detail": "Natural Language Processing"
+    },
+    {
       "roomId": "SJ-913",
       "kind": "class",
       "days": 4,
@@ -59264,17 +59275,6 @@
       "endDate": "2026-12-20",
       "label": "INFO7374",
       "detail": "ST: Adv Techniques With LLM"
-    },
-    {
-      "roomId": "SJ-913",
-      "kind": "class",
-      "days": 1,
-      "start": 1020,
-      "end": 1110,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5005",
-      "detail": "Recitation for CS 5004"
     },
     {
       "roomId": "SJ-913",
@@ -59363,17 +59363,6 @@
       "endDate": "2026-12-20",
       "label": "CS5100",
       "detail": "Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "SJ-916",
-      "kind": "class",
-      "days": 1,
-      "start": 960,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6120",
-      "detail": "Natural Language Processing"
     },
     {
       "roomId": "SJ-916",
@@ -63136,6 +63125,17 @@
       "endDate": "2026-12-13",
       "label": "ORGB3201",
       "detail": "Organizational Behavior"
+    },
+    {
+      "roomId": "SL-125",
+      "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "HIST1232",
+      "detail": "History of Boston"
     },
     {
       "roomId": "SL-125",
