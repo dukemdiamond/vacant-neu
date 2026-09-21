@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-20",
+  "generatedAt": "2026-09-21",
   "campuses": [
     {
       "code": "BOS",
@@ -4851,17 +4851,6 @@
     {
       "roomId": "225-306",
       "kind": "class",
-      "days": 18,
-      "start": 635,
-      "end": 735,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "EECE5639",
-      "detail": "Computer Vision"
-    },
-    {
-      "roomId": "225-306",
-      "kind": "class",
       "days": 8,
       "start": 745,
       "end": 845,
@@ -5386,6 +5375,17 @@
       "endDate": "2026-12-20",
       "label": "CS5010",
       "detail": "Programming Design Paradigm"
+    },
+    {
+      "roomId": "401-143",
+      "kind": "class",
+      "days": 10,
+      "start": 635,
+      "end": 735,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "EECE5639",
+      "detail": "Computer Vision"
     },
     {
       "roomId": "401-143",
