@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-21",
+  "generatedAt": "2026-09-22",
   "campuses": [
     {
       "code": "BOS",
@@ -5133,17 +5133,6 @@
       "endDate": "2026-12-20",
       "label": "INFO7375",
       "detail": "ST: Semantic Intel in LLM"
-    },
-    {
-      "roomId": "225-416",
-      "kind": "class",
-      "days": 2,
-      "start": 1080,
-      "end": 1280,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO7610",
-      "detail": "Special Topics in Natural Language Engineering Methods and Tools"
     },
     {
       "roomId": "271-252",
@@ -24442,17 +24431,6 @@
     {
       "roomId": "HA-221",
       "kind": "class",
-      "days": 16,
-      "start": 1080,
-      "end": 1290,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CSYE6200",
-      "detail": "Concepts of Object-Oriented Design"
-    },
-    {
-      "roomId": "HA-221",
-      "kind": "class",
       "days": 2,
       "start": 1080,
       "end": 1290,
@@ -31218,17 +31196,6 @@
     {
       "roomId": "KA-104",
       "kind": "class",
-      "days": 1,
-      "start": 555,
-      "end": 620,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ARCH1311",
-      "detail": "Recitation for ARCH 1310"
-    },
-    {
-      "roomId": "KA-104",
-      "kind": "class",
       "days": 8,
       "start": 555,
       "end": 620,
@@ -31863,6 +31830,17 @@
       "endDate": "2026-12-13",
       "label": "POLS3406",
       "detail": "International Law"
+    },
+    {
+      "roomId": "KA-209",
+      "kind": "class",
+      "days": 1,
+      "start": 555,
+      "end": 620,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ARCH1311",
+      "detail": "Recitation for ARCH 1310"
     },
     {
       "roomId": "KA-209",
