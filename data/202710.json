@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-22",
+  "generatedAt": "2026-09-23",
   "campuses": [
     {
       "code": "BOS",
@@ -27,7 +27,7 @@
       "code": "PTL",
       "name": "Portland",
       "buildingCount": 1,
-      "roomCount": 18
+      "roomCount": 17
     },
     {
       "code": "SEA",
@@ -395,7 +395,7 @@
       "code": "RXI",
       "name": "Roux Institute 100 Fore St.",
       "campus": "PTL",
-      "roomCount": 18
+      "roomCount": 17
     },
     {
       "code": "RY",
@@ -3215,13 +3215,6 @@
       "displayName": "Richards Hall 458"
     },
     {
-      "id": "RXI-105",
-      "campus": "PTL",
-      "building": "RXI",
-      "room": "105",
-      "displayName": "Roux Institute 100 Fore St. 105"
-    },
-    {
       "id": "RXI-108",
       "campus": "PTL",
       "building": "RXI",
@@ -4790,17 +4783,6 @@
       "end": 1055,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "CS6170",
-      "detail": "AI Capstone"
-    },
-    {
-      "roomId": "225-305",
-      "kind": "class",
-      "days": 1,
-      "start": 855,
-      "end": 1055,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
       "label": "CS7980",
       "detail": "Research Capstone"
     },
@@ -5067,17 +5049,6 @@
       "endDate": "2026-12-20",
       "label": "IE6600",
       "detail": "Computation and Visualization for Analytics"
-    },
-    {
-      "roomId": "225-409",
-      "kind": "class",
-      "days": 2,
-      "start": 855,
-      "end": 1055,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6150",
-      "detail": "Web Design and User Experience Engineering"
     },
     {
       "roomId": "225-409",
@@ -5610,28 +5581,6 @@
     {
       "roomId": "ARL-1512",
       "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PJM6250",
-      "detail": "Project Finance"
-    },
-    {
-      "roomId": "ARL-1512",
-      "kind": "class",
-      "days": 1,
-      "start": 1190,
-      "end": 1270,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "AAI6610",
-      "detail": "Applied Machine Learning"
-    },
-    {
-      "roomId": "ARL-1512",
-      "kind": "class",
       "days": 2,
       "start": 1080,
       "end": 1245,
@@ -5650,6 +5599,17 @@
       "endDate": "2026-12-20",
       "label": "ALY6145",
       "detail": "Communication and Visualization with Data"
+    },
+    {
+      "roomId": "ARL-1516",
+      "kind": "class",
+      "days": 2,
+      "start": 810,
+      "end": 1010,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "INFO6105",
+      "detail": "Data Science Engineering Methods and Tools"
     },
     {
       "roomId": "ARL-1516",
@@ -5815,17 +5775,6 @@
       "endDate": "2026-12-20",
       "label": "ALY6630",
       "detail": "Programming for Data Science"
-    },
-    {
-      "roomId": "ARL-1530",
-      "kind": "class",
-      "days": 2,
-      "start": 810,
-      "end": 1010,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6105",
-      "detail": "Data Science Engineering Methods and Tools"
     },
     {
       "roomId": "ARL-1530",
@@ -7410,17 +7359,6 @@
       "endDate": "2026-12-13",
       "label": "MATH2341",
       "detail": "Differential Equations and Linear Algebra for Engineering"
-    },
-    {
-      "roomId": "BK-315",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6106",
-      "detail": "Neural Modeling Methods and Tools"
     },
     {
       "roomId": "BK-315",
@@ -9962,6 +9900,17 @@
       "endDate": "2026-12-20",
       "label": "DGM6720",
       "detail": "Managing Digital Media Projects"
+    },
+    {
+      "roomId": "CA-001",
+      "kind": "class",
+      "days": 2,
+      "start": 815,
+      "end": 935,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "DGM6415",
+      "detail": "Interactive Media Studies"
     },
     {
       "roomId": "CA-002",
@@ -12914,6 +12863,17 @@
     {
       "roomId": "CUBE-508",
       "kind": "class",
+      "days": 2,
+      "start": 990,
+      "end": 1070,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "PJM6980",
+      "detail": "Capstone"
+    },
+    {
+      "roomId": "CUBE-508",
+      "kind": "class",
       "days": 8,
       "start": 1080,
       "end": 1280,
@@ -12965,17 +12925,6 @@
       "endDate": "2026-10-25",
       "label": "PJM6780",
       "detail": "Agile Implementation and Governance"
-    },
-    {
-      "roomId": "CUBE-513",
-      "kind": "class",
-      "days": 8,
-      "start": 1080,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PJM6980",
-      "detail": "Capstone"
     },
     {
       "roomId": "CUBE-513",
@@ -13713,17 +13662,6 @@
       "endDate": "2026-12-20",
       "label": "ENLR5121",
       "detail": "Engineering Leadership 1"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 8,
-      "start": 995,
-      "end": 1240,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "TELR5121",
-      "detail": "Technology Leadership 1"
     },
     {
       "roomId": "DG-119",
@@ -14956,17 +14894,6 @@
       "endDate": "2026-12-20",
       "label": "INTB6426",
       "detail": "Becoming a Global Leader"
-    },
-    {
-      "roomId": "DG-230",
-      "kind": "class",
-      "days": 2,
-      "start": 1070,
-      "end": 1270,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "STRT6424",
-      "detail": "Managing the Sustainable Global Enterprise"
     },
     {
       "roomId": "DG-270",
@@ -18104,17 +18031,6 @@
       "detail": "First-Year Writing"
     },
     {
-      "roomId": "EV-008",
-      "kind": "class",
-      "days": 8,
-      "start": 995,
-      "end": 1055,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "DGM6415",
-      "detail": "Interactive Media Studies"
-    },
-    {
       "roomId": "EV-010",
       "kind": "class",
       "days": 4,
@@ -18784,6 +18700,17 @@
       "endDate": "2026-12-20",
       "label": "EMGT6225",
       "detail": "Economic Decision Making"
+    },
+    {
+      "roomId": "EXP-202",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ME2350",
+      "detail": "Statics"
     },
     {
       "roomId": "EXP-202",
@@ -19609,17 +19536,6 @@
       "endDate": "2026-12-20",
       "label": "CHEM5612",
       "detail": "Principles of Mass Spectrometry"
-    },
-    {
-      "roomId": "EXP-311",
-      "kind": "class",
-      "days": 1,
-      "start": 1185,
-      "end": 1275,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5011",
-      "detail": "Recitation for CS 5010"
     },
     {
       "roomId": "EXP-311",
@@ -21846,17 +21762,6 @@
     {
       "roomId": "FR-202",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "TELE5350",
-      "detail": "Telecom and Network Infrastructure"
-    },
-    {
-      "roomId": "FR-202",
-      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -21886,17 +21791,6 @@
       "endDate": "2026-12-13",
       "label": "MKTG2201",
       "detail": "Introduction to Marketing"
-    },
-    {
-      "roomId": "FR-202",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "TELE5350",
-      "detail": "Telecom and Network Infrastructure"
     },
     {
       "roomId": "FR-202",
@@ -23030,6 +22924,17 @@
       "endDate": "2026-12-20",
       "label": "CHM1200",
       "detail": "General Chemistry 2"
+    },
+    {
+      "roomId": "FR-241",
+      "kind": "class",
+      "days": 2,
+      "start": 1070,
+      "end": 1270,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "STRT6424",
+      "detail": "Managing the Sustainable Global Enterprise"
     },
     {
       "roomId": "FR-241",
@@ -26779,17 +26684,6 @@
       "end": 990,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "CHEM6420",
-      "detail": "Engineering for Chemical Sustainability"
-    },
-    {
-      "roomId": "HS-108",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
       "label": "CHME6420",
       "detail": "Engineering for Chemical Sustainability"
     },
@@ -27707,17 +27601,6 @@
       "detail": "Computation and Visualization for Analytics"
     },
     {
-      "roomId": "HS-207",
-      "kind": "class",
-      "days": 13,
-      "start": 815,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "IE6200",
-      "detail": "Engineering Probability and Statistics"
-    },
-    {
       "roomId": "HS-209",
       "kind": "class",
       "days": 2,
@@ -28486,17 +28369,6 @@
       "endDate": "2026-12-20",
       "label": "IE6600",
       "detail": "Computation and Visualization for Analytics"
-    },
-    {
-      "roomId": "HT-224",
-      "kind": "class",
-      "days": 2,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "MEIE6850",
-      "detail": "Research Seminar in Mechanical and Industrial Engineering"
     },
     {
       "roomId": "HT-224",
@@ -31713,17 +31585,6 @@
     {
       "roomId": "KA-204",
       "kind": "class",
-      "days": 4,
-      "start": 995,
-      "end": 1170,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "HIST5237",
-      "detail": "Issues and Methods in Public History"
-    },
-    {
-      "roomId": "KA-204",
-      "kind": "class",
       "days": 2,
       "start": 1020,
       "end": 1220,
@@ -32677,17 +32538,6 @@
       "endDate": "2026-12-20",
       "label": "SBSY5300",
       "detail": "Information Systems for Integrated Project Delivery"
-    },
-    {
-      "roomId": "KN-002B",
-      "kind": "class",
-      "days": 8,
-      "start": 1090,
-      "end": 1300,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6105",
-      "detail": "Data Science Engineering Methods and Tools"
     },
     {
       "roomId": "KN-002B",
@@ -33913,6 +33763,17 @@
     {
       "roomId": "M20-125",
       "kind": "class",
+      "days": 2,
+      "start": 525,
+      "end": 625,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "M20-125",
+      "kind": "class",
       "days": 18,
       "start": 635,
       "end": 735,
@@ -33931,6 +33792,17 @@
       "endDate": "2026-12-20",
       "label": "EECE5161",
       "detail": "Thin Film Technologies"
+    },
+    {
+      "roomId": "M20-125",
+      "kind": "class",
+      "days": 8,
+      "start": 710,
+      "end": 810,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
     },
     {
       "roomId": "M20-125",
@@ -34041,17 +33913,6 @@
       "endDate": "2026-12-13",
       "label": "ARCH1120",
       "detail": "Fundamental Architectural Design"
-    },
-    {
-      "roomId": "M23-153",
-      "kind": "class",
-      "days": 16,
-      "start": 525,
-      "end": 700,
-      "startDate": "2026-09-25",
-      "endDate": "2026-10-16",
-      "label": "ARTF1975",
-      "detail": "Product Design Software"
     },
     {
       "roomId": "M23-153",
@@ -35783,17 +35644,6 @@
     {
       "roomId": "M54-035",
       "kind": "class",
-      "days": 8,
-      "start": 635,
-      "end": 835,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6215",
-      "detail": "Business Analysis and Information Engineering"
-    },
-    {
-      "roomId": "M54-035",
-      "kind": "class",
       "days": 4,
       "start": 635,
       "end": 840,
@@ -35849,17 +35699,6 @@
     {
       "roomId": "M54-107",
       "kind": "class",
-      "days": 2,
-      "start": 525,
-      "end": 625,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
-    },
-    {
-      "roomId": "M54-107",
-      "kind": "class",
       "days": 13,
       "start": 635,
       "end": 700,
@@ -35878,17 +35717,6 @@
       "endDate": "2026-12-13",
       "label": "FINA2730",
       "detail": "Fintech and Financial Innovation"
-    },
-    {
-      "roomId": "M54-107",
-      "kind": "class",
-      "days": 8,
-      "start": 710,
-      "end": 810,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENGW1111",
-      "detail": "First-Year Writing"
     },
     {
       "roomId": "M54-107",
@@ -36076,6 +35904,17 @@
       "endDate": "2026-12-20",
       "label": "HIST5101",
       "detail": "Theory and Methodology 1"
+    },
+    {
+      "roomId": "ME-206",
+      "kind": "class",
+      "days": 4,
+      "start": 995,
+      "end": 1170,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "HIST5237",
+      "detail": "Issues and Methods in Public History"
     },
     {
       "roomId": "MSI-NA",
@@ -39572,17 +39411,6 @@
       "end": 915,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "ANTH4510",
-      "detail": "Contemporary Issues in Global Africa"
-    },
-    {
-      "roomId": "NY-FND-OS2",
-      "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
       "label": "INTL4510",
       "detail": "Contemporary Issues in Global Africa"
     },
@@ -42383,17 +42211,6 @@
     {
       "roomId": "RB-107",
       "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CHME7395",
-      "detail": "Mentoring in Chemical Engineering"
-    },
-    {
-      "roomId": "RB-107",
-      "kind": "class",
       "days": 4,
       "start": 705,
       "end": 805,
@@ -43258,17 +43075,6 @@
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
       "label": "CIVE5255",
-      "detail": "Tools and Techniques of Environmental Health"
-    },
-    {
-      "roomId": "RI-155",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "HSCI5255",
       "detail": "Tools and Techniques of Environmental Health"
     },
     {
@@ -46002,17 +45808,6 @@
     {
       "roomId": "RI-254",
       "kind": "class",
-      "days": 13,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ME2350",
-      "detail": "Statics"
-    },
-    {
-      "roomId": "RI-254",
-      "kind": "class",
       "days": 20,
       "start": 705,
       "end": 805,
@@ -46442,17 +46237,6 @@
     {
       "roomId": "RI-325",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 630,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ARMY2201",
-      "detail": "Leadership and Decision Making"
-    },
-    {
-      "roomId": "RI-325",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -46878,17 +46662,6 @@
       "endDate": "2026-12-20",
       "label": "CY5001",
       "detail": "Cybersecurity: Technologies, Threats, and Defenses"
-    },
-    {
-      "roomId": "RXI-105",
-      "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "BIOE5820",
-      "detail": "Biomaterials"
     },
     {
       "roomId": "RXI-108",
@@ -48158,17 +47931,6 @@
     {
       "roomId": "RY-145",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ARMY1101",
-      "detail": "Introduction to the Army and Critical Thinking"
-    },
-    {
-      "roomId": "RY-145",
-      "kind": "class",
       "days": 20,
       "start": 705,
       "end": 805,
@@ -48682,17 +48444,6 @@
       "endDate": "2026-12-13",
       "label": "ENCP2000",
       "detail": "Introduction to Engineering Co-op Education"
-    },
-    {
-      "roomId": "RY-155",
-      "kind": "class",
-      "days": 32,
-      "start": 780,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6350",
-      "detail": "Smartphones-Based Web Development"
     },
     {
       "roomId": "RY-155",
@@ -55484,17 +55235,6 @@
     {
       "roomId": "RY-435",
       "kind": "class",
-      "days": 9,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CSYE7220",
-      "detail": "Deployment and Operation of Software Applications"
-    },
-    {
-      "roomId": "RY-435",
-      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 770,
@@ -56991,17 +56731,6 @@
     {
       "roomId": "SH-215",
       "kind": "class",
-      "days": 2,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "TELR5121",
-      "detail": "Technology Leadership 1"
-    },
-    {
-      "roomId": "SH-215",
-      "kind": "class",
       "days": 4,
       "start": 995,
       "end": 1195,
@@ -57020,17 +56749,6 @@
       "endDate": "2026-12-20",
       "label": "ENLR5131",
       "detail": "Scientific Foundations of Engineering 1"
-    },
-    {
-      "roomId": "SH-215",
-      "kind": "class",
-      "days": 2,
-      "start": 1030,
-      "end": 1240,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "TELR5131",
-      "detail": "Scientific Foundations of Technology 1"
     },
     {
       "roomId": "SH-220",
@@ -58782,17 +58500,6 @@
       "detail": "Career Management for Engineers"
     },
     {
-      "roomId": "SJ-1011",
-      "kind": "class",
-      "days": 4,
-      "start": 795,
-      "end": 900,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ENCP6000",
-      "detail": "Career Management for Engineers"
-    },
-    {
       "roomId": "SJ-1012",
       "kind": "class",
       "days": 8,
@@ -59499,17 +59206,6 @@
     {
       "roomId": "SL-002",
       "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 1015,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ARCH7130",
-      "detail": "Master’s Research Studio"
-    },
-    {
-      "roomId": "SL-002",
-      "kind": "class",
       "days": 2,
       "start": 1070,
       "end": 1220,
@@ -60199,6 +59895,17 @@
       "endDate": "2026-12-13",
       "label": "ENCP2000",
       "detail": "Introduction to Engineering Co-op Education"
+    },
+    {
+      "roomId": "SL-012",
+      "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "IE6200",
+      "detail": "Engineering Probability and Statistics"
     },
     {
       "roomId": "SL-012",
@@ -61576,17 +61283,6 @@
       "detail": "Financial Modeling"
     },
     {
-      "roomId": "SL-039",
-      "kind": "class",
-      "days": 1,
-      "start": 1185,
-      "end": 1275,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS5011",
-      "detail": "Recitation for CS 5010"
-    },
-    {
       "roomId": "SL-043",
       "kind": "class",
       "days": 13,
@@ -61677,17 +61373,6 @@
     {
       "roomId": "SL-047",
       "kind": "class",
-      "days": 2,
-      "start": 530,
-      "end": 680,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CAEP8553",
-      "detail": "Advanced Counseling Practicum"
-    },
-    {
-      "roomId": "SL-047",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -61695,17 +61380,6 @@
       "endDate": "2026-12-13",
       "label": "JRNL3700",
       "detail": "Data Storytelling"
-    },
-    {
-      "roomId": "SL-047",
-      "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ARCH7430",
-      "detail": "Topics In Research Methods in Architectural Design"
     },
     {
       "roomId": "SL-047",
@@ -61963,17 +61637,6 @@
     {
       "roomId": "SL-111",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PT5560",
-      "detail": "Bioengineering Design for Robotic Rehabilitation"
-    },
-    {
-      "roomId": "SL-111",
-      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -62014,17 +61677,6 @@
       "endDate": "2026-12-13",
       "label": "MSCR3392",
       "detail": "Gender and Film"
-    },
-    {
-      "roomId": "SL-111",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PT5560",
-      "detail": "Bioengineering Design for Robotic Rehabilitation"
     },
     {
       "roomId": "SL-111",
@@ -63063,17 +62715,6 @@
     {
       "roomId": "SL-125",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6205",
-      "detail": "Program Structure and Algorithms"
-    },
-    {
-      "roomId": "SL-125",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -63114,17 +62755,6 @@
       "endDate": "2026-12-13",
       "label": "HIST1232",
       "detail": "History of Boston"
-    },
-    {
-      "roomId": "SL-125",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6205",
-      "detail": "Program Structure and Algorithms"
     },
     {
       "roomId": "SL-125",
@@ -65556,17 +65186,6 @@
       "endDate": "2026-12-20",
       "label": "NNMD5272",
       "detail": "Nanomedicine Seminar"
-    },
-    {
-      "roomId": "WVG-108",
-      "kind": "class",
-      "days": 2,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NNMD6272",
-      "detail": "Professional Nanomedicine Seminar"
     },
     {
       "roomId": "WVH-108",
