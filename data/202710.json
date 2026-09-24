@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-23",
+  "generatedAt": "2026-09-24",
   "campuses": [
     {
       "code": "BOS",
@@ -4734,6 +4734,17 @@
     {
       "roomId": "225-305",
       "kind": "class",
+      "days": 4,
+      "start": 635,
+      "end": 835,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6983",
+      "detail": "Quantum Computing"
+    },
+    {
+      "roomId": "225-305",
+      "kind": "class",
       "days": 2,
       "start": 635,
       "end": 835,
@@ -5082,17 +5093,6 @@
       "endDate": "2026-12-20",
       "label": "CS5200",
       "detail": "Database Management Systems"
-    },
-    {
-      "roomId": "225-416",
-      "kind": "class",
-      "days": 4,
-      "start": 635,
-      "end": 835,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6983",
-      "detail": "Quantum Computing"
     },
     {
       "roomId": "225-416",
@@ -7326,6 +7326,17 @@
       "endDate": "2026-12-13",
       "label": "CY2550",
       "detail": "Foundations of Cybersecurity"
+    },
+    {
+      "roomId": "BK-315",
+      "kind": "class",
+      "days": 2,
+      "start": 705,
+      "end": 805,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "EESH2000",
+      "detail": "Professional Development for Co-op"
     },
     {
       "roomId": "BK-315",
@@ -45390,17 +45401,6 @@
     {
       "roomId": "RI-241",
       "kind": "class",
-      "days": 13,
-      "start": 815,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "ENVR4000",
-      "detail": "Science Communication and Professional Development"
-    },
-    {
-      "roomId": "RI-241",
-      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -45518,6 +45518,17 @@
       "endDate": "2026-12-13",
       "label": "PHIL3512",
       "detail": "Religion, Race, and Politics"
+    },
+    {
+      "roomId": "RI-243",
+      "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "ENVR4000",
+      "detail": "Science Communication and Professional Development"
     },
     {
       "roomId": "RI-243",
@@ -46607,17 +46618,6 @@
       "endDate": "2026-12-13",
       "label": "DS4200",
       "detail": "Information Presentation and Visualization"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 805,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "EESH2000",
-      "detail": "Professional Development for Co-op"
     },
     {
       "roomId": "RI-458",
@@ -48626,7 +48626,7 @@
       "kind": "class",
       "days": 2,
       "start": 925,
-      "end": 1140,
+      "end": 1125,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
       "label": "ARMY3301",
@@ -50501,17 +50501,6 @@
       "endDate": "2026-12-13",
       "label": "MUSC2350",
       "detail": "Acoustics and Psychoacoustics of Music"
-    },
-    {
-      "roomId": "RY-235",
-      "kind": "class",
-      "days": 2,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BUSN1103",
-      "detail": "Professional Development for Business Co-op"
     },
     {
       "roomId": "RY-235",
@@ -62205,6 +62194,17 @@
       "endDate": "2026-12-13",
       "label": "SCHM3310",
       "detail": "Logistics and Transportation Management"
+    },
+    {
+      "roomId": "SL-119",
+      "kind": "class",
+      "days": 2,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "BUSN1103",
+      "detail": "Professional Development for Business Co-op"
     },
     {
       "roomId": "SL-119",
