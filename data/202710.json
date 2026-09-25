@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-24",
+  "generatedAt": "2026-09-25",
   "campuses": [
     {
       "code": "BOS",
@@ -20297,6 +20297,61 @@
       "detail": "Lab for CHM 1200"
     },
     {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 1,
+      "start": 1230,
+      "end": 1320,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CHM2111",
+      "detail": "Lab for CHM 2110"
+    },
+    {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 8,
+      "start": 1230,
+      "end": 1320,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CHM2201",
+      "detail": "Lab for CHM 2200"
+    },
+    {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 1,
+      "start": 1230,
+      "end": 1320,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CHM2301",
+      "detail": "Lab for CHM 2300"
+    },
+    {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 2,
+      "start": 1250,
+      "end": 1340,
+      "startDate": "2026-09-09",
+      "endDate": "2026-10-25",
+      "label": "CHM2111",
+      "detail": "Lab for CHM 2110"
+    },
+    {
+      "roomId": "EXP-342",
+      "kind": "class",
+      "days": 2,
+      "start": 1250,
+      "end": 1340,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "CHM2201",
+      "detail": "Lab for CHM 2200"
+    },
+    {
       "roomId": "EXP-360",
       "kind": "class",
       "days": 16,
@@ -35699,20 +35754,20 @@
     {
       "roomId": "M54-100",
       "kind": "class",
-      "days": 21,
-      "start": 900,
-      "end": 965,
+      "days": 13,
+      "start": 635,
+      "end": 700,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
       "label": "BIOL1111",
       "detail": "General Biology 1"
     },
     {
-      "roomId": "M54-107",
+      "roomId": "M54-100",
       "kind": "class",
-      "days": 13,
-      "start": 635,
-      "end": 700,
+      "days": 21,
+      "start": 900,
+      "end": 965,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
       "label": "BIOL1111",
