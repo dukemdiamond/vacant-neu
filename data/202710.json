@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-27",
+  "generatedAt": "2026-09-28",
   "campuses": [
     {
       "code": "BOS",
@@ -35303,6 +35303,17 @@
     {
       "roomId": "M48-101",
       "kind": "class",
+      "days": 18,
+      "start": 635,
+      "end": 735,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "FINA2730",
+      "detail": "Fintech and Financial Innovation"
+    },
+    {
+      "roomId": "M48-101",
+      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -35772,17 +35783,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL1111",
       "detail": "General Biology 1"
-    },
-    {
-      "roomId": "M54-107",
-      "kind": "class",
-      "days": 18,
-      "start": 635,
-      "end": 735,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "FINA2730",
-      "detail": "Fintech and Financial Innovation"
     },
     {
       "roomId": "M54-107",
