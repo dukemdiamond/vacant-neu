@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-29",
+  "generatedAt": "2026-09-30",
   "campuses": [
     {
       "code": "BOS",
@@ -35983,6 +35983,17 @@
       "detail": "Issues and Methods in Public History"
     },
     {
+      "roomId": "ME-206",
+      "kind": "class",
+      "days": 2,
+      "start": 995,
+      "end": 1170,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "HIST7314",
+      "detail": "Research Seminar in World History"
+    },
+    {
       "roomId": "MSI-NA",
       "kind": "class",
       "days": 8,
@@ -52503,17 +52514,6 @@
       "endDate": "2026-12-13",
       "label": "COMM1000",
       "detail": "Communication Studies at Northeastern"
-    },
-    {
-      "roomId": "RY-283",
-      "kind": "class",
-      "days": 2,
-      "start": 995,
-      "end": 1170,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "HIST7314",
-      "detail": "Research Seminar in World History"
     },
     {
       "roomId": "RY-283",
