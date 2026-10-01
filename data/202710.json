@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-09-30",
+  "generatedAt": "2026-10-01",
   "campuses": [
     {
       "code": "BOS",
@@ -58887,9 +58887,9 @@
     {
       "roomId": "SJ-906",
       "kind": "class",
-      "days": 1,
-      "start": 1020,
-      "end": 1110,
+      "days": 8,
+      "start": 900,
+      "end": 990,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
       "label": "CS5005",
