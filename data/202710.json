@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-01",
+  "generatedAt": "2026-10-02",
   "campuses": [
     {
       "code": "BOS",
@@ -23027,17 +23027,6 @@
     {
       "roomId": "FR-242",
       "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "HUSV3570",
-      "detail": "The Nonprofit Sector, Philanthropy, and Social Change"
-    },
-    {
-      "roomId": "FR-242",
-      "kind": "class",
       "days": 13,
       "start": 630,
       "end": 695,
@@ -31926,6 +31915,17 @@
     {
       "roomId": "KA-302",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "HUSV3570",
+      "detail": "The Nonprofit Sector, Philanthropy, and Social Change"
+    },
+    {
+      "roomId": "KA-302",
+      "kind": "class",
       "days": 13,
       "start": 630,
       "end": 695,
@@ -35497,17 +35497,6 @@
       "endDate": "2026-12-13",
       "label": "ARCH1310",
       "detail": "Buildings and Cities, A Global History"
-    },
-    {
-      "roomId": "M54-006",
-      "kind": "class",
-      "days": 16,
-      "start": 745,
-      "end": 845,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "GSND5111",
-      "detail": "Seminar for GSND 5110"
     },
     {
       "roomId": "M54-006",
