@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-02",
+  "generatedAt": "2026-10-03",
   "campuses": [
     {
       "code": "BOS",
@@ -59041,6 +59041,17 @@
     {
       "roomId": "SJ-913",
       "kind": "class",
+      "days": 1,
+      "start": 1020,
+      "end": 1220,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "INFO7374",
+      "detail": "Machine Learning Med Devices"
+    },
+    {
+      "roomId": "SJ-913",
+      "kind": "class",
       "days": 8,
       "start": 1080,
       "end": 1160,
@@ -59114,17 +59125,6 @@
       "endDate": "2026-12-20",
       "label": "CS6983",
       "detail": "Computational Robotics"
-    },
-    {
-      "roomId": "SJ-916",
-      "kind": "class",
-      "days": 8,
-      "start": 1080,
-      "end": 1280,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO7374",
-      "detail": "Machine Learning Med Devices"
     },
     {
       "roomId": "SJ-916",
