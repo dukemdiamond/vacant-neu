@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-04",
+  "generatedAt": "2026-10-05",
   "campuses": [
     {
       "code": "BOS",
@@ -25995,39 +25995,6 @@
       "detail": "Writing for the Professions: Science and Engineering"
     },
     {
-      "roomId": "HS-101",
-      "kind": "class",
-      "days": 16,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-16",
-      "endDate": "2026-10-16",
-      "label": "LWP6501",
-      "detail": "Doctoral Research Design 2: Implementation of a Research Design"
-    },
-    {
-      "roomId": "HS-101",
-      "kind": "class",
-      "days": 32,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "label": "LWP6401",
-      "detail": "The Policymaking Process"
-    },
-    {
-      "roomId": "HS-101",
-      "kind": "class",
-      "days": 64,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-18",
-      "endDate": "2026-10-18",
-      "label": "LWP6122",
-      "detail": "Law and Legal Reasoning 3: The Executive Branch"
-    },
-    {
       "roomId": "HS-102",
       "kind": "class",
       "days": 2,
@@ -27115,39 +27082,6 @@
       "endDate": "2026-12-13",
       "label": "NRSG2215",
       "detail": "Cultivating Nursing Professional Identity and Practice"
-    },
-    {
-      "roomId": "HS-113",
-      "kind": "class",
-      "days": 16,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-16",
-      "endDate": "2026-10-16",
-      "label": "LWP6424",
-      "detail": "Introduction to Research Methods"
-    },
-    {
-      "roomId": "HS-113",
-      "kind": "class",
-      "days": 32,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-17",
-      "endDate": "2026-10-17",
-      "label": "LWP6403",
-      "detail": "Global Public Policy"
-    },
-    {
-      "roomId": "HS-113",
-      "kind": "class",
-      "days": 64,
-      "start": 510,
-      "end": 1110,
-      "startDate": "2026-10-18",
-      "endDate": "2026-10-18",
-      "label": "LWP6118",
-      "detail": "Law and Policy Debates: Historical Foundations to Current Controversies"
     },
     {
       "roomId": "HS-201",
@@ -58575,17 +58509,6 @@
       "endDate": "2026-12-20",
       "label": "ALY6620",
       "detail": "Big Data and Cloud Computing"
-    },
-    {
-      "roomId": "SJ-1012",
-      "kind": "class",
-      "days": 1,
-      "start": 1080,
-      "end": 1200,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6440",
-      "detail": "Leading and Managing Technical Projects"
     },
     {
       "roomId": "SJ-1045",
