@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-07",
   "campuses": [
     {
       "code": "BOS",
@@ -6083,6 +6083,17 @@
       "endDate": "2026-12-13",
       "label": "BIOL2301",
       "detail": "Genetics and Molecular Biology"
+    },
+    {
+      "roomId": "BK-010",
+      "kind": "class",
+      "days": 2,
+      "start": 995,
+      "end": 1195,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "EECE5644",
+      "detail": "Introduction to Machine Learning and Pattern Recognition"
     },
     {
       "roomId": "BK-025",
@@ -13655,17 +13666,6 @@
     {
       "roomId": "DG-119",
       "kind": "class",
-      "days": 2,
-      "start": 995,
-      "end": 1195,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "EECE5644",
-      "detail": "Introduction to Machine Learning and Pattern Recognition"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
       "days": 8,
       "start": 995,
       "end": 1240,
@@ -17597,7 +17597,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ARCH5330",
       "detail": "Theories of Architecture and Urbanism"
     },
@@ -18477,7 +18477,7 @@
       "start": 815,
       "end": 915,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5581",
       "detail": "Biological Imaging"
     },
@@ -18598,7 +18598,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5250",
       "detail": "Robot Mechanics and Control"
     },
@@ -18664,7 +18664,7 @@
       "start": 925,
       "end": 1025,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5591",
       "detail": "Advanced Genomics"
     },
@@ -18741,7 +18741,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5430",
       "detail": "Principles and Applications of Tissue Engineering"
     },
@@ -26353,7 +26353,7 @@
       "start": 815,
       "end": 1015,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5630",
       "detail": "Nano- and Microscale Manufacturing"
     },
@@ -26496,7 +26496,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5750",
       "detail": "Modeling and Inference in Bioengineering"
     },
@@ -26914,7 +26914,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5593",
       "detail": "Cell and Molecular Biology of Aging"
     },
@@ -27431,7 +27431,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5539",
       "detail": "Advances in Genome Editing"
     },
@@ -28344,7 +28344,7 @@
       "start": 815,
       "end": 1015,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ARCH5210",
       "detail": "Environmental Systems"
     },
@@ -28993,7 +28993,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5710",
       "detail": "Experimental Systems and Synthetic Bioengineering"
     },
@@ -29026,7 +29026,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5710",
       "detail": "Experimental Systems and Synthetic Bioengineering"
     },
@@ -29037,7 +29037,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5710",
       "detail": "Experimental Systems and Synthetic Bioengineering"
     },
@@ -29323,7 +29323,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5374",
       "detail": "ST: Robot Design"
     },
@@ -29400,7 +29400,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5374",
       "detail": "ST: Robot Design"
     },
@@ -30731,7 +30731,7 @@
       "start": 480,
       "end": 580,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5659",
       "detail": "Control Systems Engineering"
     },
@@ -31105,7 +31105,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5620",
       "detail": "Fundamentals of Advanced Materials"
     },
@@ -31138,7 +31138,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5620",
       "detail": "Fundamentals of Advanced Materials"
     },
@@ -31633,7 +31633,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5695",
       "detail": "Aerodynamics"
     },
@@ -32194,7 +32194,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "PHYS5352",
       "detail": "Quantum Computation and Information"
     },
@@ -32315,7 +32315,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5640",
       "detail": "Computational Biomechanics"
     },
@@ -32414,7 +32414,7 @@
       "start": 480,
       "end": 580,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5597",
       "detail": "Immunotherapies of Cancer and Infectious Disease"
     },
@@ -32689,7 +32689,7 @@
       "start": 995,
       "end": 1095,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "PHSC5102",
       "detail": "Concepts in Pharmaceutical Science 2"
     },
@@ -36352,7 +36352,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "MATH5111",
       "detail": "Algebra 1"
     },
@@ -42358,7 +42358,7 @@
       "start": 815,
       "end": 915,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5543",
       "detail": "Stem Cells and Regeneration"
     },
@@ -42849,17 +42849,6 @@
     {
       "roomId": "RI-140",
       "kind": "class",
-      "days": 13,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CIVE5536",
-      "detail": "Hydrologic and Hydraulic Design"
-    },
-    {
-      "roomId": "RI-140",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -43084,7 +43073,7 @@
       "start": 925,
       "end": 1025,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "CIVE5255",
       "detail": "Tools and Techniques of Environmental Health"
     },
@@ -43293,7 +43282,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5240",
       "detail": "Computer Aided Design and Manufacturing"
     },
@@ -43348,7 +43337,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5240",
       "detail": "Computer Aided Design and Manufacturing"
     },
@@ -44587,6 +44576,17 @@
     {
       "roomId": "RI-235",
       "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CIVE5536",
+      "detail": "Hydrologic and Hydraulic Design"
+    },
+    {
+      "roomId": "RI-235",
+      "kind": "class",
       "days": 20,
       "start": 705,
       "end": 805,
@@ -44877,7 +44877,7 @@
       "start": 705,
       "end": 855,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "PHSC5560",
       "detail": "Nanotoxicity"
     },
@@ -45757,7 +45757,7 @@
       "start": 925,
       "end": 1025,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "CIVE5376",
       "detail": "Traffic Engineering and Sustainable Urban Street Design"
     },
@@ -48056,7 +48056,7 @@
       "start": 555,
       "end": 620,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ENVR5190",
       "detail": "Soil Science"
     },
@@ -48716,7 +48716,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5658",
       "detail": "Continuum Mechanics"
     },
@@ -49299,7 +49299,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "IE5640",
       "detail": "Data Mining for Engineering Applications"
     },
@@ -49310,7 +49310,7 @@
       "start": 815,
       "end": 915,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "NNMD5380",
       "detail": "Electron Microscopy Techniques"
     },
@@ -49343,7 +49343,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "IE5640",
       "detail": "Data Mining for Engineering Applications"
     },
@@ -50168,7 +50168,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "MUST5973",
       "detail": "Audio Software Arch. & Design"
     },
@@ -52841,7 +52841,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5659",
       "detail": "Control Systems Engineering"
     },
@@ -52896,7 +52896,7 @@
       "start": 890,
       "end": 990,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5659",
       "detail": "Control Systems Engineering"
     },
@@ -53116,7 +53116,7 @@
       "start": 995,
       "end": 1060,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "PHYS5125",
       "detail": "Advanced Quantum Mechanics"
     },
@@ -55206,7 +55206,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5573",
       "detail": "Medical Microbiology"
     },
@@ -57186,7 +57186,7 @@
       "start": 925,
       "end": 1025,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5115",
       "detail": "Dynamical Systems in Biological Engineering"
     },
@@ -57472,7 +57472,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5235",
       "detail": "Biomedical Imaging"
     },
@@ -59881,7 +59881,7 @@
       "start": 815,
       "end": 915,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5657",
       "detail": "Finite Element Method 1"
     },
@@ -60123,7 +60123,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5591",
       "detail": "Advanced Genomics"
     },
@@ -60761,7 +60761,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ARCH5330",
       "detail": "Theories of Architecture and Urbanism"
     },
@@ -61157,7 +61157,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5306",
       "detail": "Biological Clocks"
     },
@@ -61223,7 +61223,7 @@
       "start": 995,
       "end": 1095,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5601",
       "detail": "Multidisciplinary Approaches in Motor Control"
     },
@@ -62499,7 +62499,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOL5583",
       "detail": "Immunology"
     },
@@ -62675,7 +62675,7 @@
       "start": 630,
       "end": 695,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ENVR5350",
       "detail": "Sustainable Energy and Climate Solutions"
     },
@@ -62697,7 +62697,7 @@
       "start": 705,
       "end": 805,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "ME5655",
       "detail": "Dynamics and Mechanical Vibration"
     },
@@ -64402,7 +64402,7 @@
       "start": 925,
       "end": 1025,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "PHYS5211",
       "detail": "Introduction to Scientific Computing"
     },
@@ -64600,7 +64600,7 @@
       "start": 480,
       "end": 580,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "BIOE5800",
       "detail": "Systems, Signals, and Controls for Bioengineers"
     },
