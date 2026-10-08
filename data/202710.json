@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-07",
+  "generatedAt": "2026-10-08",
   "campuses": [
     {
       "code": "BOS",
@@ -21,7 +21,7 @@
       "code": "OAK",
       "name": "Oakland",
       "buildingCount": 12,
-      "roomCount": 43
+      "roomCount": 42
     },
     {
       "code": "PTL",
@@ -179,7 +179,7 @@
       "code": "M48",
       "name": "CPM",
       "campus": "OAK",
-      "roomCount": 5
+      "roomCount": 4
     },
     {
       "code": "CN",
@@ -2380,13 +2380,6 @@
       "building": "M48",
       "room": "102",
       "displayName": "CPM 102"
-    },
-    {
-      "id": "M48-106",
-      "campus": "OAK",
-      "building": "M48",
-      "room": "106",
-      "displayName": "CPM 106"
     },
     {
       "id": "M48-206",
@@ -33862,6 +33855,17 @@
     {
       "roomId": "M20-241",
       "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "EDUT6300",
+      "detail": "School Law and Public Policy"
+    },
+    {
+      "roomId": "M20-241",
+      "kind": "class",
       "days": 5,
       "start": 710,
       "end": 810,
@@ -34188,17 +34192,6 @@
       "endDate": "2026-12-20",
       "label": "EDUT6302",
       "detail": "Field Experience 1: Educational Leadership"
-    },
-    {
-      "roomId": "M30-140",
-      "kind": "class",
-      "days": 8,
-      "start": 1035,
-      "end": 1185,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "EDUT6304",
-      "detail": "Working with Families and the Community"
     },
     {
       "roomId": "M30-140",
@@ -35389,17 +35382,6 @@
       "detail": "Foundations of Data Analytics"
     },
     {
-      "roomId": "M48-106",
-      "kind": "class",
-      "days": 2,
-      "start": 1035,
-      "end": 1185,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "EDUT6300",
-      "detail": "School Law and Public Policy"
-    },
-    {
       "roomId": "M48-206",
       "kind": "class",
       "days": 13,
@@ -35596,6 +35578,17 @@
       "endDate": "2026-12-13",
       "label": "COMM2303",
       "detail": "Global and Intercultural Communication"
+    },
+    {
+      "roomId": "M54-026",
+      "kind": "class",
+      "days": 5,
+      "start": 710,
+      "end": 810,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "EDUT6304",
+      "detail": "Working with Families and the Community"
     },
     {
       "roomId": "M54-026",
