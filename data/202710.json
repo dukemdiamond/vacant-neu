@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-08",
+  "generatedAt": "2026-10-09",
   "campuses": [
     {
       "code": "BOS",
@@ -5497,17 +5497,6 @@
     {
       "roomId": "ARL-1505",
       "kind": "class",
-      "days": 2,
-      "start": 820,
-      "end": 1020,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CY5001",
-      "detail": "Cybersecurity: Technologies, Threats, and Defenses"
-    },
-    {
-      "roomId": "ARL-1505",
-      "kind": "class",
       "days": 5,
       "start": 1080,
       "end": 1180,
@@ -5757,17 +5746,6 @@
       "endDate": "2026-12-20",
       "label": "PPUA6509",
       "detail": "Techniques of Program Evaluation"
-    },
-    {
-      "roomId": "ARL-1530",
-      "kind": "class",
-      "days": 4,
-      "start": 800,
-      "end": 880,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ALY6630",
-      "detail": "Programming for Data Science"
     },
     {
       "roomId": "ARL-1530",
@@ -6461,17 +6439,6 @@
       "endDate": "2026-12-13",
       "label": "FINA4420",
       "detail": "Mergers and Acquisitions"
-    },
-    {
-      "roomId": "BK-105",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "FINA2730",
-      "detail": "Fintech and Financial Innovation"
     },
     {
       "roomId": "BK-105",
@@ -12907,6 +12874,17 @@
       "endDate": "2026-10-25",
       "label": "PJM6420",
       "detail": "Managing Innovation Projects"
+    },
+    {
+      "roomId": "CUBE-509",
+      "kind": "class",
+      "days": 8,
+      "start": 1070,
+      "end": 1190,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "PJM6760",
+      "detail": "Principles of Agile Product Delivery and Project Management"
     },
     {
       "roomId": "CUBE-513",
@@ -28362,6 +28340,17 @@
       "endDate": "2026-12-20",
       "label": "IE6600",
       "detail": "Computation and Visualization for Analytics"
+    },
+    {
+      "roomId": "HT-224",
+      "kind": "class",
+      "days": 18,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "FINA2730",
+      "detail": "Fintech and Financial Innovation"
     },
     {
       "roomId": "HT-224",
@@ -63654,17 +63643,6 @@
     {
       "roomId": "WGV-1425",
       "kind": "class",
-      "days": 8,
-      "start": 900,
-      "end": 980,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DGM6655",
-      "detail": "Animation Fundamentals"
-    },
-    {
-      "roomId": "WGV-1425",
-      "kind": "class",
       "days": 18,
       "start": 900,
       "end": 1000,
@@ -64079,6 +64057,17 @@
       "endDate": "2026-10-25",
       "label": "DGM6475",
       "detail": "Digital Design Seminar"
+    },
+    {
+      "roomId": "WGV-1524",
+      "kind": "class",
+      "days": 4,
+      "start": 900,
+      "end": 980,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "DGM6655",
+      "detail": "Animation Fundamentals"
     },
     {
       "roomId": "WGV-1524",
