@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-13",
+  "generatedAt": "2026-10-14",
   "campuses": [
     {
       "code": "BOS",
@@ -14916,17 +14916,6 @@
       "endDate": "2026-12-16",
       "label": "CRIM1300",
       "detail": "The Death Penalty"
-    },
-    {
-      "roomId": "DG-050",
-      "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH4581",
-      "detail": "Statistics and Stochastic Processes"
     },
     {
       "roomId": "DG-050",
@@ -32069,6 +32058,17 @@
     {
       "roomId": "HT-130",
       "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1241",
+      "detail": "Calculus 1"
+    },
+    {
+      "roomId": "HT-130",
+      "kind": "class",
       "days": 8,
       "start": 480,
       "end": 600,
@@ -32087,6 +32087,17 @@
       "endDate": "2026-12-17",
       "label": "PHSC2301",
       "detail": "Human Physiology 1"
+    },
+    {
+      "roomId": "HT-130",
+      "kind": "class",
+      "days": 16,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "label": "MATH4581",
+      "detail": "Statistics and Stochastic Processes"
     },
     {
       "roomId": "HT-130",
@@ -49020,6 +49031,17 @@
     {
       "roomId": "RI-225",
       "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CIVE5536",
+      "detail": "Hydrologic and Hydraulic Design"
+    },
+    {
+      "roomId": "RI-225",
+      "kind": "class",
       "days": 20,
       "start": 705,
       "end": 805,
@@ -50215,17 +50237,6 @@
       "endDate": "2026-12-13",
       "label": "HIST2220",
       "detail": "History of Technology"
-    },
-    {
-      "roomId": "RI-235",
-      "kind": "class",
-      "days": 13,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CIVE5536",
-      "detail": "Hydrologic and Hydraulic Design"
     },
     {
       "roomId": "RI-235",
@@ -52580,6 +52591,28 @@
       "endDate": "2026-12-16",
       "label": "ACCT2301",
       "detail": "Profit Analysis for Managers and Advisors"
+    },
+    {
+      "roomId": "RI-300",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1241",
+      "detail": "Calculus 1"
+    },
+    {
+      "roomId": "RI-300",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH3081",
+      "detail": "Probability and Statistics"
     },
     {
       "roomId": "RI-300",
@@ -62051,17 +62084,6 @@
       "endDate": "2026-12-15",
       "label": "CRIM4949",
       "detail": "Senior Capstone Seminar"
-    },
-    {
-      "roomId": "RY-429",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH3081",
-      "detail": "Probability and Statistics"
     },
     {
       "roomId": "RY-429",
@@ -76879,28 +76901,6 @@
       "endDate": "2026-12-16",
       "label": "CHEM1151",
       "detail": "General Chemistry for Engineers"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH1241",
-      "detail": "Calculus 1"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH1241",
-      "detail": "Calculus 1"
     },
     {
       "roomId": "WVF-020",
