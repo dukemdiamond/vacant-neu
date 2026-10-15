@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-14",
+  "generatedAt": "2026-10-15",
   "campuses": [
     {
       "code": "BOS",
@@ -14467,17 +14467,6 @@
       "detail": "Project Finance"
     },
     {
-      "roomId": "CUBE-506",
-      "kind": "class",
-      "days": 2,
-      "start": 1070,
-      "end": 1235,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6660",
-      "detail": "Quantitative and Qualitative Methods for Business Analysis"
-    },
-    {
       "roomId": "CUBE-508",
       "kind": "class",
       "days": 2,
@@ -15466,17 +15455,6 @@
       "endDate": "2026-12-14",
       "label": "ARCH2260",
       "detail": "Introduction to Building Systems"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financl Acctng & Reporting"
     },
     {
       "roomId": "DG-119",
@@ -28283,17 +28261,6 @@
       "detail": "Financial Economics"
     },
     {
-      "roomId": "HA-322",
-      "kind": "class",
-      "days": 16,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "CAEP1280",
-      "detail": "Introduction to Mindfulness"
-    },
-    {
       "roomId": "HA-424",
       "kind": "class",
       "days": 18,
@@ -31977,6 +31944,28 @@
       "endDate": "2026-12-14",
       "label": "CRIM3060",
       "detail": "Political Crime and Terrorism"
+    },
+    {
+      "roomId": "HT-130",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ACCT1201",
+      "detail": "Financl Acctng & Reporting"
+    },
+    {
+      "roomId": "HT-130",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ACCT1209",
+      "detail": "Financial Accounting and Reporting"
     },
     {
       "roomId": "HT-130",
@@ -39679,6 +39668,28 @@
       "detail": "Calculus 1 for Science and Engineering"
     },
     {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MATH1231",
+      "detail": "Calculus for Business and Economics"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MATH1231",
+      "detail": "Calculus for Business and Economics"
+    },
+    {
       "roomId": "M41-215",
       "kind": "class",
       "days": 20,
@@ -40720,6 +40731,50 @@
       "end": 965,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
+      "label": "BIOL1111",
+      "detail": "General Biology 1"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MATH1231",
+      "detail": "Calculus for Business and Economics"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MATH1231",
+      "detail": "Calculus for Business and Economics"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MATH1231",
+      "detail": "Calculus for Business and Economics"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
       "label": "BIOL1111",
       "detail": "General Biology 1"
     },
@@ -65004,17 +65059,6 @@
       "roomId": "SH-220",
       "kind": "class",
       "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1209",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "SH-220",
-      "kind": "class",
-      "days": 1,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-14",
@@ -76224,8 +76268,19 @@
       "roomId": "WGV-1515",
       "kind": "class",
       "days": 4,
-      "start": 840,
-      "end": 920,
+      "start": 780,
+      "end": 860,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "ALY6400",
+      "detail": "Integrated Experiential Learning"
+    },
+    {
+      "roomId": "WGV-1515",
+      "kind": "class",
+      "days": 4,
+      "start": 870,
+      "end": 950,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
       "label": "ALY6700",
@@ -76538,17 +76593,6 @@
       "endDate": "2026-12-20",
       "label": "ENCP6100",
       "detail": "Introduction to Cooperative Education"
-    },
-    {
-      "roomId": "WGV-1526",
-      "kind": "class",
-      "days": 2,
-      "start": 900,
-      "end": 980,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "ALY6400",
-      "detail": "Integrated Experiential Learning"
     },
     {
       "roomId": "WGV-1526",
@@ -78815,17 +78859,6 @@
       "endDate": "2026-12-17",
       "label": "BUSN3110",
       "detail": "The Consulting Environment"
-    },
-    {
-      "roomId": "WVH-108",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "ORGB3201",
-      "detail": "Organizational Behavior"
     },
     {
       "roomId": "WVH-108",
