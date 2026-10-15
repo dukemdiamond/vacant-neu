@@ -2,7 +2,7 @@
 
 Find an empty classroom at Northeastern.
 
-**[Live at vacantneu.vercel.app](https://vacantneu.vercel.app)** · [Watch the demo](demo/vacantneu-demo.mp4)
+**[Live at vacantneu.com](https://vacantneu.com)** · [Watch the demo](demo/vacantneu-demo.mp4)
 
 [![vacantNEU](demo/vacantneu-poster.jpg)](demo/vacantneu-demo.mp4)
 
