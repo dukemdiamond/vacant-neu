@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-15",
+  "generatedAt": "2026-10-16",
   "campuses": [
     {
       "code": "BOS",
@@ -5500,17 +5500,6 @@
       "endDate": "2026-12-20",
       "label": "CS6966",
       "detail": "Practicum"
-    },
-    {
-      "roomId": "ARL-1505",
-      "kind": "class",
-      "days": 2,
-      "start": 820,
-      "end": 1020,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CY5001",
-      "detail": "Cybersecurity: Technologies, Threats, and Defenses"
     },
     {
       "roomId": "ARL-1505",
@@ -12166,6 +12155,17 @@
       "endDate": "2026-12-14",
       "label": "ACCT1201",
       "detail": "Fin Accounting & Reporting"
+    },
+    {
+      "roomId": "CH-103",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ACCT1201",
+      "detail": "Financial Accounting and Reporting"
     },
     {
       "roomId": "CH-103",
@@ -38601,6 +38601,50 @@
       "detail": "Introduction to Marketing"
     },
     {
+      "roomId": "M20-117",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "BIOL2299",
+      "detail": "Inquiries in Biological Sciences"
+    },
+    {
+      "roomId": "M20-117",
+      "kind": "class",
+      "days": 2,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "SOCL1101",
+      "detail": "Introduction to Sociology"
+    },
+    {
+      "roomId": "M20-117",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MUSC1001",
+      "detail": "Music in Everyday Life"
+    },
+    {
+      "roomId": "M20-117",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "PHIL1115",
+      "detail": "Introduction to Logic"
+    },
+    {
       "roomId": "M20-118",
       "kind": "class",
       "days": 2,
@@ -38676,6 +38720,116 @@
       "endDate": "2026-12-13",
       "label": "PHIL1160",
       "detail": "Introduction to Economic Justice"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ECON1711",
+      "detail": "Economics of Sustainability"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CS2000",
+      "detail": "Introduction to Program Design and Implementation"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "COMM1101",
+      "detail": "Introduction to Communication Studies"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 2,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "PSYC3404",
+      "detail": "Developmental Psychology"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 2,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "COMM2303",
+      "detail": "Global and Intercultural Communication"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "POLS1150",
+      "detail": "American Government"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 4,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ECON1115",
+      "detail": "Principles of Macroeconomics"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH2321",
+      "detail": "Calculus 3 for Science and Engineering"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "INNO2301",
+      "detail": "Innovation!"
+    },
+    {
+      "roomId": "M20-118",
+      "kind": "class",
+      "days": 8,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "INNO2301",
+      "detail": "Innovation!"
     },
     {
       "roomId": "M20-124",
@@ -38766,6 +38920,28 @@
       "detail": "Capstone in Public Policy and Urban Affairs"
     },
     {
+      "roomId": "M20-124",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ARCH1310",
+      "detail": "Buildings and Cities, A Global History"
+    },
+    {
+      "roomId": "M20-124",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MUST1220",
+      "detail": "Introduction to Music Technology"
+    },
+    {
       "roomId": "M20-125",
       "kind": "class",
       "days": 2,
@@ -38830,6 +39006,17 @@
       "endDate": "2026-12-20",
       "label": "INFO5100",
       "detail": "Application Engineering and Development"
+    },
+    {
+      "roomId": "M20-125",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "SOCL1246",
+      "detail": "Environment and Society"
     },
     {
       "roomId": "M20-241",
@@ -38907,6 +39094,83 @@
       "endDate": "2026-12-13",
       "label": "ECON1116",
       "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM1161",
+      "detail": "General Chemistry for Science Majors"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM1151",
+      "detail": "General Chemistry for Engineers"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ACCT1201",
+      "detail": "Financial Accounting and Reporting"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "BIOL1111",
+      "detail": "General Biology 1"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 4,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "BIOL1111",
+      "detail": "General Biology 1"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MKTG2201",
+      "detail": "Introduction to Marketing"
+    },
+    {
+      "roomId": "M21-120",
+      "kind": "class",
+      "days": 8,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "ACCT1201",
+      "detail": "Financial Accounting and Reporting"
     },
     {
       "roomId": "M23-141",
@@ -38993,6 +39257,28 @@
       "end": 1000,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
+      "label": "ARTF1220",
+      "detail": "Elements of Visual Composition"
+    },
+    {
+      "roomId": "M24-166",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ARTF1230",
+      "detail": "Making with Form and Materials"
+    },
+    {
+      "roomId": "M24-166",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
       "label": "ARTF1220",
       "detail": "Elements of Visual Composition"
     },
@@ -39204,6 +39490,17 @@
       "endDate": "2026-12-20",
       "label": "BIOT5630",
       "detail": "Cell Culture Applications for Biopharmaceuticals"
+    },
+    {
+      "roomId": "M30-140",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "BIOL2299",
+      "detail": "Inquiries in Biological Sciences"
     },
     {
       "roomId": "M41-101",
@@ -39690,6 +39987,116 @@
       "detail": "Calculus for Business and Economics"
     },
     {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM1211",
+      "detail": "General Chemistry 1"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ECON1115",
+      "detail": "Principles of Macroeconomics"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 2,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ECON1116",
+      "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ECON1115",
+      "detail": "Principles of Macroeconomics"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 4,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "CS2000",
+      "detail": "Introduction to Program Design and Implementation"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1215",
+      "detail": "Mathematical Thinking"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC1101",
+      "detail": "Foundations of Psychology"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC1101",
+      "detail": "Foundations of Psychology"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC1101",
+      "detail": "Foundations of Psychology"
+    },
+    {
+      "roomId": "M41-213",
+      "kind": "class",
+      "days": 8,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC1101",
+      "detail": "Foundations of Psychology"
+    },
+    {
       "roomId": "M41-215",
       "kind": "class",
       "days": 20,
@@ -39800,6 +40207,39 @@
       "detail": "International Business and Global Social Responsibility"
     },
     {
+      "roomId": "M41-215",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "PHYS1151",
+      "detail": "Physics for Engineering 1"
+    },
+    {
+      "roomId": "M41-215",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC3406",
+      "detail": "Clinical Psychology and Mental Health"
+    },
+    {
+      "roomId": "M41-215",
+      "kind": "class",
+      "days": 8,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "ENVR1110",
+      "detail": "Global Climate Change"
+    },
+    {
       "roomId": "M41-217",
       "kind": "class",
       "days": 9,
@@ -39908,6 +40348,72 @@
       "endDate": "2026-12-13",
       "label": "INNO2301",
       "detail": "Innovation!"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CS2100",
+      "detail": "Program Design and Implementation 1"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 2,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ARTG1001",
+      "detail": "Design Perspectives: An Introduction to Design in the World"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "PSYC3402",
+      "detail": "Social Psychology"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "PHIL2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "POLS2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "M41-217",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MATH2341",
+      "detail": "Differential Equations and Linear Algebra for Engineering"
     },
     {
       "roomId": "M44-132",
@@ -40053,6 +40559,17 @@
       "detail": "The U.S. Healthcare System"
     },
     {
+      "roomId": "M44-133",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC3458",
+      "detail": "Biological Psychology"
+    },
+    {
       "roomId": "M44-135",
       "kind": "class",
       "days": 9,
@@ -40141,6 +40658,17 @@
       "detail": "The Biotechnology Enterprise"
     },
     {
+      "roomId": "M44-135",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ARTF1220",
+      "detail": "Elements of Visual Composition"
+    },
+    {
       "roomId": "M44-318",
       "kind": "class",
       "days": 18,
@@ -40161,6 +40689,17 @@
       "endDate": "2026-12-20",
       "label": "BINF6250",
       "detail": "Algorithmic Foundations in Bioinformatics"
+    },
+    {
+      "roomId": "M44-318",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MUSC1915",
+      "detail": "Chamber Ensemble"
     },
     {
       "roomId": "M48-100",
@@ -40249,6 +40788,83 @@
       "endDate": "2026-12-13",
       "label": "CHEM1161",
       "detail": "General Chemistry for Science Majors"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM1151",
+      "detail": "General Chemistry for Engineers"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ECON1116",
+      "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1342",
+      "detail": "Calculus 2 for Science and Engineering"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1342",
+      "detail": "Calculus 2 for Science and Engineering"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ECON1116",
+      "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PHIL1160",
+      "detail": "Introduction to Economic Justice"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 8,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MKTG2201",
+      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "M48-101",
@@ -40405,6 +41021,28 @@
       "detail": "Foundations of Data Analytics"
     },
     {
+      "roomId": "M48-102",
+      "kind": "class",
+      "days": 1,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM2311",
+      "detail": "Organic Chemistry 1"
+    },
+    {
+      "roomId": "M48-102",
+      "kind": "class",
+      "days": 2,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ENVR1101",
+      "detail": "Environmental Science"
+    },
+    {
       "roomId": "M48-206",
       "kind": "class",
       "days": 13,
@@ -40559,6 +41197,39 @@
       "detail": "Prescriptive Modeling for Business"
     },
     {
+      "roomId": "M54-010",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ARTF1250",
+      "detail": "Designing Interactive Experiences"
+    },
+    {
+      "roomId": "M54-010",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ARTF1220",
+      "detail": "Elements of Visual Composition"
+    },
+    {
+      "roomId": "M54-010",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MATH1365",
+      "detail": "Introduction to Mathematical Reasoning"
+    },
+    {
       "roomId": "M54-014",
       "kind": "class",
       "days": 2,
@@ -40603,6 +41274,39 @@
       "detail": "Global and Intercultural Communication"
     },
     {
+      "roomId": "M54-014",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "EEMB2400",
+      "detail": "Introduction to Evolution"
+    },
+    {
+      "roomId": "M54-014",
+      "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "COMM1112",
+      "detail": "Public Speaking"
+    },
+    {
+      "roomId": "M54-014",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "SOCL1102",
+      "detail": "Sex, Gender, and Popular Culture"
+    },
+    {
       "roomId": "M54-026",
       "kind": "class",
       "days": 5,
@@ -40623,6 +41327,17 @@
       "endDate": "2026-12-20",
       "label": "GSND5110",
       "detail": "Game Design and Analysis"
+    },
+    {
+      "roomId": "M54-026",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC2320",
+      "detail": "Statistics in Psychological Research"
     },
     {
       "roomId": "M54-027",
@@ -40713,6 +41428,39 @@
       "detail": "Introduction to Bioinformatics"
     },
     {
+      "roomId": "M54-035",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "PHIL2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "M54-035",
+      "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "POLS2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "M54-035",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "CRWT1170",
+      "detail": "Creative Writing Foundations"
+    },
+    {
       "roomId": "M54-100",
       "kind": "class",
       "days": 13,
@@ -40779,6 +41527,50 @@
       "detail": "General Biology 1"
     },
     {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MATH1341",
+      "detail": "Calculus 1 for Science and Engineering"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MATH1341",
+      "detail": "Calculus 1 for Science and Engineering"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1341",
+      "detail": "Calculus 1 for Science and Engineering"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MATH1341",
+      "detail": "Calculus 1 for Science and Engineering"
+    },
+    {
       "roomId": "M54-107",
       "kind": "class",
       "days": 18,
@@ -40810,6 +41602,72 @@
       "endDate": "2026-12-13",
       "label": "PSYC1101",
       "detail": "Foundations of Psychology"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 2,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "PHIL1145",
+      "detail": "Technology and Human Values"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 2,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "FINA4983",
+      "detail": "Special Topics in Finance"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "PHIL1101",
+      "detail": "Introduction to Philosophy"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ECON1115",
+      "detail": "Principles of Macroeconomics"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "ECON1116",
+      "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "ACCT1201",
+      "detail": "Financial Accounting and Reporting"
     },
     {
       "roomId": "M62-101",
@@ -48237,17 +49095,6 @@
       "detail": "Ancient Philosophy and Political Thought"
     },
     {
-      "roomId": "RB-409",
-      "kind": "class",
-      "days": 16,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "ECON2560",
-      "detail": "Applied Econometrics"
-    },
-    {
       "roomId": "RB-411",
       "kind": "class",
       "days": 18,
@@ -53680,17 +54527,6 @@
       "endDate": "2026-12-20",
       "label": "LDR6250",
       "detail": "Driving Organizational Success Through Leadership Development"
-    },
-    {
-      "roomId": "RXI-138",
-      "kind": "class",
-      "days": 2,
-      "start": 1080,
-      "end": 1245,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6100",
-      "detail": "Foundations of Project Management"
     },
     {
       "roomId": "RXI-162",
