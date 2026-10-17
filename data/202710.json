@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-16",
+  "generatedAt": "2026-10-17",
   "campuses": [
     {
       "code": "BOS",
@@ -40931,6 +40931,17 @@
       "endDate": "2026-12-20",
       "label": "AAI6600",
       "detail": "Applied Artificial Intelligence"
+    },
+    {
+      "roomId": "M48-101",
+      "kind": "class",
+      "days": 2,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MGSC2301",
+      "detail": "Business Statistics"
     },
     {
       "roomId": "M48-102",
