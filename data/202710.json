@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-18",
+  "generatedAt": "2026-10-19",
   "campuses": [
     {
       "code": "BOS",
@@ -32356,17 +32356,6 @@
       "roomId": "HT-224",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "ECON3711",
-      "detail": "Economics of Race"
-    },
-    {
-      "roomId": "HT-224",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
@@ -58181,6 +58170,17 @@
       "detail": "Black Popular Music"
     },
     {
+      "roomId": "RY-233",
+      "kind": "class",
+      "days": 16,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "label": "MUSC2350",
+      "detail": "Acoustics and Psychoacoustics of Music"
+    },
+    {
       "roomId": "RY-235",
       "kind": "class",
       "days": 18,
@@ -58278,6 +58278,39 @@
       "endDate": "2026-12-14",
       "label": "HIST1206",
       "detail": "Drug Trade and Drug War: History, Security, Culture"
+    },
+    {
+      "roomId": "RY-235",
+      "kind": "class",
+      "days": 2,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MUSC1201",
+      "detail": "Music Theory 1"
+    },
+    {
+      "roomId": "RY-235",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "MUSC1201",
+      "detail": "Music Theory 1"
+    },
+    {
+      "roomId": "RY-235",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "MUSC1202",
+      "detail": "Music Theory 2"
     },
     {
       "roomId": "RY-235",
@@ -58663,17 +58696,6 @@
       "endDate": "2026-12-16",
       "label": "ARTG3452",
       "detail": "Experimental Graphic Design"
-    },
-    {
-      "roomId": "RY-245",
-      "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MUSC1202",
-      "detail": "Music Theory 2"
     },
     {
       "roomId": "RY-245",
@@ -61094,17 +61116,6 @@
       "endDate": "2026-12-20",
       "label": "ENSY5800",
       "detail": "Applications of Artificial Intelligence in Energy Systems"
-    },
-    {
-      "roomId": "RY-299",
-      "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ECON4997",
-      "detail": "Senior Economics Thesis"
     },
     {
       "roomId": "RY-299",
@@ -72921,17 +72932,6 @@
       "detail": "Advocacy Writing"
     },
     {
-      "roomId": "SL-043",
-      "kind": "class",
-      "days": 16,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MUSC2350",
-      "detail": "Acoustics and Psychoacoustics of Music"
-    },
-    {
       "roomId": "SL-045",
       "kind": "class",
       "days": 9,
@@ -73106,17 +73106,6 @@
       "endDate": "2026-12-16",
       "label": "THTR3325",
       "detail": "Dramaturgical Inquiry"
-    },
-    {
-      "roomId": "SL-049",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MUSC1201",
-      "detail": "Music Theory 1"
     },
     {
       "roomId": "SL-107",
@@ -77528,17 +77517,6 @@
       "endDate": "2026-12-14",
       "label": "MSCR1230",
       "detail": "Introduction to Film Production"
-    },
-    {
-      "roomId": "WVC-140",
-      "kind": "class",
-      "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MUSC1201",
-      "detail": "Music Theory 1"
     },
     {
       "roomId": "WVC-140",
