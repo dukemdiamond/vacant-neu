@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-10-20",
   "campuses": [
     {
       "code": "BOS",
@@ -20123,17 +20123,6 @@
     {
       "roomId": "EV-002",
       "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "LPSC2301",
-      "detail": "Introduction to Law, Policy, and Society"
-    },
-    {
-      "roomId": "EV-002",
-      "kind": "class",
       "days": 16,
       "start": 630,
       "end": 750,
@@ -40023,17 +40012,6 @@
       "roomId": "M41-213",
       "kind": "class",
       "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "M41-213",
-      "kind": "class",
-      "days": 4,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-16",
@@ -40337,17 +40315,6 @@
       "endDate": "2026-12-13",
       "label": "INNO2301",
       "detail": "Innovation!"
-    },
-    {
-      "roomId": "M41-217",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CS2100",
-      "detail": "Program Design and Implementation 1"
     },
     {
       "roomId": "M41-217",
@@ -40788,6 +40755,17 @@
       "endDate": "2026-12-14",
       "label": "CHEM1151",
       "detail": "General Chemistry for Engineers"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CS2000",
+      "detail": "Introduction to Program Design and Implementation"
     },
     {
       "roomId": "M48-100",
@@ -41602,6 +41580,17 @@
       "endDate": "2026-12-13",
       "label": "PSYC1101",
       "detail": "Foundations of Psychology"
+    },
+    {
+      "roomId": "M54-107",
+      "kind": "class",
+      "days": 1,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CHEM1161",
+      "detail": "General Chemistry for Science Majors"
     },
     {
       "roomId": "M54-107",
@@ -54881,6 +54870,17 @@
       "detail": "Applied Machine Learning"
     },
     {
+      "roomId": "RXI-215",
+      "kind": "class",
+      "days": 4,
+      "start": 900,
+      "end": 1020,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "PJM6410",
+      "detail": "Managing Projects Across Cultures"
+    },
+    {
       "roomId": "RXI-218",
       "kind": "class",
       "days": 8,
@@ -57321,17 +57321,6 @@
       "endDate": "2026-12-15",
       "label": "ARTD1002",
       "detail": "Seminar for ARTD 1001"
-    },
-    {
-      "roomId": "RY-205",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "GAME4000",
-      "detail": "Tales from the Table"
     },
     {
       "roomId": "RY-205",
@@ -70790,17 +70779,6 @@
       "roomId": "SL-013",
       "kind": "class",
       "days": 16,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "GAME2500",
-      "detail": "Foundations of Game Design"
-    },
-    {
-      "roomId": "SL-013",
-      "kind": "class",
-      "days": 16,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-18",
@@ -73194,17 +73172,6 @@
       "endDate": "2026-10-25",
       "label": "DGM5100",
       "detail": "Programming Logic Fundamentals"
-    },
-    {
-      "roomId": "SL-109",
-      "kind": "class",
-      "days": 8,
-      "start": 1070,
-      "end": 1190,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "DGM5105",
-      "detail": "Foundations of Programming for Digital Media"
     },
     {
       "roomId": "SL-111",
@@ -78969,17 +78936,6 @@
       "endDate": "2026-12-14",
       "label": "HIST2311",
       "detail": "Colonialism/Imperialism"
-    },
-    {
-      "roomId": "WVG-106",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "GAME1110",
-      "detail": "Games and Society"
     },
     {
       "roomId": "WVG-106",
