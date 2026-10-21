@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-20",
+  "generatedAt": "2026-10-21",
   "campuses": [
     {
       "code": "BOS",
@@ -6699,6 +6699,17 @@
       "endDate": "2026-12-20",
       "label": "PJM6980",
       "detail": "Capstone"
+    },
+    {
+      "roomId": "BK-030",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PHTH1260",
+      "detail": "The U.S. Healthcare System"
     },
     {
       "roomId": "BK-105",
@@ -15279,6 +15290,17 @@
       "endDate": "2026-12-20",
       "label": "CAEP6401",
       "detail": "Counseling Children and Adolescents in Schools"
+    },
+    {
+      "roomId": "DG-111",
+      "kind": "class",
+      "days": 8,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "POLS1155",
+      "detail": "Comparative Politics"
     },
     {
       "roomId": "DG-119",
@@ -24138,6 +24160,28 @@
     {
       "roomId": "FR-130",
       "kind": "class",
+      "days": 1,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "ECON1240",
+      "detail": "Economics of Crime"
+    },
+    {
+      "roomId": "FR-130",
+      "kind": "class",
+      "days": 2,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "ECON3462",
+      "detail": "Bubbles, Busts, and Bailouts: Market and Regulatory Failures in the Financial Crisis"
+    },
+    {
+      "roomId": "FR-130",
+      "kind": "class",
       "days": 16,
       "start": 630,
       "end": 750,
@@ -28019,17 +28063,6 @@
       "detail": "Experience Design Principles"
     },
     {
-      "roomId": "HA-321",
-      "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "ARTG2400",
-      "detail": "Interaction Design Principles"
-    },
-    {
       "roomId": "HA-322",
       "kind": "class",
       "days": 18,
@@ -29485,6 +29518,17 @@
       "roomId": "HS-102",
       "kind": "class",
       "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "NRSG2222",
+      "detail": "Health Assessment and Fundamental Nursing Skills"
+    },
+    {
+      "roomId": "HS-102",
+      "kind": "class",
+      "days": 1,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-14",
@@ -30492,6 +30536,17 @@
       "endDate": "2026-12-13",
       "label": "NRSG2215",
       "detail": "Cultivating Nursing Professional Identity and Practice"
+    },
+    {
+      "roomId": "HS-113",
+      "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "NRSG2222",
+      "detail": "Health Assessment and Fundamental Nursing Skills"
     },
     {
       "roomId": "HS-201",
@@ -31746,6 +31801,17 @@
       "endDate": "2026-12-17",
       "label": "BIOE5800",
       "detail": "Systems, Signals, and Controls for Bioengineers"
+    },
+    {
+      "roomId": "HT-129",
+      "kind": "class",
+      "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "CS3800",
+      "detail": "Theory of Computation"
     },
     {
       "roomId": "HT-129",
@@ -35565,6 +35631,17 @@
       "detail": "AI Security and Privacy"
     },
     {
+      "roomId": "KA-102",
+      "kind": "class",
+      "days": 16,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "label": "POLS1155",
+      "detail": "Comparative Politics"
+    },
+    {
       "roomId": "KA-104",
       "kind": "class",
       "days": 4,
@@ -38714,17 +38791,6 @@
       "roomId": "M20-118",
       "kind": "class",
       "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "M20-118",
-      "kind": "class",
-      "days": 1,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-14",
@@ -40199,6 +40265,17 @@
       "roomId": "M41-215",
       "kind": "class",
       "days": 8,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "ACCT1201",
+      "detail": "Financial Accounting and Reporting"
+    },
+    {
+      "roomId": "M41-215",
+      "kind": "class",
+      "days": 8,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-17",
@@ -40770,6 +40847,17 @@
     {
       "roomId": "M48-100",
       "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "CS2000",
+      "detail": "Introduction to Program Design and Implementation"
+    },
+    {
+      "roomId": "M48-100",
+      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 600,
@@ -40902,6 +40990,17 @@
     {
       "roomId": "M48-101",
       "kind": "class",
+      "days": 1,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "label": "MGSC2301",
+      "detail": "Business Statistics"
+    },
+    {
+      "roomId": "M48-101",
+      "kind": "class",
       "days": 2,
       "start": 630,
       "end": 750,
@@ -41019,6 +41118,17 @@
       "endDate": "2026-12-15",
       "label": "ENVR1101",
       "detail": "Environmental Science"
+    },
+    {
+      "roomId": "M48-102",
+      "kind": "class",
+      "days": 2,
+      "start": 930,
+      "end": 1050,
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "label": "MGSC2301",
+      "detail": "Business Statistics"
     },
     {
       "roomId": "M48-206",
@@ -48180,17 +48290,6 @@
       "endDate": "2026-12-20",
       "label": "INFO6150",
       "detail": "Web Design and User Experience Engineering"
-    },
-    {
-      "roomId": "QSW-516",
-      "kind": "class",
-      "days": 2,
-      "start": 660,
-      "end": 780,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6440",
-      "detail": "Leading and Managing Technical Projects"
     },
     {
       "roomId": "QSW-516",
@@ -69005,17 +69104,6 @@
       "detail": "Foundations of Software Engineering"
     },
     {
-      "roomId": "SJ-912/913",
-      "kind": "class",
-      "days": 1,
-      "start": 960,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6120",
-      "detail": "Natural Language Processing"
-    },
-    {
       "roomId": "SJ-913",
       "kind": "class",
       "days": 4,
@@ -69157,6 +69245,17 @@
       "endDate": "2026-12-20",
       "label": "CS5100",
       "detail": "Foundations of Artificial Intelligence"
+    },
+    {
+      "roomId": "SJ-916",
+      "kind": "class",
+      "days": 1,
+      "start": 960,
+      "end": 1160,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6120",
+      "detail": "Natural Language Processing"
     },
     {
       "roomId": "SJ-916",
@@ -70620,17 +70719,6 @@
       "endDate": "2026-12-13",
       "label": "ENCP2000",
       "detail": "Introduction to Engineering Co-op Education"
-    },
-    {
-      "roomId": "SL-013",
-      "kind": "class",
-      "days": 8,
-      "start": 705,
-      "end": 755,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "SLPA6339",
-      "detail": "Language Literacy in Practice"
     },
     {
       "roomId": "SL-013",
