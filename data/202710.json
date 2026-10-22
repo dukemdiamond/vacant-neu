@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-21",
+  "generatedAt": "2026-10-22",
   "campuses": [
     {
       "code": "BOS",
@@ -48939,6 +48939,17 @@
       "endDate": "2026-12-18",
       "label": "CIVE2331",
       "detail": "Fluid Mechanics and Hydraulics"
+    },
+    {
+      "roomId": "RB-109",
+      "kind": "class",
+      "days": 16,
+      "start": 780,
+      "end": 900,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "label": "ME4570",
+      "detail": "Thermal Systems Analysis and Design"
     },
     {
       "roomId": "RB-314",
