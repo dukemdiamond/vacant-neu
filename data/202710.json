@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-22",
+  "generatedAt": "2026-10-23",
   "campuses": [
     {
       "code": "BOS",
@@ -32466,17 +32466,6 @@
       "roomId": "HT-224",
       "kind": "class",
       "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "LAW3102",
-      "detail": "Introduction to Legal Studies 2: Statutes and Regulations"
-    },
-    {
-      "roomId": "HT-224",
-      "kind": "class",
-      "days": 8,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-17",
@@ -50523,17 +50512,6 @@
       "endDate": "2026-12-14",
       "label": "PHTH2350",
       "detail": "Community and Public Health"
-    },
-    {
-      "roomId": "RI-227",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "LAW3101",
-      "detail": "Introduction to Legal Studies 1: Law and Legal Reasoning"
     },
     {
       "roomId": "RI-228",
@@ -70292,17 +70270,6 @@
       "detail": "Leaders and Leadership in History"
     },
     {
-      "roomId": "SL-009",
-      "kind": "class",
-      "days": 16,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "LAW3101",
-      "detail": "Introduction to Legal Studies 1: Law and Legal Reasoning"
-    },
-    {
       "roomId": "SL-011",
       "kind": "class",
       "days": 18,
@@ -74505,17 +74472,6 @@
       "detail": "Environment, Technology, and Society"
     },
     {
-      "roomId": "SL-119",
-      "kind": "class",
-      "days": 16,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "LAW3102",
-      "detail": "Introduction to Legal Studies 2: Statutes and Regulations"
-    },
-    {
       "roomId": "SL-121",
       "kind": "class",
       "days": 18,
@@ -76802,17 +76758,6 @@
       "endDate": "2026-12-20",
       "label": "POLS7282",
       "detail": "Contemporary Political Thought"
-    },
-    {
-      "roomId": "ST-012",
-      "kind": "class",
-      "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "LAW3102",
-      "detail": "Introduction to Legal Studies 2: Statutes and Regulations"
     },
     {
       "roomId": "ST-012",
