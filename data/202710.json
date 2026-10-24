@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-23",
+  "generatedAt": "2026-10-24",
   "campuses": [
     {
       "code": "BOS",
@@ -5390,17 +5390,6 @@
       "endDate": "2026-12-20",
       "label": "IE6400",
       "detail": "Foundations for Data Analytics Engineering"
-    },
-    {
-      "roomId": "401-143",
-      "kind": "class",
-      "days": 1,
-      "start": 1080,
-      "end": 1200,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "PJM6440",
-      "detail": "Leading and Managing Technical Projects"
     },
     {
       "roomId": "ARL-1504",
@@ -68653,6 +68642,17 @@
       "detail": "Fundamentals of Cloud Computing"
     },
     {
+      "roomId": "SJ-1010/1011",
+      "kind": "class",
+      "days": 1,
+      "start": 960,
+      "end": 1160,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6120",
+      "detail": "Natural Language Processing"
+    },
+    {
       "roomId": "SJ-1011",
       "kind": "class",
       "days": 8,
@@ -69234,17 +69234,6 @@
       "endDate": "2026-12-20",
       "label": "CS5100",
       "detail": "Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "SJ-916",
-      "kind": "class",
-      "days": 1,
-      "start": 960,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6120",
-      "detail": "Natural Language Processing"
     },
     {
       "roomId": "SJ-916",
