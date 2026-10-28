@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-27",
+  "generatedAt": "2026-10-28",
   "campuses": [
     {
       "code": "BOS",
@@ -105,7 +105,7 @@
     },
     {
       "code": "NY-569",
-      "name": "569 Lexington Street NY",
+      "name": "569 Lexington Avenue NY",
       "campus": "NYC",
       "roomCount": 4
     },
@@ -2540,28 +2540,28 @@
       "campus": "NYC",
       "building": "NY-569",
       "room": "M01",
-      "displayName": "569 Lexington Street NY M01"
+      "displayName": "569 Lexington Avenue NY M01"
     },
     {
       "id": "NY-569-M02",
       "campus": "NYC",
       "building": "NY-569",
       "room": "M02",
-      "displayName": "569 Lexington Street NY M02"
+      "displayName": "569 Lexington Avenue NY M02"
     },
     {
       "id": "NY-569-PH01",
       "campus": "NYC",
       "building": "NY-569",
       "room": "PH01",
-      "displayName": "569 Lexington Street NY PH01"
+      "displayName": "569 Lexington Avenue NY PH01"
     },
     {
       "id": "NY-569-PH02",
       "campus": "NYC",
       "building": "NY-569",
       "room": "PH02",
-      "displayName": "569 Lexington Street NY PH02"
+      "displayName": "569 Lexington Avenue NY PH02"
     },
     {
       "id": "NY-AYD-ST6",
