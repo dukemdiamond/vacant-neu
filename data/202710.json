@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-28",
+  "generatedAt": "2026-10-29",
   "campuses": [
     {
       "code": "BOS",
@@ -38813,17 +38813,6 @@
       "roomId": "M20-118",
       "kind": "class",
       "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ECON1115",
-      "detail": "Principles of Macroeconomics"
-    },
-    {
-      "roomId": "M20-118",
-      "kind": "class",
-      "days": 4,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-16",
@@ -40023,34 +40012,12 @@
       "roomId": "M41-213",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "ECON1115",
-      "detail": "Principles of Macroeconomics"
-    },
-    {
-      "roomId": "M41-213",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
       "endDate": "2026-12-15",
       "label": "ECON1116",
       "detail": "Principles of Microeconomics"
-    },
-    {
-      "roomId": "M41-213",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ECON1115",
-      "detail": "Principles of Macroeconomics"
     },
     {
       "roomId": "M41-213",
@@ -64658,17 +64625,6 @@
       "endDate": "2026-12-15",
       "label": "PSYC1210",
       "detail": "Sports Psychology"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ARTG2262",
-      "detail": "Prototyping with Code"
     },
     {
       "roomId": "SH-105",
