@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-10-30",
   "campuses": [
     {
       "code": "BOS",
@@ -5742,6 +5742,17 @@
       "endDate": "2026-12-20",
       "label": "PPUA6509",
       "detail": "Techniques of Program Evaluation"
+    },
+    {
+      "roomId": "ARL-1530",
+      "kind": "class",
+      "days": 4,
+      "start": 800,
+      "end": 880,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "ALY6630",
+      "detail": "Programming for Data Science"
     },
     {
       "roomId": "ARL-1530",
@@ -68598,17 +68609,6 @@
       "detail": "Fundamentals of Cloud Computing"
     },
     {
-      "roomId": "SJ-1010/1011",
-      "kind": "class",
-      "days": 1,
-      "start": 960,
-      "end": 1160,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6120",
-      "detail": "Natural Language Processing"
-    },
-    {
       "roomId": "SJ-1011",
       "kind": "class",
       "days": 8,
@@ -69190,6 +69190,17 @@
       "endDate": "2026-12-20",
       "label": "CS5100",
       "detail": "Foundations of Artificial Intelligence"
+    },
+    {
+      "roomId": "SJ-916",
+      "kind": "class",
+      "days": 1,
+      "start": 960,
+      "end": 1160,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "CS6120",
+      "detail": "Natural Language Processing"
     },
     {
       "roomId": "SJ-916",
