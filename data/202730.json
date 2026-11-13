@@ -3,7 +3,7 @@
     "code": "202730",
     "description": "Spring 2027 Semester"
   },
-  "generatedAt": "2026-11-12",
+  "generatedAt": "2026-11-13",
   "campuses": [
     {
       "code": "BOS",
@@ -4398,12 +4398,12 @@
       "roomId": "271-252",
       "kind": "class",
       "days": 2,
-      "start": 990,
-      "end": 1190,
+      "start": 995,
+      "end": 1145,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "INTP4995",
-      "detail": "Interpreting Practicum"
+      "label": "CAEP6402",
+      "detail": "Promoting Social, Emotional, and Behavioral Success in Schools"
     },
     {
       "roomId": "271-252",
@@ -5618,6 +5618,61 @@
     {
       "roomId": "BK-204",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CHEM5692",
+      "detail": "Carbon Capture, Utilization, and Storage"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CHME5692",
+      "detail": "Carbon Capture, Utilization, and Storage"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 20,
+      "start": 705,
+      "end": 805,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "HONR3310",
+      "detail": "Law Policy & Human Behavior"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 18,
+      "start": 815,
+      "end": 915,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CS7870",
+      "detail": "Seminar in Theoretical Computer Science"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 18,
+      "start": 815,
+      "end": 915,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CS7880",
+      "detail": "Special Topics in Theoretical Computer Science"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -6245,6 +6300,17 @@
     {
       "roomId": "BK-320",
       "kind": "class",
+      "days": 13,
+      "start": 555,
+      "end": 620,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "EECE2322",
+      "detail": "Fundamentals of Digital Design and Computer Organization"
+    },
+    {
+      "roomId": "BK-320",
+      "kind": "class",
       "days": 18,
       "start": 590,
       "end": 690,
@@ -6252,17 +6318,6 @@
       "endDate": "2027-05-02",
       "label": "PSYC4512",
       "detail": "Neuropsychology"
-    },
-    {
-      "roomId": "BK-320",
-      "kind": "class",
-      "days": 13,
-      "start": 630,
-      "end": 695,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
     },
     {
       "roomId": "BK-320",
@@ -8353,17 +8408,6 @@
       "endDate": "2027-05-02",
       "label": "HIST2301",
       "detail": "History Seminar"
-    },
-    {
-      "roomId": "CA-003",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "HIST4701",
-      "detail": "Capstone Seminar"
     },
     {
       "roomId": "CA-004",
@@ -11970,8 +12014,8 @@
       "end": 620,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "EECE2322",
-      "detail": "Fundamentals of Digital Design and Computer Organization"
+      "label": "ME4505",
+      "detail": "Measurement and Analysis with Thermal Science Application"
     },
     {
       "roomId": "DG-119",
@@ -11981,41 +12025,19 @@
       "end": 690,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "AFCS3305",
-      "detail": "Beyond the Binary: Race, Sex, and Science"
+      "label": "FINA6435",
+      "detail": "Derivatives and Risk Analysis"
     },
     {
       "roomId": "DG-119",
       "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "HIST3305",
-      "detail": "Beyond the Binary: Race, Sex, and Science"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "WMNS3305",
-      "detail": "Beyond the Binary: Race, Sex, and Science"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 8,
+      "days": 13,
       "start": 630,
       "end": 695,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "PT5111",
-      "detail": "Professional Development for Bouv&eacute; Graduate Co-op"
+      "label": "ME3455",
+      "detail": "Dynamics"
     },
     {
       "roomId": "DG-119",
@@ -16216,8 +16238,8 @@
       "end": 690,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "ECON2316",
-      "detail": "Microeconomic Theory"
+      "label": "CIVE2320",
+      "detail": "Structural Analysis"
     },
     {
       "roomId": "EXP-203",
@@ -16966,6 +16988,39 @@
       "endDate": "2027-05-02",
       "label": "OR7245",
       "detail": "Network Analysis and Advanced Optimization"
+    },
+    {
+      "roomId": "FR-128",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "AFCS3305",
+      "detail": "Beyond the Binary: Race, Sex, and Science"
+    },
+    {
+      "roomId": "FR-128",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "HIST3305",
+      "detail": "Beyond the Binary: Race, Sex, and Science"
+    },
+    {
+      "roomId": "FR-128",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "WMNS3305",
+      "detail": "Beyond the Binary: Race, Sex, and Science"
     },
     {
       "roomId": "FR-128",
@@ -20055,8 +20110,8 @@
       "end": 695,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
+      "label": "ME4508",
+      "detail": "Mechanical Engineering Computation and Design"
     },
     {
       "roomId": "HA-221",
@@ -22576,6 +22631,17 @@
       "endDate": "2027-05-02",
       "label": "NRSG5220",
       "detail": "Introduction to Research Methods and Application for Healthcare"
+    },
+    {
+      "roomId": "HS-204",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ECON2316",
+      "detail": "Microeconomic Theory"
     },
     {
       "roomId": "HS-204",
@@ -26241,6 +26307,17 @@
       "detail": "Lab for CHEM 1214"
     },
     {
+      "roomId": "KA-202",
+      "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "SLPA1102",
+      "detail": "Language Development"
+    },
+    {
       "roomId": "KA-204",
       "kind": "class",
       "days": 13,
@@ -29257,6 +29334,17 @@
     {
       "roomId": "M44-133",
       "kind": "class",
+      "days": 1,
+      "start": 815,
+      "end": 1015,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "INFO7374",
+      "detail": "ST: Adv Techniques With LLM"
+    },
+    {
+      "roomId": "M44-133",
+      "kind": "class",
       "days": 16,
       "start": 900,
       "end": 1000,
@@ -29631,17 +29719,6 @@
     {
       "roomId": "M48-102",
       "kind": "class",
-      "days": 8,
-      "start": 635,
-      "end": 835,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "INFO6215",
-      "detail": "Business Analysis and Information Engineering"
-    },
-    {
-      "roomId": "M48-102",
-      "kind": "class",
       "days": 18,
       "start": 635,
       "end": 735,
@@ -29675,13 +29752,13 @@
     {
       "roomId": "M48-102",
       "kind": "class",
-      "days": 1,
+      "days": 13,
       "start": 815,
-      "end": 1015,
+      "end": 880,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "INFO7374",
-      "detail": "ST: Adv Techniques With LLM"
+      "label": "CS7980",
+      "detail": "Research Capstone"
     },
     {
       "roomId": "M48-102",
@@ -29928,6 +30005,17 @@
     {
       "roomId": "M54-014",
       "kind": "class",
+      "days": 8,
+      "start": 635,
+      "end": 835,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "INFO6215",
+      "detail": "Business Analysis and Information Engineering"
+    },
+    {
+      "roomId": "M54-014",
+      "kind": "class",
       "days": 18,
       "start": 635,
       "end": 735,
@@ -29935,6 +30023,17 @@
       "endDate": "2027-05-02",
       "label": "PHIL2303",
       "detail": "Social and Political Philosophy"
+    },
+    {
+      "roomId": "M54-014",
+      "kind": "class",
+      "days": 5,
+      "start": 710,
+      "end": 810,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "EECE2140",
+      "detail": "Computing Fundamentals for Engineers"
     },
     {
       "roomId": "M54-014",
@@ -30122,6 +30221,28 @@
       "endDate": "2027-05-02",
       "label": "PHYS1151",
       "detail": "Physics for Engineering 1"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 10,
+      "start": 900,
+      "end": 1000,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CS3200",
+      "detail": "Introduction to Databases"
+    },
+    {
+      "roomId": "M54-100",
+      "kind": "class",
+      "days": 10,
+      "start": 900,
+      "end": 1000,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CS5200",
+      "detail": "Database Management Systems"
     },
     {
       "roomId": "M54-100",
@@ -30331,6 +30452,17 @@
       "endDate": "2027-05-02",
       "label": "HIST1201",
       "detail": "First-Year Seminar"
+    },
+    {
+      "roomId": "ME-206",
+      "kind": "class",
+      "days": 5,
+      "start": 890,
+      "end": 990,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "HIST4701",
+      "detail": "Capstone Seminar"
     },
     {
       "roomId": "MU-201",
@@ -36616,6 +36748,28 @@
     {
       "roomId": "RI-165",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "POLS3420",
+      "detail": "U.S. National Security Policy"
+    },
+    {
+      "roomId": "RI-165",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MATH1342",
+      "detail": "Calculus 2 for Science and Engineering"
+    },
+    {
+      "roomId": "RI-165",
+      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 805,
@@ -37265,6 +37419,28 @@
     {
       "roomId": "RI-228",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "POLS2330",
+      "detail": "American Political Thought"
+    },
+    {
+      "roomId": "RI-228",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MATH1342",
+      "detail": "Calculus 2 for Science and Engineering"
+    },
+    {
+      "roomId": "RI-228",
+      "kind": "class",
       "days": 8,
       "start": 705,
       "end": 805,
@@ -37360,6 +37536,17 @@
       "endDate": "2027-05-02",
       "label": "PSY2230",
       "detail": "Stress, Resilience, and Behavior Change"
+    },
+    {
+      "roomId": "RI-229",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "POLS4500",
+      "detail": "U.S. Constitutional Law"
     },
     {
       "roomId": "RI-229",
@@ -37952,8 +38139,8 @@
       "end": 690,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "DS3000",
-      "detail": "Mathematical Foundations of Artificial Intelligence"
+      "label": "ANTH1101",
+      "detail": "Peoples and Cultures"
     },
     {
       "roomId": "RI-236",
@@ -39197,6 +39384,17 @@
       "endDate": "2027-05-02",
       "label": "CIVE2340",
       "detail": "Geotechnical Engineering"
+    },
+    {
+      "roomId": "RI-325",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "BIOE6200",
+      "detail": "Mathematical Methods in Bioengineering"
     },
     {
       "roomId": "RI-325",
@@ -42039,6 +42237,17 @@
     {
       "roomId": "RY-204",
       "kind": "class",
+      "days": 2,
+      "start": 990,
+      "end": 1190,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "INTP4995",
+      "detail": "Interpreting Practicum"
+    },
+    {
+      "roomId": "RY-204",
+      "kind": "class",
       "days": 1,
       "start": 995,
       "end": 1145,
@@ -42046,17 +42255,6 @@
       "endDate": "2027-05-02",
       "label": "CAEP6287",
       "detail": "Group Counseling"
-    },
-    {
-      "roomId": "RY-204",
-      "kind": "class",
-      "days": 2,
-      "start": 995,
-      "end": 1145,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "CAEP6402",
-      "detail": "Promoting Social, Emotional, and Behavioral Success in Schools"
     },
     {
       "roomId": "RY-204",
@@ -47594,6 +47792,17 @@
     {
       "roomId": "RY-433",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ECON2316",
+      "detail": "Microeconomic Theory"
+    },
+    {
+      "roomId": "RY-433",
+      "kind": "class",
       "days": 8,
       "start": 705,
       "end": 770,
@@ -50364,6 +50573,17 @@
       "detail": "Engineering Leadership 2"
     },
     {
+      "roomId": "SH-415",
+      "kind": "class",
+      "days": 4,
+      "start": 1070,
+      "end": 1150,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "PJM6250",
+      "detail": "Project Finance"
+    },
+    {
       "roomId": "SH-420",
       "kind": "class",
       "days": 13,
@@ -51411,6 +51631,28 @@
     {
       "roomId": "SL-012",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "CRIM3600",
+      "detail": "Criminal Justice Research Methods"
+    },
+    {
+      "roomId": "SL-012",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "INSH3101",
+      "detail": "Research Methods in the Social Sciences"
+    },
+    {
+      "roomId": "SL-012",
+      "kind": "class",
       "days": 8,
       "start": 705,
       "end": 805,
@@ -51528,6 +51770,17 @@
       "endDate": "2027-05-02",
       "label": "CY5240",
       "detail": "Cyberlaw: Privacy, Ethics, and Digital Rights"
+    },
+    {
+      "roomId": "SL-013",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ENVR5000",
+      "detail": "Community Stakeholder Engagement in Environmental Management and Research"
     },
     {
       "roomId": "SL-013",
@@ -53270,6 +53523,17 @@
     {
       "roomId": "SL-109",
       "kind": "class",
+      "days": 1,
+      "start": 960,
+      "end": 1030,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "DGM6670",
+      "detail": "Game Development Fundamentals"
+    },
+    {
+      "roomId": "SL-109",
+      "kind": "class",
       "days": 8,
       "start": 1070,
       "end": 1150,
@@ -53277,17 +53541,6 @@
       "endDate": "2027-05-02",
       "label": "DGM6655",
       "detail": "Animation Fundamentals"
-    },
-    {
-      "roomId": "SL-109",
-      "kind": "class",
-      "days": 1,
-      "start": 1070,
-      "end": 1150,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "DGM6670",
-      "detail": "Game Development Fundamentals"
     },
     {
       "roomId": "SL-109",
@@ -53464,6 +53717,17 @@
       "endDate": "2027-05-02",
       "label": "RGA6660",
       "detail": "Therapeutic Product Development: A Regulatory Overview"
+    },
+    {
+      "roomId": "SL-115",
+      "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "EECE5578",
+      "detail": "Terahertz Communications"
     },
     {
       "roomId": "SL-115",
@@ -54133,8 +54397,8 @@
       "end": 990,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "SLPA1102",
-      "detail": "Language Development"
+      "label": "PT1880",
+      "detail": "Introduction to Sports Medicine"
     },
     {
       "roomId": "SL-123",
@@ -56509,8 +56773,8 @@
       "end": 690,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "CIVE2320",
-      "detail": "Structural Analysis"
+      "label": "DS3000",
+      "detail": "Mathematical Foundations of Artificial Intelligence"
     },
     {
       "roomId": "WVH-108",
