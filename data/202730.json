@@ -3,7 +3,7 @@
     "code": "202730",
     "description": "Spring 2027 Semester"
   },
-  "generatedAt": "2026-11-15",
+  "generatedAt": "2026-11-16",
   "campuses": [
     {
       "code": "BOS",
@@ -5715,6 +5715,28 @@
     {
       "roomId": "BK-204",
       "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "PHIL2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "POLS2325",
+      "detail": "Ancient Philosophy and Political Thought"
+    },
+    {
+      "roomId": "BK-204",
+      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -6360,6 +6382,17 @@
       "endDate": "2027-05-02",
       "label": "PSYC4512",
       "detail": "Neuropsychology"
+    },
+    {
+      "roomId": "BK-320",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ME2380",
+      "detail": "Thermodynamics"
     },
     {
       "roomId": "BK-320",
@@ -8285,6 +8318,17 @@
       "endDate": "2027-05-02",
       "label": "EECE5698",
       "detail": "ST: Tapeout a CMOS Chip"
+    },
+    {
+      "roomId": "CA-001",
+      "kind": "class",
+      "days": 13,
+      "start": 995,
+      "end": 1060,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
     },
     {
       "roomId": "CA-002",
@@ -15923,6 +15967,17 @@
     {
       "roomId": "EV-008",
       "kind": "class",
+      "days": 13,
+      "start": 815,
+      "end": 880,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ENGW1111",
+      "detail": "First-Year Writing"
+    },
+    {
+      "roomId": "EV-008",
+      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -17221,17 +17276,6 @@
     {
       "roomId": "FR-128",
       "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "POLS4701",
-      "detail": "Political Science Senior Capstone"
-    },
-    {
-      "roomId": "FR-128",
-      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -17727,6 +17771,17 @@
     {
       "roomId": "FR-151",
       "kind": "class",
+      "days": 4,
+      "start": 705,
+      "end": 805,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "EESC6500",
+      "detail": "Pathways to Professional Success"
+    },
+    {
+      "roomId": "FR-151",
+      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -17734,17 +17789,6 @@
       "endDate": "2027-05-02",
       "label": "IE4515",
       "detail": "Operations Research"
-    },
-    {
-      "roomId": "FR-151",
-      "kind": "class",
-      "days": 20,
-      "start": 705,
-      "end": 805,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "MKTG3301",
-      "detail": "Marketing Management"
     },
     {
       "roomId": "FR-151",
@@ -22039,17 +22083,6 @@
     {
       "roomId": "HS-106",
       "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "PHIL4901",
-      "detail": "Topics in Philosophy Seminar"
-    },
-    {
-      "roomId": "HS-106",
-      "kind": "class",
       "days": 5,
       "start": 890,
       "end": 990,
@@ -23683,8 +23716,8 @@
       "end": 915,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "BIOE3210",
-      "detail": "Bioelectricity"
+      "label": "EEMB3460",
+      "detail": "Conservation Biology"
     },
     {
       "roomId": "HT-224",
@@ -24734,6 +24767,17 @@
     {
       "roomId": "ISEC-136",
       "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ME2350",
+      "detail": "Statics"
+    },
+    {
+      "roomId": "ISEC-136",
+      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -24767,13 +24811,13 @@
     {
       "roomId": "ISEC-136",
       "kind": "class",
-      "days": 2,
+      "days": 18,
       "start": 815,
       "end": 915,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "EESC2000",
-      "detail": "Professional Development for Co-op"
+      "label": "BIOE3210",
+      "detail": "Bioelectricity"
     },
     {
       "roomId": "ISEC-136",
@@ -24866,6 +24910,17 @@
     {
       "roomId": "ISEC-138",
       "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MKTG2201",
+      "detail": "Introduction to Marketing"
+    },
+    {
+      "roomId": "ISEC-138",
+      "kind": "class",
       "days": 1,
       "start": 705,
       "end": 805,
@@ -24899,13 +24954,13 @@
     {
       "roomId": "ISEC-138",
       "kind": "class",
-      "days": 4,
+      "days": 20,
       "start": 705,
       "end": 805,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "EESC6500",
-      "detail": "Pathways to Professional Success"
+      "label": "MKTG3301",
+      "detail": "Marketing Management"
     },
     {
       "roomId": "ISEC-138",
@@ -25005,6 +25060,17 @@
       "endDate": "2027-05-02",
       "label": "ECON1116",
       "detail": "Principles of Microeconomics"
+    },
+    {
+      "roomId": "ISEC-140",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ACCT1201",
+      "detail": "Financl Accounting & Rep"
     },
     {
       "roomId": "ISEC-140",
@@ -25148,6 +25214,17 @@
       "endDate": "2027-05-02",
       "label": "ECON2350",
       "detail": "Statistics for Economists"
+    },
+    {
+      "roomId": "ISEC-142",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MKTG2201",
+      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "ISEC-142",
@@ -26767,17 +26844,6 @@
       "detail": "Texts, Maps, and Networks: Readings and Methods for Digital History"
     },
     {
-      "roomId": "KA-204",
-      "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1280,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "HINF5301",
-      "detail": "Evaluating Health Technologies"
-    },
-    {
       "roomId": "KA-208",
       "kind": "class",
       "days": 18,
@@ -27172,17 +27238,6 @@
       "endDate": "2027-04-16",
       "label": "LW7512",
       "detail": "Problems in Public Health Law"
-    },
-    {
-      "roomId": "KA-308",
-      "kind": "class",
-      "days": 4,
-      "start": 995,
-      "end": 1195,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "SOCL7201",
-      "detail": "Foundations of Social Theory 2"
     },
     {
       "roomId": "KA-308",
@@ -38022,6 +38077,17 @@
     {
       "roomId": "RI-231",
       "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MATH3527",
+      "detail": "Number Theory 1"
+    },
+    {
+      "roomId": "RI-231",
+      "kind": "class",
       "days": 4,
       "start": 705,
       "end": 805,
@@ -39140,6 +39206,17 @@
       "endDate": "2027-05-02",
       "label": "CHEM5620",
       "detail": "Protein Chemistry"
+    },
+    {
+      "roomId": "RI-243",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "ENGW3306",
+      "detail": "Advanced Writing in the Health Professions"
     },
     {
       "roomId": "RI-243",
@@ -40383,6 +40460,17 @@
       "endDate": "2027-05-02",
       "label": "PHTH4540",
       "detail": "Health Education and Program Planning"
+    },
+    {
+      "roomId": "RY-124",
+      "kind": "class",
+      "days": 13,
+      "start": 995,
+      "end": 1060,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "POLS4701",
+      "detail": "Political Science Senior Capstone"
     },
     {
       "roomId": "RY-124",
@@ -41945,6 +42033,17 @@
       "endDate": "2027-05-02",
       "label": "ENCP2000",
       "detail": "Introduction to Engineering Co-op Education"
+    },
+    {
+      "roomId": "RY-159",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "WMNS1103",
+      "detail": "Introduction to Women’s, Gender, and Sexuality Studies"
     },
     {
       "roomId": "RY-159",
@@ -44343,17 +44442,6 @@
       "endDate": "2027-05-02",
       "label": "SPNS1240",
       "detail": "Latin American Film"
-    },
-    {
-      "roomId": "RY-265",
-      "kind": "class",
-      "days": 2,
-      "start": 1050,
-      "end": 1200,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "PHTH5120",
-      "detail": "Race, Ethnicity, and Health in the United States"
     },
     {
       "roomId": "RY-265",
@@ -46853,6 +46941,17 @@
       "detail": "Introduction to Art Therapy"
     },
     {
+      "roomId": "RY-394",
+      "kind": "class",
+      "days": 2,
+      "start": 995,
+      "end": 1195,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "SOCL7201",
+      "detail": "Foundations of Social Theory 2"
+    },
+    {
       "roomId": "RY-399",
       "kind": "class",
       "days": 8,
@@ -48765,6 +48864,17 @@
       "endDate": "2027-05-02",
       "label": "CHEM1162",
       "detail": "Lab for CHEM 1161"
+    },
+    {
+      "roomId": "RY-456",
+      "kind": "class",
+      "days": 13,
+      "start": 630,
+      "end": 695,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "COMM4605",
+      "detail": "Youth and Communication Technology"
     },
     {
       "roomId": "RY-458",
@@ -55171,6 +55281,17 @@
     {
       "roomId": "SN-108",
       "kind": "class",
+      "days": 18,
+      "start": 590,
+      "end": 690,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "MEIE4702",
+      "detail": "Capstone Design 2"
+    },
+    {
+      "roomId": "SN-108",
+      "kind": "class",
       "days": 13,
       "start": 630,
       "end": 695,
@@ -55708,17 +55829,6 @@
       "detail": "Statistics for Design"
     },
     {
-      "roomId": "WGV-1418",
-      "kind": "class",
-      "days": 2,
-      "start": 900,
-      "end": 980,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "DGM6010",
-      "detail": "Information Technology and Creative Practice"
-    },
-    {
       "roomId": "WGV-1425",
       "kind": "class",
       "days": 4,
@@ -55743,17 +55853,6 @@
     {
       "roomId": "WGV-1425",
       "kind": "class",
-      "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2027-01-13",
-      "endDate": "2027-02-27",
-      "label": "DGM6475",
-      "detail": "Digital Design Seminar"
-    },
-    {
-      "roomId": "WGV-1425",
-      "kind": "class",
       "days": 8,
       "start": 900,
       "end": 980,
@@ -55772,17 +55871,6 @@
       "endDate": "2027-05-02",
       "label": "CS7980",
       "detail": "Research Capstone"
-    },
-    {
-      "roomId": "WGV-1425",
-      "kind": "class",
-      "days": 2,
-      "start": 1020,
-      "end": 1140,
-      "startDate": "2027-03-15",
-      "endDate": "2027-05-02",
-      "label": "DGM6055",
-      "detail": "Content Management Systems"
     },
     {
       "roomId": "WGV-1426",
@@ -55816,6 +55904,50 @@
       "endDate": "2027-05-02",
       "label": "CS6650",
       "detail": "Building Scalable Distributed Systems"
+    },
+    {
+      "roomId": "WGV-1426",
+      "kind": "class",
+      "days": 8,
+      "start": 1020,
+      "end": 1100,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "DGM6705",
+      "detail": "Search Engine Optimization and Brand Strategy"
+    },
+    {
+      "roomId": "WGV-1426",
+      "kind": "class",
+      "days": 8,
+      "start": 1050,
+      "end": 1170,
+      "startDate": "2027-01-13",
+      "endDate": "2027-02-27",
+      "label": "DGM5100",
+      "detail": "Programming Logic Fundamentals"
+    },
+    {
+      "roomId": "WGV-1426",
+      "kind": "class",
+      "days": 4,
+      "start": 645,
+      "end": 765,
+      "startDate": "2027-03-15",
+      "endDate": "2027-05-02",
+      "label": "DGM6055",
+      "detail": "Content Management Systems"
+    },
+    {
+      "roomId": "WGV-1426",
+      "kind": "class",
+      "days": 8,
+      "start": 1050,
+      "end": 1170,
+      "startDate": "2027-03-15",
+      "endDate": "2027-05-02",
+      "label": "DGM5105",
+      "detail": "Foundations of Programming for Digital Media"
     },
     {
       "roomId": "WGV-1515",
@@ -55853,6 +55985,17 @@
     {
       "roomId": "WGV-1515",
       "kind": "class",
+      "days": 2,
+      "start": 900,
+      "end": 980,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "DGM6010",
+      "detail": "Information Technology and Creative Practice"
+    },
+    {
+      "roomId": "WGV-1515",
+      "kind": "class",
       "days": 1,
       "start": 960,
       "end": 1160,
@@ -55860,6 +56003,17 @@
       "endDate": "2027-05-02",
       "label": "CSYE7380",
       "detail": "Theory and Practical Applications of AI Generative Modeling"
+    },
+    {
+      "roomId": "WGV-1515",
+      "kind": "class",
+      "days": 4,
+      "start": 930,
+      "end": 985,
+      "startDate": "2027-03-15",
+      "endDate": "2027-05-02",
+      "label": "DGM6200",
+      "detail": "Digital Storytelling Foundations"
     },
     {
       "roomId": "WGV-1523",
@@ -55908,17 +56062,6 @@
     {
       "roomId": "WGV-1523",
       "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2027-01-13",
-      "endDate": "2027-02-27",
-      "label": "DGM5100",
-      "detail": "Programming Logic Fundamentals"
-    },
-    {
-      "roomId": "WGV-1523",
-      "kind": "class",
       "days": 2,
       "start": 960,
       "end": 1040,
@@ -55926,17 +56069,6 @@
       "endDate": "2027-05-02",
       "label": "AAI6630",
       "detail": "Applied Computer Vision"
-    },
-    {
-      "roomId": "WGV-1523",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2027-03-15",
-      "endDate": "2027-05-02",
-      "label": "DGM5105",
-      "detail": "Foundations of Programming for Digital Media"
     },
     {
       "roomId": "WGV-1524",
@@ -55996,17 +56128,6 @@
     {
       "roomId": "WGV-1524",
       "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 985,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "DGM6200",
-      "detail": "Digital Storytelling Foundations"
-    },
-    {
-      "roomId": "WGV-1524",
-      "kind": "class",
       "days": 8,
       "start": 960,
       "end": 1160,
@@ -56047,17 +56168,6 @@
       "endDate": "2027-02-27",
       "label": "DGM5000",
       "detail": "Visual Communication Fundamentals"
-    },
-    {
-      "roomId": "WGV-1524",
-      "kind": "class",
-      "days": 4,
-      "start": 1020,
-      "end": 1100,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "DGM6255",
-      "detail": "Usability and Human Interaction"
     },
     {
       "roomId": "WGV-1524",
@@ -56106,6 +56216,17 @@
     {
       "roomId": "WGV-1526",
       "kind": "class",
+      "days": 4,
+      "start": 780,
+      "end": 860,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "DGM6685",
+      "detail": "Advanced Game Development"
+    },
+    {
+      "roomId": "WGV-1526",
+      "kind": "class",
       "days": 8,
       "start": 900,
       "end": 980,
@@ -56113,17 +56234,6 @@
       "endDate": "2027-05-02",
       "label": "DGM6600",
       "detail": "Information Design for Digital Media"
-    },
-    {
-      "roomId": "WGV-1526",
-      "kind": "class",
-      "days": 4,
-      "start": 900,
-      "end": 980,
-      "startDate": "2027-01-13",
-      "endDate": "2027-05-02",
-      "label": "DGM6685",
-      "detail": "Advanced Game Development"
     },
     {
       "roomId": "WGV-1526",
@@ -56146,6 +56256,17 @@
       "endDate": "2027-05-02",
       "label": "DGM6115",
       "detail": "Data Collection, Analysis, and Visualization"
+    },
+    {
+      "roomId": "WGV-1526",
+      "kind": "class",
+      "days": 2,
+      "start": 1035,
+      "end": 1115,
+      "startDate": "2027-01-13",
+      "endDate": "2027-05-02",
+      "label": "DGM6255",
+      "detail": "Usability and Human Interaction"
     },
     {
       "roomId": "WVC-140",
@@ -57365,8 +57486,8 @@
       "end": 695,
       "startDate": "2027-01-13",
       "endDate": "2027-05-02",
-      "label": "MATH3527",
-      "detail": "Number Theory 1"
+      "label": "ME2355",
+      "detail": "Mechanics of Materials"
     },
     {
       "roomId": "WVH-110",
