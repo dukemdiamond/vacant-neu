@@ -61,6 +61,9 @@ Class data comes from Northeastern's **Banner 9 Self-Service API** — the same 
 unauthenticated endpoint SearchNEU's scraper reads. A full term is ~20 paginated requests
 (`searchResults` accepts no subject filter, so one sweep covers the whole catalog).
 
+[**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md) has the full picture: the data model, the vacancy
+algorithm, the failure policy behind every publish gate, and the known limits.
+
 ### Why there's no database
 
 The entire Boston room schedule is 86 KB gzipped and effectively immutable within a term. A
@@ -80,6 +83,7 @@ pnpm install
 pnpm scrape                    # scrape current term -> data/<term>.json
 pnpm scrape --dry-run          # scrape and report, write nothing
 pnpm scrape --term 202710      # pin a specific term
+pnpm scrape --today 2026-12-30 --dry-run   # rehearse which term that date would pick
 
 pnpm events                    # scrape club events from Engage -> data/events.json
 pnpm events --dry-run          # fetch and report, write nothing
@@ -94,7 +98,7 @@ pnpm inspect --free --at 2026-09-16T14:30
 
 pnpm demo                      # record a walkthrough video (see tools/demo)
 
-pnpm test                      # 83 unit tests
+pnpm test                      # 106 unit tests
 pnpm typecheck
 
 pnpm --filter @vacantneu/web dev     # http://localhost:3000
