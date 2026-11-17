@@ -173,6 +173,17 @@ describe("transform", () => {
     expect(buildings[0]?.roomCount).toBe(2);
   });
 
+  it("collapses sections of one course that share a room and slot into one booking", () => {
+    // Banner lists each capstone section as its own row; the room sees one booking.
+    const sections = Array.from({ length: 11 }, (_, i) => ({
+      ...section(),
+      courseReferenceNumber: String(20000 + i),
+    }));
+    const { meetings, stats } = transform([...sections, section({ room: "170" })]);
+    expect(meetings).toHaveLength(2);
+    expect(stats.duplicateRows).toBe(10);
+  });
+
   it("backfills display names when the building description appears on a later row", () => {
     // First row carries no description; a later row for the same building does.
     const { rooms } = transform([

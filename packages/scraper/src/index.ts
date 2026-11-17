@@ -102,7 +102,10 @@ async function main() {
     `  skipped: no room ${stats.skippedNoRoom}, no usable campus ${stats.skippedNoCampus},`,
   );
   console.log(
-    `           excluded building ${stats.skippedExcludedBuilding}, unusable time ${stats.skippedBadTime}, no days ${stats.skippedNoDays}`,
+    `           excluded building ${stats.skippedExcludedBuilding}, unusable time ${stats.skippedBadTime}, no days ${stats.skippedNoDays},`,
+  );
+  console.log(
+    `           duplicate rows ${stats.duplicateRows} (sections sharing a room and slot)`,
   );
   console.log(
     `\n${buildings.length} buildings, ${rooms.length} rooms, ${meetings.length} meetings across ${campuses.length} campuses:`,

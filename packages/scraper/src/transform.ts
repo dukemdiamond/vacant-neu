@@ -6,7 +6,7 @@
  * campuses (NYC, Oakland, London, Seattle, Portland) are out of scope for v1.
  */
 import type { Building, Campus, Meeting, Room } from "@vacantneu/core";
-import { DAY_BITS } from "@vacantneu/core";
+import { DAY_BITS, dedupeMeetings } from "@vacantneu/core";
 import type { BannerMeetingTime, BannerSection } from "./schema.js";
 
 export const BOSTON_CAMPUS = "BOS";
@@ -145,6 +145,8 @@ export interface TransformResult {
     skippedExcludedBuilding: number;
     skippedBadTime: number;
     skippedNoDays: number;
+    /** Rows identical to one already kept: sections of one course sharing a room and slot. */
+    duplicateRows: number;
   };
 }
 
@@ -157,6 +159,7 @@ export function transform(sections: BannerSection[]): TransformResult {
     skippedExcludedBuilding: 0,
     skippedBadTime: 0,
     skippedNoDays: 0,
+    duplicateRows: 0,
   };
 
   const buildingNames = new Map<string, string>();
@@ -281,13 +284,18 @@ export function transform(sections: BannerSection[]): TransformResult {
     // Largest first, so the picker leads with the campus almost everyone wants.
     .sort((a, b) => b.roomCount - a.roomCount || a.name.localeCompare(b.name));
 
+  // Each section is its own Banner row, and the artifact does not carry the section, so sections
+  // sharing a room and slot would otherwise appear as that many copies of one booking.
+  const unique = dedupeMeetings(meetings);
+  stats.duplicateRows = meetings.length - unique.length;
+
   return {
     campuses,
     buildings,
     rooms: [...rooms.values()].sort((a, b) => a.id.localeCompare(b.id)),
     // Sorted so re-running the scraper produces a byte-identical artifact and the daily cron
     // doesn't churn commits when nothing actually changed.
-    meetings: meetings.sort(
+    meetings: unique.sort(
       (a, b) =>
         a.roomId.localeCompare(b.roomId) ||
         a.startDate.localeCompare(b.startDate) ||
