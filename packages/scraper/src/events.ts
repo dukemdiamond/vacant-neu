@@ -11,8 +11,14 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { CampusEvent, Meeting, ScheduleArtifact } from "@vacantneu/core";
+import {
+  campusDateISO,
+  type CampusEvent,
+  type Meeting,
+  type ScheduleArtifact,
+} from "@vacantneu/core";
 import { EngageSessionError, cookieHeaderFromEnv, fetchEvents } from "./engage.js";
+import { refuseOverwrite } from "./events-guard.js";
 import { transformEvents } from "./engage-transform.js";
 
 const DATA_DIR = join(import.meta.dirname, "../../../data");
@@ -78,6 +84,13 @@ async function main() {
         `\nSet ENGAGE_SESSION_ID and ENGAGE_UID to see them. See README for how to obtain them.`,
     );
   }
+  // An anonymous pull may now publish when it beats a stale artifact, so it must not be silent.
+  if (!pull.authenticated && process.env.GITHUB_ACTIONS) {
+    console.log(
+      "::warning title=Engage pull was anonymous::Most venues are hidden. " +
+        "Set the ENGAGE_SESSION_ID and ENGAGE_UID repository secrets.",
+    );
+  }
 
   if (dryRun) {
     console.log("\n--dry-run: nothing written.");
@@ -96,25 +109,14 @@ async function main() {
   const outPath = join(DATA_DIR, "events.json");
   const json = `${JSON.stringify(artifact, null, 2)}\n`;
 
-  /*
-   * Never trade a good artifact for a worse one.
-   *
-   * An anonymous pull still succeeds; it just finds almost nothing, because Engage redacts the
-   * venues. Letting it overwrite an authenticated artifact would quietly discard weeks of real
-   * bookings and look like a normal run. Same reasoning as the class scraper's count floors:
-   * keeping yesterday's data beats publishing a hollow version of today's.
-   */
-  if (existsSync(outPath)) {
+  // See events-guard.ts: a worse pull never replaces a better artifact, judged on what is ahead.
+  if (existsSync(outPath) && !process.argv.includes("--force")) {
     const previous = JSON.parse(readFileSync(outPath, "utf8")) as EventArtifact;
-    const losingAuth = previous.authenticated && !artifact.authenticated;
-    const collapsing =
-      previous.meetings.length > 4 && meetings.length < previous.meetings.length / 2;
-    if (!process.argv.includes("--force") && (losingAuth || collapsing)) {
+    const refusal = refuseOverwrite(previous, artifact, campusDateISO(new Date()));
+    if (refusal) {
       console.error(
-        `\nRefusing to overwrite ${previous.meetings.length} existing bookings with ` +
-          `${meetings.length}` +
-          (losingAuth ? ", because this pull was anonymous and the existing one was not" : "") +
-          `.\nSet a working ENGAGE_SESSION_ID, or pass --force if the drop is genuine.`,
+        `\nRefusing to overwrite data/events.json: ${refusal}.` +
+          `\nSet a working ENGAGE_SESSION_ID, or pass --force if the drop is genuine.`,
       );
       process.exit(3);
     }
