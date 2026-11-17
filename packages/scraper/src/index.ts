@@ -2,14 +2,16 @@
  * Scraper CLI: Banner -> validated -> normalized -> data/<term>.json
  *
  * Usage:
- *   pnpm scrape                 # auto-selects the current term
- *   pnpm scrape --term 202710   # explicit term
- *   pnpm scrape --dry-run       # scrape and report, write nothing
+ *   pnpm scrape                      # picks the term in session today (see term.ts)
+ *   pnpm scrape --term 202710        # explicit term
+ *   pnpm scrape --dry-run            # scrape and report, write nothing
+ *   pnpm scrape --today 2026-12-30   # choose the term as if it were that date
  */
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
-import { ACADEMIC_CALENDAR_2026_2027, type ScheduleArtifact } from "@vacantneu/core";
-import { BannerClient } from "./banner.js";
+import { ACADEMIC_CALENDAR_2026_2027, campusDateISO, type ScheduleArtifact } from "@vacantneu/core";
+import { BannerClient, type BannerTerm } from "./banner.js";
+import { chooseTerm, isMainSemester, termSpan, type TermCandidate } from "./term.js";
 import { transform } from "./transform.js";
 
 /**
@@ -29,31 +31,62 @@ function arg(name: string): string | undefined {
 }
 
 /**
- * Picks the term to scrape.
- *
- * Banner marks past terms "(View Only)", so the live term is the newest one without that marker.
- * Summer/CPS quarters overlap the main semesters, so we prefer plain semesters.
+ * How many of Banner's newest main semesters to consider. Three always spans the term in
+ * session, the one open for registration after it, and the one just finished.
  */
-async function selectTerm(client: BannerClient) {
-  const terms = await client.getTerms();
-  const live = terms.filter((t) => !/view only/i.test(t.description));
-  const preferred = live.find((t) => /semester/i.test(t.description)) ?? live[0];
-  if (!preferred) throw new Error("No active term found in Banner's term list");
-  return preferred;
+const CANDIDATE_TERMS = 3;
+
+/**
+ * Picks the term to scrape by date, not by Banner's ordering: see term.ts for why the newest
+ * open term is the wrong answer for weeks at a time. "(View Only)" terms stay in the running,
+ * because that marker flips on an administrative schedule rather than when classes end.
+ */
+async function selectTerm(terms: BannerTerm[], today: string) {
+  const semesters = terms.filter((t) => isMainSemester(t.description)).slice(0, CANDIDATE_TERMS);
+  if (semesters.length === 0) throw new Error("No semester found in Banner's term list");
+
+  const candidates: TermCandidate[] = [];
+  for (const t of semesters) {
+    // Banner pins a session to one term, so each probe gets its own.
+    const span = termSpan(await new BannerClient().sampleSections(t.code));
+    candidates.push({ ...t, span });
+    console.log(
+      `  ${t.code}  ${t.description.padEnd(38)} ${span ? `${span.start} to ${span.end}` : "no dated meetings"}`,
+    );
+  }
+
+  const choice = chooseTerm(candidates, today);
+  if (!choice) throw new Error("Could not read dates for any candidate term");
+  console.log(`  -> ${choice.term.code}: ${choice.reason}\n`);
+  return { code: choice.term.code, description: choice.term.description };
+}
+
+/** The site shows the term's name, and Banner's "(View Only)" is not part of it. */
+function displayName(description: string): string {
+  return description.replace(/\s*\(view only\)\s*$/i, "");
 }
 
 async function main() {
   const dryRun = process.argv.includes("--dry-run");
   const client = new BannerClient();
+  const terms = await client.getTerms();
+  // Overridable so the selection can be rehearsed for any date: `--today 2026-12-30 --dry-run`.
+  const today = arg("today") ?? campusDateISO(new Date());
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(today))
+    throw new Error(`--today must be YYYY-MM-DD, got ${today}`);
 
   const explicit = arg("term");
-  const term = explicit
-    ? {
-        code: explicit,
-        description:
-          (await client.getTerms()).find((t) => t.code === explicit)?.description ?? explicit,
-      }
-    : await selectTerm(client);
+  let term: BannerTerm;
+  if (explicit) {
+    term = {
+      code: explicit,
+      description: terms.find((t) => t.code === explicit)?.description ?? explicit,
+    };
+  } else {
+    console.log(`Choosing the term for ${today}:`);
+    term = await selectTerm(terms, today);
+  }
+  term = { ...term, description: displayName(term.description) };
 
   console.log(`Scraping ${term.description} (${term.code}) from Banner...`);
 
@@ -113,16 +146,21 @@ async function main() {
   const outPath = join(DATA_DIR, `${term.code}.json`);
   const json = `${JSON.stringify(artifact, null, 2)}\n`;
 
+  // The pointer is written independently of the schedule: switching back to a term whose
+  // artifact is already up to date must still move the site onto it.
+  const pointerPath = join(DATA_DIR, "current.json");
+  const pointer = JSON.stringify({ term: term.code }, null, 2) + "\n";
+  if (!existsSync(pointerPath) || readFileSync(pointerPath, "utf8") !== pointer) {
+    writeFileSync(pointerPath, pointer);
+    console.log(`\nPointed ${pointerPath} at ${term.code}`);
+  }
+
   if (existsSync(outPath) && readFileSync(outPath, "utf8") === json) {
     console.log(`\nNo changes. ${outPath} is already current.`);
     return;
   }
 
   writeFileSync(outPath, json);
-  writeFileSync(
-    join(DATA_DIR, "current.json"),
-    JSON.stringify({ term: term.code }, null, 2) + "\n",
-  );
   console.log(`\nWrote ${outPath} (${(json.length / 1024).toFixed(0)} KB)`);
 }
 

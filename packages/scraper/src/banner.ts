@@ -123,6 +123,27 @@ export class BannerClient {
   }
 
   /**
+   * Fetches the first page of a term's sections: enough to read the term's dates without
+   * sweeping the whole catalog. Banner holds one search term per session, so probing several
+   * terms wants a fresh client for each.
+   */
+  async sampleSections(term: string, size = 200): Promise<BannerSection[]> {
+    if (this.authorizedTerm !== term) await this.authorizeTerm(term);
+    const query = new URLSearchParams({
+      txt_term: term,
+      pageOffset: "0",
+      pageMaxSize: String(Math.min(size, PAGE_SIZE)),
+      sortColumn: "subjectDescription",
+      sortDirection: "asc",
+    });
+    const parsed = bannerSearchResponse.parse(
+      await this.json(`/searchResults/searchResults?${query}`),
+    );
+    if (!parsed.success) throw new Error(`Banner reported failure for term ${term}`);
+    return parsed.data;
+  }
+
+  /**
    * Fetches every section in a term.
    *
    * `searchResults` accepts no subject filter, so one paginated sweep covers the whole catalog

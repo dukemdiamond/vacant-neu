@@ -31,16 +31,59 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       # The vacancy engine gates the data: if its behaviour has drifted, we don't publish.
-      - run: pnpm test
+      - name: Test
+        id: test
+        run: pnpm test
 
+      # A refusal here fails the job, but the steps after it still run: the class schedule and club
+      # events are independent sources, and one being refused is no reason to freeze the other.
       - name: Scrape classes
+        id: classes
         run: pnpm scrape ${{ inputs.term && format('--term {0}', inputs.term) || '' }}
+
+      # A refused scrape leaves the site serving stale data, which nothing on the page reveals.
+      # Failed scheduled runs are easy to miss, so file an issue the first time it happens.
+      - name: Open an issue when the class scrape is refused
+        if: ${{ !cancelled() && steps.classes.outcome == 'failure' }}
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: open } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "scrape-failure",
+            });
+            if (open.length > 0) {
+              core.info("An issue is already open; not filing another.");
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner, repo: context.repo.repo,
+              title: "Class schedule scrape is being refused",
+              labels: ["scrape-failure"],
+              body: [
+                "The Banner scrape did not publish, so the site is still serving the last good",
+                "schedule. Every run fails until this is fixed, and nothing on the page shows it.",
+                "",
+                "Check the log of the failed run for which term was chosen and why, then:",
+                "- **Below a plausibility floor**: if the chosen term is the right one, Banner may",
+                "  be degraded or room assignments may not be published yet; re-run later.",
+                "- **Wrong term chosen**: dispatch this workflow with an explicit `term`, and fix",
+                "  the selection in `packages/scraper/src/term.ts`.",
+                "- **Schema or network error**: Banner changed shape or is down.",
+                "",
+                "Close this issue once a run succeeds.",
+                "",
+                `Failed run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              ].join("\n"),
+            });
 
       # Club events are a secondary source behind a credential that expires, so a failure here
       # must not stop the class schedule publishing. Exit code 2 means the Engage session needs a
       # manual refresh; anything else is a transient fault worth ignoring until the next run.
       - name: Scrape club events
         id: events
+        if: ${{ !cancelled() && steps.test.outcome == 'success' }}
         continue-on-error: true
         env:
           ENGAGE_SESSION_ID: ${{ secrets.ENGAGE_SESSION_ID }}
@@ -51,7 +94,7 @@ jobs:
       # Both mean the same thing in practice: the cookie needs replacing. Neither is fatal, since
       # events are future-dated and the existing artifact stays useful for weeks.
       - name: Open an issue when the Engage session needs refreshing
-        if: steps.events.outcome == 'failure'
+        if: ${{ !cancelled() && steps.events.outcome == 'failure' }}
         # An alerting failure must not prevent publishing a successful class scrape.
         continue-on-error: true
         uses: actions/github-script@v7
@@ -85,9 +128,11 @@ jobs:
               ].join("\n"),
             });
 
-      # The scraper exits non-zero on an implausible result set, so reaching this step means the
-      # artifact passed its sanity floors. Nothing is committed when the data is unchanged.
+      # Each scraper writes only an artifact that passed its own gates, so whatever changed under
+      # data/ is publishable even when the other source was refused. Nothing is committed when the
+      # data is unchanged.
       - name: Commit updated data
+        if: ${{ !cancelled() && steps.test.outcome == 'success' }}
         run: |
           if [[ -z "$(git status --porcelain data/)" ]]; then
             echo "No schedule changes."
