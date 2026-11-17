@@ -5,7 +5,9 @@ import MiniSearch from "minisearch";
 import { useNow } from "./clock";
 import {
   allRoomStatuses,
+  dedupeMeetings,
   indexMeetingsByRoom,
+  searchBookings,
   type Meeting,
   type Room,
   type RoomStatus,
@@ -54,9 +56,14 @@ export function useSchedule(): LoadState {
         const extra = clubs?.meetings ?? [];
         setState({
           status: "ready",
-          artifact: extra.length
-            ? { ...artifact, meetings: [...artifact.meetings, ...extra] }
-            : artifact,
+          // Deduplicated here as well as in the scraper, so an artifact published before that
+          // fix, or a repeat between the two sources, still lists each booking once.
+          artifact: {
+            ...artifact,
+            meetings: dedupeMeetings(
+              extra.length ? [...artifact.meetings, ...extra] : artifact.meetings,
+            ),
+          },
           clubEvents: extra.length,
         });
       })
@@ -74,20 +81,12 @@ export function useSchedule(): LoadState {
   return state;
 }
 
-export interface RoomHit {
-  room: Room;
-  status: RoomStatus;
-  meetings: Meeting[];
-}
-
 interface SearchDoc {
   id: string;
   room: string;
   roomLoose: string;
   building: string;
   buildingCode: string;
-  /** Every class and event that meets in this room, so a course code finds its classroom. */
-  bookings: string;
 }
 
 /** A room the query matched, and whether it matched only because of what is booked in it. */
@@ -100,21 +99,37 @@ export interface RoomHit {
    * use this to keep the result visible even when an availability filter would drop it.
    */
   viaBooking: boolean;
+  /**
+   * The classes or events in this room that answered the query, so the card can say when they
+   * meet. A card otherwise lists only today, and a room found through a class that meets there
+   * on Thursdays, or only for its final, would look like it matched nothing.
+   */
+  matched: Meeting[];
 }
 
 /**
- * Builds the MiniSearch index and a room lookup.
+ * Builds the room lookup, which answers two different questions.
  *
- * Rooms are indexed by building name, building code, and room number in both the padded and
- * unpadded spelling, because Banner writes "070" and students type "70".
+ * "Which room is Ryder 155?" is answered by MiniSearch over building name, building code, and room
+ * number in both the padded and unpadded spelling, because Banner writes "070" and students type
+ * "70". Building names tolerate typos.
+ *
+ * "Where does CS3650 meet?" is answered by {@link searchBookings}, which matches each class or
+ * event on its own and without typo tolerance. Those cannot share one index: pooling a room's
+ * class titles lets the words of a query match across different classes, and fuzzy matching
+ * makes CS3650 find CS6650.
  */
 export interface RoomIndex {
   search: MiniSearch<SearchDoc>;
   rooms: Map<string, Room>;
   meetings: Map<string, Meeting[]>;
   buildingNames: Map<string, string>;
-  /** Rooms matching a query, ranked, each tagged with how it matched. */
-  lookup(query: string): RoomHit[];
+  /**
+   * Rooms matching a query, ranked, each tagged with how it matched: rooms named by the query
+   * first, then rooms hosting a matching class. Bookings that ended before `today` (campus ISO
+   * date) do not count.
+   */
+  lookup(query: string, today?: string): RoomHit[];
 }
 
 export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | null {
@@ -123,15 +138,14 @@ export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | nul
 
     const buildingNames = new Map(artifact.buildings.map((b) => [b.code, b.name]));
     const search = new MiniSearch<SearchDoc>({
-      fields: ["room", "roomLoose", "building", "buildingCode", "bookings"],
+      fields: ["room", "roomLoose", "building", "buildingCode"],
       storeFields: ["id"],
       searchOptions: {
         prefix: true,
-        // Building names tolerate typos, room numbers must not: with a flat fuzzy factor,
-        // "Ryder 155" also matches 153, 154, 156 and 158, burying the room actually asked for.
-        fuzzy: (term) => (/^\d+$/.test(term) ? false : 0.2),
-        // A room number should outrank a course that happens to contain the same digits.
-        boost: { buildingCode: 2, room: 2, roomLoose: 2, bookings: 0.5 },
+        // Building names tolerate typos, anything with a digit must not: with a flat fuzzy
+        // factor, "Ryder 155" also matches 153, 154, 156 and 158, burying the room asked for.
+        fuzzy: (term) => (/\d/.test(term) ? false : 0.2),
+        boost: { buildingCode: 2, room: 2, roomLoose: 2 },
         combineWith: "AND",
       },
     });
@@ -146,34 +160,38 @@ export function useRoomIndex(artifact: ScheduleArtifact | null): RoomIndex | nul
         roomLoose: room.room.replace(/^0+/, ""),
         building: buildingNames.get(room.building) ?? room.building,
         buildingCode: room.building,
-        // Deduplicated: a lecture repeating three times a week should not weight its room three
-        // times as heavily as one that meets once.
-        bookings: [
-          ...new Set((meetings.get(room.id) ?? []).flatMap((m) => [m.label, m.detail])),
-        ].join(" "),
       })),
     );
-
-    const ROOM_FIELDS = new Set(["room", "roomLoose", "building", "buildingCode"]);
 
     return {
       search,
       rooms,
       meetings,
       buildingNames,
-      lookup(query: string): RoomHit[] {
+      lookup(query: string, today?: string): RoomHit[] {
         const trimmed = query.trim();
         if (!trimmed) return [];
-        return search
-          .search(trimmed)
-          .map((hit) => {
-            const room = rooms.get(hit.id as string);
-            if (!room) return null;
-            // `match` maps each matched term to the fields it was found in.
-            const fields = Object.values(hit.match).flat();
-            return { room, viaBooking: !fields.some((f) => ROOM_FIELDS.has(f)) };
-          })
-          .filter((hit): hit is RoomHit => hit !== null);
+
+        const bookings = searchBookings(trimmed, meetings, today);
+        const hits: RoomHit[] = [];
+        const seen = new Set<string>();
+
+        for (const hit of search.search(trimmed)) {
+          const room = rooms.get(hit.id as string);
+          if (!room) continue;
+          seen.add(room.id);
+          hits.push({ room, viaBooking: false, matched: bookings.get(room.id)?.meetings ?? [] });
+        }
+
+        // Best match first, and a room the class meets in every week ahead of one it visits
+        // once, for a final. Ties keep the artifact's room order, which is stable.
+        const viaBooking = [...bookings]
+          .filter(([id]) => !seen.has(id) && rooms.has(id))
+          .sort(([, a], [, b]) => b.score - a.score || Number(b.recurring) - Number(a.recurring));
+        for (const [id, match] of viaBooking) {
+          hits.push({ room: rooms.get(id)!, viaBooking: true, matched: match.meetings });
+        }
+        return hits;
       },
     };
   }, [artifact]);

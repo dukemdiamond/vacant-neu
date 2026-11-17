@@ -302,16 +302,33 @@ the same answer as one standing in the hallway.
 
 ### Search
 
-MiniSearch over rooms, indexed by building name, building code, and room number in both the padded
-and unpadded spelling, because Banner writes `070` and students type `70`. Three tuning decisions
-worth noting:
+A query is answered two ways at once, and the results are joined: rooms the query names first, then
+rooms hosting a class or event that matches it.
 
-- **Fuzzy matching is disabled for digits.** With a flat fuzzy factor, "Ryder 155" also matches 153,
-  154, 156 and 158, burying the room actually asked for.
-- **Bookings are deduplicated before indexing.** A lecture meeting three times a week should not
-  weight its room three times as heavily as one that meets once.
-- **A class match survives the availability filter.** Searching a course code is a request to find
-  _that_ room; answering "no rooms match" because the class is in session is the opposite of useful.
+**Rooms** go through MiniSearch, indexed by building name, building code, and room number in both
+the padded and unpadded spelling, because Banner writes `070` and students type `70`. Building names
+tolerate typos; any word containing a digit does not, because with a flat fuzzy factor "Ryder 155"
+also matches 153, 154, 156 and 158.
+
+**Classes and events** go through `searchBookings` in `packages/core/src/search.ts`, which is plain
+code rather than an index, for two reasons that both showed up as wrong results:
+
+- **Every word must match the same booking.** Pooling a room's titles into one field let
+  "computer systems" match a room holding _Computer Networks_ at 11 and _Healthcare System_ at 2.
+- **Course codes match exactly.** Fuzzy matching made CS3650 find CS6650, one edit away and a
+  different course. Spacing is forgiven instead: `cs 3650`, `cs-3650` and `CS3650` are the same
+  query, and `cs36` is a code still being typed.
+
+Title words match whole, with plurals folded and only the last word allowed to be a prefix. Matches
+rank exact code, then exact title, then phrase, then words in any order, and a room the class meets
+in weekly ranks above one it visits once for a final. Bookings already over do not count.
+
+Each result found through a booking says which class matched and when it meets there ("Final, Tue
+Dec 15, 3:30 to 5:30 PM"). The card's day list covers only today, so without that line a room found
+through a class's Thursday slot or its final looks like a wrong result.
+
+A booking match also survives the availability filter. Searching a course code is a request to find
+_that_ room; answering "no rooms match" because the class is in session is the opposite of useful.
 
 ## Where the map data comes from
 

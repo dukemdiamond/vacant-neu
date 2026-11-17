@@ -3,13 +3,27 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRightIcon } from "@phosphor-icons/react";
-import type { AcademicCalendar, Building, Campus, Room, RoomStatus } from "@vacantneu/core";
+import {
+  campusDateISO,
+  type AcademicCalendar,
+  type Building,
+  type Campus,
+  type Room,
+  type RoomStatus,
+} from "@vacantneu/core";
 import { CampusPicker } from "@/components/CampusPicker";
 import { PhaseNotice } from "@/components/PhaseNotice";
 import { RoomCard } from "@/components/RoomCard";
 import { ResultsSkeleton } from "@/components/Skeleton";
 import { SearchField } from "@/components/SearchField";
-import { useAllStatuses, useNow, useRoomIndex, useSchedule, type RoomIndex } from "@/lib/schedule";
+import {
+  useAllStatuses,
+  useNow,
+  useRoomIndex,
+  useSchedule,
+  type RoomHit,
+  type RoomIndex,
+} from "@/lib/schedule";
 import { resolveCampus, roomsOnCampus, useCampus } from "@/lib/campus";
 import { formatDay, termPhase, type TermPhase } from "@/lib/term";
 
@@ -62,15 +76,14 @@ export default function Home() {
     [artifact, campusCode],
   );
 
+  // Only the date matters to the lookup, so the per-minute clock tick does not re-run the search.
+  const today = campusDateISO(now);
   const matches = useMemo(() => {
     const trimmed = query.trim();
     if (!index || trimmed.length === 0) return null;
-    // The index covers class and event names too, so a course code finds the room it meets in.
-    return index
-      .lookup(trimmed)
-      .map((hit) => hit.room)
-      .filter((room) => room.campus === campusCode);
-  }, [index, query, campusCode]);
+    // Class and event names are searched too, so a course code finds the room it meets in.
+    return index.lookup(trimmed, today).filter((hit) => hit.room.campus === campusCode);
+  }, [index, query, campusCode, today]);
 
   // Reset the expansion when the query or campus changes, so a new search starts short again.
   useEffect(() => setShowAll(false), [query, campusCode]);
@@ -163,7 +176,7 @@ function Results({
   now,
   query,
 }: {
-  matches: Room[];
+  matches: RoomHit[];
   showAll: boolean;
   onShowAll: () => void;
   statusById: Map<string, RoomStatus>;
@@ -172,7 +185,8 @@ function Results({
   now: Date;
   query: string;
 }) {
-  const rooms = showAll ? matches : matches.slice(0, RESULTS_PAGE);
+  const hits = showAll ? matches : matches.slice(0, RESULTS_PAGE);
+  const rooms = hits.map((hit) => hit.room);
   const total = matches.length;
   if (rooms.length === 0) {
     return (
@@ -203,7 +217,7 @@ function Results({
           expandFirst && total === 1 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2",
         ].join(" ")}
       >
-        {rooms.map((room) => {
+        {hits.map(({ room, matched }) => {
           const status = statusById.get(room.id);
           if (!status) return null;
           return (
@@ -215,6 +229,7 @@ function Results({
               calendar={calendar}
               now={now}
               defaultOpen={expandFirst && room.id === rooms[0]?.id}
+              matched={matched}
             />
           );
         })}

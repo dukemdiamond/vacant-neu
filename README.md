@@ -98,7 +98,7 @@ pnpm inspect --free --at 2026-09-16T14:30
 
 pnpm demo                      # record a walkthrough video (see tools/demo)
 
-pnpm test                      # 106 unit tests
+pnpm test                      # 126 unit tests
 pnpm typecheck
 
 pnpm --filter @vacantneu/web dev     # http://localhost:3000

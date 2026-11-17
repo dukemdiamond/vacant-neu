@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import {
+  campusDateISO,
   campusInstant,
   isFreeFor,
   type Building,
@@ -89,19 +90,21 @@ export default function BrowsePage() {
    * "CS2500" is a request to find that class's room, and answering "no rooms match" because the
    * class is in session is the opposite of useful: the room being busy is the answer.
    */
-  const hits = useMemo(() => (index ? index.lookup(query) : []), [index, query]);
+  // Today's real date, not the time-travelled one: a booking already over is no answer to "where
+  // does this class meet?", whichever moment the grid is showing.
+  const today = campusDateISO(now);
+  const hits = useMemo(() => (index ? index.lookup(query, today) : []), [index, query, today]);
   const searching = query.trim().length > 0;
+  const hitById = useMemo(() => new Map(hits.map((h) => [h.room.id, h])), [hits]);
 
   const candidates = useMemo(() => {
     if (!artifact || !index) return [];
-
-    const byId = new Map(hits.map((h) => [h.room.id, h]));
 
     return artifact.rooms.filter((room) => {
       // One campus at a time. A pooled list would put Vancouver rooms in a Boston search.
       if (room.campus !== campusCode) return false;
 
-      const hit = searching ? byId.get(room.id) : null;
+      const hit = searching ? hitById.get(room.id) : null;
       if (searching && !hit) return false;
 
       const status = statusById.get(room.id);
@@ -109,7 +112,7 @@ export default function BrowsePage() {
       if (availability === "all" || hit?.viaBooking) return true;
       return isFreeFor(status, REQUIRED_MINUTES[availability]);
     });
-  }, [artifact, index, hits, searching, statusById, availability, campusCode]);
+  }, [artifact, index, hitById, searching, statusById, availability, campusCode]);
 
   const countByBuilding = useMemo(() => {
     const counts = new Map<string, number>();
@@ -254,6 +257,7 @@ export default function BrowsePage() {
                             calendar={artifact.calendar}
                             now={at}
                             showBuilding={false}
+                            matched={hitById.get(room.id)?.matched}
                           />
                         ))}
                       </div>

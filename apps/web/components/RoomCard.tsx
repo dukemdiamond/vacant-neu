@@ -3,10 +3,12 @@
 import { useId, useState } from "react";
 import { CalendarBlankIcon, CaretDownIcon } from "@phosphor-icons/react";
 import {
+  DAY_BITS,
   campusTime,
   formatDuration,
   formatMinutes,
   formatRange,
+  isExamPeriod,
   meetingsOnDay,
   type AcademicCalendar,
   type Meeting,
@@ -34,6 +36,11 @@ interface Props {
    * heading that says exactly that.
    */
   showBuilding?: boolean;
+  /**
+   * The classes or events that a search matched in this room. Shown on the card itself, because
+   * the day list below covers only today and the match may meet here on another day.
+   */
+  matched?: Meeting[];
 }
 
 /**
@@ -52,6 +59,7 @@ export function RoomCard({
   now,
   defaultOpen = false,
   showBuilding = true,
+  matched = [],
 }: Props) {
   const [open, setOpen] = useState(defaultOpen);
   const [showSchedule, setShowSchedule] = useState(false);
@@ -119,6 +127,8 @@ export function RoomCard({
         {free ? <FreeDetail status={status} /> : <BusyDetail status={status} />}
       </p>
 
+      {matched.length > 0 && <MatchedBookings meetings={matched} calendar={calendar} />}
+
       <div id={panelId} hidden={!open}>
         <DaySchedule meetings={meetings} status={status} calendar={calendar} now={now} />
         <button
@@ -140,6 +150,77 @@ export function RoomCard({
         />
       )}
     </article>
+  );
+}
+
+/** Courses shown before the rest collapse into a count. */
+const MATCHED_COURSES = 2;
+/** Meeting times shown per course. */
+const MATCHED_TIMES = 3;
+
+const DAY_NAMES = Object.entries(DAY_BITS) as [keyof typeof DAY_BITS, number][];
+
+/** "Tue, Fri 3:25 to 5:05 PM", or "Final, Tue Dec 15, 3:30 to 5:30 PM" for a single date. */
+function describeTime(m: Meeting, calendar: AcademicCalendar): string {
+  const range = formatRange(m.start, m.end);
+  if (m.startDate === m.endDate) {
+    const [year, month, day] = m.startDate.split("-").map(Number);
+    const date = new Date(Date.UTC(year!, month! - 1, day!)).toLocaleDateString("en-US", {
+      weekday: "short",
+      month: "short",
+      day: "numeric",
+      timeZone: "UTC",
+    });
+    // A one-off session in the exam period is the final, which is worth saying in words.
+    const prefix = m.kind === "class" && isExamPeriod(calendar, m.startDate) ? "Final, " : "";
+    return `${prefix}${date.replace(",", "")}, ${range}`;
+  }
+  const days = DAY_NAMES.filter(([, bit]) => m.days & bit).map(([name]) => name);
+  return `${days.join(", ")} ${range}`;
+}
+
+/**
+ * Why a search found this room: which matched class meets here, and when.
+ *
+ * Without it a room found through a class's Thursday slot, or its final exam, shows a list of
+ * today's unrelated classes and looks like a wrong result.
+ */
+function MatchedBookings({
+  meetings,
+  calendar,
+}: {
+  meetings: Meeting[];
+  calendar: AcademicCalendar;
+}) {
+  const courses = new Map<string, { label: string; detail: string; times: string[] }>();
+  for (const m of meetings) {
+    const key = `${m.label}\u0000${m.detail}`;
+    const course = courses.get(key) ?? { label: m.label, detail: m.detail, times: [] };
+    const time = describeTime(m, calendar);
+    if (!course.times.includes(time)) course.times.push(time);
+    courses.set(key, course);
+  }
+  const list = [...courses.values()];
+  const hidden = list.length - MATCHED_COURSES;
+
+  return (
+    <ul className="mt-2 flex flex-col gap-1 text-sm">
+      {list.slice(0, MATCHED_COURSES).map((c) => (
+        <li key={`${c.label}-${c.detail}`} className="text-ink-muted">
+          <span className="text-ink">{c.label}</span>{" "}
+          {c.detail && <span className="text-ink-faint">{c.detail}</span>}
+          <span className="tabular block text-ink-muted">
+            {c.times.slice(0, MATCHED_TIMES).join("; ")}
+            {c.times.length > MATCHED_TIMES && `; ${c.times.length - MATCHED_TIMES} more`}
+          </span>
+        </li>
+      ))}
+      {hidden > 0 && (
+        <li className="text-ink-faint">
+          and {hidden} more matching {hidden === 1 ? "class" : "classes"}
+        </li>
+      )}
+    </ul>
   );
 }
 
