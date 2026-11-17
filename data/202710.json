@@ -6065,39 +6065,6 @@
     {
       "roomId": "BK-010",
       "kind": "class",
-      "days": 1,
-      "start": 705,
-      "end": 755,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHSC5181",
-      "detail": "Integrated Learning Lab 1"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 1,
-      "start": 705,
-      "end": 755,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHSC5181",
-      "detail": "Integrated Learning Lab 1"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 1,
-      "start": 705,
-      "end": 755,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHSC5181",
-      "detail": "Integrated Learning Lab 1"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
       "days": 13,
       "start": 815,
       "end": 880,
@@ -6186,50 +6153,6 @@
     {
       "roomId": "BK-010",
       "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA2201",
-      "detail": "Financial Management"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA2201",
-      "detail": "Financial Management"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
       "days": 2,
       "start": 930,
       "end": 1050,
@@ -6264,155 +6187,12 @@
       "roomId": "BK-010",
       "kind": "class",
       "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CHEM1151",
-      "detail": "General Chemistry for Engineers"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 4,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-16",
       "endDate": "2026-12-16",
       "label": "ACCT2301",
       "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
     },
     {
       "roomId": "BK-010",
@@ -6435,17 +6215,6 @@
       "endDate": "2026-12-17",
       "label": "BIOL1113",
       "detail": "General Biology 2"
-    },
-    {
-      "roomId": "BK-010",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "CIVE2221",
-      "detail": "Statics and Solid Mechanics"
     },
     {
       "roomId": "BK-010",
@@ -8771,28 +8540,6 @@
     {
       "roomId": "BK-425",
       "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
       "days": 16,
       "start": 480,
       "end": 660,
@@ -8811,39 +8558,6 @@
       "endDate": "2026-12-13",
       "label": "NRSG2221",
       "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 1,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
     },
     {
       "roomId": "BK-425",
@@ -8881,51 +8595,7 @@
     {
       "roomId": "BK-425",
       "kind": "class",
-      "days": 8,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
       "days": 16,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 16,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 2,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 2,
       "start": 690,
       "end": 870,
       "startDate": "2026-09-09",
@@ -8958,51 +8628,7 @@
     {
       "roomId": "BK-425",
       "kind": "class",
-      "days": 1,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
       "days": 2,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 2,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 8,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 8,
       "start": 900,
       "end": 1080,
       "startDate": "2026-09-09",
@@ -9031,28 +8657,6 @@
       "endDate": "2026-12-13",
       "label": "NRSG2221",
       "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 16,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 1,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
     },
     {
       "roomId": "BK-425",
@@ -9075,17 +8679,6 @@
       "endDate": "2026-12-20",
       "label": "NRSG7221",
       "detail": "Acute Care Practicum 2 (Adult-Gerontology)"
-    },
-    {
-      "roomId": "BK-425",
-      "kind": "class",
-      "days": 4,
-      "start": 995,
-      "end": 1175,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG6115",
-      "detail": "Health Assessment"
     },
     {
       "roomId": "BK-425",
@@ -9185,17 +8778,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL2309",
       "detail": "Biology Project Lab"
-    },
-    {
-      "roomId": "BK-610",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
     },
     {
       "roomId": "BK-610",
@@ -9453,17 +9035,6 @@
     {
       "roomId": "BK-705",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
       "days": 1,
       "start": 630,
       "end": 805,
@@ -9519,50 +9090,6 @@
     {
       "roomId": "BK-705",
       "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 4,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 8,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
       "days": 1,
       "start": 890,
       "end": 1060,
@@ -9597,50 +9124,6 @@
       "roomId": "BK-705",
       "kind": "class",
       "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL3612",
-      "detail": "Lab for BIOL 3611"
-    },
-    {
-      "roomId": "BK-705",
-      "kind": "class",
-      "days": 4,
       "start": 890,
       "end": 1060,
       "startDate": "2026-09-09",
@@ -9706,42 +9189,9 @@
     {
       "roomId": "BK-710",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
-    },
-    {
-      "roomId": "BK-710",
-      "kind": "class",
       "days": 16,
       "start": 480,
       "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
-    },
-    {
-      "roomId": "BK-710",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
-    },
-    {
-      "roomId": "BK-710",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
       "label": "BIOL1112",
@@ -9779,17 +9229,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL3422",
       "detail": "Lab for BIOL 3421"
-    },
-    {
-      "roomId": "BK-710",
-      "kind": "class",
-      "days": 1,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
     },
     {
       "roomId": "BK-710",
@@ -9849,28 +9288,6 @@
     {
       "roomId": "BK-715",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
       "days": 16,
       "start": 480,
       "end": 650,
@@ -9904,40 +9321,7 @@
     {
       "roomId": "BK-715",
       "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1108",
-      "detail": "Lab for BIOL 1107"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
       "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1108",
-      "detail": "Lab for BIOL 1107"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1108",
-      "detail": "Lab for BIOL 1107"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
-      "days": 8,
       "start": 890,
       "end": 1060,
       "startDate": "2026-09-09",
@@ -9966,28 +9350,6 @@
       "endDate": "2026-12-13",
       "label": "BIOL1108",
       "detail": "Lab for BIOL 1107"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1108",
-      "detail": "Lab for BIOL 1107"
-    },
-    {
-      "roomId": "BK-715",
-      "kind": "class",
-      "days": 1,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1112",
-      "detail": "Lab for BIOL 1111"
     },
     {
       "roomId": "BK-715",
@@ -10047,17 +9409,6 @@
     {
       "roomId": "BK-720",
       "kind": "class",
-      "days": 8,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1114",
-      "detail": "Lab for BIOL 1113"
-    },
-    {
-      "roomId": "BK-720",
-      "kind": "class",
       "days": 16,
       "start": 705,
       "end": 875,
@@ -10081,28 +9432,6 @@
       "roomId": "BK-720",
       "kind": "class",
       "days": 1,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1114",
-      "detail": "Lab for BIOL 1113"
-    },
-    {
-      "roomId": "BK-720",
-      "kind": "class",
-      "days": 1,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "BIOL1114",
-      "detail": "Lab for BIOL 1113"
-    },
-    {
-      "roomId": "BK-720",
-      "kind": "class",
-      "days": 8,
       "start": 890,
       "end": 1060,
       "startDate": "2026-09-09",
@@ -10421,28 +9750,6 @@
     {
       "roomId": "BL-303L",
       "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 660,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
       "days": 4,
       "start": 480,
       "end": 660,
@@ -10465,28 +9772,6 @@
     {
       "roomId": "BL-303L",
       "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
       "days": 16,
       "start": 690,
       "end": 870,
@@ -10494,28 +9779,6 @@
       "endDate": "2026-12-20",
       "label": "NRSG2221",
       "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 16,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 4,
-      "start": 690,
-      "end": 870,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
     },
     {
       "roomId": "BL-303L",
@@ -10542,17 +9805,6 @@
     {
       "roomId": "BL-303L",
       "kind": "class",
-      "days": 8,
-      "start": 810,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
       "days": 2,
       "start": 840,
       "end": 1020,
@@ -10560,28 +9812,6 @@
       "endDate": "2026-12-20",
       "label": "NRSG3334",
       "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 2,
-      "start": 840,
-      "end": 1020,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "BL-303L",
-      "kind": "class",
-      "days": 16,
-      "start": 900,
-      "end": 1080,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
     },
     {
       "roomId": "BL-303L",
@@ -10736,17 +9966,6 @@
       "endDate": "2026-12-13",
       "label": "ENGW1111",
       "detail": "First-Year Writing"
-    },
-    {
-      "roomId": "CA-002",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "NRSG4604",
-      "detail": "Public Health Community Nursing"
     },
     {
       "roomId": "CA-002",
@@ -11555,28 +10774,6 @@
       "roomId": "CG-097",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3303",
-      "detail": "Investments"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
@@ -11632,67 +10829,12 @@
       "roomId": "CG-097",
       "kind": "class",
       "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 8,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-17",
       "endDate": "2026-12-17",
       "label": "ME2340",
       "detail": "Introduction to Material Science"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
-    },
-    {
-      "roomId": "CG-097",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
     },
     {
       "roomId": "CG-097",
@@ -11896,28 +11038,6 @@
       "roomId": "CH-101",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3303",
-      "detail": "Investments"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Fin Accounting & Reporting"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
@@ -11950,28 +11070,6 @@
     {
       "roomId": "CH-101",
       "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA2201",
-      "detail": "Financial Management"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "ME3475",
-      "detail": "Fluid Mechanics"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
       "days": 2,
       "start": 780,
       "end": 900,
@@ -11990,28 +11088,6 @@
       "endDate": "2026-12-15",
       "label": "MATH2321",
       "detail": "Calculus 3 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ME2355",
-      "detail": "Mechanics of Materials"
     },
     {
       "roomId": "CH-101",
@@ -12034,17 +11110,6 @@
       "endDate": "2026-12-16",
       "label": "MSCR1220",
       "detail": "Media, Culture, and Society"
-    },
-    {
-      "roomId": "CH-101",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "BIOE2350",
-      "detail": "Biomechanics"
     },
     {
       "roomId": "CH-101",
@@ -12215,34 +11280,12 @@
       "roomId": "CH-103",
       "kind": "class",
       "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 1,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-14",
       "endDate": "2026-12-14",
       "label": "PHYS1151",
       "detail": "Physics for Engineering 1"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 1,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3301",
-      "detail": "Corporate Finance"
     },
     {
       "roomId": "CH-103",
@@ -12281,34 +11324,12 @@
       "roomId": "CH-103",
       "kind": "class",
       "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "FINA2730",
-      "detail": "Fintech and Financial Innovation"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 2,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-15",
       "endDate": "2026-12-15",
       "label": "MATH1231",
       "detail": "Calc for Business/Econ"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
     },
     {
       "roomId": "CH-103",
@@ -12347,17 +11368,6 @@
       "roomId": "CH-103",
       "kind": "class",
       "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "FINA4516",
-      "detail": "Real Estate Finance"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 4,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-16",
@@ -12380,56 +11390,12 @@
       "roomId": "CH-103",
       "kind": "class",
       "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS3000",
-      "detail": "Mathematical Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 8,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-17",
       "endDate": "2026-12-17",
       "label": "MKTG3401",
       "detail": "Marketing Research"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MKTG3401",
-      "detail": "Marketing Research"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
     },
     {
       "roomId": "CH-103",
@@ -12457,56 +11423,12 @@
       "roomId": "CH-103",
       "kind": "class",
       "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 16,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-18",
       "endDate": "2026-12-18",
       "label": "MATH1341",
       "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "CH-103",
-      "kind": "class",
-      "days": 16,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "ME4570",
-      "detail": "Thermal Systems Analysis and Design"
     },
     {
       "roomId": "CH-103",
@@ -12588,17 +11510,6 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 16,
       "start": 480,
       "end": 650,
@@ -12626,138 +11537,6 @@
       "end": 650,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
       "label": "PHYS1148",
       "detail": "Lab for PHYS 1147"
     },
@@ -12771,204 +11550,6 @@
       "endDate": "2026-12-13",
       "label": "PHYS1152",
       "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 650,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
     },
     {
       "roomId": "CH-319",
@@ -13006,61 +11587,6 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 800,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 800,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 800,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 800,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 800,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 16,
       "start": 705,
       "end": 875,
@@ -13088,149 +11614,6 @@
       "end": 875,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
       "label": "PHYS1148",
       "detail": "Lab for PHYS 1147"
     },
@@ -13248,215 +11631,6 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1152",
-      "detail": "Lab for PHYS 1151"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 875,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 2,
       "start": 705,
       "end": 875,
@@ -13484,50 +11658,6 @@
       "end": 985,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 1,
-      "start": 815,
-      "end": 985,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 1,
-      "start": 815,
-      "end": 985,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 1,
-      "start": 815,
-      "end": 985,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 1,
-      "start": 815,
-      "end": 985,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
       "label": "PHYS1156",
       "detail": "Lab for PHYS 1155"
     },
@@ -13535,182 +11665,6 @@
       "roomId": "CH-319",
       "kind": "class",
       "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1146",
-      "detail": "Lab for PHYS 1145"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 8,
       "start": 890,
       "end": 1060,
       "startDate": "2026-09-09",
@@ -13754,94 +11708,6 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 16,
       "start": 890,
       "end": 1060,
@@ -13849,171 +11715,6 @@
       "endDate": "2026-12-13",
       "label": "PHYS1148",
       "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 16,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1148",
-      "detail": "Lab for PHYS 1147"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1156",
-      "detail": "Lab for PHYS 1155"
     },
     {
       "roomId": "CH-319",
@@ -14051,28 +11752,6 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1162",
-      "detail": "Lab for PHYS 1161"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1162",
-      "detail": "Lab for PHYS 1161"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 8,
       "start": 890,
       "end": 1060,
@@ -14084,40 +11763,7 @@
     {
       "roomId": "CH-319",
       "kind": "class",
-      "days": 4,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1162",
-      "detail": "Lab for PHYS 1161"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
       "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1176",
-      "detail": "Lab for PHYS 1175"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 2,
-      "start": 890,
-      "end": 1060,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS1176",
-      "detail": "Lab for PHYS 1175"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 1,
       "start": 890,
       "end": 1060,
       "startDate": "2026-09-09",
@@ -14157,39 +11803,6 @@
       "endDate": "2026-12-20",
       "label": "PHY1201",
       "detail": "Lab for PHY 1200"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 1230,
-      "end": 1320,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHY1201",
-      "detail": "Lab for PHY 1200"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 1230,
-      "end": 1320,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHY1201",
-      "detail": "Lab for PHY 1200"
-    },
-    {
-      "roomId": "CH-319",
-      "kind": "class",
-      "days": 4,
-      "start": 1230,
-      "end": 1320,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHY2201",
-      "detail": "Lab for PHY 2200"
     },
     {
       "roomId": "CH-319",
@@ -14679,41 +12292,8 @@
       "roomId": "DA-230",
       "kind": "class",
       "days": 16,
-      "start": 480,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS2372",
-      "detail": "Lab for PHYS 2371"
-    },
-    {
-      "roomId": "DA-230",
-      "kind": "class",
-      "days": 16,
       "start": 815,
       "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS2372",
-      "detail": "Lab for PHYS 2371"
-    },
-    {
-      "roomId": "DA-230",
-      "kind": "class",
-      "days": 16,
-      "start": 815,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "PHYS2372",
-      "detail": "Lab for PHYS 2371"
-    },
-    {
-      "roomId": "DA-230",
-      "kind": "class",
-      "days": 8,
-      "start": 890,
-      "end": 1100,
       "startDate": "2026-09-09",
       "endDate": "2026-12-13",
       "label": "PHYS2372",
@@ -14916,17 +12496,6 @@
       "endDate": "2026-12-14",
       "label": "ACCT1201",
       "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "DG-050",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "DG-050",
@@ -15184,17 +12753,6 @@
     {
       "roomId": "DG-070",
       "kind": "class",
-      "days": 1,
-      "start": 815,
-      "end": 1015,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG4889",
-      "detail": "Transition into Nursing Practice"
-    },
-    {
-      "roomId": "DG-070",
-      "kind": "class",
       "days": 16,
       "start": 815,
       "end": 915,
@@ -15345,28 +12903,6 @@
       "endDate": "2026-12-13",
       "label": "CHEM1153",
       "detail": "Recitation for CHEM 1151"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 680,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "SLPA5107",
-      "detail": "Clinical Procedures"
-    },
-    {
-      "roomId": "DG-119",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 680,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "SLPA5107",
-      "detail": "Clinical Procedures"
     },
     {
       "roomId": "DG-119",
@@ -15697,17 +13233,6 @@
       "endDate": "2026-12-13",
       "label": "FINA4320",
       "detail": "International Financial Management"
-    },
-    {
-      "roomId": "DG-130",
-      "kind": "class",
-      "days": 2,
-      "start": 815,
-      "end": 1015,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG4610",
-      "detail": "Managing and Leading in Healthcare"
     },
     {
       "roomId": "DG-130",
@@ -18584,17 +16109,6 @@
       "roomId": "DK-160",
       "kind": "class",
       "days": 2,
-      "start": 600,
-      "end": 720,
-      "startDate": "2026-09-07",
-      "endDate": "2026-12-04",
-      "label": "LAW6165",
-      "detail": "Legal Skills in Social Context: Foundations of Legal Research and Writing"
-    },
-    {
-      "roomId": "DK-160",
-      "kind": "class",
-      "days": 2,
       "start": 780,
       "end": 900,
       "startDate": "2026-09-07",
@@ -18806,28 +16320,6 @@
       "days": 8,
       "start": 570,
       "end": 690,
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-03",
-      "label": "LAW6165",
-      "detail": "Legal Skills in Social Context: Foundations of Legal Research and Writing"
-    },
-    {
-      "roomId": "DK-230",
-      "kind": "class",
-      "days": 8,
-      "start": 570,
-      "end": 690,
-      "startDate": "2026-09-03",
-      "endDate": "2026-09-03",
-      "label": "LAW6165",
-      "detail": "Legal Skills in Social Context: Foundations of Legal Research and Writing"
-    },
-    {
-      "roomId": "DK-230",
-      "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
       "startDate": "2026-09-03",
       "endDate": "2026-09-03",
       "label": "LAW6165",
@@ -19848,28 +17340,6 @@
     {
       "roomId": "EL-AUD",
       "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CHEM2313",
-      "detail": "Organic Chemistry 2"
-    },
-    {
-      "roomId": "EL-AUD",
-      "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CHEM2313",
-      "detail": "Organic Chemistry 2"
-    },
-    {
-      "roomId": "EL-AUD",
-      "kind": "class",
       "days": 8,
       "start": 630,
       "end": 750,
@@ -19877,39 +17347,6 @@
       "endDate": "2026-12-17",
       "label": "CS2000",
       "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "EL-AUD",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "EL-AUD",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "EL-AUD",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "BIOL2217",
-      "detail": "Integrated Anatomy and Physiology 1"
     },
     {
       "roomId": "EL-AUD",
@@ -20718,17 +18155,6 @@
       "roomId": "EV-024",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG3301",
-      "detail": "Marketing Management"
-    },
-    {
-      "roomId": "EV-024",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
@@ -21384,17 +18810,6 @@
       "endDate": "2026-12-17",
       "label": "COMM2303",
       "detail": "Global and Intercultural Communication"
-    },
-    {
-      "roomId": "EXP-202",
-      "kind": "class",
-      "days": 16,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH3175",
-      "detail": "Group Theory"
     },
     {
       "roomId": "EXP-202",
@@ -22704,17 +20119,6 @@
       "endDate": "2026-12-13",
       "label": "CHEM2314",
       "detail": "Lab for CHEM 2313"
-    },
-    {
-      "roomId": "EXP-322",
-      "kind": "class",
-      "days": 2,
-      "start": 705,
-      "end": 1065,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "CHEM2318",
-      "detail": "Lab for CHEM 2317"
     },
     {
       "roomId": "EXP-322",
@@ -27493,17 +24897,6 @@
     {
       "roomId": "HA-221",
       "kind": "class",
-      "days": 1,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "MATH2331",
-      "detail": "Linear Algebra"
-    },
-    {
-      "roomId": "HA-221",
-      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 600,
@@ -29282,17 +26675,6 @@
       "endDate": "2026-12-13",
       "label": "HIST3340",
       "detail": "Technologies of Text"
-    },
-    {
-      "roomId": "HS-101",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 630,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "NRSG4604",
-      "detail": "Public Health Community Nursing"
     },
     {
       "roomId": "HS-101",
@@ -31563,39 +28945,6 @@
     {
       "roomId": "HT-129",
       "kind": "class",
-      "days": 8,
-      "start": 555,
-      "end": 605,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHMD5283",
-      "detail": "Integrated Learning Lab 3"
-    },
-    {
-      "roomId": "HT-129",
-      "kind": "class",
-      "days": 8,
-      "start": 555,
-      "end": 605,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHMD5283",
-      "detail": "Integrated Learning Lab 3"
-    },
-    {
-      "roomId": "HT-129",
-      "kind": "class",
-      "days": 8,
-      "start": 555,
-      "end": 605,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "PHMD5283",
-      "detail": "Integrated Learning Lab 3"
-    },
-    {
-      "roomId": "HT-129",
-      "kind": "class",
       "days": 18,
       "start": 590,
       "end": 690,
@@ -31790,28 +29139,6 @@
       "endDate": "2026-12-14",
       "label": "FINA2201",
       "detail": "Financial Management"
-    },
-    {
-      "roomId": "HT-129",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA2201",
-      "detail": "Financial Management"
-    },
-    {
-      "roomId": "HT-129",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "FINA4514",
-      "detail": "Investment Banking"
     },
     {
       "roomId": "HT-129",
@@ -32114,17 +29441,6 @@
       "roomId": "HT-130",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "ME4555",
-      "detail": "System Analysis and Control"
-    },
-    {
-      "roomId": "HT-130",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
@@ -32175,17 +29491,6 @@
       "endDate": "2026-12-17",
       "label": "PHSC2301",
       "detail": "Human Physiology 1"
-    },
-    {
-      "roomId": "HT-130",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH4581",
-      "detail": "Statistics and Stochastic Processes"
     },
     {
       "roomId": "HT-130",
@@ -33786,17 +31091,6 @@
       "roomId": "ISEC-102",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CHEM2311",
-      "detail": "Organic Chemistry 1"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
@@ -33819,45 +31113,12 @@
       "roomId": "ISEC-102",
       "kind": "class",
       "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "PHYS1155",
-      "detail": "Physics for Engineering 2"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 1,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-14",
       "endDate": "2026-12-14",
       "label": "ME3455",
       "detail": "Dynamics"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 1,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ME3455",
-      "detail": "Dynamics"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "ISEC-102",
@@ -33907,56 +31168,12 @@
       "roomId": "ISEC-102",
       "kind": "class",
       "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CS1800",
-      "detail": "Discrete Structures"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 4,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-16",
       "endDate": "2026-12-16",
       "label": "BIOL1107",
       "detail": "Foundations of Biology"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
     },
     {
       "roomId": "ISEC-102",
@@ -33990,28 +31207,6 @@
       "endDate": "2026-12-17",
       "label": "ECON1116",
       "detail": "Principles of Microeconomics"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS4400",
-      "detail": "Machine Learning"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS4400",
-      "detail": "Machine Learning"
     },
     {
       "roomId": "ISEC-102",
@@ -34045,28 +31240,6 @@
       "endDate": "2026-12-17",
       "label": "BIOL3611",
       "detail": "Biochemistry"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "ME2350",
-      "detail": "Statics"
-    },
-    {
-      "roomId": "ISEC-102",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "ME2350",
-      "detail": "Statics"
     },
     {
       "roomId": "ISEC-102",
@@ -37735,17 +34908,6 @@
       "roomId": "KN-010",
       "kind": "class",
       "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "KN-010",
-      "kind": "class",
-      "days": 16,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-18",
@@ -37771,17 +34933,6 @@
       "start": 780,
       "end": 900,
       "startDate": "2026-09-02",
-      "endDate": "2026-12-04",
-      "label": "LAW6165",
-      "detail": "Legal Skills in Social Context: Foundations of Legal Research and Writing"
-    },
-    {
-      "roomId": "KN-204",
-      "kind": "class",
-      "days": 1,
-      "start": 570,
-      "end": 690,
-      "startDate": "2026-09-07",
       "endDate": "2026-12-04",
       "label": "LAW6165",
       "detail": "Legal Skills in Social Context: Foundations of Legal Research and Writing"
@@ -38141,72 +35292,6 @@
     {
       "roomId": "LINE-906",
       "kind": "class",
-      "days": 8,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 4,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 4,
-      "start": 420,
-      "end": 600,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
       "days": 4,
       "start": 420,
       "end": 600,
@@ -38229,50 +35314,6 @@
     {
       "roomId": "LINE-906",
       "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
       "days": 4,
       "start": 600,
       "end": 780,
@@ -38280,39 +35321,6 @@
       "endDate": "2026-12-20",
       "label": "NRSG3334",
       "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 4,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 4,
-      "start": 600,
-      "end": 780,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG3334",
-      "detail": "Lab for NRSG 3333"
-    },
-    {
-      "roomId": "LINE-906",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1110,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "NRSG2221",
-      "detail": "Lab for NRSG 2220 and NRSG 2222"
     },
     {
       "roomId": "LINE-906",
@@ -40034,17 +37042,6 @@
       "roomId": "M41-213",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
-    },
-    {
-      "roomId": "M41-213",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
@@ -40836,17 +37833,6 @@
     {
       "roomId": "M48-100",
       "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
-    },
-    {
-      "roomId": "M48-100",
-      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 600,
@@ -40854,17 +37840,6 @@
       "endDate": "2026-12-15",
       "label": "ECON1116",
       "detail": "Principles of Microeconomics"
-    },
-    {
-      "roomId": "M48-100",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
     },
     {
       "roomId": "M48-100",
@@ -41430,17 +38405,6 @@
     {
       "roomId": "M54-027",
       "kind": "class",
-      "days": 18,
-      "start": 635,
-      "end": 735,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "CS6983",
-      "detail": "AI Coding"
-    },
-    {
-      "roomId": "M54-027",
-      "kind": "class",
       "days": 2,
       "start": 900,
       "end": 990,
@@ -41574,28 +38538,6 @@
       "roomId": "M54-100",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
-    },
-    {
-      "roomId": "M54-100",
-      "kind": "class",
-      "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
-    },
-    {
-      "roomId": "M54-100",
-      "kind": "class",
-      "days": 1,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-14",
@@ -41611,28 +38553,6 @@
       "end": 600,
       "startDate": "2026-12-15",
       "endDate": "2026-12-15",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "M54-100",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "M54-100",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
       "label": "MATH1341",
       "detail": "Calculus 1 for Science and Engineering"
     },
@@ -42168,67 +39088,12 @@
       "roomId": "MU-201",
       "kind": "class",
       "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT3401",
-      "detail": "Financial Reporting and Analysis 1"
-    },
-    {
-      "roomId": "MU-201",
-      "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT3401",
-      "detail": "Financial Reporting and Analysis 1"
-    },
-    {
-      "roomId": "MU-201",
-      "kind": "class",
-      "days": 4,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-16",
       "endDate": "2026-12-16",
       "label": "ACCT2301",
       "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "MU-201",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "MU-201",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "MU-201",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH3081",
-      "detail": "Probability and Statistics"
     },
     {
       "roomId": "MU-201",
@@ -42867,17 +39732,6 @@
       "endDate": "2026-12-20",
       "label": "MKTG2201",
       "detail": "Introduction to Marketing"
-    },
-    {
-      "roomId": "NY-569-PH01",
-      "kind": "class",
-      "days": 5,
-      "start": 890,
-      "end": 990,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DANC3540",
-      "detail": "Dance and Cultural Histories"
     },
     {
       "roomId": "NY-569-PH01",
@@ -44704,17 +41558,6 @@
       "endDate": "2026-12-20",
       "label": "BIOL2218",
       "detail": "Lab for BIOL 2217"
-    },
-    {
-      "roomId": "NY-CH-701",
-      "kind": "class",
-      "days": 18,
-      "start": 815,
-      "end": 915,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "DANC3540",
-      "detail": "Dance &Cultural Histories(HON)"
     },
     {
       "roomId": "NY-CH-701",
@@ -47518,28 +44361,6 @@
       "end": 1380,
       "startDate": "2026-09-09",
       "endDate": "2026-12-20",
-      "label": "THTR4702",
-      "detail": "Capstone: Creative Practice Research Project"
-    },
-    {
-      "roomId": "NY-NH-THTR",
-      "kind": "class",
-      "days": 96,
-      "start": 540,
-      "end": 1380,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "THTR4994",
-      "detail": "Internship"
-    },
-    {
-      "roomId": "NY-NH-THTR",
-      "kind": "class",
-      "days": 96,
-      "start": 540,
-      "end": 1380,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
       "label": "THTR4994",
       "detail": "Internship"
     },
@@ -47608,28 +44429,6 @@
       "endDate": "2026-12-20",
       "label": "THTR4702",
       "detail": "Capstone: Creative Practice Research Project"
-    },
-    {
-      "roomId": "NY-NH-THTR",
-      "kind": "class",
-      "days": 31,
-      "start": 1110,
-      "end": 1380,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "THTR4702",
-      "detail": "Capstone: Creative Practice Research Project"
-    },
-    {
-      "roomId": "NY-NH-THTR",
-      "kind": "class",
-      "days": 31,
-      "start": 1110,
-      "end": 1380,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "THTR4994",
-      "detail": "Internship"
     },
     {
       "roomId": "NY-NH-THTR",
@@ -51517,28 +48316,6 @@
     {
       "roomId": "RI-236",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2341",
-      "detail": "Differential Equations and Linear Algebra for Engineering"
-    },
-    {
-      "roomId": "RI-236",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2341",
-      "detail": "Differential Equations and Linear Algebra for Engineering"
-    },
-    {
-      "roomId": "RI-236",
-      "kind": "class",
       "days": 4,
       "start": 630,
       "end": 750,
@@ -51557,17 +48334,6 @@
       "endDate": "2026-12-17",
       "label": "PSYC3458",
       "detail": "Biological Psychology"
-    },
-    {
-      "roomId": "RI-236",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
     },
     {
       "roomId": "RI-236",
@@ -53541,28 +50307,6 @@
     {
       "roomId": "RI-300",
       "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
-    },
-    {
-      "roomId": "RI-300",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "RI-300",
-      "kind": "class",
       "days": 4,
       "start": 780,
       "end": 900,
@@ -54092,45 +50836,12 @@
       "roomId": "RI-458",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3303",
-      "detail": "Investments"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
       "endDate": "2026-12-14",
       "label": "FINA4370",
       "detail": "Financial Modeling"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA4370",
-      "detail": "Financial Modeling"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA2201",
-      "detail": "Financial Management"
     },
     {
       "roomId": "RI-458",
@@ -54153,17 +50864,6 @@
       "endDate": "2026-12-14",
       "label": "PSYC3406",
       "detail": "Clinical Psychology and Mental Health"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "FINA4512",
-      "detail": "Financial Risk Management"
     },
     {
       "roomId": "RI-458",
@@ -54213,28 +50913,6 @@
       "roomId": "RI-458",
       "kind": "class",
       "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT4501",
-      "detail": "Financial Reporting and Analysis 2"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 4,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-16",
@@ -54257,45 +50935,12 @@
       "roomId": "RI-458",
       "kind": "class",
       "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS4400",
-      "detail": "Machine Learning"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 8,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-17",
       "endDate": "2026-12-17",
       "label": "ACCT4414",
       "detail": "Income Tax Determination and Planning"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "ACCT4414",
-      "detail": "Income Tax Determination and Planning"
-    },
-    {
-      "roomId": "RI-458",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
     },
     {
       "roomId": "RI-458",
@@ -64575,28 +61220,6 @@
       "roomId": "SH-105",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3303",
-      "detail": "Investments"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
-      "days": 1,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-14",
@@ -64614,17 +61237,6 @@
       "endDate": "2026-12-14",
       "label": "PSYC3404",
       "detail": "Developmental Psychology"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2341",
-      "detail": "Differential Equations and Linear Algebra for Engineering"
     },
     {
       "roomId": "SH-105",
@@ -64691,17 +61303,6 @@
       "endDate": "2026-12-17",
       "label": "ME2340",
       "detail": "Introduction to Material Science"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
     },
     {
       "roomId": "SH-105",
@@ -64982,17 +61583,6 @@
       "roomId": "SH-135",
       "kind": "class",
       "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CS3800",
-      "detail": "Theory of Computation"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
-      "days": 1,
       "start": 780,
       "end": 900,
       "startDate": "2026-12-14",
@@ -65010,17 +61600,6 @@
       "endDate": "2026-12-14",
       "label": "ANTH1101",
       "detail": "Peoples and Cultures"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "SH-135",
@@ -65091,17 +61670,6 @@
     {
       "roomId": "SH-135",
       "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "PSYC2320",
-      "detail": "Statistics in Psychological Research"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
       "days": 8,
       "start": 480,
       "end": 600,
@@ -65142,28 +61710,6 @@
       "endDate": "2026-12-18",
       "label": "MATH1342",
       "detail": "Calculus 2 for Science and Engineering"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
     },
     {
       "roomId": "SH-135",
@@ -66313,17 +62859,6 @@
       "roomId": "SH-305",
       "kind": "class",
       "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "FINA3303",
-      "detail": "Investments"
-    },
-    {
-      "roomId": "SH-305",
-      "kind": "class",
-      "days": 1,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-14",
@@ -66341,39 +62876,6 @@
       "endDate": "2026-12-15",
       "label": "PSYC3200",
       "detail": "Clinical Neuroanatomy"
-    },
-    {
-      "roomId": "SH-305",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
-    },
-    {
-      "roomId": "SH-305",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
-    },
-    {
-      "roomId": "SH-305",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
     },
     {
       "roomId": "SH-305",
@@ -66695,17 +63197,6 @@
       "detail": "Calculus 1 for Science and Engineering"
     },
     {
-      "roomId": "SH-315",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
       "roomId": "SH-320",
       "kind": "class",
       "days": 18,
@@ -66968,17 +63459,6 @@
       "endDate": "2026-12-17",
       "label": "HIST1170",
       "detail": "Europe: Empires, Revolutions, Wars, and Their Aftermath"
-    },
-    {
-      "roomId": "SH-320",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
     },
     {
       "roomId": "SH-320",
@@ -67313,39 +63793,6 @@
     {
       "roomId": "SH-335",
       "kind": "class",
-      "days": 5,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
-      "days": 5,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
-      "days": 5,
-      "start": 630,
-      "end": 695,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "IE2310",
-      "detail": "Introduction to Industrial Engineering"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
       "days": 9,
       "start": 705,
       "end": 805,
@@ -67479,34 +63926,12 @@
       "roomId": "SH-335",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
       "endDate": "2026-12-15",
       "label": "ARTG1290",
       "detail": "Typographic Systems"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
     },
     {
       "roomId": "SH-335",
@@ -67555,17 +63980,6 @@
     {
       "roomId": "SH-335",
       "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH1215",
-      "detail": "Mathematical Thinking"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
       "days": 8,
       "start": 480,
       "end": 600,
@@ -67573,17 +63987,6 @@
       "endDate": "2026-12-17",
       "label": "EEMB2400",
       "detail": "Introduction to Evolution"
-    },
-    {
-      "roomId": "SH-335",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MATH1365",
-      "detail": "Introduction to Mathematical Reasoning"
     },
     {
       "roomId": "SH-335",
@@ -75167,17 +71570,6 @@
     {
       "roomId": "SL-123",
       "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MATH1365",
-      "detail": "Introduction to Mathematical Reasoning"
-    },
-    {
-      "roomId": "SL-123",
-      "kind": "class",
       "days": 16,
       "start": 780,
       "end": 900,
@@ -75563,116 +71955,6 @@
     {
       "roomId": "SN-108",
       "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 18,
-      "start": 590,
-      "end": 690,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "MEIE4702",
-      "detail": "Capstone Design 2"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
       "days": 13,
       "start": 630,
       "end": 695,
@@ -75844,17 +72126,6 @@
       "startDate": "2026-12-14",
       "endDate": "2026-12-14",
       "label": "ACCT1201",
-      "detail": "Fin Accounting & Reporting"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
       "detail": "Fin Accounting & Reporting HON"
     },
     {
@@ -75883,34 +72154,12 @@
       "roomId": "SN-108",
       "kind": "class",
       "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2341",
-      "detail": "Differential Equations and Linear Algebra for Engineering"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 2,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-15",
       "endDate": "2026-12-15",
       "label": "BIOL2301",
       "detail": "Genetics and Molecular Biology"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
     },
     {
       "roomId": "SN-108",
@@ -75971,78 +72220,12 @@
       "roomId": "SN-108",
       "kind": "class",
       "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MISM2510",
-      "detail": "Fundamentals of Information Analytics"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 8,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "MISM2510",
-      "detail": "Fundamentals of Information Analytics"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 8,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-17",
       "endDate": "2026-12-17",
       "label": "INNO2301",
       "detail": "Innovation!"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 8,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "INNO2301",
-      "detail": "Innovation!"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
-    },
-    {
-      "roomId": "SN-108",
-      "kind": "class",
-      "days": 16,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1342",
-      "detail": "Calculus 2 for Science and Engineering"
     },
     {
       "roomId": "SN-108",
@@ -76190,39 +72373,6 @@
     {
       "roomId": "SN-168",
       "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 1,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "ACCT1201",
-      "detail": "Financial Accounting and Reporting"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 600,
@@ -76241,28 +72391,6 @@
       "endDate": "2026-12-15",
       "label": "CS3520",
       "detail": "Programming in C++"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 2,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "CS3520",
-      "detail": "Programming in C++"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH1231",
-      "detail": "Calculus for Business and Economics"
     },
     {
       "roomId": "SN-168",
@@ -76323,56 +72451,12 @@
       "roomId": "SN-168",
       "kind": "class",
       "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 4,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "ACCT2301",
-      "detail": "Profit Analysis for Managers and Advisors"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 4,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-16",
       "endDate": "2026-12-16",
       "label": "MATH3081",
       "detail": "Probability and Statistics"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH3081",
-      "detail": "Probability and Statistics"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "ME2380",
-      "detail": "Thermodynamics"
     },
     {
       "roomId": "SN-168",
@@ -76406,28 +72490,6 @@
       "endDate": "2026-12-18",
       "label": "CS3000",
       "detail": "Algorithms and Data"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
-    },
-    {
-      "roomId": "SN-168",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "MATH1341",
-      "detail": "Calculus 1 for Science and Engineering"
     },
     {
       "roomId": "SN-168",
@@ -77593,17 +73655,6 @@
       "startDate": "2026-12-14",
       "endDate": "2026-12-14",
       "label": "CHEM2311",
-      "detail": "Organic Chemistry 1"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 1,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "CHEM2311",
       "detail": "Organic Chemistry1 (HON)"
     },
     {
@@ -77616,28 +73667,6 @@
       "endDate": "2026-12-14",
       "label": "PHYS1155",
       "detail": "Physics for Engineering 2"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "PHYS1155",
-      "detail": "Physics for Engineering 2"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 2,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MKTG2201",
-      "detail": "Introduction to Marketing"
     },
     {
       "roomId": "WVF-020",
@@ -77676,28 +73705,6 @@
       "roomId": "WVF-020",
       "kind": "class",
       "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "PSYC1101",
-      "detail": "Foundations of Psychology"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 2,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "PSYC1101",
-      "detail": "Foundations of Psychology"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 2,
       "start": 930,
       "end": 1050,
       "startDate": "2026-12-15",
@@ -77720,28 +73727,6 @@
       "roomId": "WVF-020",
       "kind": "class",
       "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CS3000",
-      "detail": "Algorithms and Data"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 4,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "CHEM1151",
-      "detail": "General Chemistry for Engineers"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 4,
       "start": 630,
       "end": 750,
       "startDate": "2026-12-16",
@@ -77763,17 +73748,6 @@
     {
       "roomId": "WVF-020",
       "kind": "class",
-      "days": 4,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "MATH1241",
-      "detail": "Calculus 1"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
       "days": 8,
       "start": 480,
       "end": 600,
@@ -77781,39 +73755,6 @@
       "endDate": "2026-12-17",
       "label": "DS3000",
       "detail": "Mathematical Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS3000",
-      "detail": "Mathematical Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 8,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "DS3000",
-      "detail": "Mathematical Foundations of Artificial Intelligence"
-    },
-    {
-      "roomId": "WVF-020",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "CS2000",
-      "detail": "Introduction to Program Design and Implementation"
     },
     {
       "roomId": "WVF-020",
@@ -78698,17 +74639,6 @@
     {
       "roomId": "WVG-104",
       "kind": "class",
-      "days": 2,
-      "start": 930,
-      "end": 1050,
-      "startDate": "2026-12-15",
-      "endDate": "2026-12-15",
-      "label": "MATH2321",
-      "detail": "Calculus 3 for Science and Engineering"
-    },
-    {
-      "roomId": "WVG-104",
-      "kind": "class",
       "days": 4,
       "start": 480,
       "end": 600,
@@ -79413,17 +75343,6 @@
     {
       "roomId": "WVH-108",
       "kind": "class",
-      "days": 4,
-      "start": 1080,
-      "end": 1290,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
-      "label": "INFO6215",
-      "detail": "Business Analysis and Information Engineering"
-    },
-    {
-      "roomId": "WVH-108",
-      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 580,
@@ -79651,17 +75570,6 @@
       "endDate": "2026-12-18",
       "label": "ACCT3416",
       "detail": "Strategic Cost Analysis for Decision Making"
-    },
-    {
-      "roomId": "WVH-108",
-      "kind": "class",
-      "days": 16,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-18",
-      "endDate": "2026-12-18",
-      "label": "PHYS1141",
-      "detail": "General Physics"
     },
     {
       "roomId": "WVH-108",
