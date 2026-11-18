@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-18",
   "campuses": [
     {
       "code": "BOS",
@@ -32639,6 +32639,17 @@
       "detail": "Strategy in Action"
     },
     {
+      "roomId": "KA-011",
+      "kind": "class",
+      "days": 16,
+      "start": 510,
+      "end": 690,
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-18",
+      "label": "CHME5621",
+      "detail": "Electrochemical Engineering"
+    },
+    {
       "roomId": "KA-102",
       "kind": "class",
       "days": 1,
@@ -32656,7 +32667,7 @@
       "start": 590,
       "end": 690,
       "startDate": "2026-09-09",
-      "endDate": "2026-12-20",
+      "endDate": "2026-12-13",
       "label": "CHME5621",
       "detail": "Electrochemical Engineering"
     },
