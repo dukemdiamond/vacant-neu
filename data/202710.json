@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-11-18",
+  "generatedAt": "2026-11-19",
   "campuses": [
     {
       "code": "BOS",
@@ -36951,6 +36951,17 @@
       "detail": "Foundations of Data Analysis for Business"
     },
     {
+      "roomId": "M41-212",
+      "kind": "class",
+      "days": 4,
+      "start": 480,
+      "end": 600,
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "label": "EEMB2400",
+      "detail": "Introduction to Evolution"
+    },
+    {
       "roomId": "M41-213",
       "kind": "class",
       "days": 1,
@@ -38335,17 +38346,6 @@
       "endDate": "2026-12-13",
       "label": "COMM2303",
       "detail": "Global and Intercultural Communication"
-    },
-    {
-      "roomId": "M54-014",
-      "kind": "class",
-      "days": 4,
-      "start": 480,
-      "end": 600,
-      "startDate": "2026-12-16",
-      "endDate": "2026-12-16",
-      "label": "EEMB2400",
-      "detail": "Introduction to Evolution"
     },
     {
       "roomId": "M54-014",
