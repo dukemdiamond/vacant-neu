@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-20",
   "campuses": [
     {
       "code": "BOS",
@@ -10256,17 +10256,6 @@
     {
       "roomId": "CA-005",
       "kind": "class",
-      "days": 4,
-      "start": 1070,
-      "end": 1190,
-      "startDate": "2026-11-02",
-      "endDate": "2026-12-20",
-      "label": "CMN6400",
-      "detail": "Effective Meetings and Team Dynamics"
-    },
-    {
-      "roomId": "CA-005",
-      "kind": "class",
       "days": 1,
       "start": 780,
       "end": 900,
@@ -10824,6 +10813,17 @@
       "endDate": "2026-12-17",
       "label": "IE2310",
       "detail": "Introduction to Industrial Engineering"
+    },
+    {
+      "roomId": "CG-097",
+      "kind": "class",
+      "days": 8,
+      "start": 630,
+      "end": 750,
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "label": "PSYC3404",
+      "detail": "Developmental Psychology"
     },
     {
       "roomId": "CG-097",
@@ -54804,6 +54804,17 @@
       "detail": "Analysis 2: Functions of Several Variables"
     },
     {
+      "roomId": "RY-220",
+      "kind": "class",
+      "days": 4,
+      "start": 1070,
+      "end": 1190,
+      "startDate": "2026-11-02",
+      "endDate": "2026-12-20",
+      "label": "CMN6400",
+      "detail": "Effective Meetings and Team Dynamics"
+    },
+    {
       "roomId": "RY-233",
       "kind": "class",
       "days": 18,
@@ -61241,17 +61252,6 @@
     {
       "roomId": "SH-105",
       "kind": "class",
-      "days": 1,
-      "start": 780,
-      "end": 900,
-      "startDate": "2026-12-14",
-      "endDate": "2026-12-14",
-      "label": "PSYC3404",
-      "detail": "Developmental Psychology"
-    },
-    {
-      "roomId": "SH-105",
-      "kind": "class",
       "days": 2,
       "start": 480,
       "end": 600,
@@ -61688,17 +61688,6 @@
       "endDate": "2026-12-17",
       "label": "SOCL1246",
       "detail": "Environment and Society"
-    },
-    {
-      "roomId": "SH-135",
-      "kind": "class",
-      "days": 8,
-      "start": 630,
-      "end": 750,
-      "startDate": "2026-12-17",
-      "endDate": "2026-12-17",
-      "label": "PSYC3404",
-      "detail": "Developmental Psychology"
     },
     {
       "roomId": "SH-135",
