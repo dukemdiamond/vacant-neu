@@ -1,6 +1,6 @@
 {
   "source": "engage",
-  "generatedAt": "2026-11-20",
+  "generatedAt": "2026-11-21",
   "authenticated": false,
   "meetings": [
     {
@@ -230,201 +230,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=388627"
     },
     {
-      "id": "388662",
-      "name": "Paddle Decorating",
-      "club": "Delta Zeta Sorority, Xi Upsilon",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 600,
-      "end": 1020,
-      "spansDays": false,
-      "category": "Workshop",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=388662"
-    },
-    {
-      "id": "391918",
-      "name": "Perfect Pair Fall Coffee Fundraiser NOV",
-      "club": "Perfect Pair at Northeastern University",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 600,
-      "end": 840,
-      "spansDays": false,
-      "category": "Fundraiser",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391918"
-    },
-    {
-      "id": "390714",
-      "name": "H4H Build a House Fundraiser",
-      "club": "Habitat For Humanity Northeastern",
-      "location": "Snell Quad/Library Courtyard",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 720,
-      "end": 900,
-      "spansDays": false,
-      "category": "Fundraiser",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390714"
-    },
-    {
-      "id": "392329",
-      "name": "Cookies Fundraiser",
-      "club": "The Fashion Society",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 750,
-      "end": 870,
-      "spansDays": false,
-      "category": "Fundraiser",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392329"
-    },
-    {
-      "id": "393398",
-      "name": "We donut want to miss your feedback!",
-      "club": "Student Government Association",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 780,
-      "end": 900,
-      "spansDays": false,
-      "category": "Tabling Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393398"
-    },
-    {
-      "id": "392067",
-      "name": "Lab Tour- Ultragenyx Somerville",
-      "club": "Graduate Biotechnology and Bioinformatics Association",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 900,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Academic",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392067"
-    },
-    {
-      "id": "383397",
-      "name": "After School Volunteering (Peace Through Play)",
-      "club": "Peace through Play",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 960,
-      "end": 1080,
-      "spansDays": false,
-      "category": "Community Service",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383397"
-    },
-    {
-      "id": "392458",
-      "name": "ASCE x AIChE Dodgeball",
-      "club": "American Society of Civil Engineers",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1020,
-      "end": 1080,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392458"
-    },
-    {
-      "id": "392359",
-      "name": "Cafe and Destress",
-      "club": "The Happiness Cup",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1020,
-      "end": 1200,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392359"
-    },
-    {
-      "id": "392368",
-      "name": "Card Making",
-      "club": "Alpha Phi Omega",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "Community Service",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392368"
-    },
-    {
-      "id": "391620",
-      "name": "Cookies, Cocoa, and Coloring w/ RA JaJa",
-      "club": "55th Street Residence Hall",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391620"
-    },
-    {
-      "id": "384370",
-      "name": "Northeastern Smash Tournaments (Ultimate)",
-      "club": "Super Smash Bros Club",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1080,
-      "end": 1320,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384370"
-    },
-    {
-      "id": "392515",
-      "name": "NUCSO Presents: Annual Caribbean Charity Pageant!",
-      "club": "Caribbean Students' Organization",
-      "location": "-",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1080,
-      "end": 1320,
-      "spansDays": false,
-      "category": "Fundraiser",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392515"
-    },
-    {
-      "id": "392563",
-      "name": "APMC Speaker Series",
-      "club": "Aspiring Product Managers Club",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1110,
-      "end": 1230,
-      "spansDays": false,
-      "category": "Academic",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392563"
-    },
-    {
-      "id": "393387",
-      "name": "Friendsgiving",
-      "club": "Black Student Union",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1110,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393387"
-    },
-    {
       "id": "392805",
       "name": "Open Loj",
       "club": "Northeastern University Huskiers and Outing Club",
@@ -436,58 +241,6 @@
       "spansDays": true,
       "category": "Social",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=392805"
-    },
-    {
-      "id": "389937",
-      "name": "Craft Night COSF",
-      "club": "Coptic Orthodox Student Fellowship",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1140,
-      "end": 1320,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=389937"
-    },
-    {
-      "id": "384001",
-      "name": "Drop-In Badminton",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384001"
-    },
-    {
-      "id": "391418",
-      "name": "Karnival",
-      "club": "Kaliente Dance Group",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Performance/Speaker",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391418"
-    },
-    {
-      "id": "392611",
-      "name": "New Member Presentation",
-      "club": "Latino America Unida, Lambda Alpha Upsilon Fraternity, Inc.",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1140,
-      "end": 1320,
-      "spansDays": false,
-      "category": "Cultural",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392611"
     },
     {
       "id": "392890",
@@ -514,58 +267,6 @@
       "spansDays": true,
       "category": "Performance/Speaker",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391878"
-    },
-    {
-      "id": "390063",
-      "name": "Bedazzle Night",
-      "club": "55th Street Residence Hall",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1200,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390063"
-    },
-    {
-      "id": "393463",
-      "name": "Frame By Frame Cabaret",
-      "club": "Musical Theater Association (MTA)",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1200,
-      "end": 1320,
-      "spansDays": false,
-      "category": "Performance/Speaker",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393463"
-    },
-    {
-      "id": "393010",
-      "name": "ISANU Thanksgiving Dinner",
-      "club": "Indonesian Student Association",
-      "location": "Egan 306",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1200,
-      "end": 1320,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393010"
-    },
-    {
-      "id": "389256",
-      "name": "Diversity Function",
-      "club": "The Throne",
-      "location": "Great Hall",
-      "roomId": null,
-      "date": "2026-11-20",
-      "start": 1230,
-      "end": 1410,
-      "spansDays": false,
-      "category": "Performance/Speaker",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=389256"
     },
     {
       "id": "388485",
@@ -2701,7 +2402,7 @@
     },
     {
       "id": "393468",
-      "name": "Spring 2026 Musica Auditions",
+      "name": "Spring 2026 Musical Auditions",
       "club": "Drama Club",
       "location": "Back of Lisser Black Box theater",
       "roomId": null,
@@ -2711,19 +2412,6 @@
       "spansDays": false,
       "category": "Social",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393468"
-    },
-    {
-      "id": "393476",
-      "name": "Spring 2026 Musica Auditions",
-      "club": "Drama Club",
-      "location": "Back of Lisser Black Box theater",
-      "roomId": null,
-      "date": "2026-12-01",
-      "start": 1110,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393476"
     },
     {
       "id": "393343",
@@ -3038,6 +2726,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=387356"
     },
     {
+      "id": "393585",
+      "name": "NEUSSA x Simmons SSA x UMBSSA Winter Potluck",
+      "club": "Somali Students Association",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-02",
+      "start": 1080,
+      "end": 1230,
+      "spansDays": false,
+      "category": "Social",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393585"
+    },
+    {
       "id": "388027",
       "name": "NU Stage Fall Rehearsals",
       "club": "NU Stage Musical Theater Company",
@@ -3130,7 +2831,7 @@
     },
     {
       "id": "393472",
-      "name": "Spring 2026 Musica Auditions",
+      "name": "Spring 2026 Musical Auditions",
       "club": "Drama Club",
       "location": "Back of Lisser Black Box theater",
       "roomId": null,
@@ -3166,19 +2867,6 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393577"
-    },
-    {
-      "id": "392763",
-      "name": "Drama Club General Meeting",
-      "club": "Drama Club",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-02",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392763"
     },
     {
       "id": "383973",
@@ -3715,7 +3403,7 @@
     },
     {
       "id": "393473",
-      "name": "Spring 2026 Musica Auditions",
+      "name": "Spring 2026 Musical Auditions",
       "club": "Drama Club",
       "location": "Back of Lisser Black Box theater",
       "roomId": null,
@@ -3855,6 +3543,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=389324"
+    },
+    {
+      "id": "393422",
+      "name": "Showcase Showdown",
+      "club": "Wireless Club",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-03",
+      "start": 1140,
+      "end": 1200,
+      "spansDays": false,
+      "category": "Meeting",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393422"
     },
     {
       "id": "393456",
@@ -4066,7 +3767,7 @@
     },
     {
       "id": "393474",
-      "name": "Spring 2026 Musica Auditions",
+      "name": "Spring 2026 Musical Auditions",
       "club": "Drama Club",
       "location": "Back of Lisser Black Box theater",
       "roomId": null,
@@ -4221,6 +3922,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=384344"
     },
     {
+      "id": "392564",
+      "name": "BCF x Ruach Worship Night",
+      "club": "Black Christian Fellowship",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-05",
+      "start": 1080,
+      "end": 1230,
+      "spansDays": false,
+      "category": "Spiritual",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=392564"
+    },
+    {
       "id": "390379",
       "name": "Noche Buena",
       "club": "Dominican Student Association",
@@ -4232,19 +3946,6 @@
       "spansDays": false,
       "category": "Dinner/Gala",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=390379"
-    },
-    {
-      "id": "393475",
-      "name": "Spring 2026 Musica Auditions",
-      "club": "Drama Club",
-      "location": "Back of Lisser Black Box theater",
-      "roomId": null,
-      "date": "2026-12-05",
-      "start": 1110,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393475"
     },
     {
       "id": "393014",
@@ -4414,6 +4115,19 @@
       "spansDays": false,
       "category": "Social",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393429"
+    },
+    {
+      "id": "392381",
+      "name": "Northeastern Madrigal Singers Fall 2026 Concert",
+      "club": "Northeastern University Madrigal Singers",
+      "location": "St Cyprian's Episcopal Church",
+      "roomId": null,
+      "date": "2026-12-06",
+      "start": 1140,
+      "end": 1260,
+      "spansDays": false,
+      "category": "Performance/Speaker",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=392381"
     },
     {
       "id": "385493",
@@ -4650,6 +4364,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=389907"
     },
     {
+      "id": "393475",
+      "name": "Spring 2026 Musical Auditions",
+      "club": "Drama Club",
+      "location": "Back of Lisser Black Box theater",
+      "roomId": null,
+      "date": "2026-12-07",
+      "start": 1110,
+      "end": 1260,
+      "spansDays": false,
+      "category": "Social",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393475"
+    },
+    {
       "id": "389741",
       "name": "SUITS Weekly Meeting",
       "club": "Students for the Exploration and Development of Space of Northeastern University",
@@ -4830,6 +4557,19 @@
       "spansDays": false,
       "category": "Community Service",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=383409"
+    },
+    {
+      "id": "388407",
+      "name": "Final Project Work Session",
+      "club": "ASLA Adapt",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-08",
+      "start": 1020,
+      "end": 1140,
+      "spansDays": false,
+      "category": "Meeting",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=388407"
     },
     {
       "id": "389199",
@@ -5066,6 +4806,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=390564"
     },
     {
+      "id": "393380",
+      "name": "Holiday Party at HSU",
+      "club": "Haitian Student Unity (HSU)",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-08",
+      "start": 1170,
+      "end": 1230,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393380"
+    },
+    {
       "id": "388205",
       "name": "ntertainment",
       "club": "Chinese Students and Scholars Association",
@@ -5246,19 +4999,6 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=388168"
-    },
-    {
-      "id": "393370",
-      "name": "SGA - Belonging and Burnout",
-      "club": "Student Government Association",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-09",
-      "start": 1080,
-      "end": 1170,
-      "spansDays": false,
-      "category": "Educational/Awareness",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393370"
     },
     {
       "id": "388673",
@@ -5651,6 +5391,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393515"
     },
     {
+      "id": "393424",
+      "name": "EBoard Elections + Brownie Bakeoff",
+      "club": "Wireless Club",
+      "location": "Hayden 503",
+      "roomId": null,
+      "date": "2026-12-10",
+      "start": 1140,
+      "end": 1200,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393424"
+    },
+    {
       "id": "389624",
       "name": "ENC Men's Group",
       "club": "Encounter Every Nation Campus Ministries of Northeastern University",
@@ -5792,6 +5545,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=387349"
+    },
+    {
+      "id": "393467",
+      "name": "CRG afterhours",
+      "club": "Northeastern Recreational Climbing Club",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-10",
+      "start": 1380,
+      "end": 1435,
+      "spansDays": false,
+      "category": "Athletic/Sports",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393467"
     },
     {
       "id": "393214",
@@ -9253,10 +9019,10 @@
     }
   ],
   "stats": {
-    "events": 696,
-    "redacted": 647,
+    "events": 678,
+    "redacted": 632,
     "noLocation": 0,
-    "unmatchedVenue": 31,
+    "unmatchedVenue": 28,
     "unparsedDates": 0,
     "matched": 18
   }
