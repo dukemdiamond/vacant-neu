@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-24",
   "campuses": [
     {
       "code": "BOS",
@@ -66924,6 +66924,17 @@
       "endDate": "2026-12-20",
       "label": "MKT2100",
       "detail": "Principles of Marketing"
+    },
+    {
+      "roomId": "SL-012",
+      "kind": "class",
+      "days": 1,
+      "start": 1160,
+      "end": 1215,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-20",
+      "label": "ALY4955",
+      "detail": "Project"
     },
     {
       "roomId": "SL-012",
