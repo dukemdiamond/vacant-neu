@@ -3,7 +3,7 @@
     "code": "202710",
     "description": "Fall 2026 Semester"
   },
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "campuses": [
     {
       "code": "BOS",
@@ -30525,17 +30525,6 @@
       "endDate": "2026-12-13",
       "label": "MATH3331",
       "detail": "Differential Geometry"
-    },
-    {
-      "roomId": "INV-018",
-      "kind": "class",
-      "days": 18,
-      "start": 925,
-      "end": 1025,
-      "startDate": "2026-09-09",
-      "endDate": "2026-12-13",
-      "label": "LING3412",
-      "detail": "Language and Culture"
     },
     {
       "roomId": "INV-019",
@@ -65703,6 +65692,17 @@
       "endDate": "2026-12-13",
       "label": "COMM3230",
       "detail": "Interpersonal Communication"
+    },
+    {
+      "roomId": "SL-001",
+      "kind": "class",
+      "days": 18,
+      "start": 925,
+      "end": 1025,
+      "startDate": "2026-09-09",
+      "endDate": "2026-12-13",
+      "label": "LING3412",
+      "detail": "Language and Culture"
     },
     {
       "roomId": "SL-001",

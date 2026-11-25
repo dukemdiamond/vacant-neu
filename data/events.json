@@ -1,6 +1,6 @@
 {
   "source": "engage",
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "authenticated": false,
   "meetings": [
     {
@@ -79,17 +79,6 @@
       "end": 1050,
       "startDate": "2026-12-11",
       "endDate": "2026-12-11"
-    },
-    {
-      "roomId": "RY-126",
-      "kind": "event",
-      "label": "Operation Smile Weekly General Meeting",
-      "detail": "Operation Smile",
-      "days": 2,
-      "start": 1080,
-      "end": 1140,
-      "startDate": "2026-11-24",
-      "endDate": "2026-11-24"
     },
     {
       "roomId": "RY-126",
@@ -193,357 +182,6 @@
       "spansDays": true,
       "category": "Leadership",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393478"
-    },
-    {
-      "id": "383399",
-      "name": "After School Volunteering (Peace Through Play)",
-      "club": "Peace through Play",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 960,
-      "end": 1080,
-      "spansDays": false,
-      "category": "Community Service",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383399"
-    },
-    {
-      "id": "392051",
-      "name": "HSU Friendsgiving",
-      "club": "Haitian Student Unity (HSU)",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1020,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Cultural",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392051"
-    },
-    {
-      "id": "392830",
-      "name": "Healing Harmonies Open Mic Night",
-      "club": "Music In Hospitals and Nursing Homes Using Entertainment As Therapy",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1050,
-      "end": 1230,
-      "spansDays": false,
-      "category": "Performance/Speaker",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392830"
-    },
-    {
-      "id": "392453",
-      "name": "Keynote with Dr. Munif Hatem",
-      "club": "Biomedical Orthopedic Networking & Educational Society",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1065,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Academic",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392453"
-    },
-    {
-      "id": "389197",
-      "name": "Cruelty-Free Club Weekly Meeting",
-      "club": "Cruelty-Free Northeastern",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1170,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=389197"
-    },
-    {
-      "id": "391019",
-      "name": "Mount Studios Meeting",
-      "club": "Mount Studios",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391019"
-    },
-    {
-      "id": "391071",
-      "name": "Mount Studios Meeting",
-      "club": "Mount Studios",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391071"
-    },
-    {
-      "id": "391123",
-      "name": "Mount Studios Meeting",
-      "club": "Mount Studios",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391123"
-    },
-    {
-      "id": "390503",
-      "name": "Northeastern Hellenic Society Bi-Weekly General Body Meeting",
-      "club": "Hellenic Society of Northeastern University",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1200,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390503"
-    },
-    {
-      "id": "388022",
-      "name": "NU Stage Fall Rehearsals",
-      "club": "NU Stage Musical Theater Company",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1380,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=388022"
-    },
-    {
-      "id": "387098",
-      "name": "Operation Smile Weekly General Meeting",
-      "club": "Operation Smile",
-      "location": "RY 126",
-      "roomId": "RY-126",
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=387098"
-    },
-    {
-      "id": "387781",
-      "name": "rev coworking",
-      "club": "Rev",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=387781"
-    },
-    {
-      "id": "391329",
-      "name": "Ritual Reviews",
-      "club": "Kappa Kappa Gamma - Eta Omicron Chapter",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391329"
-    },
-    {
-      "id": "390605",
-      "name": "SASE GENERAL MEETING",
-      "club": "Society of Asian Scientists and Engineers",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "Cultural",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390605"
-    },
-    {
-      "id": "391864",
-      "name": "UTSAV Act Meetings",
-      "club": "UTSAV - South Asian Organization",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=391864"
-    },
-    {
-      "id": "389559",
-      "name": "Weekly Meeting",
-      "club": "Husky Competitive Programming Club",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1080,
-      "end": 1140,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=389559"
-    },
-    {
-      "id": "393047",
-      "name": "APMC Speaker Session",
-      "club": "Aspiring Product Managers Club",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1110,
-      "end": 1230,
-      "spansDays": false,
-      "category": "Academic",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393047"
-    },
-    {
-      "id": "387311",
-      "name": "SUITS Weekly Meeting",
-      "club": "Students for the Exploration and Development of Space of Northeastern University",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1110,
-      "end": 1170,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=387311"
-    },
-    {
-      "id": "384830",
-      "name": "General Body Meeting",
-      "club": "Solar Decathlon",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1140,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384830"
-    },
-    {
-      "id": "388384",
-      "name": "Lunabotics General Meeting",
-      "club": "Students for the Exploration and Development of Space of Northeastern University",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1140,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=388384"
-    },
-    {
-      "id": "390437",
-      "name": "New Member Study Hours",
-      "club": "Beta Theta Pi",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Academic",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390437"
-    },
-    {
-      "id": "387608",
-      "name": "NU Breakers Breaksgiving",
-      "club": "NU Breakers",
-      "location": "Curry Ballroom",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1140,
-      "end": 1320,
-      "spansDays": false,
-      "category": "Cultural",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=387608"
-    },
-    {
-      "id": "385428",
-      "name": "SODA General Meeting Request",
-      "club": "Student Organ Donation Advocates at Northeastern",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1140,
-      "end": 1200,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=385428"
-    },
-    {
-      "id": "390562",
-      "name": "Events Department",
-      "club": "Chinese Students and Scholars Association",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1170,
-      "end": 1290,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390562"
-    },
-    {
-      "id": "388203",
-      "name": "ntertainment",
-      "club": "Chinese Students and Scholars Association",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1170,
-      "end": 1290,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=388203"
-    },
-    {
-      "id": "390320",
-      "name": "Operations Sync for Disrupt",
-      "club": "Disrupt",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-24",
-      "start": 1170,
-      "end": 1230,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=390320"
-    },
-    {
-      "id": "392157",
-      "name": "Bible Study Meeting",
-      "club": "Christian Fellowship at Northeastern NYC",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-25",
-      "start": 720,
-      "end": 780,
-      "spansDays": false,
-      "category": "Meeting",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=392157"
     },
     {
       "id": "393232",
@@ -700,19 +338,6 @@
       "spansDays": false,
       "category": "Educational/Awareness",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=387425"
-    },
-    {
-      "id": "393268",
-      "name": "DANCE with IRILÉ: Afro-Brazilian Music and Dance 🏹🕊️",
-      "club": "IRILÉ: Afro- Brazilian Performing Art Group",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-11-25",
-      "start": 1170,
-      "end": 1260,
-      "spansDays": false,
-      "category": "General Event",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393268"
     },
     {
       "id": "388347",
@@ -1625,19 +1250,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393543"
     },
     {
-      "id": "383985",
-      "name": "Drop-In Volleyball",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-01",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383985"
-    },
-    {
       "id": "384831",
       "name": "General Body Meeting",
       "club": "Solar Decathlon",
@@ -2106,32 +1718,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393577"
     },
     {
-      "id": "383973",
-      "name": "Drop-In Pickleball",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-02",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383973"
-    },
-    {
-      "id": "384039",
-      "name": "Drop-In Soccer",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-02",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384039"
-    },
-    {
       "id": "391804",
       "name": "ENC Womens Group",
       "club": "Encounter Every Nation Campus Ministries of Northeastern University",
@@ -2247,6 +1833,19 @@
       "spansDays": false,
       "category": "General Event",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393101"
+    },
+    {
+      "id": "393732",
+      "name": "The Nature of Music: Christopher Shultis",
+      "club": "Mills Performing Arts",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-02",
+      "start": 1170,
+      "end": 1290,
+      "spansDays": false,
+      "category": "Performance/Speaker",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393732"
     },
     {
       "id": "388348",
@@ -2377,6 +1976,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=392160"
+    },
+    {
+      "id": "393730",
+      "name": "The Sweet Spot Dessert Drop",
+      "club": "Student Life",
+      "location": "The Commons",
+      "roomId": null,
+      "date": "2026-12-03",
+      "start": 840,
+      "end": 960,
+      "spansDays": false,
+      "category": "Social",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393730"
     },
     {
       "id": "392923",
@@ -3068,6 +2680,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393502"
     },
     {
+      "id": "392813",
+      "name": "Hotpot and Karaoke",
+      "club": "Japanese Culture Club",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-04",
+      "start": 1080,
+      "end": 1410,
+      "spansDays": false,
+      "category": "Dinner/Gala",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=392813"
+    },
+    {
       "id": "384371",
       "name": "Northeastern Smash Tournaments (Ultimate)",
       "club": "Super Smash Bros Club",
@@ -3092,6 +2717,19 @@
       "spansDays": false,
       "category": "Social",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393474"
+    },
+    {
+      "id": "392826",
+      "name": "APO Formal - Fall 2026",
+      "club": "Alpha Phi Omega",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-04",
+      "start": 1140,
+      "end": 1290,
+      "spansDays": false,
+      "category": "Social",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=392826"
     },
     {
       "id": "384002",
@@ -3822,19 +3460,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=392432"
     },
     {
-      "id": "384030",
-      "name": "Drop-in Ping Pong (Table Tennis)",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-07",
-      "start": 1140,
-      "end": 1230,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384030"
-    },
-    {
       "id": "391766",
       "name": "Gajok Study Group",
       "club": "Korean American Student Association",
@@ -4186,19 +3811,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=393188"
     },
     {
-      "id": "383986",
-      "name": "Drop-In Volleyball",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-08",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383986"
-    },
-    {
       "id": "393547",
       "name": "Felt Pennants",
       "club": "Alpha Phi Omega",
@@ -4366,6 +3978,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=392161"
+    },
+    {
+      "id": "392932",
+      "name": "Donut Stress: Press Pause",
+      "club": "Disability Access Services",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-09",
+      "start": 840,
+      "end": 960,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=392932"
     },
     {
       "id": "393559",
@@ -4589,45 +4214,6 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=389608"
     },
     {
-      "id": "383933",
-      "name": "Drop-In Pickleball",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-09",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383933"
-    },
-    {
-      "id": "383974",
-      "name": "Drop-In Pickleball",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-09",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=383974"
-    },
-    {
-      "id": "384017",
-      "name": "Drop-In Soccer",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-09",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384017"
-    },
-    {
       "id": "391805",
       "name": "ENC Womens Group",
       "club": "Encounter Every Nation Campus Ministries of Northeastern University",
@@ -4743,19 +4329,6 @@
       "spansDays": false,
       "category": "Community Service",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=383411"
-    },
-    {
-      "id": "393701",
-      "name": "Resin Party!",
-      "club": "Iranian Student Association of Northeastern University",
-      "location": "CSC 344",
-      "roomId": null,
-      "date": "2026-12-10",
-      "start": 990,
-      "end": 1110,
-      "spansDays": false,
-      "category": "Social",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=393701"
     },
     {
       "id": "388490",
@@ -5070,6 +4643,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=388289"
     },
     {
+      "id": "393664",
+      "name": "NU Downhillers Wax Night",
+      "club": "Downhillers Ski and Snowboard Club",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2026-12-10",
+      "start": 1140,
+      "end": 1260,
+      "spansDays": false,
+      "category": "Athletic/Sports",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393664"
+    },
+    {
       "id": "389325",
       "name": "Rover Life Detection Weekly Meeting",
       "club": "Students for the Exploration and Development of Space of Northeastern University",
@@ -5263,19 +4849,6 @@
       "spansDays": false,
       "category": "General Event",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=388758"
-    },
-    {
-      "id": "384003",
-      "name": "Drop-In Badminton",
-      "club": "Campus Sports and Recreation  - Oakland Campus",
-      "location": "Private location",
-      "roomId": null,
-      "date": "2026-12-11",
-      "start": 1140,
-      "end": 1260,
-      "spansDays": false,
-      "category": "Athletic/Sports",
-      "url": "https://engage.northeastern.edu/rsvp_boot?id=384003"
     },
     {
       "id": "390505",
@@ -6097,6 +5670,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391133"
     },
     {
+      "id": "393686",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-01-15",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393686"
+    },
+    {
       "id": "383437",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -6264,6 +5850,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391135"
+    },
+    {
+      "id": "393687",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-01-22",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393687"
     },
     {
       "id": "383442",
@@ -6461,6 +6060,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391137"
     },
     {
+      "id": "393688",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-01-29",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393688"
+    },
+    {
       "id": "383447",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -6641,6 +6253,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391139"
+    },
+    {
+      "id": "393689",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-02-05",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393689"
     },
     {
       "id": "383452",
@@ -6825,6 +6450,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391141"
     },
     {
+      "id": "393690",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-02-12",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393690"
+    },
+    {
       "id": "383457",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -6994,6 +6632,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391143"
     },
     {
+      "id": "393691",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-02-19",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393691"
+    },
+    {
       "id": "383462",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -7161,6 +6812,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391145"
+    },
+    {
+      "id": "393692",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-02-26",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393692"
     },
     {
       "id": "383467",
@@ -7358,6 +7022,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391147"
     },
     {
+      "id": "393693",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-03-05",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393693"
+    },
+    {
       "id": "383472",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -7525,6 +7202,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391149"
+    },
+    {
+      "id": "393694",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-03-12",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393694"
     },
     {
       "id": "383477",
@@ -7696,6 +7386,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391151"
     },
     {
+      "id": "393695",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-03-19",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393695"
+    },
+    {
       "id": "383482",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -7863,6 +7566,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391153"
+    },
+    {
+      "id": "393696",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-03-26",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393696"
     },
     {
       "id": "383487",
@@ -8034,6 +7750,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391155"
     },
     {
+      "id": "393697",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-04-02",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393697"
+    },
+    {
       "id": "383492",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -8201,6 +7930,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391157"
+    },
+    {
+      "id": "393698",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-04-09",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393698"
     },
     {
       "id": "383497",
@@ -8372,6 +8114,19 @@
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391159"
     },
     {
+      "id": "393699",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-04-16",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393699"
+    },
+    {
       "id": "383502",
       "name": "After School Volunteering (Peace Through Play)",
       "club": "Peace through Play",
@@ -8474,6 +8229,19 @@
       "spansDays": false,
       "category": "Meeting",
       "url": "https://engage.northeastern.edu/rsvp_boot?id=391161"
+    },
+    {
+      "id": "393700",
+      "name": "Fridays at HOPe",
+      "club": "Best Buddies",
+      "location": "Private location",
+      "roomId": null,
+      "date": "2027-04-23",
+      "start": 780,
+      "end": 900,
+      "spansDays": false,
+      "category": "General Event",
+      "url": "https://engage.northeastern.edu/rsvp_boot?id=393700"
     },
     {
       "id": "391058",
@@ -8685,11 +8453,11 @@
     }
   ],
   "stats": {
-    "events": 654,
-    "redacted": 611,
+    "events": 637,
+    "redacted": 596,
     "noLocation": 1,
-    "unmatchedVenue": 26,
+    "unmatchedVenue": 25,
     "unparsedDates": 0,
-    "matched": 16
+    "matched": 15
   }
 }
