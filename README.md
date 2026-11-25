@@ -4,6 +4,8 @@ Find an empty classroom at Northeastern.
 
 **[Live at vacantneu.com](https://vacantneu.com)** · [Watch the demo](demo/vacantneu-demo.mp4)
 
+2,000+ users!
+
 [![vacantNEU](demo/vacantneu-poster.jpg)](demo/vacantneu-demo.mp4)
 
 Every course catalog answers "where is my class?". vacantNEU answers the inverse: **which rooms
